@@ -83,7 +83,7 @@ def run(repo: str, out: str, token: str | None, full: bool = False,
         print(f"  comments to download for {len(targets)}/{len(data)} issues...")
         ok = err = 0
         if targets and token is None:
-            print("  no token: limit is 60 req/hour, GH_TOKEN is required for 1000 issues. Continuing anyway (slow, may fail).")
+            print("  no token: limit is 60 req/hour, BACKUP_TOKEN is required. Continuing anyway (slow, may fail).")
 
         def _one(t):
             number, _, idx = t

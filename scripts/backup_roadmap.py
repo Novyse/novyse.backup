@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Back up roadmap = org-level Project V2 (stdlib only).
 Usage:
-  GH_TOKEN=xxx python3 scripts/backup_roadmap.py --out backup
+  BACKUP_TOKEN=xxx python3 scripts/backup_roadmap.py --out backup
   # quick test: python3 scripts/backup_roadmap.py --out /tmp/bk --max-items 20
 NOTE: GraphQL always requires a token, even for public projects.
 """
@@ -82,7 +82,7 @@ def run(org: str, number: int, out: str, token: str | None,
         max_items: int = 0) -> dict:
     print(f"[roadmap] org={org} project=#{number} ...")
     if not token:
-        raise SystemExit("GH_TOKEN/GITHUB_TOKEN is required for GraphQL (even public projects). Export it and retry.")
+        raise SystemExit("BACKUP_TOKEN is required for GraphQL (even public projects). Export it and retry.")
     # fields (paginated, usually a single page is enough)
     fields, fcur = [], None
     while True:

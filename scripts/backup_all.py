@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Main script: runs releases + issues + roadmap.
 Usage:
-  GH_TOKEN=xxx python3 scripts/backup_all.py --out backup
+  BACKUP_TOKEN=xxx python3 scripts/backup_all.py --out backup
   # quick local test without stressing limits (60 req/hour without token):
   python3 scripts/backup_all.py --out /tmp/bk-test --max-releases-pages 1 --max-issues 20 --no-comments --max-items 20
-  # NOTE: roadmap always requires GH_TOKEN; without a token it is skipped with a warning.
+  # NOTE: roadmap needs BACKUP_TOKEN; without a token it is skipped with a warning.
 """
 import argparse
 import json
@@ -55,8 +55,8 @@ def main():
             print(f"  issues failed: {e}")
     if "roadmap" not in skip:
         if not token:
-            print("  roadmap skipped: GH_TOKEN is required for GraphQL (even public projects).")
-            errors["roadmap"] = "skipped: missing GH_TOKEN"
+            print("  roadmap skipped: BACKUP_TOKEN is required for GraphQL (even public projects).")
+            errors["roadmap"] = "skipped: missing token"
         else:
             try:
                 results["roadmap"] = mod_map.run(ORG, PROJECT_NUMBER, str(out), token,

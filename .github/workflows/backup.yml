@@ -12,8 +12,6 @@ on:
 
 permissions:
   contents: write
-  issues: read
-  projects: read
 
 concurrency:
   group: backup
@@ -32,7 +30,7 @@ jobs:
 
       - name: Run full backup
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BACKUP_TOKEN: ${{ secrets.BACKUP_TOKEN }}
         run: |
           python3 scripts/backup_all.py \
             --out backup \

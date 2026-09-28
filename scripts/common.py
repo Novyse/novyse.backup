@@ -12,7 +12,7 @@ UA = "novyse-backup/1.0 (+https://github.com/novyse)"
 
 
 def get_token(explicit: str | None = None) -> str | None:
-    tok = explicit or os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
+    tok = explicit or os.environ.get("BACKUP_TOKEN")
     return tok.strip() if tok and tok.strip() else None
 
 
@@ -109,7 +109,7 @@ def paginate_rest(first_url: str, token: str | None, max_pages: int = 600, log_e
 
 def graphql(query: str, variables: dict, token: str, timeout: int = 30, retries: int = 5):
     if not token:
-        raise RuntimeError("GraphQL requires a token (GH_TOKEN/GITHUB_TOKEN), even for public projects.")
+        raise RuntimeError("GraphQL requires BACKUP_TOKEN, even for public projects.")
     payload = json.dumps({"query": query, "variables": variables}).encode()
     last_err = None
     for attempt in range(retries):
