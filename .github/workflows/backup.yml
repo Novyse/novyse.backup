@@ -1,0 +1,56 @@
+name: Daily backup
+
+on:
+  schedule:
+    - cron: '0 3 * * *' # every day 03:00 UTC
+  workflow_dispatch:
+    inputs:
+      skip:
+        description: 'Steps to skip (e.g. roadmap)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+  issues: read
+  projects: read
+
+concurrency:
+  group: backup
+  cancel-in-progress: false
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run full backup
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 scripts/backup_all.py \
+            --out backup \
+            --skip "${{ inputs.skip }}"
+
+      - name: Upload artifact (safety copy besides git)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: backup-${{ github.run_id }}
+          path: backup/
+          retention-days: 30
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add backup/
+          git diff --cached --quiet && echo "No changes" && exit 0
+          git commit -m "Backup $(date -u +'%Y-%m-%d')"
+          git pull --rebase && git push
