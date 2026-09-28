@@ -1,0 +1,970 @@
+[
+  {
+    "tag_name": "v1.2.0-20260831.0",
+    "name": "Version 1.2.0-20260831.0",
+    "body": "# Novyse 1.2.0-20260831.0 - Enhanced Chat Features\r\n\r\n## Features\r\n\r\n### Chat\r\n\r\n* **Forums & Sub-Channels:** Implemented full forum support and sub-channel functionality, enabling dedicated message lists and independent vocal channels within chats.\r\n* **Role-Based Permissions:** Added a role-based permission management system and normalized member role data handling across chat components.\r\n* **Sub-Chat Navigation:** Added navigation to automatically switch to the correct sub-chat when selecting pinned messages, including transitions from vocal view to chat view.\r\n\r\n### Messages\r\n\r\n* **GIF Integration:** Integrated GIF search and selection picker powered by a new API gateway endpoint.\r\n* **Message Search:** Added highlighted search navigation supporting local chats, sub-chats, remote chats, and global messages.\r\n\r\n### Comms\r\n\r\n* **Audio Output Selection:** Implemented audio output device selection and toggling in the communications bar.\r\n* **Vocal Subs:** Added support for dedicated voice sub-channels and updated sub-creation flows.\r\n* **Speaking Animations:** Added animated wave indicators in the comms header while speaking, alongside voice chat empty-state animation assets.\r\n\r\n### Authentication\r\n\r\n* **Socket Error Handling & Token Refresh:** Implemented granular socket authentication error handling and in-band token refresh via the `auth:refresh` event.\r\n\r\n### Settings\r\n\r\n* **Startup Preferences:** Added a configurable option in startup settings to launch the application minimized.\r\n\r\n### UI/UX\r\n\r\n* **DateTime Component:** Added a dedicated `DateTimeInput` component for date and time selection.\r\n* **Slider Hover Preview:** Added hover preview functionality to the custom slider component.\r\n* **Header Search Navigation:** Added direct navigation to search from the chat list header.\r\n\r\n### API\r\n\r\n* **GIF Search Gateway:** Added API gateway endpoint support for GIF search and querying.\r\n\r\n### Desktop\r\n\r\n* **Cross-Platform File Opener:** Implemented the `useOpenFile` hook to handle system file opening via native OS intents.\r\n\r\n## Bug Fixes\r\n\r\n### Chat\r\n\r\n* **Store Initialization:** Removed redundant `selectedSub` initializations and corrected member role handling logic in the chat store.\r\n* **Pinned Messages:** Included `subID` parameters when retrieving pinned messages from the active chat store.\r\n* **Split View:** Fixed split-view rendering by removing unwanted borders and eliminating duplicated sublists.\r\n\r\n### Messages\r\n\r\n* **Message Scrolling:** Resolved scrolling bugs and jitter for smoother and more precise message list navigation (#304).\r\n* **Media Dimensions & Scaling:** Corrected video container sizing on mobile and optimized image and video viewers to adapt dynamically to media dimensions.\r\n* **Video Previews:** Fixed an issue where audio remained active during video previews.\r\n* **Mentions:** Fixed user mention handling within the text input component.\r\n\r\n### Comms\r\n\r\n* **Header Overflow:** Resolved layout overflow issues for communications header elements on smaller screens.\r\n* **Context Menu:** Fixed an issue where the communications context menu could not be dismissed.\r\n* **Audio Routing:** Fixed desktop audio output switching (#286) and addressed synchronized audio input/output routing behavior on Android.\r\n\r\n### Notification\r\n\r\n* **Dependency Cycles:** Eliminated require cycles by dynamically and lazily importing `useActiveChatStore` in notification managers.\r\n\r\n### Authentication\r\n\r\n* **Mobile Onboarding Alignment:** Fixed signup text alignment and added transition animations during the welcome sequence to prevent mobile UI lag.\r\n\r\n### UI/UX\r\n\r\n* **Screen Orientation:** Fixed an issue on mobile where the interface would not rotate with screen orientation.\r\n* **Header Layout & Borders:** Corrected border radiuses and paddings across chat headers, search bars, and comms headers.\r\n* **Bottom Sheets:** Fixed incorrect border radiuses on mobile bottom sheet components.\r\n* **Missing Icons:** Resolved missing icon references across multiple UI components.\r\n\r\n### Distribution\r\n\r\n* **Package Lock:** Restored the lockfile for Flathub packaging and updated build dependencies.\r\n* **Memory Paging:** Applied a fix for Android 16KB memory paging warnings.\r\n\r\n### Miscellaneous\r\n\r\n* **File Formatting:** Enforced trailing newline standards in `socket-io.ts` and corrected broken internal imports.\r\n\r\n## Improvements\r\n\r\n### Chat\r\n\r\n* **Header & Sublist Structure:** Unified header logic across the entire application and improved sublist integration within chat views.\r\n\r\n### Messages\r\n\r\n* **Optimized Video Playback:** Configured in-chat videos to play previews only when visible in the viewport, automatically resetting to start when scrolled offscreen.\r\n* **Saved & Favorite Messages:** Renamed starred messages to favorites and added dedicated UI buttons and localization for saved messages.\r\n* **Search Autofocus:** Configured the search input to focus automatically upon navigating to the search view.\r\n\r\n### Comms\r\n\r\n* **Mute Indicators:** Added red background indicators to comms icons when microphone and speaker are muted.\r\n* **Profile Navigation:** Added the ability to view user profiles directly from the communications context menu.\r\n\r\n### Notification\r\n\r\n* **System Notifications:** Refactored system notification handling to suppress unnecessary title and subtitle rendering.\r\n\r\n### Settings\r\n\r\n* **Settings UI Rework:** Modernized multiple settings screens to align with the new design system and added custom right-icon support to `SettingsRow`.\r\n\r\n### UI/UX\r\n\r\n* **Typography Standardization:** Standardized typography components across the application (`AppText` to `Typography`, `LinkText` to `LinkTypography`) and unified text property propagation.\r\n* **Modal Transitions & Sheets:** Added enter/exit animations for modals and updated bottom sheets to dynamically adjust height to content before enabling scrolling.\r\n* **Context Menus:** Migrated action menus and file upload overlays to modular context menu components featuring automatic viewport boundary detection.\r\n* **Touch Targets & Controls:** Enlarged input touch targets, added stretch animations to switch components, and overhauled custom slider controls.\r\n* **Small Screen Performance:** Disabled resource-intensive blur views on tab navigators for compact screens.\r\n\r\n### Security\r\n\r\n* **Route Standardization:** Reorganized security settings routes to `/privacy-and-security`.\r\n\r\n### Miscellaneous\r\n\r\n* **Store Architecture:** Reorganized Zustand context architectures into dedicated `/store` directories.\r\n* **Bundling & Build Warnings:** Updated Metro configs, optimized icon imports to prevent EMFILE errors, and adjusted TypeScript exclude patterns to eliminate build warnings.\r\n\r\n## Known Issues",
+    "published_at": "2026-08-31T10:17:24Z",
+    "created_at": "2026-08-31T09:28:03Z",
+    "draft": false,
+    "prerelease": false,
+    "target_commitish": "production",
+    "assets": [
+      {
+        "name": "latest-linux.yml",
+        "size": 644,
+        "download_count": 50,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/latest-linux.yml"
+      },
+      {
+        "name": "latest-mac.yml",
+        "size": 477,
+        "download_count": 2,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/latest-mac.yml"
+      },
+      {
+        "name": "latest.yml",
+        "size": 340,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/latest.yml"
+      },
+      {
+        "name": "novyse-arm64-v8a.apk",
+        "size": 104810511,
+        "download_count": 6,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/novyse-arm64-v8a.apk"
+      },
+      {
+        "name": "novyse-armeabi-v7a.apk",
+        "size": 81691737,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/novyse-armeabi-v7a.apk"
+      },
+      {
+        "name": "Novyse-mac.zip",
+        "size": 129390293,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/Novyse-mac.zip"
+      },
+      {
+        "name": "Novyse-mac.zip.blockmap",
+        "size": 135444,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/Novyse-mac.zip.blockmap"
+      },
+      {
+        "name": "Novyse-Portable.exe",
+        "size": 116609257,
+        "download_count": 2,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/Novyse-Portable.exe"
+      },
+      {
+        "name": "Novyse-Setup.exe",
+        "size": 116770774,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/Novyse-Setup.exe"
+      },
+      {
+        "name": "Novyse-Setup.exe.blockmap",
+        "size": 122904,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/Novyse-Setup.exe.blockmap"
+      },
+      {
+        "name": "Novyse-Setup.msi",
+        "size": 130826240,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/Novyse-Setup.msi"
+      },
+      {
+        "name": "novyse-web-1.2.0-20260831.0.zip",
+        "size": 7876545,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/novyse-web-1.2.0-20260831.0.zip"
+      },
+      {
+        "name": "novyse-x86.apk",
+        "size": 104886940,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/novyse-x86.apk"
+      },
+      {
+        "name": "novyse-x86_64.apk",
+        "size": 112743014,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/novyse-x86_64.apk"
+      },
+      {
+        "name": "novyse.aab",
+        "size": 226021481,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/novyse.aab"
+      },
+      {
+        "name": "Novyse.AppImage",
+        "size": 148769892,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/Novyse.AppImage"
+      },
+      {
+        "name": "novyse.deb",
+        "size": 117295744,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/novyse.deb"
+      },
+      {
+        "name": "Novyse.dmg",
+        "size": 134068446,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/Novyse.dmg"
+      },
+      {
+        "name": "Novyse.dmg.blockmap",
+        "size": 140202,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/Novyse.dmg.blockmap"
+      },
+      {
+        "name": "novyse.flatpak",
+        "size": 105775104,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/novyse.flatpak"
+      },
+      {
+        "name": "novyse.rpm",
+        "size": 99755133,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/novyse.rpm"
+      },
+      {
+        "name": "Novyse.snap",
+        "size": 125308928,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/Novyse.snap"
+      }
+    ]
+  },
+  {
+    "tag_name": "v1.1.0-20260614.0",
+    "name": "Version 1.1.0-20260614.0",
+    "body": "# Novyse 1.1.0-20260614.0 - Desktop and Tweaks\r\n\r\n## Features\r\n\r\n## Bug Fixes\r\n\r\n### Initialization\r\n\r\n* **Startup:** Handled the `ERR_UPDATER_NO_PUBLISHED_VERSIONS` error gracefully in the splash screen during the startup process.\r\n\r\n## Improvements\r\n\r\n### Distribution\r\n\r\n* **Web Deployment:** Decoupled web deployment into a separate workflow job and updated the package main entry.\r\n\r\n## Known Issues",
+    "published_at": "2026-06-14T13:17:51Z",
+    "created_at": "2026-06-14T12:27:27Z",
+    "draft": false,
+    "prerelease": false,
+    "target_commitish": "production",
+    "assets": [
+      {
+        "name": "latest-linux.yml",
+        "size": 644,
+        "download_count": 112,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/latest-linux.yml"
+      },
+      {
+        "name": "latest-mac.yml",
+        "size": 477,
+        "download_count": 2,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/latest-mac.yml"
+      },
+      {
+        "name": "latest.yml",
+        "size": 340,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/latest.yml"
+      },
+      {
+        "name": "novyse-arm64-v8a.apk",
+        "size": 99860777,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/novyse-arm64-v8a.apk"
+      },
+      {
+        "name": "novyse-armeabi-v7a.apk",
+        "size": 77954417,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/novyse-armeabi-v7a.apk"
+      },
+      {
+        "name": "Novyse-mac.zip",
+        "size": 128943210,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/Novyse-mac.zip"
+      },
+      {
+        "name": "Novyse-mac.zip.blockmap",
+        "size": 135555,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/Novyse-mac.zip.blockmap"
+      },
+      {
+        "name": "Novyse-Portable.exe",
+        "size": 115324195,
+        "download_count": 5,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/Novyse-Portable.exe"
+      },
+      {
+        "name": "Novyse-Setup.exe",
+        "size": 115485699,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/Novyse-Setup.exe"
+      },
+      {
+        "name": "Novyse-Setup.exe.blockmap",
+        "size": 121740,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/Novyse-Setup.exe.blockmap"
+      },
+      {
+        "name": "Novyse-Setup.msi",
+        "size": 129880064,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/Novyse-Setup.msi"
+      },
+      {
+        "name": "novyse-web-1.1.0-20260614.0.zip",
+        "size": 7763977,
+        "download_count": 2,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/novyse-web-1.1.0-20260614.0.zip"
+      },
+      {
+        "name": "novyse-x86.apk",
+        "size": 102919169,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/novyse-x86.apk"
+      },
+      {
+        "name": "novyse-x86_64.apk",
+        "size": 107367299,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/novyse-x86_64.apk"
+      },
+      {
+        "name": "novyse.aab",
+        "size": 215114407,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/novyse.aab"
+      },
+      {
+        "name": "Novyse.AppImage",
+        "size": 147072138,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/Novyse.AppImage"
+      },
+      {
+        "name": "novyse.deb",
+        "size": 116276360,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/novyse.deb"
+      },
+      {
+        "name": "Novyse.dmg",
+        "size": 133557162,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/Novyse.dmg"
+      },
+      {
+        "name": "Novyse.dmg.blockmap",
+        "size": 139679,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/Novyse.dmg.blockmap"
+      },
+      {
+        "name": "novyse.flatpak",
+        "size": 105026056,
+        "download_count": 4,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/novyse.flatpak"
+      },
+      {
+        "name": "novyse.rpm",
+        "size": 99058417,
+        "download_count": 2,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/novyse.rpm"
+      },
+      {
+        "name": "Novyse.snap",
+        "size": 123908096,
+        "download_count": 3,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/Novyse.snap"
+      }
+    ]
+  },
+  {
+    "tag_name": "v1.0.2-20260614.0",
+    "name": "Version 1.0.2-20260614.0",
+    "body": "# Novyse 1.0.2-20260614.0 - Desktop and Tweaks\r\n\r\n## Features\r\n\r\n### Distribution\r\n\r\n* **Android Updater:** Implemented in-app Android APK update flow using `expo-intent-launcher` and file system utilities.\r\n* **Android Updater:** Implemented architecture-aware APK updates for Android and improved Play Store detection logic.\r\n* **Android Builds:** Introduced an automated Android build script and updated build configuration and documentation.\r\n* **Deployment:** Added Cloudflare deployment workflow.\r\n* **Release Tracking:** Dynamically set the update URL based on the branch for release tracking.\r\n\r\n### Messages\r\n\r\n* **Reactions:** Triggered particle animation for reactions after the initial message mount delay.\r\n* **Reactions:** Added animated particle effects to message reactions using new `ReactionPill` and `ReactionParticles` components (#276).\r\n\r\n### UI/UX\r\n\r\n* **Audio Waveform:** Implemented `PanResponder` for smooth waveform seeking and drag interaction.\r\n* **Navigation:** Introduced `useMobileBackHandler` to centralize custom back navigation logic for mobile layouts (#272).\r\n\r\n### Security\r\n\r\n* **Secure Store:** Implemented a polling mechanism to wait for `safeStorage` availability in secure store operations.\r\n\r\n## Bug Fixes\r\n\r\n### UI/UX\r\n\r\n* **Chromium Renderer:** Fixed a blur border radius bug on Chromium.\r\n* **Button Progress:** Prevented division by zero in button progress calculations by validating the progress object and total size.\r\n* **Gradient Colors:** Sanitized gradient color arrays and improved fallback handling across UI components (#275).\r\n\r\n### Messages\r\n\r\n* **Reactions:** Handled reaction pill particle triggers on list item recycling by tracking message ID changes.\r\n\r\n### Chat\r\n\r\n* **ChatList:** Removed the unintended background from the chat list.\r\n\r\n### Comms\r\n\r\n* **Watch Together:** Reset pinned and fullscreen states when a Watch Together stream ends (#277).\r\n\r\n### Distribution\r\n\r\n* **Auto Updater:** Updated the `autoUpdater` channel and prerelease settings based on the preview branch configuration.\r\n\r\n## Improvements\r\n\r\n### UI/UX\r\n\r\n* **Reactions Menu:** Replaced the local blur implementation with `AnimatedBlurView` in `ReactionsMenu` (#274).\r\n* **UI Components:** Standardized UI components by replacing standard views and gradients with `BlurredView` (#274).\r\n* **BlurredView:** Migrated from `@react-native-community/blur` to `expo-blur` and simplified `BlurredView` implementation (#274).\r\n* **NativeBlur:** Renamed `PlatformType` to `Platform` and updated `NativeBlur` props with `downsampleFactor` support.\r\n* **Blur UI:** Improved blur UI and added scripts to fix errors while building.\r\n* **Layouts:** Reorganized layout imports and included the `SmartBackground` component.\r\n* **QR Code:** Replaced `react-native-qrcode-svg` with `react-native-qrcode-skia` (#278) and added Skia WebAssembly support (#276).\r\n* **Cross-platform Blur:** Replaced `expo-blur` with `react-native-community/blur` for improved cross-platform blur consistency (#274) and added minimal Skia configuration for Android (#276).\r\n\r\n### Chat\r\n\r\n* **ChatList Header:** Wrapped the ChatList header logo and search icon in `HoverAndPressedButton` for improved interaction feedback (#273).\r\n\r\n## Known Issues",
+    "published_at": "2026-06-14T09:56:50Z",
+    "created_at": "2026-05-28T17:21:12Z",
+    "draft": false,
+    "prerelease": true,
+    "target_commitish": "production",
+    "assets": [
+      {
+        "name": "app-arm64-v8a-release.apk",
+        "size": 100201633,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260614.0/app-arm64-v8a-release.apk"
+      },
+      {
+        "name": "app-armeabi-v7a-release.apk",
+        "size": 78295269,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260614.0/app-armeabi-v7a-release.apk"
+      },
+      {
+        "name": "app-x86-release.apk",
+        "size": 103260021,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260614.0/app-x86-release.apk"
+      },
+      {
+        "name": "app-x86_64-release.apk",
+        "size": 107708151,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260614.0/app-x86_64-release.apk"
+      },
+      {
+        "name": "Novyse-mac-preview.zip",
+        "size": 128955070,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260614.0/Novyse-mac-preview.zip"
+      },
+      {
+        "name": "Novyse-mac-preview.zip.blockmap",
+        "size": 135403,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260614.0/Novyse-mac-preview.zip.blockmap"
+      },
+      {
+        "name": "Novyse-Portable-preview.exe",
+        "size": 115324290,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260614.0/Novyse-Portable-preview.exe"
+      },
+      {
+        "name": "Novyse-preview.AppImage",
+        "size": 146985875,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260614.0/Novyse-preview.AppImage"
+      },
+      {
+        "name": "novyse-preview.deb",
+        "size": 116197192,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260614.0/novyse-preview.deb"
+      },
+      {
+        "name": "Novyse-preview.dmg",
+        "size": 133604009,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260614.0/Novyse-preview.dmg"
+      },
+      {
+        "name": "Novyse-preview.dmg.blockmap",
+        "size": 138150,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260614.0/Novyse-preview.dmg.blockmap"
+      },
+      {
+        "name": "novyse-preview.flatpak",
+        "size": 105019024,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260614.0/novyse-preview.flatpak"
+      },
+      {
+        "name": "novyse-preview.rpm",
+        "size": 99050293,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260614.0/novyse-preview.rpm"
+      },
+      {
+        "name": "Novyse-preview.snap",
+        "size": 123826176,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260614.0/Novyse-preview.snap"
+      },
+      {
+        "name": "Novyse-Setup-preview.exe",
+        "size": 115485936,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260614.0/Novyse-Setup-preview.exe"
+      },
+      {
+        "name": "Novyse-Setup-preview.exe.blockmap",
+        "size": 121610,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260614.0/Novyse-Setup-preview.exe.blockmap"
+      },
+      {
+        "name": "Novyse-Setup-preview.msi",
+        "size": 129871872,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260614.0/Novyse-Setup-preview.msi"
+      },
+      {
+        "name": "novyse-web-1.0.2-20260614.0.zip",
+        "size": 7764033,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260614.0/novyse-web-1.0.2-20260614.0.zip"
+      },
+      {
+        "name": "preview-linux.yml",
+        "size": 676,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260614.0/preview-linux.yml"
+      },
+      {
+        "name": "preview-mac.yml",
+        "size": 501,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260614.0/preview-mac.yml"
+      },
+      {
+        "name": "preview.yml",
+        "size": 356,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260614.0/preview.yml"
+      }
+    ]
+  },
+  {
+    "tag_name": "v1.0.2-20260609.1",
+    "name": "Version 1.0.2-20260609.1",
+    "body": "# Novyse 1.0.2-20260609.1 - Desktop and Tweaks\r\n\r\n## Features\r\n\r\n### Desktop\r\n\r\n* **WatchTogetherPlayer:** Added a spacebar keyboard shortcut for toggling play/pause (#268).\r\n\r\n### Comms\r\n\r\n* **CommsMenu:** Added pin and fullscreen controls in action menu (#271).\r\n\r\n## Bug Fixes\r\n\r\n### Desktop\r\n\r\n* **Startup:** Prevented redundant splash screen closure when an update check fails during startup, resolving an issue that caused a double window to open for the same app (#270).\r\n\r\n## Improvements\r\n\r\n### Distribution\r\n\r\n* **Snap Publishing:** Migrated snap publish configuration to include the GitHub provider and restricted it to production builds.\r\n* **CI Pipeline:** Allowed same version updates in CI.\r\n* **Linux Build:** Conditionally configured snapStore for Linux build targets.\r\n* **Android Build:** Added an Android build script.\r\n* **Release Workflow:** Removed Gradle cache from the release workflow job configuration.\r\n\r\n### Miscellaneous\r\n\r\n* **Maintainer Metadata:** Updated maintainer metadata (#269).\r\n\r\n## Known Issues",
+    "published_at": "2026-06-09T18:44:19Z",
+    "created_at": "2026-05-28T17:21:12Z",
+    "draft": false,
+    "prerelease": true,
+    "target_commitish": "production",
+    "assets": [
+      {
+        "name": "app-arm64-v8a-release.apk",
+        "size": 88753949,
+        "download_count": 3,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260609.1/app-arm64-v8a-release.apk"
+      },
+      {
+        "name": "app-armeabi-v7a-release.apk",
+        "size": 70501215,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260609.1/app-armeabi-v7a-release.apk"
+      },
+      {
+        "name": "app-x86-release.apk",
+        "size": 91058679,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260609.1/app-x86-release.apk"
+      },
+      {
+        "name": "app-x86_64-release.apk",
+        "size": 95818102,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260609.1/app-x86_64-release.apk"
+      },
+      {
+        "name": "Novyse-mac-preview.zip",
+        "size": 125676543,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260609.1/Novyse-mac-preview.zip"
+      },
+      {
+        "name": "Novyse-mac-preview.zip.blockmap",
+        "size": 132709,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260609.1/Novyse-mac-preview.zip.blockmap"
+      },
+      {
+        "name": "Novyse-Portable-preview.exe",
+        "size": 112646208,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260609.1/Novyse-Portable-preview.exe"
+      },
+      {
+        "name": "Novyse-preview.AppImage",
+        "size": 143538383,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260609.1/Novyse-preview.AppImage"
+      },
+      {
+        "name": "novyse-preview.deb",
+        "size": 113260776,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260609.1/novyse-preview.deb"
+      },
+      {
+        "name": "Novyse-preview.dmg",
+        "size": 130122087,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260609.1/Novyse-preview.dmg"
+      },
+      {
+        "name": "Novyse-preview.dmg.blockmap",
+        "size": 135602,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260609.1/Novyse-preview.dmg.blockmap"
+      },
+      {
+        "name": "novyse-preview.flatpak",
+        "size": 102473680,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260609.1/novyse-preview.flatpak"
+      },
+      {
+        "name": "novyse-preview.rpm",
+        "size": 96562129,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260609.1/novyse-preview.rpm"
+      },
+      {
+        "name": "Novyse-preview.snap",
+        "size": 120934400,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260609.1/Novyse-preview.snap"
+      },
+      {
+        "name": "Novyse-Setup-preview.exe",
+        "size": 112807857,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260609.1/Novyse-Setup-preview.exe"
+      },
+      {
+        "name": "Novyse-Setup-preview.exe.blockmap",
+        "size": 119595,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260609.1/Novyse-Setup-preview.exe.blockmap"
+      },
+      {
+        "name": "Novyse-Setup-preview.msi",
+        "size": 126918656,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260609.1/Novyse-Setup-preview.msi"
+      },
+      {
+        "name": "novyse-web-1.0.2-20260609.1.zip",
+        "size": 4339303,
+        "download_count": 2,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260609.1/novyse-web-1.0.2-20260609.1.zip"
+      },
+      {
+        "name": "preview-linux.yml",
+        "size": 676,
+        "download_count": 3,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260609.1/preview-linux.yml"
+      },
+      {
+        "name": "preview-mac.yml",
+        "size": 501,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260609.1/preview-mac.yml"
+      },
+      {
+        "name": "preview.yml",
+        "size": 356,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260609.1/preview.yml"
+      }
+    ]
+  },
+  {
+    "tag_name": "v1.0.2-20260609.0",
+    "name": "Version 1.0.2-20260609.0",
+    "body": "# Novyse 1.0.2-20260609.0 - Desktop and Tweaks\r\n\r\n## Features\r\n\r\n### Core & Connectivity\r\n\r\n* **Automatic FCM Synchronization:** Implemented automatic FCM token synchronization upon network reconnection to ensure reliable notification delivery.\r\n* **Headless Entry Point:** Initialized the application entry point with headless database and network support, alongside a refactor of mobile notification permissions.\r\n\r\n### Media & User Interface\r\n\r\n* **Throttled Keyboard Navigation:** Implemented throttled keyboard navigation for web video playback within the `WatchTogetherPlayer` to improve responsiveness and user control.\r\n* **Custom Signup Styling:** Applied custom styling to the mode toggle element located in the signup field.\r\n\r\n### Deployment & CI/CD Automation\r\n\r\n* **Android Build Patching:** Added a dedicated Android build patching script and enhanced both artifact renaming and upload logic within the release workflow.\r\n\r\n---\r\n\r\n## Bug Fixes\r\n\r\n### Notifications & Chat\r\n\r\n* **Foreground Service Crash:** Fixed an issue on Android 14+ where attempting to stop the service without an existing foreground notification caused application errors and crashes.\r\n* **FCM Token Logic:** Optimized and corrected the synchronization logic for FCM tokens to prevent sync failures.\r\n\r\n---\r\n\r\n## Improvements\r\n\r\n### Build & Infrastructure\r\n\r\n* **Snapcraft Migration:** Migrated the Snapcraft configuration to utilize the standard snap object structure.\r\n\r\n---\r\n\r\n## Known Issues",
+    "published_at": "2026-06-09T13:42:43Z",
+    "created_at": "2026-05-28T17:21:12Z",
+    "draft": false,
+    "prerelease": true,
+    "target_commitish": "production",
+    "assets": [
+      {
+        "name": "Novyse-mac-preview.zip",
+        "size": 125676490,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260609.0/Novyse-mac-preview.zip"
+      },
+      {
+        "name": "Novyse-mac-preview.zip.blockmap",
+        "size": 132683,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260609.0/Novyse-mac-preview.zip.blockmap"
+      },
+      {
+        "name": "Novyse-Portable-preview.exe",
+        "size": 112646942,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260609.0/Novyse-Portable-preview.exe"
+      },
+      {
+        "name": "novyse-preview-arm64-v8a.apk",
+        "size": 88411873,
+        "download_count": 3,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260609.0/novyse-preview-arm64-v8a.apk"
+      },
+      {
+        "name": "novyse-preview-armeabi-v7a.apk",
+        "size": 70159139,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260609.0/novyse-preview-armeabi-v7a.apk"
+      },
+      {
+        "name": "novyse-preview-x86.apk",
+        "size": 90716603,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260609.0/novyse-preview-x86.apk"
+      },
+      {
+        "name": "novyse-preview-x86_64.apk",
+        "size": 95476026,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260609.0/novyse-preview-x86_64.apk"
+      },
+      {
+        "name": "Novyse-preview.AppImage",
+        "size": 143538698,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260609.0/Novyse-preview.AppImage"
+      },
+      {
+        "name": "novyse-preview.deb",
+        "size": 113259532,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260609.0/novyse-preview.deb"
+      },
+      {
+        "name": "Novyse-preview.dmg",
+        "size": 130117783,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260609.0/Novyse-preview.dmg"
+      },
+      {
+        "name": "Novyse-preview.dmg.blockmap",
+        "size": 136994,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260609.0/Novyse-preview.dmg.blockmap"
+      },
+      {
+        "name": "novyse-preview.flatpak",
+        "size": 102473616,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260609.0/novyse-preview.flatpak"
+      },
+      {
+        "name": "novyse-preview.rpm",
+        "size": 96549437,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260609.0/novyse-preview.rpm"
+      },
+      {
+        "name": "Novyse-Setup-preview.exe",
+        "size": 112808588,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260609.0/Novyse-Setup-preview.exe"
+      },
+      {
+        "name": "Novyse-Setup-preview.exe.blockmap",
+        "size": 119652,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260609.0/Novyse-Setup-preview.exe.blockmap"
+      },
+      {
+        "name": "Novyse-Setup-preview.msi",
+        "size": 126910464,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260609.0/Novyse-Setup-preview.msi"
+      },
+      {
+        "name": "novyse-web-1.0.2-20260609.0.zip",
+        "size": 4338910,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260609.0/novyse-web-1.0.2-20260609.0.zip"
+      },
+      {
+        "name": "preview-mac.yml",
+        "size": 501,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260609.0/preview-mac.yml"
+      },
+      {
+        "name": "preview.yml",
+        "size": 356,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260609.0/preview.yml"
+      }
+    ]
+  },
+  {
+    "tag_name": "v1.0.2-20260608.0",
+    "name": "Version 1.0.2-20260608.0",
+    "body": "# Novyse 1.0.2-20260608.0 - Desktop and Tweaks\r\n\r\n## Features\r\n\r\n### Screen Sharing & Media Capture\r\n\r\n* **System Audio Capture:** Enables capturing system audio during desktop screen sharing sessions via loopback configurations and LiveKit track sources.\r\n* **Wayland Support:** Adds native screen sharing and audio selection capabilities for Linux desktop clients running under Wayland environments.\r\n* **Custom IPC Screen Picker:** Implements a specialized IPC-based screen selection dialog accompanied by an interactive context menu for desktop source picking.\r\n* **Automatic Permission Approval:** Configured automated approvals for display and media capture prompts inside Electron sessions.\r\n* **PipeWire Support:** Activates native WebRTC PipeWire flags exclusively for Linux-based desktop installations to improve capture stability.\r\n\r\n### WatchTogether & Playback\r\n\r\n* **Real-Time Synchronized Playback:** Introduces a collaborative, synchronized video playback mechanism powered by custom hooks and player components.\r\n* **Direct Video URL Support:** Adds the `DirectVideoPlayer` component, allowing users to watch direct video file URLs together.\r\n* **Auto-Hiding Player Controls:** Introduces animated playback control overlays inside `UserCard` and `WatchTogetherPlayer` that automatically hide based on interaction timers.\r\n* **Centralized Session State:** Centralizes the core WatchTogether modal state within `CommsContext` and consolidates URL validation messaging directly inside the supported links UI view.\r\n\r\n### Mobile & Core Communications\r\n\r\n* **FCM Background Handler:** Registers a native mobile Firebase Cloud Messaging background handler directly inside the notification manager initialization workflow.\r\n* **Persistent Android Foreground Service:** Implements a dedicated, persistent background service to maintain voice chat control and real-time state synchronization on Android devices.\r\n* **Immersive Fullscreen Mode:** Introduces an immersive mobile fullscreen experience utilizing custom Modals alongside native screen orientation locking.\r\n* **Internationalized Call Notifications:** Adds multi-language localization assets for incoming call notifications while completely refactoring background interactions.\r\n* **Dynamic Volume Control:** Adds real-time audio track volume adjustments linked directly to remote volume levels, mute states, and active slider adjustments.\r\n* **Microphone Safety Checks:** Integrates explicit microphone permission checks and error boundary handling straight into the communications interface.\r\n\r\n### Deployment & CI/CD Automation\r\n\r\n* **Multi-Platform Linux Publishing:** Introduces automated Flathub deployment configurations and Snap Store publishing directly into the release pipelines.\r\n* **Automated Desktop Builds:** Establishes a complete CI/CD release workflow featuring dynamic artifact naming schemes and optimized desktop builds using Sharp to eliminate caching overhead.\r\n* **Android Domain Verification:** Configures official Digital Asset Links mappings to manage verified Android application domain links.\r\n\r\n---\r\n\r\n## Bug Fixes\r\n\r\nResolved issues and malfunctions.\r\n\r\n### Screen Sharing\r\n\r\n* **Track Management:** Fixed an issue where audio and video tracks were not cleanly disposed of by linking them together to ensure atomic unpublishing.\r\n* **getDisplayMedia Handler:** Fixed an issue that caused an `OverconstrainedError` by stripping out video constraints during desktop capture sessions.\r\n* **Window Audio Capture:** Fixed an issue where window sources improperly attempted audio capture within the `useCommsAction` lifecycle hook.\r\n* **Desktop Capturer Callback:** Fixed a platform-specific crash by forcing desktop capturer callbacks to return null under Wayland contexts.\r\n\r\n### Notifications & Chat\r\n\r\n* **FCM Notifications:** Fixed an issue that caused duplicate push notifications to fire when an active websocket session was already running.\r\n* **Chat Store Navigation:** Fixed a bug that accidentally cleared the active chat storage state when switching rapidly between distinct chat sessions.\r\n* **Notification Press Handler:** Fixed an issue where tapping a mobile notification failed to accurately update the active chat state or refresh the content view.\r\n* **Notification Resolver:** Fixed a resolver error to properly allow local file paths and absolute URI patterns for notification routing.\r\n* **Event Synchronization:** Fixed data type mismatches during event synchronization by forcing `eventID` to strings and improving `chatUUID` extraction logic.\r\n\r\n### Audio & Comms\r\n\r\n* **Speaking Map State:** Fixed a state retention bug by completely resetting the speaking status map whenever communication channels clear.\r\n* **Web Audio Gain Elements:** Fixed an issue where audio elements suffered from narrow gain ranges by increasing linear gain boundaries and enforcing strict clamping to 1.0.\r\n\r\n### UI & Layout\r\n\r\n* **Login Screen:** Fixed an unpolished UI layout by adding missing margins to the username input field during the login sequence.\r\n* **Android WatchTogether:** Fixed a layout compatibility flaw impacting YouTube WatchTogether playback on Android devices.\r\n* **Flatpak Filenames:** Fixed automated Flathub deployment failures by normalizing Flatpak package output filenames strictly to lowercase.\r\n\r\n---\r\n\r\n## Improvements\r\n\r\n### Architectural Refactoring\r\n\r\n* **Screen Sharing Architecture:** Overhauled the screen sharing pipeline to leverage native picker support, optimize source selection UI, and unlock full macOS compatibility.\r\n* **Initialization Lifecycle:** Optimized core application initialization speeds, streamlined event subscription handlers, and introduced duplicate listener prevention barriers.\r\n* **Adaptive UI Components:** Transitioned the `DeleteAccount` action into an adaptive layout model while optimizing `AdaptiveModal` presentation stability using debounced triggers.\r\n* **WatchTogether Cleanup:** Refactored the core playback components by removing legacy Twitch code integrations and restructuring the layout architecture into the `BottomBar` directory.\r\n\r\n### Project Dependencies & Assets\r\n\r\n* **Dependency Upgrades:** Upgraded overall Expo project dependencies to align perfectly with `expo-share-intent` 7.0.0 and Expo 56.\r\n* **Application Brand Assets:** Modernized core brand identity items by migrating the main application icon to a crisp SVG vector format.\r\n* **Documentation Updates:** Added fresh application screenshot assets and routed internal image URLs straight to the production branch.\r\n\r\n---\r\n\r\n## Known Issues",
+    "published_at": "2026-06-08T13:09:53Z",
+    "created_at": "2026-05-28T17:21:12Z",
+    "draft": false,
+    "prerelease": true,
+    "target_commitish": "production",
+    "assets": [
+      {
+        "name": "app-arm64-v8a-release.apk",
+        "size": 88747301,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260608.0/app-arm64-v8a-release.apk"
+      },
+      {
+        "name": "app-armeabi-v7a-release.apk",
+        "size": 70494567,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260608.0/app-armeabi-v7a-release.apk"
+      },
+      {
+        "name": "app-x86-release.apk",
+        "size": 91052031,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260608.0/app-x86-release.apk"
+      },
+      {
+        "name": "app-x86_64-release.apk",
+        "size": 95811454,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260608.0/app-x86_64-release.apk"
+      },
+      {
+        "name": "novyse-web-1.0.2-20260608.0.zip",
+        "size": 4338483,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.2-20260608.0/novyse-web-1.0.2-20260608.0.zip"
+      }
+    ]
+  },
+  {
+    "tag_name": "v1.0.1-20260528.0",
+    "name": "Version 1.0.1-20260528.0",
+    "body": "# Novyse 1.0.1-20260528.0 - Desktop and Tweaks\r\n\r\n## Features\r\n\r\n### Desktop App\r\n* **Architecture:** Successfully implemented the desktop application architecture with Electron.\r\n* **Custom Window Controls:** Implemented frameless support with custom window controls for a seamless, native feel.\r\n* **System Tray & App Instances:** Added system tray support and enforced single-instance application behavior.\r\n* **Native Notifications:** Implemented native desktop notifications via RPC and added support for custom notification icons (processed via Sharp).\r\n* **Update System:** Implemented a new auto-update system that tracks the application's installation source.\r\n* **File Management & Storage:** Introduced native secure storage support and a dedicated RPC bridge for desktop file management.\r\n* **Process Identification:** Enforced consistent app name and icon rendering across all background and foreground processes.\r\n* **Startup Actions:** Implemented a system settings menu to configure custom startup actions.\r\n\r\n### Mobile App\r\n* **Emoji & Sticker Picker:** Implemented a mobile-compatible picker with Reanimated keyboard synchronization for smooth UI transitions.\r\n* **Restricted Keyboard Views:** Disabled mobile-specific keyboard views when using the desktop application.\r\n\r\n### UI & UX\r\n* **Panel Resizing:** Added a `PanelResizeHandle` component to improve resizing functionality in layout and chat pages.\r\n* **Icon-Only Mode:** Introduced an `iconOnly` mode to the `StatusMessage` component, used automatically in the `StatusHeader` when the sidebar is collapsed.\r\n\r\n### Core & Integration\r\n* **Cross-Platform Notifications:** Added subtitle support to cross-platform notifications and modularized profile picture resolution.\r\n* **Device Management:** Introduced new device-type handling to better differentiate environments and integrate notifications.\r\n* **Authentication Lifecycle:** Migrated socket connection lifecycle management directly into the authentication and initialization flow.\r\n* **Turnstile Integration:** Emitted Cloudflare Turnstile tokens via `window.postMessage` for improved cross-frame communication.\r\n\r\n---\r\n\r\n## Bug Fixes\r\n\r\n### Desktop\r\n* **External Links:** Fixed an issue where external links were not automatically opening in the default system browser.\r\n* **Rapid Resizing:** Resolved an issue where quickly resizing the window triggered the startup process multiple times.\r\n* **UI Resizing Glitches:** Fixed various visual bugs when adjusting desktop panels, resulting in a more native-app experience.\r\n* **Microphone Permissions (macOS):** Restored correct permissions to stop macOS from incorrectly indicating that the microphone is always in use.\r\n* **Traffic Light Controls (macOS):** Successfully hidden the default macOS traffic light buttons for the custom frameless window.\r\n* **Dev Tools:** Fixed an issue preventing Developer Tools from opening due to frameless window configuration.\r\n* **Window Constraints:** Adjusted minimum height and width boundaries to prevent the UI from collapsing.\r\n\r\n### Mobile\r\n* **Storage Utility Timing:** Added missing `await` statements for file deletion and copy operations, resolving timing issues related to Expo SDK 56.\r\n* **Android Booting:** Added additional safety checks to ensure Android devices can boot the app reliably.\r\n\r\n### Chat & Messaging\r\n* **Unread Counts:** Fixed a bug that incremented the unread message count when sending your own messages.\r\n* **Active Chat State:** Fixed an issue where the active chat state wasn't cleared when navigating away from the ChatList in the TabNavigator.\r\n* **Database Constraints:** Corrected invalid SQL constraints applied to the messages table.\r\n\r\n### UI & Form Inputs\r\n* **Context Menus:** Allowed native context menus to appear correctly on `input` and `contenteditable` elements within the root layout.\r\n* **Icon Alignment:** Centered the active microphone icon perfectly on desktop.\r\n* **Padding Adjustments:** Removed unused padding from window controls and increased vertical padding for action menu items.\r\n* **Notification Requirements:** Enforced mandatory data payloads for incoming notifications to prevent crashes on empty data.\r\n\r\n---\r\n\r\n## Improvements\r\n\r\n### Architecture & Performance\r\n* **Expo SDK 56:** Fully migrated and bumped the mobile application to Expo SDK 56.\r\n* **List Rendering:** Replaced `FlatList` with `FlashList` for significant performance gains in large scrolling views, centralizing scrollbar styles into a reusable constant.\r\n* **RPC Modularization:** Modularized Electron RPC interfaces into dedicated, secure modules for storage, windows, files, and notifications.\r\n* **State Cleanup:** Moved the clearing of active chat states from tab navigation directly into the chat component's cleanup lifecycle.\r\n\r\n### UI Enhancements\r\n* **Theme Polish:** Polished the classic light and dark themes, adding specific hover and pressed states to icons.\r\n* **Sidebar Responsiveness:** Enhanced sidebar layout behavior for better responsiveness across both mobile and desktop environments.\r\n* **Global Scrollbars:** Added standard, global scrollbar styles for web targets.\r\n* **Background Rendering:** Unified app background rendering using the `SmartBackground` component and cleaned up redundant `LinearGradient` usage.\r\n\r\n### Build & Infrastructure\r\n* **Release Workflows:** Refactored GitHub Actions release workflows for better structure, standardized formatting, and added support for production AAB/APK builds via EAS profiles.\r\n* **Cross-Platform Scripts:** Made both `electron build` and `postinstall` commands cross-platform compatible.\r\n* **Version Management:** Integrated a new `package.json`-based version synchronization script into the desktop build lifecycle (currently v1.0.1-20260528.0).\r\n* **Documentation:** Updated `CONTRIBUTING.md` with desktop platform development instructions and solutions for Windows EMFILE errors.\r\n\r\n---\r\n\r\n## Known Issues\r\n\r\n### Desktop App\r\n* **Global Shortcuts:** Global shortcut registration and IPC event handling have been merged into the codebase but are currently disabled. This functionality will be fully implemented and activated in version 1.2.",
+    "published_at": "2026-05-28T16:11:07Z",
+    "created_at": "2026-05-28T15:47:09Z",
+    "draft": false,
+    "prerelease": true,
+    "target_commitish": "production",
+    "assets": [
+      {
+        "name": "app-arm64-v8a-release.apk",
+        "size": 102466758,
+        "download_count": 2,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.1-20260528.0/app-arm64-v8a-release.apk"
+      },
+      {
+        "name": "app-armeabi-v7a-release.apk",
+        "size": 84214028,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.1-20260528.0/app-armeabi-v7a-release.apk"
+      },
+      {
+        "name": "app-x86-release.apk",
+        "size": 104771488,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.1-20260528.0/app-x86-release.apk"
+      },
+      {
+        "name": "app-x86_64-release.apk",
+        "size": 109530911,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.1-20260528.0/app-x86_64-release.apk"
+      },
+      {
+        "name": "novyse-desktop-1.0.1-20260528.0.x86_64.rpm",
+        "size": 96530417,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.1-20260528.0/novyse-desktop-1.0.1-20260528.0.x86_64.rpm"
+      },
+      {
+        "name": "novyse-desktop_1.0.1-20260528.0_amd64.deb",
+        "size": 115708124,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.1-20260528.0/novyse-desktop_1.0.1-20260528.0_amd64.deb"
+      },
+      {
+        "name": "novyse-web-1.0.1-20260528.0.zip",
+        "size": 4325599,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.1-20260528.0/novyse-web-1.0.1-20260528.0.zip"
+      },
+      {
+        "name": "Novyse.preview-1.0.1-20260528.0-arm64-mac.zip",
+        "size": 118314757,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.1-20260528.0/Novyse.preview-1.0.1-20260528.0-arm64-mac.zip"
+      },
+      {
+        "name": "Novyse.preview-1.0.1-20260528.0-arm64-mac.zip.blockmap",
+        "size": 124239,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.1-20260528.0/Novyse.preview-1.0.1-20260528.0-arm64-mac.zip.blockmap"
+      },
+      {
+        "name": "Novyse.preview-1.0.1-20260528.0-arm64.dmg",
+        "size": 122540398,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.1-20260528.0/Novyse.preview-1.0.1-20260528.0-arm64.dmg"
+      },
+      {
+        "name": "Novyse.preview-1.0.1-20260528.0-arm64.dmg.blockmap",
+        "size": 129625,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.1-20260528.0/Novyse.preview-1.0.1-20260528.0-arm64.dmg.blockmap"
+      },
+      {
+        "name": "Novyse.preview-1.0.1-20260528.0.AppImage",
+        "size": 143420930,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.1-20260528.0/Novyse.preview-1.0.1-20260528.0.AppImage"
+      },
+      {
+        "name": "Novyse.preview-1.0.1-20260528.0.exe",
+        "size": 106201656,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.1-20260528.0/Novyse.preview-1.0.1-20260528.0.exe"
+      },
+      {
+        "name": "Novyse.preview-1.0.1-20260528.0.msi",
+        "size": 119615488,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.1-20260528.0/Novyse.preview-1.0.1-20260528.0.msi"
+      },
+      {
+        "name": "Novyse.preview-Setup-1.0.1-20260528.0.exe",
+        "size": 106363316,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.1-20260528.0/Novyse.preview-Setup-1.0.1-20260528.0.exe"
+      },
+      {
+        "name": "Novyse.preview-Setup-1.0.1-20260528.0.exe.blockmap",
+        "size": 113451,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.1-20260528.0/Novyse.preview-Setup-1.0.1-20260528.0.exe.blockmap"
+      },
+      {
+        "name": "preview-linux.yml",
+        "size": 757,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.1-20260528.0/preview-linux.yml"
+      },
+      {
+        "name": "preview-mac.yml",
+        "size": 570,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.1-20260528.0/preview-mac.yml"
+      },
+      {
+        "name": "preview.yml",
+        "size": 390,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.0.1-20260528.0/preview.yml"
+      }
+    ]
+  },
+  {
+    "tag_name": "v1.0.0-20260514.0",
+    "name": "Version 1.0.0-20260514.0",
+    "body": "# Novyse 1.0.0-20260514.0 - Public Release\r\n\r\n## Features\r\n\r\n### User Interface & Themes\r\n* Ultra-Thin Sidebar: On large screens, the sidebar can now be collapsed to show only chat avatars, providing more screen real estate. The TabBar is hidden in this view and can be accessed by expanding the sidebar again (available only in the chatlist tab).\r\n* Experimental Themes: Added the first implementation of light, dark, and system themes (currently experimental and awaiting refinement).\r\n\r\n### Settings & Profile\r\n* Profile Page Redesign: Completely overhauled the profile page allowing users to view and edit personal information, including avatar, display name, handle, biography, region, country, and birthday.\r\n* Public Profiles: Introduced a public-facing profile page accessible via user handle, complete with badge support and gradient background features.\r\n* Profile Deletion: Integrated complete account deletion capabilities directly into the auth service, paired with an interactive banner and confirmation modal.\r\n* Chat Overview: Added a detailed overview component for both Direct Messages and Groups, displaying chat metadata, member lists with join dates, and a unified view of shared files.\r\n* Advanced Chat Settings: Introduced a robust chat settings page utilizing a new unified UI system (custom switches, rows, and sections). Includes options to manage media upload limits, notifications, privacy, and admin-specific member controls.\r\n* Security Settings Dashboard: Added comprehensive security settings pages to manage API Keys, Passkeys, Multi-Factor Authentication (MFA), password changes, and active sessions tracking.\r\n\r\n### Comms (Voice, Video & Screen Share)\r\n* LiveKit Engine Migration: Completely removed the legacy WebRTC implementation and migrated to LiveKit. This provides highly stable One-on-One and Group audio/video calls.\r\n* Screen Sharing: Fully implemented screen sharing capabilities during voice/video calls. On Android, this includes the integration of foreground media projection permissions.\r\n* Audio Sync & Controls: Mapped screen share video track IDs directly to audio volume synchronization. Added persistent, per-participant volume controls.\r\n* UI/UX Overhaul for Comms: Redesigned the audio player header with an animated progress bar. Added a context-aware comms menu with toggle selectors for input devices.\r\n* Sound Effects: Introduced a custom sound mapping system with distinct audio cues for joining, leaving, and toggling screen share sessions.\r\n\r\n### Chat & Messaging\r\n* Real-Time Activity & Presence: Added a real-time status tracker (Online, last seen, typing, recording audio) powered by Zustand and Socket.IO. Activity is displayed dynamically in both chat headers and chat list previews.\r\n* Read Confirmations: Implemented a robust read receipt system. Unread counts are synchronized in real-time, side-by-side with reaction statistics, and now correctly include system messages.\r\n* Message Interactions: Users can now edit text messages (which displays a pencil icon), delete messages for everyone or just themselves, and forward messages seamlessly.\r\n* Advanced Reply System: Implemented the ability to reply to up to 3 messages simultaneously. Added swipe-to-reply mechanics with haptic feedback on mobile, cross-message quoting, and the ability to click a reply to instantly scroll to the original message.\r\n* Reactions: Added interactive emoji reactions. Reaction pills now display user avatars and total counts, fully synced across clients.\r\n* Pinning & Drafts: Chats and individual messages can now be pinned to the top, synchronized across all devices, and tracked by 'pinned_at' and 'pinned_by' metadata. Added a local draft system that saves unsent text and pending files persistently.\r\n* File Sharing Enhancements: Users can now paste files directly from the clipboard (Ctrl+V) on web, drag-and-drop files into the chat, and share content using the native OS intent via expo-share-intent. Added the ability to cancel pending file transfers and download multiple files as a ZIP archive.\r\n* Pinned Message Navigation: Added support for scrolling directly to pinned messages in chat via ActiveChatContext.\r\n* Dynamic Header Height: Tracks and applies dynamic header height to message list padding via ActiveChatContext for better visual alignment.\r\n* Auto-Focus Input: Automatically focuses the text input after sending or updating messages.\r\n* Global Chat Shortcuts: Implemented global chat shortcuts for message editing, replying, and navigation with corresponding UI settings.\r\n* Media Duration in Descriptions: Appends media duration to file type descriptions in single-file messages.\r\n\r\n### Notifications\r\n* Cross-Platform Notifications: Replaced the legacy notification manager with a modular system utilizing Firebase for reliable background push notifications on both Android and Web.\r\n* Lockscreen Integrations: Added lockscreen audio notifications that accurately display the sender's name and profile picture.\r\n\r\n### Security\r\n* Zero-Knowledge OPAQUE Protocol: Completely refactored authentication to use @serenity-kit/opaque, ensuring passwords are never transmitted to the server. Added secure fallback polyfills for broad device compatibility.\r\n* Passkey Integration: Introduced full Passkey support for secure, passwordless logins, including multi-device passkey registration and cross-platform header configurations.\r\n* Turnstile & Zod Validation: Integrated Cloudflare Turnstile verification into the login and signup flows to prevent bot abuse. Upgraded form validations globally using Zod, extending password requirements to 16-256 characters.\r\n* Name Validation Limit: Added a 50-character name validation limit and refactored signup step navigation logic.\r\n* Updated Security Icon: Refreshed the security icon for a more consistent look.\r\n\r\n---\r\n\r\n## Bug Fixes\r\n\r\n### UI / UX\r\n* Disabled text selection on chat headers and settings elements to prevent accidental highlighting and improve interaction consistency on touch devices.\r\n* Fixed an issue where a transparent background caused a light blue flash while switching tabs or navigating on mobile.\r\n* Corrected the aspect ratio for media inside messages by updating the video stream object-fit style to 'contain'.\r\n* Fixed the underlap issue where User Cards in vocal chats were hidden beneath the header and bottom bar.\r\n* Resolved Android-specific keyboard behavior that caused incorrect padding and margin alignments when the virtual keyboard opened.\r\n* Fixed missing alignments and grid placements when elements of a ChatList item were missing or loading.\r\n* Added missing 'noDescriptionYet' on the English dictionary.\r\n* Fixed incorrect icon names across the app.\r\n\r\n### Chat Mechanics\r\n* Fixed a bug on Android where swiping to reply could enter an infinite loop; reply targets are now strictly capped at 3.\r\n* Message timestamps now accurately detect the user's current timezone and convert the UTC+0 server timestamp automatically.\r\n* Resolved an issue where missing 'created_at' timestamps caused the ChatList to sort incorrectly by defaulting to the current time.\r\n* Fixed a critical bug that allowed users to send files with a size of 0 bytes.\r\n* Corrected an issue where pending file messages were not properly displayed in the active chat view or the chat item preview.\r\n* Fixed profile picture updates to use fileUUID instead of profilePictureUUID when updating the local database and profile state.\r\n\r\n### Core & Network\r\n* Stopped continuous 401 Unauthorized API Gateway request spamming by adding strict token invalidation checks.\r\n* Fixed LiveKit playback issues and 'track attach/detach' crashes specific to mobile devices.\r\n* Resolved an issue where swapping the camera (facingMode) did not update the local video feed on Android devices.\r\n* Fixed an empty database synchronization bug by ensuring background sync operations abort if the new chats or users arrays are empty.\r\n* Cleared all Zustand stores and React Navigation states upon user logout to prevent data corruption and secure residual session data.\r\n* Improved auth token error handling.\r\n* Ensured localUserUUID is available before loading chats in ChatContext.\r\n\r\n---\r\n\r\n## Improvements\r\n\r\n### Performance & Architecture\r\n* FlashList Migration: Replaced the legacy FlatList in the message view with FlashList, implementing a 50-message lazy loading system that drastically improves rendering speeds in heavy chats.\r\n* Zustand State Management: Deprecated older React Contexts in favor of Zustand for the ChatContext, UserContext, and NetworkStore, massively reducing unnecessary re-renders.\r\n* Database Refactoring: Consolidated database logic into TypeScript Repositories. Replaced timestamp-based synchronization with highly accurate Event ID tracking.\r\n* Bulk Operations: Optimized database performance by adding 'addMultiple' repository methods for bulk inserting members and messages during initial sync.\r\n* Environment Migration: Transitioned the entire development environment from Node.js to Bun for faster dependency resolution and build times.\r\n* ReplyBar Refactor: Updated ReplyBar to derive the sender's name directly from the user store via UUID.\r\n\r\n### Localization & Accessibility\r\n* i18n Implementation: Added a full split-language infrastructure supporting seamless switching between English and Italian, backed by a custom AppText component.\r\n* Consolidated Documentation: Restructured the project documentation, moving developer setups to CONTRIBUTING.md and adding comprehensive preview build guides.\r\n* API Key Localization: Renamed API key translation keys and nested create modal strings while adding auth signup localization.\r\n\r\n### Quality of Life\r\n* Responsive Layouts: Enhanced the global screen detection with a new ScreenContext hook, dynamically resizing split views and chat containers across web and tablet layouts.\r\n* File Transfer Indicators: Added accurate circular progress indicators and size labels for media messages during both uploads and downloads.\r\n* Session Time Management: Migrated local time management for user sessions to Luxon for accurate multi-timezone tracking.\r\n* Error Page Cleanup: Removed unnecessary icon and styles from the error page layout.\r\n\r\n---\r\n\r\n## Known Issues\r\n\r\n### Mobile & UI\r\n* On certain Android devices, rapidly scrolling through heavy media chats while the keyboard is open may cause slight UI stuttering or lag.\r\n* The 'Typing' and 'Recording Audio' activity indicators in massive group chats currently use a temporary generic style and will be visually overhauled in the next patch.\r\n\r\n### Features\r\n* Local search functionality currently only resolves public group handles server-side; deep local SQLite search for cached direct messages is still under development.",
+    "published_at": "2026-06-07T09:37:34Z",
+    "created_at": "2026-05-28T17:21:12Z",
+    "draft": false,
+    "prerelease": false,
+    "target_commitish": "production",
+    "assets": []
+  },
+  {
+    "tag_name": "v0.9.0-20260128.0",
+    "name": "Version 0.9.0-20260128.0",
+    "body": "# Novyse 0.9.0-20260128.0 - Files and more\r\n\r\n## Features\r\n\r\n### Chat\r\n* Added a bottom sheet menu for sending media\r\n* Added profile picture and name of message sender in every type of chat\r\n* Chats are now selectable and can be pinned to the top\r\n* Sent messages will now be added to a queue before being sent. This ensures that every message will eventually be delivered. Messages won’t be sent while you’re offline, but they will automatically be sent once the connection is restored. Messages will also persist across app restarts, allowing you to have an offline chat with yourself without needing an internet connection. As soon as the connection comes back, all queued messages will be sent automatically.\r\n* Added vocal, audio, image, video and general file messages.\r\n* Added a custom vocal bottom bar for voice recording with integrated pause, speech detection, time elapsed, cancel and send button.\r\n* Added custom interface for image/video display.\r\n* Added a floating rectangle that appears on timestamp hovering and displays the full timestamp.\r\n* Added a custom modal/sheet depending on platform that let the user upload any file they want with custom errors and alert.\r\n\r\n### Settings\r\n* Added a custom page to see local storage usage for database and file.\r\n* Added a clickable profile picture image in the profile's settings page, this opens a modal that let the user change their profile picture.\r\n* Profile picture changes are notified across every chat you participates in, so every change is done in real time.\r\n\r\n---\r\n\r\n## Bug Fixes\r\n\r\n### Login\r\n* QR code will not be loaded anymore on small screen.\r\n* Fixed a bug where signup page was not accessible due to a misconfiguration in login theme.\r\n* Fixed a bug where logout was not possible in certain scenarios.\r\n* Now trying logging in with a wrong password does not redirect to index page.\r\n* You can now open any private chat with anyone on mobile.\r\n* Fixed a bug where on email check if email was not valid no error was returned.\r\n* Fixed a bug where on email check if server returned an unknown response no error was returned.\r\n\r\n### API\r\n* Added an api check before sending updates requests.\r\n* Fixed a bug where last update time was using the wrong datetime.\r\n\r\n### Android\r\n* Production app could not be open after login.\r\n\r\n### Chat\r\n* Fixed a bug on mobile that did not let the user open a private chat from search.\r\n* Fixed an error with Socket.IO unsubscribe feature.\r\n* Fixed an error with audio recorderer unmount feature.\r\n* Fixed a bug where upon sending a new message timestamp was not updated in chatList's last message.\r\n* Fixed a bug where file size always mismatched between mobile and web.\r\n\r\n### Chat list\r\n* Fixed a bug where sender and/or last message was not showing correctly.\r\n\r\n---\r\n\r\n## Improvements\r\n\r\n### Chat\r\n* Chat entry logic improved, now you can see real-time messages in (public) group/channel/forum before you join. You can now see real-time chat creation or group/channel/forum join even if done on another device.\r\n* Improved mobile keyboard behavior.\r\n* Text variable will now be called Content to prepare for future messages types.\r\n\r\n### Settings\r\n* New UI for chat creation.\r\n\r\n### Search\r\n* Search action now starts after writing at least 3 char.\r\n* Search result now does not include private handle.\r\n\r\n### Login\r\n* QR code now display expires time.\r\n* QR code now is destroyed after continuing with login removing API request spamming.\r\n* Every authentication page has some type of check to redirect you in another page if some requirements are not met.\r\n* Email check renamed and moved on index for a cleaner url on web browser.\r\n* Field validation is now more coherent.\r\n* Implemented rotating auth token to remove the necessity of logging in every 7 days.\r\n* Now after logging in it automatically redirects you in email-check page, giving you a success toast and auto inputting your email.\r\n* Added +16 confirmation on signup.\r\n\r\n### Optimization\r\n* Removed unused class.\r\n* Removed unused deps (counted 31).\r\n\r\n---\r\n\r\n## Known Issues\r\n\r\n### Login\r\n* QR Code does not render when using logout, or back button.\r\n* Changing profile picture does not update immediately.\r\n\r\n### WebRTC\r\n* Disabled, not working. Waiting for 1.2 update.",
+    "published_at": "2026-06-07T09:37:32Z",
+    "created_at": "2026-05-28T17:21:12Z",
+    "draft": false,
+    "prerelease": false,
+    "target_commitish": "production",
+    "assets": []
+  },
+  {
+    "tag_name": "v0.8.0-20250930.0",
+    "name": "Version 0.8.0-20250930.0",
+    "body": "# Novyse 0.8.0-20250930.0 - Backend Revolution\r\n\r\n## Features\r\n\r\n### Chat\r\n* Added a private 'Saved Messages' chat for users to store personal notes\r\n\r\n### Authentication\r\n* Implemented JWT-based authentication for secure, stateless sessions\r\n* Added token refresh mechanism to maintain user sessions without frequent logins\r\n* Enhanced password security with bcrypt hashing and salting\r\n* Introduced multi-factor authentication (MFA) for an additional layer of security, by using authenticator apps like Google Authenticator or simply email codes\r\n* Implemented QR Code login for quick access on trusted devices\r\n* Added backup codes for account recovery in case of lost MFA device\r\n* Added an email verification step during user registration to ensure valid accounts\r\n\r\n### Server and Infrastructure\r\n* Migrated backend monolith to micro-services for improved performance and scalability\r\n* Deployed services using Docker and Kubernetes for better orchestration\r\n* Implemented Redis for caching and session management\r\n* Set up Nginx as a reverse proxy for load balancing and SSL termination\r\n* Established CI/CD pipelines with GitHub Actions for automated testing and deployment\r\n* Used hasura to auto-generate GraphQL APIs from the database schema\r\n\r\n---\r\n\r\n## Bug Fixes\r\n\r\n### Chat\r\n* Fixed a bug where chat were not being created when sending the first message to a new user\r\n* Fixed a bug where messages were not being sent in newly created groups\r\n* Fixed a bug where messages were not being received in newly created groups\r\n* Fixed a bug where you could open a chat with yourself from the search\r\n* Fixed a bug where you could create duplicate chats from the search not letting you access the already existing chat\r\n* Join button in chat content now works correctly, without needing to refresh the page\r\n* Fixed a bug where chat list and chat content were just re-rendering when a new message was received instead of just updating the state\r\n* Fixed a bug where the last message in chat list was not updating when sending a new message\r\n* Now messages are stored only ONE time in the local database, instead of duplicating them\r\n\r\n### Authentication\r\n* Fixed a bug where the 'confirm password' field was being sent to the server during signup, this is now removed\r\n* Fixed a bug where users could not login after logging out unless the page/app was reloaded\r\n* Local database now COMPLETELY clears on logout, without needing to refresh the page/app, or reinstall the app\r\n\r\n### Socket\r\n* WebSocket now reconnects automatically if the connection is lost\r\n* Fixed a bug where the WebSocket was not opening (or randomly closes and never recovering) if you were already logged in from Firefox, Chrome, Desktop app, or extension\r\n* WebSocket now opens without any problems on android devices\r\n\r\n---\r\n\r\n## Improvements\r\n\r\n### Design\r\n* Redesigned the logo and app icon for a modern look\r\n* Updated color scheme for better aesthetics and usability\r\n* Improved Login and Signup pages with enhanced UI/UX\r\n* Refined chat list and chat window designs for clarity and ease of use\r\n* Enhanced responsiveness for mobile and desktop views\r\n\r\n### Chat\r\n* Chat entry logic improved for easy and not buggy access\r\n* Now you can easily create a chat with anyone by searching their handle\r\n* Now you can easily create a group, forum or channel, private or public (there are no difference between them for now, just the type in database)\r\n* Now you can easily join a group, forum or channel if you know the handle\r\n* Now whenever a person join a group, forum or channel, all the members are notified by a system message in chat\r\n* Now whenever a person creates a group, forum or channel, all the members are notified by a system message in chat\r\n* Now search feature can be used to access already existing chats without creating duplicates or api errors\r\n\r\n### Settings\r\n* Added a comms settings page to customize audio/video preferences\r\n* Updated theme settings with a better looking page\r\n* Added a reset database button in settings to clear local data, in case of issues\r\n* Added a change password feature in settings for user convenience\r\n* Added a 2fa setup page in settings to manage multi-factor authentication and/or download backup codes\r\n* Added an info page in settings with app version, links to privacy policy, terms of service, and open-source licenses\r\n* Updated profile settings to allow users to view their information\r\n* Improved look on shortcuts settings page\r\n\r\n### Database\r\n* Server database migrated to PostgreSQL behind Hasura for improved performance and scalability\r\n* Created a new database schema optimized for relational data and complex queries\r\n* Messages are now stored in a different database using NoSQL for faster read/write operations\r\n* Local database schema optimized for better performance and reduced redundancy\r\n* Local database now uses a better compatibility layer for cross-platform support\r\n\r\n### Performance\r\n* Optimized Socket.IO stability and reconnection logic for better real-time communication\r\n* Improved startup application time\r\n\r\n### Security\r\n* Added a way to reset password via email for account recovery\r\n* Now access token is stored in memory instead of local storage for enhanced security\r\n\r\n### WebRTC\r\n* Added voice filtering to reduce background noise during calls (Noise Suppression, Expander, Noise Gate, Typing Attenuation)\r\n* Added a settings page for WebRTC to allow users to customize their audio and video preferences, select input/output devices, and use specific voice filters\r\n\r\n---\r\n\r\n## Known Issues\r\n\r\n### WebRTC\r\n* All of the voice chats features are unstable and potentially buggy, especially on Android since the new backend change broke the WebRTC implementation. This will be address in future updates.\r\n* Voice filtering is not perfect and may cut out some speech or let through some background noise. More filters and improvements will be added in future updates.\r\n* Voice filtering is ALWAYS ACTIVE and cannot be turned off. This happens only after you joined a call. This will be fixed in future updates.\r\n\r\n### User Interface\r\n* Some graphical enhancements are yet to be implemented.\r\n* The group creation modal appears graphically unappealing.\r\n* Some chat inside chat list may not render correctly until you refresh the page.\r\n* Some colors in some themes are not perfect and may need adjustments.\r\n\r\n### Functionality\r\n* Back gesture on mobile is not implemented on all pages.\r\n* Some API error handling are yet to be implemented.\r\n* QR Code in the login page could create some problems like sending many requests to the server if you leave it open for too long or not loading at all. This will be fixed in next update.",
+    "published_at": "2026-06-07T09:37:30Z",
+    "created_at": "2026-05-28T17:21:12Z",
+    "draft": false,
+    "prerelease": false,
+    "target_commitish": "production",
+    "assets": []
+  },
+  {
+    "tag_name": "v0.7.0-20250615.0",
+    "name": "Version 0.7.0-20250615.0",
+    "body": "# Novyse 0.7.0-20250615.0 - Voice/Video Calls\r\n\r\n## Features\r\n\r\n### Communication\r\n* Voice, Video & Group Calls: Core infrastructure implemented\r\n* Screen Sharing during calls\r\n* Pin Users in Call to keep them in focus\r\n\r\n### User Interface\r\n* Floating Comms Menu with entry animation and responsive design\r\n* Emoji Picker in Chat\r\n* Speech Indicator with green border on speaking user's avatar\r\n* Clickable Links in messages\r\n\r\n---\r\n\r\n## Bug Fixes\r\n\r\n### Webcam and Video Streams\r\n* Remote video stream no longer stops after webcam deactivation/reactivation\r\n* Video stream now updates when a remote user changes webcam\r\n* Changing own webcam no longer causes failure\r\n* Final video frame is correctly replaced with avatar after webcam off\r\n* Local webcam updates correctly in all scenarios\r\n* MID mapping issue fixed for new users joining chat with webcam\r\n\r\n### Audio/Video Controls\r\n* Mute/Unmute and video controls no longer lock after leaving a chat with webcam off\r\n\r\n### Stability and Connection\r\n* Fixed native dependency crash on Android dev builds\r\n* Resolved WebRTC and WebSocket circular import\r\n* Fixed entry/exit sound bug when in different chat than the call\r\n\r\n### User Interface\r\n* Fixed URL display issue in web messages\r\n* Mobile chats display without requiring page reload\r\n* Received messages appear instantly\r\n\r\n---\r\n\r\n## Improvements\r\n\r\n### WebRTC\r\n* Complete UI and variable logic rework for stability and reliability\r\n\r\n### Voice Layout\r\n* Massively optimized voice chat layout for better desktop UX\r\n\r\n### UI and Theme\r\n* Default theme uses transparent backgrounds\r\n* Updated icons across interface\r\n* Fixed weak blur on Android\r\n* Implemented gradient background for comms\r\n\r\n### Performance\r\n* Rewritten VAD logic with memoization to prevent re-renders\r\n* Floating menu only re-renders for local user changes\r\n* Improved cache handling when logging out and in as another user\r\n\r\n---\r\n\r\n## Known Issues\r\n\r\n### Video Call Behavior\r\n* First-time join may not show active webcam until page refresh\r\n\r\n### Android Compatibility\r\n* WebRTC features untested and potentially unstable on Android\r\n* Android app is not yet publicly available\r\n\r\n### Audio Features\r\n* Noise filtering attempt failed; feature is not currently available",
+    "published_at": "2026-06-07T09:37:28Z",
+    "created_at": "2026-05-28T17:21:12Z",
+    "draft": false,
+    "prerelease": false,
+    "target_commitish": "production",
+    "assets": []
+  },
+  {
+    "tag_name": "v0.6.0-20250406.0",
+    "name": "Version 0.6.0-20250406.0",
+    "body": "# Novyse 0.6.0-20250406.0 - The Mega Refactor Update\r\n\r\n## Features\r\n\r\n### Pages\r\n* Introduced a new page dedicated to VocalContent for upcoming features.\r\n\r\n### User Interface\r\n* Added an option in the three-dot menu to switch between chat, vocal, and both views.\r\n* Introduced a settings menu with pages for storage and themes.\r\n\r\n### Search\r\n* Implemented a search function for user and group handles.\r\n* Enabled chat creation from search results if a user is found.\r\n\r\n### Messaging\r\n* Real-time chat creation when receiving a message from a user without an existing chat.\r\n\r\n### Authentication\r\n* Logout now also triggers an API call to clear the server-side session.\r\n\r\n### Groups\r\n* Initialized group management during app initialization.\r\n* Added the ability to create and join groups.\r\n\r\n### Themes\r\n* First implementation of themes (color refinements needed).\r\n\r\n### Dependencies\r\n* Installed the 'react-native-webrtc' package.\r\n\r\n### Database\r\n* Added a component to display the size of the local database.\r\n\r\n---\r\n\r\n## Bug Fixes\r\n\r\n### User Interface\r\n* Fixed the issue where the microphone icon in chat would go off-screen.\r\n* Disabled the Floating Action Button to avoid major graphical errors on mobile and web.\r\n* Improved the distance between the floating button and the margin.\r\n* Fixed chat list margins on mobile.\r\n* Resolved bugs preventing proper modal display on small screens (modal now works correctly).\r\n* Improved the switch button in the group creation modal (better graphics on mobile).\r\n\r\n### Messaging\r\n* Fixed the issue where sending the first message erroneously created a request for a new chat.\r\n* Resolved the bug in sending messages from new groups.\r\n* Fixed the issue with message hash and state updates after returning from the server (completely removed with the API rework).\r\n\r\n### Event Emitters\r\n* Fixed issues related to event emitters.\r\n* Resolved a bug where the event emitter was not triggered upon receiving a message from the socket.\r\n\r\n### Authentication\r\n* Resolved the graphical defect on Android in the loginPassword screen.\r\n* The 'confirm password' field is no longer sent to the server.\r\n\r\n### Database\r\n* Fixed the incorrect SQLite query causing errors during login.\r\n* Corrected the behavior of insertOrIgnore on mobile so that handles appear correctly.\r\n\r\n---\r\n\r\n## Improvements\r\n\r\n### WebSocket\r\n* Temporarily commented out the WebSocket background code; this will be revisited when working on notifications.\r\n\r\n### User Interface\r\n* New look for the bottom bar in chats.\r\n* Optimized chat list view: each chat now shows the name, the last message (with overflow handled), and a placeholder for unread messages.\r\n* Improved the sidebar.\r\n* Renewed login and signup pages.\r\n* Reorganized and better commented the code for chat list and chat content pages.\r\n\r\n### Mobile Optimization\r\n* Improved header.\r\n* Note: 'both' view mode is not available in mobile mode.\r\n\r\n### Backend and API Updates\r\n* Completed the transition to the new API.\r\n* Updated WebSocket, JSON parser, API methods, and database pages for backend improvements.\r\n* Continued updates to the new backend.\r\n\r\n### Code and Methods\r\n* Optimized various methods and cleaned up code (reduced console.log in localDatabaseMethods and webSocketMethods pages).\r\n* Implemented the update method.\r\n\r\n### Group Modal\r\n* Added handle-availability check before group creation to avoid API-side validator errors.\r\n* Name/handle/public fields are cleared upon creation (with saving if 'Back' is clicked).\r\n* Partial restyle and use of wrappers to fix a bug in the text field.\r\n\r\n### Testing Path\r\n* Used the /test path to avoid cluttering the official database.\r\n\r\n### Obsolete Libraries\r\n* Updated obsolete libraries.\r\n* Slightly improved settings page; themes page now works (though still very unattractive).\r\n\r\n---\r\n\r\n## Known Issues\r\n\r\n### Graphical Improvements\r\n* Pending graphical improvements.\r\n* Some graphical enhancements are yet to be implemented.\r\n* Welcome/login/signup graphics do not work correctly on mobile (and likely on small screens).\r\n* The group creation modal appears graphically unappealing.\r\n* Opening the keyboard for message input is flashy and laggy.\r\n\r\n### Modal\r\n* Edge cases and graphical bugs remain in the modal on very small screens.\r\n\r\n### Performance\r\n* The sidebar is limited to 60fps and needs to adapt to the screen's refresh rate.\r\n* The input text for sending messages is slow.\r\n\r\n### API and Cache\r\n* Improve client-side API error handling.\r\n* Cache remains in the browser.\r\n\r\n### Navigation\r\n* Back gesture on mobile is not implemented on all pages.\r\n* Joining a group does not automatically redirect to the chat; the user must exit the search and re-enter.\r\n\r\n### Search and Chat\r\n* Duplicate opening of already existing chats from search and inability to send messages in certain cases.\r\n* Ability to open a chat with oneself from the search.\r\n\r\n### Settings\r\n* The settings section is unusable.\r\n\r\n### Notifications\r\n* Notifications on Android, Web, and Desktop (via wrapper) need to be implemented.\r\n\r\n### WebSocket\r\n* WebSocket remaining open in the background requires further interventions.\r\n\r\n### Async Storage\r\n* Create a function to reset/delete all content in async storage upon logout.",
+    "published_at": "2026-06-07T09:37:26Z",
+    "created_at": "2026-05-28T17:21:12Z",
+    "draft": false,
+    "prerelease": false,
+    "target_commitish": "production",
+    "assets": []
+  },
+  {
+    "tag_name": "v0.5.0-20250306.0",
+    "name": "Version 0.5.0-20250306.0",
+    "body": "# Novyse 0.5.0-20250306.0 - Restyle and Fixes\r\n\r\n## Features\r\n\r\n### User Interface\r\n* Total graphic restyle of messages, chat header, colors, chat bar, login page, signup page, and welcome page.\r\n\r\n### Authentication\r\n* Added the ability to hide and/or show the password on the login page as needed.\r\n\r\n### Connectivity\r\n* Added a check for cases of absent internet connection.\r\n\r\n---\r\n\r\n## Bug Fixes\r\n\r\n### Websocket\r\n* Websocket now opens even if you are already logged in.\r\n* Websocket now remains open in the background.\r\n\r\n### Browser\r\n* On mobile browsers, the application used an unsupported library causing a crash.\r\n\r\n### Messaging\r\n* Messages no longer duplicate.\r\n* Messages no longer repeat infinitely.\r\n* Message reception sometimes did not work.\r\n\r\n---\r\n\r\n## Improvements\r\n\r\n### User Experience\r\n* Improved navigation between pages, links are now formatted in a readable way and indicate exactly which chat you are in.\r\n\r\n### Messaging\r\n* It is now possible to see the date of messages in the chat.\r\n\r\n---\r\n\r\n## Known Issues\r\n\r\n### User Interface\r\n* Opening the app on a mobile browser loads a full white page with a small box containing the app.\r\n* Chat headers are not displayed on the chat page.\r\n* The (+) button on the main page is in a very peculiar position.\r\n* While scrolling, the sidebar overlaps the messages.\r\n\r\n### Scrolling\r\n* The scroll behavior is inverted: moving the wheel up scrolls the page down and vice versa.\r\n\r\n### Authentication\r\n* Can't login after a logout unless the page/app is reloaded.\r\n\r\n### WebSocket\r\n* WebSocket does not open if you are already logged in from Firefox, Chrome, Desktop app, or extension.\r\n\r\n### Desktop App\r\n* The desktop app is cropped at the top and bottom.",
+    "published_at": "2026-06-07T09:37:24Z",
+    "created_at": "2026-05-28T17:21:12Z",
+    "draft": false,
+    "prerelease": false,
+    "target_commitish": "production",
+    "assets": []
+  },
+  {
+    "tag_name": "v0.4.0-20250206.0",
+    "name": "Version 0.4.0-20250206.0",
+    "body": "# Novyse 0.4.0-20250206.0 - The Real Start\r\n\r\n## Features\r\n\r\n### Other\r\n* The previous versions were used to test builds and understand the level of functionality to develop. Starting from the next patch, there will be real changes. Name changed to Buzz.",
+    "published_at": "2026-06-07T09:37:23Z",
+    "created_at": "2026-05-28T17:21:12Z",
+    "draft": false,
+    "prerelease": false,
+    "target_commitish": "production",
+    "assets": []
+  },
+  {
+    "tag_name": "v0.3.0-20250205.0",
+    "name": "Version 0.3.0-20250205.0",
+    "body": "# Novyse 0.3.0-20250205.0 - Refactor and responses\r\n\r\n## Features\r\n\r\n### Test\r\n* Added basic socket connection to the server.\r\n* Added basic message receiving.\r\n\r\n---\r\n\r\n## Improvements\r\n\r\n### User Interface\r\n* Added basic information to every chat on chat list.\r\n\r\n### Server\r\n* Starting back-end refactoring in NodeJS.",
+    "published_at": "2026-06-07T09:37:21Z",
+    "created_at": "2026-05-28T17:21:12Z",
+    "draft": false,
+    "prerelease": false,
+    "target_commitish": "production",
+    "assets": []
+  },
+  {
+    "tag_name": "v0.2.0-20250129.0",
+    "name": "Version 0.2.0-20250129.0",
+    "body": "# Novyse 0.2.0-20250129.0 - The First Steps\r\n\r\n## Features\r\n\r\n### User Interface\r\n* Basic status bar.\r\n* Basic side bar.\r\n* Basic chat window.\r\n* Basic chat list.\r\n\r\n### Other\r\n* Added basic components for the client and server.",
+    "published_at": "2026-06-07T09:37:19Z",
+    "created_at": "2026-05-28T17:21:12Z",
+    "draft": false,
+    "prerelease": false,
+    "target_commitish": "production",
+    "assets": []
+  },
+  {
+    "tag_name": "v0.1.0-20250128.0",
+    "name": "Version 0.1.0-20250128.0",
+    "body": "# Novyse 0.1.0-20250128.0 - The Beginning\r\n\r\n## Features\r\n\r\n### Other\r\n* Initial release of the Novyse application with basic messaging features called Messanger, client in React Native and server in Python.\r\n* There are not any particular note regarding the developement of this version.",
+    "published_at": "2026-06-07T09:37:17Z",
+    "created_at": "2026-05-28T17:21:12Z",
+    "draft": false,
+    "prerelease": false,
+    "target_commitish": "production",
+    "assets": []
+  }
+]
