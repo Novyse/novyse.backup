@@ -17,6 +17,16 @@ from config import SOURCE_REPO
 
 
 
+def parent_number(i: dict) -> int | None:
+    url = i.get("parent_issue_url")
+    if not url:
+        return None
+    try:
+        return int(str(url).rstrip("/").split("/")[-1])
+    except ValueError:
+        return None
+
+
 def slim_issue(i: dict) -> dict:
     return {
         "number": i.get("number"),
@@ -34,6 +44,11 @@ def slim_issue(i: dict) -> dict:
         "comments_count": i.get("comments", 0),
         "body": i.get("body"),
         "url": i.get("html_url"),
+        "parent": parent_number(i),
+        "sub_issues_summary": i.get("sub_issues_summary"),
+        "sub_issues": [],
+        "issue_field_values": i.get("issue_field_values"),
+        "issue_dependencies": i.get("issue_dependencies_summary"),
     }
 
 
@@ -60,6 +75,20 @@ def fetch_comments(repo: str, number: int, token: str | None, full: bool):
     return out if full else [slim_comment(c) for c in out]
 
 
+def fetch_sub_issue_numbers(repo: str, number: int, token: str | None):
+    """Children issue numbers (numbers only). Called for parents only."""
+    url = f"{API}/repos/{repo}/issues/{number}/sub_issues?per_page=100&page=1"
+    out, page_url, page = [], url, 0
+    from common import parse_link_next
+    while page_url and page < 20:  # max 2000 children/issue
+        page += 1
+        batch, headers = rest_get(page_url, token)
+        items = batch if isinstance(batch, list) else [batch]
+        out.extend(x.get("number") for x in items if x.get("number") is not None)
+        page_url = parse_link_next(headers.get("Link"))
+    return sorted(set(out))
+
+
 def run(repo: str, out: str, token: str | None, full: bool = False,
         max_pages: int = 600, max_issues: int = 0, no_comments: bool = False,
         since: str | None = None, workers: int = 8) -> dict:
@@ -72,6 +101,10 @@ def run(repo: str, out: str, token: str | None, full: bool = False,
         raw = raw[:max_issues]
         print(f"  test mode: limited to {max_issues} issues")
     data = raw if full else [slim_issue(i) for i in raw]
+    if full:
+        for item in data:
+            item["parent"] = parent_number(item)
+            item.setdefault("sub_issues", [])
 
     if not no_comments:
         # fetch comments only where comments_count > 0 (saves ~70% of calls)
@@ -108,6 +141,31 @@ def run(repo: str, out: str, token: str | None, full: bool = False,
         for item in data:
             item["comments"] = []
         print("  comments skipped (--no-comments)")
+
+    # second pass: fetch sub-issue numbers for parents
+    parents = [(idx, item) for idx, item in enumerate(data)
+               if (item.get("sub_issues_summary") or {}).get("total", 0) > 0]
+    if parents:
+        print(f"  sub-issues to fetch for {len(parents)}/{len(data)} parent issues...")
+        ok2 = err2 = 0
+
+        def _one_sub(t):
+            idx, item = t
+            try:
+                return idx, fetch_sub_issue_numbers(repo, item["number"], token), None
+            except Exception as e:
+                return idx, [], str(e)
+
+        with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as ex:
+            for idx, children, e in ex.map(_one_sub, parents):
+                if e:
+                    err2 += 1
+                    data[idx]["sub_issues_fetch_error"] = e[:200]
+                    data[idx]["sub_issues"] = []
+                else:
+                    ok2 += 1
+                    data[idx]["sub_issues"] = children
+        print(f"  sub-issues ok: {ok2}, errors: {err2}")
 
     size = write_json(Path(out) / "issues.json", data)
     print(f"  {len(data)} issues -> {out}/issues.json ({size/1024:.1f} KB)")
