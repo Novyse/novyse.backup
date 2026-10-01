@@ -1,5 +1,37 @@
 [
   {
+    "number": 319,
+    "title": "Multi-account",
+    "state": "open",
+    "state_reason": null,
+    "is_pull_request": false,
+    "labels": [],
+    "assignees": [],
+    "milestone": null,
+    "created_at": "2026-10-01T09:01:38Z",
+    "updated_at": "2026-10-01T09:01:38Z",
+    "closed_at": null,
+    "author": "SamueleOrazioDurante",
+    "comments_count": 0,
+    "body": "Sign in with multiple accounts on the same device and switch between them freely. Each account keeps its own chats, media and settings, fully isolated from the others.",
+    "url": "https://github.com/Novyse/novyse/issues/319",
+    "parent": null,
+    "sub_issues_summary": {
+      "total": 0,
+      "completed": 0,
+      "percent_completed": 0
+    },
+    "sub_issues": [],
+    "issue_field_values": [],
+    "issue_dependencies": {
+      "blocked_by": 0,
+      "total_blocked_by": 0,
+      "blocking": 0,
+      "total_blocking": 0
+    },
+    "comments": []
+  },
+  {
     "number": 318,
     "title": "Windows Communication Detection Caused System Volume to be Lowered Significantly",
     "state": "open",
