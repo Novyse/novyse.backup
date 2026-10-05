@@ -1,5 +1,37 @@
 [
   {
+    "number": 320,
+    "title": "Add Camera and Recording message types with video preview",
+    "state": "open",
+    "state_reason": null,
+    "is_pull_request": false,
+    "labels": [],
+    "assignees": [],
+    "milestone": null,
+    "created_at": "2026-10-05T09:25:07Z",
+    "updated_at": "2026-10-05T09:25:07Z",
+    "closed_at": null,
+    "author": "SamueleOrazioDurante",
+    "comments_count": 0,
+    "body": "Add `Camera` and `Recording` to the supported message types. For both types, display a live video preview directly above the text input bar.",
+    "url": "https://github.com/Novyse/novyse/issues/320",
+    "parent": null,
+    "sub_issues_summary": {
+      "total": 0,
+      "completed": 0,
+      "percent_completed": 0
+    },
+    "sub_issues": [],
+    "issue_field_values": [],
+    "issue_dependencies": {
+      "blocked_by": 0,
+      "total_blocked_by": 0,
+      "blocking": 0,
+      "total_blocking": 0
+    },
+    "comments": []
+  },
+  {
     "number": 319,
     "title": "Multi-account",
     "state": "open",
@@ -107,15 +139,15 @@
   {
     "number": 316,
     "title": "(mobile) Messages hitbox for replies and action menu trigger",
-    "state": "open",
-    "state_reason": null,
+    "state": "closed",
+    "state_reason": "completed",
     "is_pull_request": false,
     "labels": [],
     "assignees": [],
     "milestone": null,
     "created_at": "2026-09-15T20:01:36Z",
-    "updated_at": "2026-09-15T20:02:21Z",
-    "closed_at": null,
+    "updated_at": "2026-10-04T15:14:32Z",
+    "closed_at": "2026-10-04T15:14:32Z",
     "author": "SamueleOrazioDurante",
     "comments_count": 1,
     "body": null,
@@ -285,11 +317,11 @@
     "assignees": [],
     "milestone": null,
     "created_at": "2026-09-06T17:19:32Z",
-    "updated_at": "2026-09-26T19:10:38Z",
+    "updated_at": "2026-10-05T09:22:32Z",
     "closed_at": null,
     "author": "SamueleOrazioDurante",
     "comments_count": 2,
-    "body": "- [x] Reply\n- [x] Swipe Reply\n- [x] Quote\n- [x] Edit and #237 \n- [x] Pin\n- [x] Copy Text\n- [ ] Forward\n- [x] Delete\n- [x] Select\n- [x] Select menu with reply/select/delete\n- [x] Message type menu (Recording, Media, Camera etc)\n    - [ ] Video preview on top of text bar for both this types\n    - [ ] Recording\n    - [ ] Camera\n- [x] Reaction and #302 \n- [x] Emoji menu with sticker (WIP empty menu) and GIF (from klipy)\n     - [ ] On android emoji/keyboard switch is bad (#313 )\n- [x] Mention Bar\n- [x] Draft bar with preview for every type of file\n- [x] Channel\n- [x] Forum\n- [x] #301\n- [x] Read confirmation (+ notification)",
+    "body": "- [x] Reply\n- [x] Swipe Reply\n- [x] Quote\n- [x] Edit and #237 \n- [x] Pin\n- [x] Copy Text\n- [ ] Forward\n- [x] Delete\n- [x] Select\n- [x] Select menu with reply/select/delete\n- [x] Message type menu (Recording, Media, Camera etc)\n- [x] Reaction and #302 \n- [x] Emoji menu with sticker (WIP empty menu) and GIF (from klipy)\n     - [ ] On android emoji/keyboard switch is bad (#313 )\n- [x] Mention Bar\n- [x] Draft bar with preview for every type of file\n- [x] Channel\n- [x] Forum\n- [x] #301\n- [x] Read confirmation (+ notification)",
     "url": "https://github.com/Novyse/novyse/issues/312",
     "parent": 306,
     "sub_issues_summary": {
@@ -464,11 +496,11 @@
     "assignees": [],
     "milestone": null,
     "created_at": "2026-09-05T10:56:58Z",
-    "updated_at": "2026-09-22T21:59:39Z",
+    "updated_at": "2026-10-04T16:27:22Z",
     "closed_at": null,
     "author": "SamueleOrazioDurante",
     "comments_count": 0,
-    "body": "- [ ] non puoi cambiare microfono (su mobile se cambi output audio cambi anche microfono, da capire)\n     (se non è possibile cambiare 1 dispositivo alla volta allora unire microfono+output insieme solo su android/ios)\n- [ ] non puoi cambiare cam (+ su mobile solo switch front/back camera)\n- [ ] non puoi cambiare output audio\n- [x] fullscreen non funziona bene\n- [x] screenshare non si vede quando sei fuori dalla chat vocale\n- [x] status message è lungo in culo (errore in bottombar)\n- [ ] modifica impostazioni per migliorare audio/video/screenshare\n- [ ] riduzione del rumore\n- [ ] context menu custom per mute/volume change in locale per ogni user card\n- [x] screenshare con linux wayland si comporta male",
+    "body": "- [x] non puoi cambiare microfono (su mobile se cambi output audio cambi anche microfono, da capire)\n     (se non è possibile cambiare 1 dispositivo alla volta allora unire microfono+output insieme solo su android/ios)\n- [x] non puoi cambiare cam (+ su mobile solo switch front/back camera)\n- [x] non puoi cambiare output audio\n- [x] fullscreen non funziona bene\n- [x] screenshare non si vede quando sei fuori dalla chat vocale\n- [x] status message è lungo in culo (errore in bottombar)\n- [ ] modifica impostazioni per migliorare audio/video/screenshare\n- [ ] riduzione del rumore\n- [ ] context menu custom per mute/volume change in locale per ogni user card\n- [x] screenshare con linux wayland si comporta male",
     "url": "https://github.com/Novyse/novyse/issues/309",
     "parent": 306,
     "sub_issues_summary": {
@@ -1563,10 +1595,10 @@
     ],
     "milestone": null,
     "created_at": "2026-06-10T19:17:09Z",
-    "updated_at": "2026-06-10T19:17:09Z",
+    "updated_at": "2026-10-05T09:26:50Z",
     "closed_at": null,
     "author": "SamueleOrazioDurante",
-    "comments_count": 0,
+    "comments_count": 1,
     "body": "Currently, there is an issue when canceling file/video uploads: if a user decides to cancel an upload, simply deleting the record from the database is not sufficient. The generated S3 link remains valid, effectively leaving orphaned files in our storage.\n\nTo solve this issue and properly manage the lifecycle of messages and files, we need to implement a state machine system.\n\nThe new logic should include the following states:\n\n* **Message States:** `pending`, `sent`.\n* **File States:** `pending`, `uploaded`, `deleted`.\n\n**Expected Behavior:**\n\n1. **S3 Cleanup:** When an upload is canceled or deleted, the file must be actively invalidated or removed from S3, and the file's state should be updated to `deleted`.\n2. **Upload Error Handling:** If a file fails to upload (e.g., due to insufficient storage space or because the file no longer exists locally), the entire `pending message` associated with it must be deleted outright. It makes no sense to keep a pending message in the queue if its required attachment cannot be uploaded.",
     "url": "https://github.com/Novyse/novyse/issues/281",
     "parent": null,
@@ -1583,7 +1615,16 @@
       "blocking": 0,
       "total_blocking": 0
     },
-    "comments": []
+    "comments": [
+      {
+        "id": 5991725023,
+        "author": "SamueleOrazioDurante",
+        "created_at": "2026-10-05T09:26:50Z",
+        "updated_at": "2026-10-05T09:26:50Z",
+        "body": "In the flow where the user adds new files:\n\n* The user edits the text, deletes an existing file, and selects 2 large new files.\n* The client sends the initial request (`PATCH /message`).\n\nIf the backend immediately deletes the old file and updates the text during this first request—before the new files are even uploaded to S3:\n\nWhat happens if the user loses connection mid-upload, closes the app, or their battery dies?\nThe message would be left in an inconsistent/broken state: the text would be updated and the old file deleted, but the new files would never arrive.\n\n**How to handle it properly:**\nThe `PATCH` request should only validate and create a `pending_edit` record, storing the intended changes (draft text, IDs of files to remove, files to upload). The actual message in the database and the `MESSAGE_EDITED` event should be updated and emitted **strictly upon confirmation** (or immediately, if the edit does not include new files). This ensures the message is never corrupted if the upload fails.",
+        "url": "https://github.com/Novyse/novyse/issues/281#issuecomment-5991725023"
+      }
+    ]
   },
   {
     "number": 280,
@@ -3418,10 +3459,10 @@
     "assignees": [],
     "milestone": null,
     "created_at": "2026-06-07T16:42:50Z",
-    "updated_at": "2026-09-23T15:50:14Z",
+    "updated_at": "2026-10-04T15:16:49Z",
     "closed_at": null,
     "author": "SamueleOrazioDurante",
-    "comments_count": 2,
+    "comments_count": 3,
     "body": "Improve the general settings page to manage standard application preferences and account options.",
     "url": "https://github.com/Novyse/novyse/issues/240",
     "parent": 306,
@@ -3471,6 +3512,14 @@
         "updated_at": "2026-09-06T16:36:31Z",
         "body": "For legal\n\nAdd Legal & Privacy and every open source licence of every library we use",
         "url": "https://github.com/Novyse/novyse/issues/240#issuecomment-5560624550"
+      },
+      {
+        "id": 5981480433,
+        "author": "SamueleOrazioDurante",
+        "created_at": "2026-10-04T15:16:49Z",
+        "updated_at": "2026-10-04T15:16:49Z",
+        "body": "Da fare la lista di tutti i settings da attivare prima della release",
+        "url": "https://github.com/Novyse/novyse/issues/240#issuecomment-5981480433"
       }
     ]
   },
