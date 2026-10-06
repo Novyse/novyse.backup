@@ -1,5 +1,54 @@
 [
   {
+    "number": 321,
+    "title": "Messages forward",
+    "state": "open",
+    "state_reason": null,
+    "is_pull_request": false,
+    "labels": [],
+    "assignees": [],
+    "milestone": null,
+    "created_at": "2026-10-05T13:58:06Z",
+    "updated_at": "2026-10-05T14:07:10Z",
+    "closed_at": null,
+    "author": "SamueleOrazioDurante",
+    "comments_count": 2,
+    "body": null,
+    "url": "https://github.com/Novyse/novyse/issues/321",
+    "parent": null,
+    "sub_issues_summary": {
+      "total": 0,
+      "completed": 0,
+      "percent_completed": 0
+    },
+    "sub_issues": [],
+    "issue_field_values": [],
+    "issue_dependencies": {
+      "blocked_by": 0,
+      "total_blocked_by": 0,
+      "blocking": 0,
+      "total_blocking": 0
+    },
+    "comments": [
+      {
+        "id": 5996029748,
+        "author": "SamueleOrazioDurante",
+        "created_at": "2026-10-05T14:01:25Z",
+        "updated_at": "2026-10-05T14:01:25Z",
+        "body": "#### 1. Data Structure (`forward_froms`)\n\nA standard message payload will include a `forward_froms` field, which contains an array of forwarded message references. Each object in the array includes:\n\n* **`chat_id`**: The target chat where the original message resides.\n* **`sub_id`**: The sub-channel/thread identifier.\n* **`message_id`**: The unique identifier of the specific message.\n\n#### 2. UI & Client Layout\n\n* **Forward Bar:** Displayed at the top of the message bubble, alongside or styled similarly to reply headers.\n* **Content Display:** Renders the text preview retrieved by the server.\n* **Navigation Action:** Clicking on a forwarded reference navigates directly to the original message within its source chat.\n\n#### 3. Server-Side Responsibilities\n\n* **Validation:** Verifies whether the referenced messages exist.\n* **Content Extraction:**\n* Fetches the original message content and injects it into each forward item before dispatching to recipients.\n* **Scope:** Currently restricted to text only (file forwarding is deferred to a future iteration).\n\n\n\n#### 4. Permissions & Access Control\n\n* **Member of the source chat:** The link is active; tapping it takes the user straight to the referenced message.\n* **Non-member (public/joinable chat):** The user is prompted to join the chat first before accessing the message.\n* **Non-member (restricted/no permissions):**\n* The link is disabled/non-clickable.\n* The UI presents an explicit notification indicating that the user lacks the required permissions to access or join that chat.",
+        "url": "https://github.com/Novyse/novyse/issues/321#issuecomment-5996029748"
+      },
+      {
+        "id": 5996134012,
+        "author": "SamueleOrazioDurante",
+        "created_at": "2026-10-05T14:07:10Z",
+        "updated_at": "2026-10-05T14:07:10Z",
+        "body": "To handle forwarded files without duplicating them in MinIO, a `message_forwards` table links the newly sent message to the original message containing the files. When a user requests an attachment, access control traverses this chain: it verifies that the file belongs to the original message, that this message is referenced by the forwarded message, and that the user has access to the destination chat. If the entire chain is valid, file access is granted.",
+        "url": "https://github.com/Novyse/novyse/issues/321#issuecomment-5996134012"
+      }
+    ]
+  },
+  {
     "number": 320,
     "title": "Add Camera and Recording message types with video preview",
     "state": "open",
@@ -73,10 +122,10 @@
     "assignees": [],
     "milestone": null,
     "created_at": "2026-09-26T12:53:03Z",
-    "updated_at": "2026-09-26T12:53:03Z",
+    "updated_at": "2026-10-05T14:37:51Z",
     "closed_at": null,
     "author": "MatteoMagnani7",
-    "comments_count": 0,
+    "comments_count": 1,
     "body": null,
     "url": "https://github.com/Novyse/novyse/issues/318",
     "parent": null,
@@ -93,20 +142,29 @@
       "blocking": 0,
       "total_blocking": 0
     },
-    "comments": []
+    "comments": [
+      {
+        "id": 5996699969,
+        "author": "SamueleOrazioDurante",
+        "created_at": "2026-10-05T14:37:51Z",
+        "updated_at": "2026-10-05T14:37:51Z",
+        "body": "https://github.com/livekit/client-sdk-flutter/issues/506#issuecomment-2087976792",
+        "url": "https://github.com/Novyse/novyse/issues/318#issuecomment-5996699969"
+      }
+    ]
   },
   {
     "number": 317,
     "title": "When a user is muted (mic/speaker) it should be visible with icons to all other users",
-    "state": "open",
-    "state_reason": null,
+    "state": "closed",
+    "state_reason": "completed",
     "is_pull_request": false,
     "labels": [],
     "assignees": [],
     "milestone": null,
     "created_at": "2026-09-22T20:20:31Z",
-    "updated_at": "2026-09-22T21:26:59Z",
-    "closed_at": null,
+    "updated_at": "2026-10-05T10:55:47Z",
+    "closed_at": "2026-10-05T10:55:47Z",
     "author": "MatteoMagnani7",
     "comments_count": 1,
     "body": null,
@@ -317,11 +375,11 @@
     "assignees": [],
     "milestone": null,
     "created_at": "2026-09-06T17:19:32Z",
-    "updated_at": "2026-10-05T09:22:32Z",
+    "updated_at": "2026-10-05T13:57:51Z",
     "closed_at": null,
     "author": "SamueleOrazioDurante",
     "comments_count": 2,
-    "body": "- [x] Reply\n- [x] Swipe Reply\n- [x] Quote\n- [x] Edit and #237 \n- [x] Pin\n- [x] Copy Text\n- [ ] Forward\n- [x] Delete\n- [x] Select\n- [x] Select menu with reply/select/delete\n- [x] Message type menu (Recording, Media, Camera etc)\n- [x] Reaction and #302 \n- [x] Emoji menu with sticker (WIP empty menu) and GIF (from klipy)\n     - [ ] On android emoji/keyboard switch is bad (#313 )\n- [x] Mention Bar\n- [x] Draft bar with preview for every type of file\n- [x] Channel\n- [x] Forum\n- [x] #301\n- [x] Read confirmation (+ notification)",
+    "body": "- [x] Reply\n- [x] Swipe Reply\n- [x] Quote\n- [x] Edit and #237 \n- [x] Pin\n- [x] Copy Text\n- [x] Delete\n- [x] Select\n- [x] Select menu with reply/select/delete\n- [x] Message type menu (Recording, Media, Camera etc)\n- [x] Reaction and #302 \n- [x] Emoji menu with sticker (WIP empty menu) and GIF (from klipy)\n     - [ ] On android emoji/keyboard switch is bad (#313 )\n- [x] Mention Bar\n- [x] Draft bar with preview for every type of file\n- [x] Channel\n- [x] Forum\n- [x] #301\n- [x] Read confirmation (+ notification)",
     "url": "https://github.com/Novyse/novyse/issues/312",
     "parent": 306,
     "sub_issues_summary": {
@@ -496,11 +554,11 @@
     "assignees": [],
     "milestone": null,
     "created_at": "2026-09-05T10:56:58Z",
-    "updated_at": "2026-10-04T16:27:22Z",
+    "updated_at": "2026-10-05T10:55:53Z",
     "closed_at": null,
     "author": "SamueleOrazioDurante",
     "comments_count": 0,
-    "body": "- [x] non puoi cambiare microfono (su mobile se cambi output audio cambi anche microfono, da capire)\n     (se non è possibile cambiare 1 dispositivo alla volta allora unire microfono+output insieme solo su android/ios)\n- [x] non puoi cambiare cam (+ su mobile solo switch front/back camera)\n- [x] non puoi cambiare output audio\n- [x] fullscreen non funziona bene\n- [x] screenshare non si vede quando sei fuori dalla chat vocale\n- [x] status message è lungo in culo (errore in bottombar)\n- [ ] modifica impostazioni per migliorare audio/video/screenshare\n- [ ] riduzione del rumore\n- [ ] context menu custom per mute/volume change in locale per ogni user card\n- [x] screenshare con linux wayland si comporta male",
+    "body": "- [x] non puoi cambiare microfono (su mobile se cambi output audio cambi anche microfono, da capire)\n     (se non è possibile cambiare 1 dispositivo alla volta allora unire microfono+output insieme solo su android/ios)\n- [x] non puoi cambiare cam (+ su mobile solo switch front/back camera)\n- [x] non puoi cambiare output audio\n- [x] fullscreen non funziona bene\n- [x] screenshare non si vede quando sei fuori dalla chat vocale\n- [x] status message è lungo in culo (errore in bottombar)\n- [ ] modifica impostazioni per migliorare audio/video/screenshare\n- [ ] riduzione del rumore\n- [x] context menu custom per mute/volume change in locale per ogni user card\n- [x] screenshare con linux wayland si comporta male",
     "url": "https://github.com/Novyse/novyse/issues/309",
     "parent": 306,
     "sub_issues_summary": {
@@ -3459,10 +3517,10 @@
     "assignees": [],
     "milestone": null,
     "created_at": "2026-06-07T16:42:50Z",
-    "updated_at": "2026-10-04T15:16:49Z",
+    "updated_at": "2026-10-05T16:23:30Z",
     "closed_at": null,
     "author": "SamueleOrazioDurante",
-    "comments_count": 3,
+    "comments_count": 4,
     "body": "Improve the general settings page to manage standard application preferences and account options.",
     "url": "https://github.com/Novyse/novyse/issues/240",
     "parent": 306,
@@ -3520,6 +3578,14 @@
         "updated_at": "2026-10-04T15:16:49Z",
         "body": "Da fare la lista di tutti i settings da attivare prima della release",
         "url": "https://github.com/Novyse/novyse/issues/240#issuecomment-5981480433"
+      },
+      {
+        "id": 5998009838,
+        "author": "SamueleOrazioDurante",
+        "created_at": "2026-10-05T15:51:17Z",
+        "updated_at": "2026-10-05T16:23:30Z",
+        "body": "- Tutto account\n- Input e formattazione > Invia con INvio #315 \n- Password e sicurezza tutto e vedi cosa rinominare nelle descrizioni\n- Lingua e data > Lingua applicazione\n- Info e diagnostica > versione, canale aggiornamenti, link e risorse ufficiali",
+        "url": "https://github.com/Novyse/novyse/issues/240#issuecomment-5998009838"
       }
     ]
   },

@@ -7,7 +7,7 @@
     "closed": false,
     "closedAt": null,
     "createdAt": "2026-06-07T13:45:39Z",
-    "updatedAt": "2026-10-05T09:25:56Z"
+    "updatedAt": "2026-10-05T16:25:00Z"
   },
   "org": "Novyse",
   "fields": [
@@ -1257,14 +1257,14 @@
       }
     },
     {
-      "id": "PVTI_lADOCuSSY84BZ912zg8M9NU",
+      "id": "PVTI_lADOCuSSY84BZ912zg7HYeI",
       "isArchived": false,
       "content": {
         "__typename": "Issue",
-        "number": 317,
-        "title": "When a user is muted (mic/speaker) it should be visible with icons to all other users",
+        "number": 313,
+        "title": "Emoji picker cleanup + android keyboard integration",
         "state": "OPEN",
-        "url": "https://github.com/Novyse/novyse/issues/317",
+        "url": "https://github.com/Novyse/novyse/issues/313",
         "repository": {
           "nameWithOwner": "Novyse/novyse"
         },
@@ -1282,16 +1282,23 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "In Progress",
+            "name": "v1.3 - Flutter",
             "field": {
-              "name": "Status"
+              "name": "Version"
             }
           },
           {
             "__typename": "ProjectV2ItemFieldTextValue",
-            "text": "When a user is muted (mic/speaker) it should be visible with icons to all other users",
+            "text": "Emoji picker cleanup + android keyboard integration",
             "field": {
               "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "In Progress",
+            "field": {
+              "name": "Status"
             }
           },
           {
@@ -1303,13 +1310,6 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.3 - Flutter",
-            "field": {
-              "name": "Version"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
             "name": "Client",
             "field": {
               "name": "Scope"
@@ -1317,7 +1317,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Comms",
+            "name": "UI/UX",
             "field": {
               "name": "Category"
             }
@@ -14481,75 +14481,6 @@
       }
     },
     {
-      "id": "PVTI_lADOCuSSY84BZ912zg7HYeI",
-      "isArchived": false,
-      "content": {
-        "__typename": "Issue",
-        "number": 313,
-        "title": "Emoji picker cleanup + android keyboard integration",
-        "state": "OPEN",
-        "url": "https://github.com/Novyse/novyse/issues/313",
-        "repository": {
-          "nameWithOwner": "Novyse/novyse"
-        },
-        "labels": {
-          "nodes": []
-        },
-        "assignees": {
-          "nodes": []
-        }
-      },
-      "fieldValues": {
-        "nodes": [
-          {
-            "__typename": "ProjectV2ItemFieldRepositoryValue"
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.3 - Flutter",
-            "field": {
-              "name": "Version"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldTextValue",
-            "text": "Emoji picker cleanup + android keyboard integration",
-            "field": {
-              "name": "Title"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Planned",
-            "field": {
-              "name": "Status"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Improvement",
-            "field": {
-              "name": "Classification"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Client",
-            "field": {
-              "name": "Scope"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "UI/UX",
-            "field": {
-              "name": "Category"
-            }
-          }
-        ]
-      }
-    },
-    {
       "id": "PVTI_lADOCuSSY84BZ912zg7HZJ4",
       "isArchived": false,
       "content": {
@@ -14680,6 +14611,75 @@
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
             "name": "UI/UX",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zg8M9NU",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 317,
+        "title": "When a user is muted (mic/speaker) it should be visible with icons to all other users",
+        "state": "CLOSED",
+        "url": "https://github.com/Novyse/novyse/issues/317",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Completed",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "When a user is muted (mic/speaker) it should be visible with icons to all other users",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Improvement",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.3 - Flutter",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Comms",
             "field": {
               "name": "Category"
             }
@@ -14934,8 +14934,56 @@
           }
         ]
       }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zg-pUE0",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 321,
+        "title": "Messages forward",
+        "state": "OPEN",
+        "url": "https://github.com/Novyse/novyse/issues/321",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Unassigned",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "Messages forward",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Planned",
+            "field": {
+              "name": "Status"
+            }
+          }
+        ]
+      }
     }
   ],
-  "fetched": 196,
-  "totalCount": 196
+  "fetched": 197,
+  "totalCount": 197
 }
