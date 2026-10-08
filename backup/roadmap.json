@@ -7,7 +7,7 @@
     "closed": false,
     "closedAt": null,
     "createdAt": "2026-06-07T13:45:39Z",
-    "updatedAt": "2026-10-05T16:25:00Z"
+    "updatedAt": "2026-10-08T08:34:54Z"
   },
   "org": "Novyse",
   "fields": [
@@ -44,6 +44,10 @@
         {
           "id": "306a5944",
           "name": "Discarded"
+        },
+        {
+          "id": "42cf935d",
+          "name": "Blocked"
         }
       ]
     },
@@ -340,6 +344,12 @@
         "nodes": [
           {
             "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemIssueFieldValue"
+          },
+          {
+            "__typename": "ProjectV2ItemIssueFieldValue"
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
@@ -14982,8 +14992,77 @@
           }
         ]
       }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zg_PAlw",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 322,
+        "title": "[Linux] Wayland screen share",
+        "state": "OPEN",
+        "url": "https://github.com/Novyse/novyse/issues/322",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Unassigned",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "[Linux] Wayland screen share",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Blocked",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Bug Fix",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Comms",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
     }
   ],
-  "fetched": 197,
-  "totalCount": 197
+  "fetched": 198,
+  "totalCount": 198
 }

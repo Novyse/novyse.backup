@@ -1,5 +1,46 @@
 [
   {
+    "number": 322,
+    "title": "[Linux] Wayland screen share",
+    "state": "open",
+    "state_reason": null,
+    "is_pull_request": false,
+    "labels": [],
+    "assignees": [],
+    "milestone": null,
+    "created_at": "2026-10-07T20:22:41Z",
+    "updated_at": "2026-10-08T08:33:45Z",
+    "closed_at": null,
+    "author": "SamueleOrazioDurante",
+    "comments_count": 1,
+    "body": "When initiating a screen share via `navigator.mediaDevices.getDisplayMedia()` without passing an explicit `deviceId` on Linux Wayland:\n\n1. [ ] **Double portal prompt on initial call:** The OS permissions/source picker dialog (`xdg-desktop-portal`) appears **twice** in a row before capturing begins. On subsequent screen-share sessions in the same app lifecycle, it only prompts once.\n2. [x] **Cannot share individual windows:** The portal dialog only shows physical monitors/displays; the \"Window\" tab/option is completely absent.\n\n---\n\n### Root Cause Analysis (`common/cpp/src/flutter_screen_capture.cc`)\n\n#### 1. Double prompt on initial call:\nIn `FlutterScreenCapture::GetDisplayMedia`:\n```cpp\n#ifdef __linux__\n  if (!source.get() && !sources_.empty() && source_id == \"0\") {\n    source = sources_.front();\n  }\n  if (!source.get()) {\n    EncodableList types;\n    types.push_back(EncodableValue(std::string(\"screen\")));\n    BuildDesktopSourcesList(types, true); // <--- Triggers Portal Prompt #1\n    for (auto src : sources_) {\n      if (src->id().std_string() == source_id) {\n        source = src;\n      }\n    }\n    if (!source.get() && !sources_.empty() && source_id == \"0\") {\n      source = sources_.front();\n    }\n  }\n#endif\n```\n- **First call:** `sources_` is empty in memory, so `if (!source.get())` evaluates to `true` and triggers `BuildDesktopSourcesList`. On Wayland, this interacts with `xdg-desktop-portal` (`SelectSources`), prompting the user (**Prompt 1**).\n- Immediately afterward, `base_->desktop_device_->CreateDesktopCapturer(source, show_cursor)` is called to create the actual PipeWire capturer instance. When started, `BaseCapturerPipeWire` initiates its own portal session, causing the portal dialog to appear again (**Prompt 2**).\n- **Subsequent calls:** `sources_` already retains the cached entry in memory (`!sources_.empty()`), so `source = sources_.front()` succeeds and `BuildDesktopSourcesList` is skipped, leaving only Prompt 2.\n\n#### 2. Display-only restriction (no window sharing):\n- `GetDisplayMedia` hardcodes `types.push_back(EncodableValue(std::string(\"screen\")))`. It never requests `\"window\"`.\n- In `libwebrtc`, `DesktopType::kScreen` translates to the portal `ScreenCast` option `types = 1` (`MONITOR`). Because the `WINDOW` flag (`2`) or combined flags (`1 | 2 = 3`) are not passed to `SelectSources`, `xdg-desktop-portal` restricts the system picker strictly to entire screens.\n",
+    "url": "https://github.com/Novyse/novyse/issues/322",
+    "parent": null,
+    "sub_issues_summary": {
+      "total": 0,
+      "completed": 0,
+      "percent_completed": 0
+    },
+    "sub_issues": [],
+    "issue_field_values": [],
+    "issue_dependencies": {
+      "blocked_by": 0,
+      "total_blocked_by": 0,
+      "blocking": 0,
+      "total_blocking": 0
+    },
+    "comments": [
+      {
+        "id": 6055987593,
+        "author": "SamueleOrazioDurante",
+        "created_at": "2026-10-08T08:33:45Z",
+        "updated_at": "2026-10-08T08:33:45Z",
+        "body": "When calling `getDisplayMedia()`, the `flutter_webrtc` plugin internally creates **two separate WebRTC capturer instances on parallel worker threads**:\n 1. A temporary one (`BuildDesktopSourcesList`) just to query available sources.\n 2. The actual streaming capturer (`CreateDesktopCapturer`) to acquire the video feed.\n\nBecause both instances originate from the precompiled `libwebrtc.so` and make identical, concurrent D-Bus calls, intercepting or cancelling one of them from outside the library triggers an unavoidable thread race condition that cancels the active stream and breaks PipeWire video capture. \n\nA clean fix would require modifying the `flutter_webrtc` plugin itself to bypass the dummy enumeration step on Wayland, we should consider opening an issue on the official flutter_webrtc library.",
+        "url": "https://github.com/Novyse/novyse/issues/322#issuecomment-6055987593"
+      }
+    ]
+  },
+  {
     "number": 321,
     "title": "Messages forward",
     "state": "open",
@@ -481,10 +522,10 @@
     "assignees": [],
     "milestone": null,
     "created_at": "2026-09-05T11:00:41Z",
-    "updated_at": "2026-09-24T15:12:59Z",
+    "updated_at": "2026-10-07T21:20:12Z",
     "closed_at": null,
     "author": "SamueleOrazioDurante",
-    "comments_count": 5,
+    "comments_count": 8,
     "body": "- [x] Icon tray (background activity)\n- [x] Custom title bar\n- [x] Open on start-up (#240)\n   - [x] Open as minimized",
     "url": "https://github.com/Novyse/novyse/issues/310",
     "parent": 306,
@@ -541,6 +582,30 @@
         "updated_at": "2026-09-24T10:18:58Z",
         "body": "decisamente colpa della libreria, aspettiamo che sia supportata decentemente la tray",
         "url": "https://github.com/Novyse/novyse/issues/310#issuecomment-5812248666"
+      },
+      {
+        "id": 6046049859,
+        "author": "SamueleOrazioDurante",
+        "created_at": "2026-10-07T20:17:08Z",
+        "updated_at": "2026-10-07T20:17:08Z",
+        "body": "Ultima versione dovrebbe aver fixato problemi di full screen con windows #309 e in teoria problemi con la tray, da vedere",
+        "url": "https://github.com/Novyse/novyse/issues/310#issuecomment-6046049859"
+      },
+      {
+        "id": 6047045127,
+        "author": "SamueleOrazioDurante",
+        "created_at": "2026-10-07T21:18:07Z",
+        "updated_at": "2026-10-07T21:18:07Z",
+        "body": "- [ ] Windows fullscreen crashes the app, nativeapi 0.5.0 should fix this problem\n- [ ] Windows tray does not close/open app, only quit button works",
+        "url": "https://github.com/Novyse/novyse/issues/310#issuecomment-6047045127"
+      },
+      {
+        "id": 6047079838,
+        "author": "SamueleOrazioDurante",
+        "created_at": "2026-10-07T21:20:12Z",
+        "updated_at": "2026-10-07T21:20:12Z",
+        "body": "Tray left/right clicks works, toggleWindow does not",
+        "url": "https://github.com/Novyse/novyse/issues/310#issuecomment-6047079838"
       }
     ]
   },
@@ -554,11 +619,11 @@
     "assignees": [],
     "milestone": null,
     "created_at": "2026-09-05T10:56:58Z",
-    "updated_at": "2026-10-05T10:55:53Z",
+    "updated_at": "2026-10-07T21:17:49Z",
     "closed_at": null,
     "author": "SamueleOrazioDurante",
-    "comments_count": 0,
-    "body": "- [x] non puoi cambiare microfono (su mobile se cambi output audio cambi anche microfono, da capire)\n     (se non è possibile cambiare 1 dispositivo alla volta allora unire microfono+output insieme solo su android/ios)\n- [x] non puoi cambiare cam (+ su mobile solo switch front/back camera)\n- [x] non puoi cambiare output audio\n- [x] fullscreen non funziona bene\n- [x] screenshare non si vede quando sei fuori dalla chat vocale\n- [x] status message è lungo in culo (errore in bottombar)\n- [ ] modifica impostazioni per migliorare audio/video/screenshare\n- [ ] riduzione del rumore\n- [x] context menu custom per mute/volume change in locale per ogni user card\n- [x] screenshare con linux wayland si comporta male",
+    "comments_count": 2,
+    "body": "- [x] non puoi cambiare microfono (su mobile se cambi output audio cambi anche microfono, da capire)\n     (se non è possibile cambiare 1 dispositivo alla volta allora unire microfono+output insieme solo su android/ios)\n- [x] non puoi cambiare cam (+ su mobile solo switch front/back camera)\n- [x] non puoi cambiare output audio\n- [x] fullscreen non funziona bene\n- [x] screenshare non si vede quando sei fuori dalla chat vocale\n- [x] status message è lungo in culo (errore in bottombar)\n- [x] modifica impostazioni per migliorare audio/video/screenshare\n- [x] riduzione del rumore\n- [x] context menu custom per mute/volume change in locale per ogni user card\n- [x] screenshare con linux wayland si comporta male",
     "url": "https://github.com/Novyse/novyse/issues/309",
     "parent": 306,
     "sub_issues_summary": {
@@ -574,7 +639,24 @@
       "blocking": 0,
       "total_blocking": 0
     },
-    "comments": []
+    "comments": [
+      {
+        "id": 6044347289,
+        "author": "SamueleOrazioDurante",
+        "created_at": "2026-10-07T18:34:56Z",
+        "updated_at": "2026-10-07T21:17:49Z",
+        "body": "To fix:\n- [x] Local screen share is not visible anymore\n- [x] When user is not in current comms no mute icon should appear in user card\n- [x] Mobile needs to double tap to open context menu, just reduce it to single tap\n- [ ] Change fps/quality live\n- [ ] Mobile screen share does not work",
+        "url": "https://github.com/Novyse/novyse/issues/309#issuecomment-6044347289"
+      },
+      {
+        "id": 6045828935,
+        "author": "SamueleOrazioDurante",
+        "created_at": "2026-10-07T20:03:29Z",
+        "updated_at": "2026-10-07T20:03:29Z",
+        "body": "1fd9829950f886753679b51f0ce6fbaac4989e27",
+        "url": "https://github.com/Novyse/novyse/issues/309#issuecomment-6045828935"
+      }
+    ]
   },
   {
     "number": 308,
@@ -659,7 +741,7 @@
     "assignees": [],
     "milestone": null,
     "created_at": "2026-08-31T07:05:09Z",
-    "updated_at": "2026-09-26T20:14:52Z",
+    "updated_at": "2026-10-07T20:29:27Z",
     "closed_at": null,
     "author": "SamueleOrazioDurante",
     "comments_count": 0,
@@ -679,7 +761,22 @@
       311,
       312
     ],
-    "issue_field_values": [],
+    "issue_field_values": [
+      {
+        "issue_field_id": 30474187,
+        "node_id": "IFDV_kgDOALWIWw",
+        "data_type": "date",
+        "issue_field_name": "Start date",
+        "value": "2026-08-31"
+      },
+      {
+        "issue_field_id": 30474188,
+        "node_id": "IFDV_kgDOALWIYA",
+        "data_type": "date",
+        "issue_field_name": "Target date",
+        "value": "2026-10-12"
+      }
+    ],
     "issue_dependencies": {
       "blocked_by": 0,
       "total_blocked_by": 0,
@@ -3517,7 +3614,7 @@
     "assignees": [],
     "milestone": null,
     "created_at": "2026-06-07T16:42:50Z",
-    "updated_at": "2026-10-05T16:23:30Z",
+    "updated_at": "2026-10-07T20:28:55Z",
     "closed_at": null,
     "author": "SamueleOrazioDurante",
     "comments_count": 4,
@@ -3545,7 +3642,7 @@
         "node_id": "IFDV_kgDOABziXg",
         "data_type": "date",
         "issue_field_name": "Target date",
-        "value": "2026-10-31"
+        "value": "2026-10-12"
       }
     ],
     "issue_dependencies": {
@@ -3599,10 +3696,10 @@
     "assignees": [],
     "milestone": null,
     "created_at": "2026-06-07T16:42:33Z",
-    "updated_at": "2026-09-23T15:50:20Z",
+    "updated_at": "2026-10-07T20:28:48Z",
     "closed_at": null,
     "author": "SamueleOrazioDurante",
-    "comments_count": 0,
+    "comments_count": 2,
     "body": "Allow users to modify screen share settings for individual active screen shares in real-time.",
     "url": "https://github.com/Novyse/novyse/issues/239",
     "parent": 238,
@@ -3625,7 +3722,7 @@
         "node_id": "IFDV_kgDOABziXQ",
         "data_type": "date",
         "issue_field_name": "Target date",
-        "value": "2026-10-31"
+        "value": "2026-10-12"
       }
     ],
     "issue_dependencies": {
@@ -3634,7 +3731,24 @@
       "blocking": 0,
       "total_blocking": 0
     },
-    "comments": []
+    "comments": [
+      {
+        "id": 6045824694,
+        "author": "SamueleOrazioDurante",
+        "created_at": "2026-10-07T20:03:13Z",
+        "updated_at": "2026-10-07T20:03:13Z",
+        "body": "1fd9829950f886753679b51f0ce6fbaac4989e27",
+        "url": "https://github.com/Novyse/novyse/issues/239#issuecomment-6045824694"
+      },
+      {
+        "id": 6046190646,
+        "author": "SamueleOrazioDurante",
+        "created_at": "2026-10-07T20:25:32Z",
+        "updated_at": "2026-10-07T20:25:32Z",
+        "body": "- [ ] Live settings changes\n- [ ] Better UI",
+        "url": "https://github.com/Novyse/novyse/issues/239#issuecomment-6046190646"
+      }
+    ]
   },
   {
     "number": 238,
@@ -3646,10 +3760,10 @@
     "assignees": [],
     "milestone": null,
     "created_at": "2026-06-07T16:42:16Z",
-    "updated_at": "2026-09-23T15:50:17Z",
+    "updated_at": "2026-10-07T20:29:04Z",
     "closed_at": null,
     "author": "SamueleOrazioDurante",
-    "comments_count": 0,
+    "comments_count": 1,
     "body": "Add a settings page for comms to manage voice and video comms preferences.",
     "url": "https://github.com/Novyse/novyse/issues/238",
     "parent": 240,
@@ -3674,7 +3788,7 @@
         "node_id": "IFDV_kgDOABziXA",
         "data_type": "date",
         "issue_field_name": "Target date",
-        "value": "2026-10-31"
+        "value": "2026-10-12"
       }
     ],
     "issue_dependencies": {
@@ -3683,7 +3797,16 @@
       "blocking": 0,
       "total_blocking": 0
     },
-    "comments": []
+    "comments": [
+      {
+        "id": 6045827291,
+        "author": "SamueleOrazioDurante",
+        "created_at": "2026-10-07T20:03:23Z",
+        "updated_at": "2026-10-07T20:03:23Z",
+        "body": "1fd9829950f886753679b51f0ce6fbaac4989e27",
+        "url": "https://github.com/Novyse/novyse/issues/238#issuecomment-6045827291"
+      }
+    ]
   },
   {
     "number": 237,
