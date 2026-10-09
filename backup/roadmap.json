@@ -7,7 +7,7 @@
     "closed": false,
     "closedAt": null,
     "createdAt": "2026-06-07T13:45:39Z",
-    "updatedAt": "2026-10-08T08:34:54Z"
+    "updatedAt": "2026-10-08T21:36:39Z"
   },
   "org": "Novyse",
   "fields": [
@@ -460,75 +460,6 @@
             "name": "Improvement",
             "field": {
               "name": "Classification"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "id": "PVTI_lADOCuSSY84BZ912zg5jx1E",
-      "isArchived": false,
-      "content": {
-        "__typename": "Issue",
-        "number": 309,
-        "title": "Vocal chat",
-        "state": "OPEN",
-        "url": "https://github.com/Novyse/novyse/issues/309",
-        "repository": {
-          "nameWithOwner": "Novyse/novyse"
-        },
-        "labels": {
-          "nodes": []
-        },
-        "assignees": {
-          "nodes": []
-        }
-      },
-      "fieldValues": {
-        "nodes": [
-          {
-            "__typename": "ProjectV2ItemFieldRepositoryValue"
-          },
-          {
-            "__typename": "ProjectV2ItemFieldTextValue",
-            "text": "Vocal chat",
-            "field": {
-              "name": "Title"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "In Progress",
-            "field": {
-              "name": "Status"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Improvement",
-            "field": {
-              "name": "Classification"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.3 - Flutter",
-            "field": {
-              "name": "Version"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Client+Server",
-            "field": {
-              "name": "Scope"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Comms",
-            "field": {
-              "name": "Category"
             }
           }
         ]
@@ -1102,156 +1033,6 @@
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
             "name": "Client",
-            "field": {
-              "name": "Scope"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Settings",
-            "field": {
-              "name": "Category"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "id": "PVTI_lADOCuSSY84BZ912zgu-EbA",
-      "isArchived": false,
-      "content": {
-        "__typename": "Issue",
-        "number": 238,
-        "title": "Comms Settings",
-        "state": "OPEN",
-        "url": "https://github.com/Novyse/novyse/issues/238",
-        "repository": {
-          "nameWithOwner": "Novyse/novyse"
-        },
-        "labels": {
-          "nodes": []
-        },
-        "assignees": {
-          "nodes": []
-        }
-      },
-      "fieldValues": {
-        "nodes": [
-          {
-            "__typename": "ProjectV2ItemFieldRepositoryValue"
-          },
-          {
-            "__typename": "ProjectV2ItemIssueFieldValue"
-          },
-          {
-            "__typename": "ProjectV2ItemIssueFieldValue"
-          },
-          {
-            "__typename": "ProjectV2ItemFieldTextValue",
-            "text": "Comms Settings",
-            "field": {
-              "name": "Title"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "In Progress",
-            "field": {
-              "name": "Status"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Feature",
-            "field": {
-              "name": "Classification"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.3 - Flutter",
-            "field": {
-              "name": "Version"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Client",
-            "field": {
-              "name": "Scope"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Settings",
-            "field": {
-              "name": "Category"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "id": "PVTI_lADOCuSSY84BZ912zgu-Ecs",
-      "isArchived": false,
-      "content": {
-        "__typename": "Issue",
-        "number": 239,
-        "title": "Screen Share Settings",
-        "state": "OPEN",
-        "url": "https://github.com/Novyse/novyse/issues/239",
-        "repository": {
-          "nameWithOwner": "Novyse/novyse"
-        },
-        "labels": {
-          "nodes": []
-        },
-        "assignees": {
-          "nodes": []
-        }
-      },
-      "fieldValues": {
-        "nodes": [
-          {
-            "__typename": "ProjectV2ItemFieldRepositoryValue"
-          },
-          {
-            "__typename": "ProjectV2ItemIssueFieldValue"
-          },
-          {
-            "__typename": "ProjectV2ItemIssueFieldValue"
-          },
-          {
-            "__typename": "ProjectV2ItemFieldTextValue",
-            "text": "Screen Share Settings",
-            "field": {
-              "name": "Title"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "In Progress",
-            "field": {
-              "name": "Status"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Feature",
-            "field": {
-              "name": "Classification"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.3 - Flutter",
-            "field": {
-              "name": "Version"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Client+Server",
             "field": {
               "name": "Scope"
             }
@@ -14698,13 +14479,232 @@
       }
     },
     {
+      "id": "PVTI_lADOCuSSY84BZ912zgu-Ecs",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 239,
+        "title": "Screen Share Settings",
+        "state": "CLOSED",
+        "url": "https://github.com/Novyse/novyse/issues/239",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemIssueFieldValue"
+          },
+          {
+            "__typename": "ProjectV2ItemIssueFieldValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "Screen Share Settings",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Completed",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Feature",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.3 - Flutter",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client+Server",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Settings",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zgu-EbA",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 238,
+        "title": "Comms Settings",
+        "state": "CLOSED",
+        "url": "https://github.com/Novyse/novyse/issues/238",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemIssueFieldValue"
+          },
+          {
+            "__typename": "ProjectV2ItemIssueFieldValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "Comms Settings",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Completed",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Feature",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.3 - Flutter",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Settings",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zg5jx1E",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 309,
+        "title": "Vocal chat",
+        "state": "CLOSED",
+        "url": "https://github.com/Novyse/novyse/issues/309",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "Vocal chat",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Completed",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Improvement",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.3 - Flutter",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client+Server",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Comms",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
+    },
+    {
       "id": "PVTI_lADOCuSSY84BZ912zg7HZfc",
       "isArchived": false,
       "content": {
         "__typename": "Issue",
         "number": 315,
         "title": "(desktop) Shortcuts",
-        "state": "OPEN",
+        "state": "CLOSED",
         "url": "https://github.com/Novyse/novyse/issues/315",
         "repository": {
           "nameWithOwner": "Novyse/novyse"
@@ -14737,7 +14737,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Planned",
+            "name": "Completed",
             "field": {
               "name": "Status"
             }

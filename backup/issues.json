@@ -279,18 +279,18 @@
   {
     "number": 315,
     "title": "(desktop) Shortcuts",
-    "state": "open",
-    "state_reason": null,
+    "state": "closed",
+    "state_reason": "completed",
     "is_pull_request": false,
     "labels": [],
     "assignees": [],
     "milestone": null,
     "created_at": "2026-09-15T19:59:28Z",
-    "updated_at": "2026-09-15T20:01:02Z",
-    "closed_at": null,
+    "updated_at": "2026-10-08T21:36:38Z",
+    "closed_at": "2026-10-08T21:36:38Z",
     "author": "SamueleOrazioDurante",
     "comments_count": 0,
-    "body": "| Key | Action  |  \n|---|---|\n|  Enter |  Send message |  \n|CTRL + Enter  |  New line |  \n| Arrow UP  | Latest message edit OR reply  |\n... ",
+    "body": "| Key | Action  |  \n|---|---|\n|  Enter |  Send message |  \n|SHIFT + Enter  |  New line |  \n| Arrow UP  | Latest message edit OR reply  |",
     "url": "https://github.com/Novyse/novyse/issues/315",
     "parent": null,
     "sub_issues_summary": {
@@ -612,15 +612,15 @@
   {
     "number": 309,
     "title": "Vocal chat",
-    "state": "open",
-    "state_reason": null,
+    "state": "closed",
+    "state_reason": "completed",
     "is_pull_request": false,
     "labels": [],
     "assignees": [],
     "milestone": null,
     "created_at": "2026-09-05T10:56:58Z",
-    "updated_at": "2026-10-07T21:17:49Z",
-    "closed_at": null,
+    "updated_at": "2026-10-08T20:28:02Z",
+    "closed_at": "2026-10-08T20:28:01Z",
     "author": "SamueleOrazioDurante",
     "comments_count": 2,
     "body": "- [x] non puoi cambiare microfono (su mobile se cambi output audio cambi anche microfono, da capire)\n     (se non è possibile cambiare 1 dispositivo alla volta allora unire microfono+output insieme solo su android/ios)\n- [x] non puoi cambiare cam (+ su mobile solo switch front/back camera)\n- [x] non puoi cambiare output audio\n- [x] fullscreen non funziona bene\n- [x] screenshare non si vede quando sei fuori dalla chat vocale\n- [x] status message è lungo in culo (errore in bottombar)\n- [x] modifica impostazioni per migliorare audio/video/screenshare\n- [x] riduzione del rumore\n- [x] context menu custom per mute/volume change in locale per ogni user card\n- [x] screenshare con linux wayland si comporta male",
@@ -644,8 +644,8 @@
         "id": 6044347289,
         "author": "SamueleOrazioDurante",
         "created_at": "2026-10-07T18:34:56Z",
-        "updated_at": "2026-10-07T21:17:49Z",
-        "body": "To fix:\n- [x] Local screen share is not visible anymore\n- [x] When user is not in current comms no mute icon should appear in user card\n- [x] Mobile needs to double tap to open context menu, just reduce it to single tap\n- [ ] Change fps/quality live\n- [ ] Mobile screen share does not work",
+        "updated_at": "2026-10-08T20:12:54Z",
+        "body": "To fix:\n- [x] Local screen share is not visible anymore\n- [x] When user is not in current comms no mute icon should appear in user card\n- [x] Mobile needs to double tap to open context menu, just reduce it to single tap\n- [x] Mobile screen share does not work",
         "url": "https://github.com/Novyse/novyse/issues/309#issuecomment-6044347289"
       },
       {
@@ -741,17 +741,17 @@
     "assignees": [],
     "milestone": null,
     "created_at": "2026-08-31T07:05:09Z",
-    "updated_at": "2026-10-07T20:29:27Z",
+    "updated_at": "2026-10-08T20:28:30Z",
     "closed_at": null,
     "author": "SamueleOrazioDurante",
     "comments_count": 0,
-    "body": "* [ ] **Onboarding**\n  - [x] Initial Setup\n  - [ ] Fully Done\n\n* [ ] **Signup**\n  - [x] Initial Setup\n  - [ ] Fully Done\n\n* [ ] **Login**\n  - [x] Initial Setup\n  - [ ] Fully Done\n\n* [ ] **Update required**\n  - [x] Initial Setup\n  - [ ] Fully Done\n\n* [ ] **Main app**\n  - [x] Initial Setup\n  - [ ] Fully Done\n\n* [ ] **Chat**\n  - [x] Initial Setup\n  - [ ] Fully Done\n\n* [ ] **Vocal**\n  - [x] Initial Setup\n  - [ ] Fully Done\n\n* [ ] **Profile**\n  - [ ] Initial Setup\n  - [ ] Fully Done\n\n* [ ] **Settings**\n  - [x] Initial Setup\n  - [ ] Fully Done\n  \n* [ ] **Forward**\n* [x] **Init**\n* [ ] **Update**\n* [x] **User store**\n* [x] **Chat store**\n* [x] **Msg store**",
+    "body": "* [ ] **Onboarding**\n  - [x] Initial Setup\n  - [ ] Fully Done\n\n* [ ] **Signup**\n  - [x] Initial Setup\n  - [ ] Fully Done\n\n* [ ] **Login**\n  - [x] Initial Setup\n  - [ ] Fully Done\n\n* [ ] **Update required**\n  - [x] Initial Setup\n  - [ ] Fully Done\n\n* [ ] **Main app**\n  - [x] Initial Setup\n  - [ ] Fully Done\n\n* [ ] **Chat**\n  - [x] Initial Setup\n  - [ ] Fully Done\n\n* [ ] **Vocal**\n  - [x] Initial Setup\n  - [ ] Fully Done\n\n* [ ] **Profile**\n  - [ ] Initial Setup\n  - [ ] Fully Done\n\n* [ ] **Settings**\n  - [x] Initial Setup\n  - [ ] Fully Done\n  \n* [x] **Init**\n* [ ] **Update**\n* [x] **User store**\n* [x] **Chat store**\n* [x] **Msg store**",
     "url": "https://github.com/Novyse/novyse/issues/306",
     "parent": null,
     "sub_issues_summary": {
       "total": 6,
-      "completed": 2,
-      "percent_completed": 33
+      "completed": 3,
+      "percent_completed": 50
     },
     "sub_issues": [
       240,
@@ -3623,8 +3623,8 @@
     "parent": 306,
     "sub_issues_summary": {
       "total": 1,
-      "completed": 0,
-      "percent_completed": 0
+      "completed": 1,
+      "percent_completed": 100
     },
     "sub_issues": [
       238
@@ -3689,17 +3689,17 @@
   {
     "number": 239,
     "title": "Screen Share Settings",
-    "state": "open",
-    "state_reason": null,
+    "state": "closed",
+    "state_reason": "completed",
     "is_pull_request": false,
     "labels": [],
     "assignees": [],
     "milestone": null,
     "created_at": "2026-06-07T16:42:33Z",
-    "updated_at": "2026-10-07T20:28:48Z",
-    "closed_at": null,
+    "updated_at": "2026-10-08T20:27:38Z",
+    "closed_at": "2026-10-08T20:27:38Z",
     "author": "SamueleOrazioDurante",
-    "comments_count": 2,
+    "comments_count": 3,
     "body": "Allow users to modify screen share settings for individual active screen shares in real-time.",
     "url": "https://github.com/Novyse/novyse/issues/239",
     "parent": 238,
@@ -3722,7 +3722,7 @@
         "node_id": "IFDV_kgDOABziXQ",
         "data_type": "date",
         "issue_field_name": "Target date",
-        "value": "2026-10-12"
+        "value": "2026-10-08"
       }
     ],
     "issue_dependencies": {
@@ -3744,24 +3744,32 @@
         "id": 6046190646,
         "author": "SamueleOrazioDurante",
         "created_at": "2026-10-07T20:25:32Z",
-        "updated_at": "2026-10-07T20:25:32Z",
-        "body": "- [ ] Live settings changes\n- [ ] Better UI",
+        "updated_at": "2026-10-08T20:13:20Z",
+        "body": "- [x] Better UI",
         "url": "https://github.com/Novyse/novyse/issues/239#issuecomment-6046190646"
+      },
+      {
+        "id": 6058094331,
+        "author": "SamueleOrazioDurante",
+        "created_at": "2026-10-08T10:42:06Z",
+        "updated_at": "2026-10-08T10:42:06Z",
+        "body": "Metti Status Message al posto di errore dentro text per errori relativi al bitrate, vedi se fattibile nelle impostazioni casomai metti solo nel modal",
+        "url": "https://github.com/Novyse/novyse/issues/239#issuecomment-6058094331"
       }
     ]
   },
   {
     "number": 238,
     "title": "Comms Settings",
-    "state": "open",
-    "state_reason": null,
+    "state": "closed",
+    "state_reason": "completed",
     "is_pull_request": false,
     "labels": [],
     "assignees": [],
     "milestone": null,
     "created_at": "2026-06-07T16:42:16Z",
-    "updated_at": "2026-10-07T20:29:04Z",
-    "closed_at": null,
+    "updated_at": "2026-10-08T20:27:46Z",
+    "closed_at": "2026-10-08T20:27:46Z",
     "author": "SamueleOrazioDurante",
     "comments_count": 1,
     "body": "Add a settings page for comms to manage voice and video comms preferences.",
@@ -3769,8 +3777,8 @@
     "parent": 240,
     "sub_issues_summary": {
       "total": 1,
-      "completed": 0,
-      "percent_completed": 0
+      "completed": 1,
+      "percent_completed": 100
     },
     "sub_issues": [
       239
@@ -3788,7 +3796,7 @@
         "node_id": "IFDV_kgDOABziXA",
         "data_type": "date",
         "issue_field_name": "Target date",
-        "value": "2026-10-12"
+        "value": "2026-10-08"
       }
     ],
     "issue_dependencies": {
