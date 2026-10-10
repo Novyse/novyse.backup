@@ -7,7 +7,7 @@
     "closed": false,
     "closedAt": null,
     "createdAt": "2026-06-07T13:45:39Z",
-    "updatedAt": "2026-10-08T21:36:39Z"
+    "updatedAt": "2026-10-09T15:12:34Z"
   },
   "org": "Novyse",
   "fields": [
@@ -11331,7 +11331,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.3 - Flutter",
+            "name": "Unassigned",
             "field": {
               "name": "Version"
             }

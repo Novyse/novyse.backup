@@ -741,11 +741,11 @@
     "assignees": [],
     "milestone": null,
     "created_at": "2026-08-31T07:05:09Z",
-    "updated_at": "2026-10-08T20:28:30Z",
+    "updated_at": "2026-10-09T15:12:33Z",
     "closed_at": null,
     "author": "SamueleOrazioDurante",
     "comments_count": 0,
-    "body": "* [ ] **Onboarding**\n  - [x] Initial Setup\n  - [ ] Fully Done\n\n* [ ] **Signup**\n  - [x] Initial Setup\n  - [ ] Fully Done\n\n* [ ] **Login**\n  - [x] Initial Setup\n  - [ ] Fully Done\n\n* [ ] **Update required**\n  - [x] Initial Setup\n  - [ ] Fully Done\n\n* [ ] **Main app**\n  - [x] Initial Setup\n  - [ ] Fully Done\n\n* [ ] **Chat**\n  - [x] Initial Setup\n  - [ ] Fully Done\n\n* [ ] **Vocal**\n  - [x] Initial Setup\n  - [ ] Fully Done\n\n* [ ] **Profile**\n  - [ ] Initial Setup\n  - [ ] Fully Done\n\n* [ ] **Settings**\n  - [x] Initial Setup\n  - [ ] Fully Done\n  \n* [x] **Init**\n* [ ] **Update**\n* [x] **User store**\n* [x] **Chat store**\n* [x] **Msg store**",
+    "body": "* [ ] **Onboarding**\n  - [x] Initial Setup\n  - [ ] Fully Done\n\n* [ ] **Signup**\n  - [x] Initial Setup\n  - [ ] Fully Done\n\n* [ ] **Login**\n  - [x] Initial Setup\n  - [ ] Fully Done\n\n* [ ] **Update required**\n  - [x] Initial Setup\n  - [ ] Fully Done\n\n* [ ] **Main app**\n  - [x] Initial Setup\n  - [ ] Fully Done\n\n* [ ] **Chat**\n  - [x] Initial Setup\n  - [ ] Fully Done\n\n* [ ] **Vocal**\n  - [x] Initial Setup\n  - [ ] Fully Done\n\n* [ ] **Profile**\n  - [x] Initial Setup\n  - [ ] Fully Done\n\n* [ ] **Settings**\n  - [x] Initial Setup\n  - [ ] Fully Done\n  \n* [x] **Init**\n* [ ] **Update**\n* [x] **User store**\n* [x] **Chat store**\n* [x] **Msg store**",
     "url": "https://github.com/Novyse/novyse/issues/306",
     "parent": null,
     "sub_issues_summary": {
