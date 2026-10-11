@@ -7,7 +7,7 @@
     "closed": false,
     "closedAt": null,
     "createdAt": "2026-06-07T13:45:39Z",
-    "updatedAt": "2026-10-09T15:12:34Z"
+    "updatedAt": "2026-10-10T19:59:45Z"
   },
   "org": "Novyse",
   "fields": [
@@ -191,7 +191,7 @@
         },
         {
           "id": "5973e0f1",
-          "name": "v1.3 - Flutter"
+          "name": "v1.3 - Flutter Migration"
         },
         {
           "id": "92770627",
@@ -322,219 +322,6 @@
   ],
   "items": [
     {
-      "id": "PVTI_lADOCuSSY84BZ912zg4sIVc",
-      "isArchived": false,
-      "content": {
-        "__typename": "Issue",
-        "number": 306,
-        "title": "Flutter Migration",
-        "state": "OPEN",
-        "url": "https://github.com/Novyse/novyse/issues/306",
-        "repository": {
-          "nameWithOwner": "Novyse/novyse"
-        },
-        "labels": {
-          "nodes": []
-        },
-        "assignees": {
-          "nodes": []
-        }
-      },
-      "fieldValues": {
-        "nodes": [
-          {
-            "__typename": "ProjectV2ItemFieldRepositoryValue"
-          },
-          {
-            "__typename": "ProjectV2ItemIssueFieldValue"
-          },
-          {
-            "__typename": "ProjectV2ItemIssueFieldValue"
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "In Progress",
-            "field": {
-              "name": "Status"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldTextValue",
-            "text": "Flutter Migration",
-            "field": {
-              "name": "Title"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.3 - Flutter",
-            "field": {
-              "name": "Version"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Client",
-            "field": {
-              "name": "Scope"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Miscellaneous",
-            "field": {
-              "name": "Category"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Feature",
-            "field": {
-              "name": "Classification"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "id": "PVTI_lADOCuSSY84BZ912zg5rY14",
-      "isArchived": false,
-      "content": {
-        "__typename": "Issue",
-        "number": 312,
-        "title": "Chat",
-        "state": "OPEN",
-        "url": "https://github.com/Novyse/novyse/issues/312",
-        "repository": {
-          "nameWithOwner": "Novyse/novyse"
-        },
-        "labels": {
-          "nodes": []
-        },
-        "assignees": {
-          "nodes": []
-        }
-      },
-      "fieldValues": {
-        "nodes": [
-          {
-            "__typename": "ProjectV2ItemFieldRepositoryValue"
-          },
-          {
-            "__typename": "ProjectV2ItemFieldTextValue",
-            "text": "Chat",
-            "field": {
-              "name": "Title"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "In Progress",
-            "field": {
-              "name": "Status"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Chat",
-            "field": {
-              "name": "Category"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Client+Server",
-            "field": {
-              "name": "Scope"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.3 - Flutter",
-            "field": {
-              "name": "Version"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Improvement",
-            "field": {
-              "name": "Classification"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "id": "PVTI_lADOCuSSY84BZ912zg5jzBc",
-      "isArchived": false,
-      "content": {
-        "__typename": "Issue",
-        "number": 310,
-        "title": "Desktop",
-        "state": "OPEN",
-        "url": "https://github.com/Novyse/novyse/issues/310",
-        "repository": {
-          "nameWithOwner": "Novyse/novyse"
-        },
-        "labels": {
-          "nodes": []
-        },
-        "assignees": {
-          "nodes": []
-        }
-      },
-      "fieldValues": {
-        "nodes": [
-          {
-            "__typename": "ProjectV2ItemFieldRepositoryValue"
-          },
-          {
-            "__typename": "ProjectV2ItemFieldTextValue",
-            "text": "Desktop",
-            "field": {
-              "name": "Title"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "In Progress",
-            "field": {
-              "name": "Status"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Improvement",
-            "field": {
-              "name": "Classification"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.3 - Flutter",
-            "field": {
-              "name": "Version"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Client",
-            "field": {
-              "name": "Scope"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Desktop",
-            "field": {
-              "name": "Category"
-            }
-          }
-        ]
-      }
-    },
-    {
       "id": "PVTI_lADOCuSSY84BZ912zgu-EXc",
       "isArchived": false,
       "content": {
@@ -587,7 +374,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.3 - Flutter",
+            "name": "v1.3 - Flutter Migration",
             "field": {
               "name": "Version"
             }
@@ -662,7 +449,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.3 - Flutter",
+            "name": "v1.3 - Flutter Migration",
             "field": {
               "name": "Version"
             }
@@ -710,7 +497,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.3 - Flutter",
+            "name": "v1.3 - Flutter Migration",
             "field": {
               "name": "Version"
             }
@@ -806,7 +593,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.3 - Flutter",
+            "name": "v1.3 - Flutter Migration",
             "field": {
               "name": "Version"
             }
@@ -860,7 +647,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.3 - Flutter",
+            "name": "v1.3 - Flutter Migration",
             "field": {
               "name": "Version"
             }
@@ -950,7 +737,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.3 - Flutter",
+            "name": "v1.3 - Flutter Migration",
             "field": {
               "name": "Version"
             }
@@ -965,81 +752,6 @@
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
             "name": "Notification",
-            "field": {
-              "name": "Category"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "id": "PVTI_lADOCuSSY84BZ912zgu-EfI",
-      "isArchived": false,
-      "content": {
-        "__typename": "Issue",
-        "number": 240,
-        "title": "General Settings",
-        "state": "OPEN",
-        "url": "https://github.com/Novyse/novyse/issues/240",
-        "repository": {
-          "nameWithOwner": "Novyse/novyse"
-        },
-        "labels": {
-          "nodes": []
-        },
-        "assignees": {
-          "nodes": []
-        }
-      },
-      "fieldValues": {
-        "nodes": [
-          {
-            "__typename": "ProjectV2ItemFieldRepositoryValue"
-          },
-          {
-            "__typename": "ProjectV2ItemIssueFieldValue"
-          },
-          {
-            "__typename": "ProjectV2ItemIssueFieldValue"
-          },
-          {
-            "__typename": "ProjectV2ItemFieldTextValue",
-            "text": "General Settings",
-            "field": {
-              "name": "Title"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "In Progress",
-            "field": {
-              "name": "Status"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Feature",
-            "field": {
-              "name": "Classification"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.3 - Flutter",
-            "field": {
-              "name": "Version"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Client",
-            "field": {
-              "name": "Scope"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Settings",
             "field": {
               "name": "Category"
             }
@@ -1073,7 +785,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.3 - Flutter",
+            "name": "Unassigned",
             "field": {
               "name": "Version"
             }
@@ -1142,7 +854,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.3 - Flutter",
+            "name": "v1.3 - Flutter Migration",
             "field": {
               "name": "Version"
             }
@@ -14297,7 +14009,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.3 - Flutter",
+            "name": "v1.3 - Flutter Migration",
             "field": {
               "name": "Version"
             }
@@ -14380,7 +14092,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.3 - Flutter",
+            "name": "v1.3 - Flutter Migration",
             "field": {
               "name": "Version"
             }
@@ -14456,7 +14168,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.3 - Flutter",
+            "name": "v1.3 - Flutter Migration",
             "field": {
               "name": "Version"
             }
@@ -14531,7 +14243,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.3 - Flutter",
+            "name": "v1.3 - Flutter Migration",
             "field": {
               "name": "Version"
             }
@@ -14606,7 +14318,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.3 - Flutter",
+            "name": "v1.3 - Flutter Migration",
             "field": {
               "name": "Version"
             }
@@ -14653,6 +14365,9 @@
             "__typename": "ProjectV2ItemFieldRepositoryValue"
           },
           {
+            "__typename": "ProjectV2ItemFieldPullRequestValue"
+          },
+          {
             "__typename": "ProjectV2ItemFieldTextValue",
             "text": "Vocal chat",
             "field": {
@@ -14661,7 +14376,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Completed",
+            "name": "In Progress",
             "field": {
               "name": "Status"
             }
@@ -14675,7 +14390,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.3 - Flutter",
+            "name": "v1.3 - Flutter Migration",
             "field": {
               "name": "Version"
             }
@@ -14723,7 +14438,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.3 - Flutter",
+            "name": "v1.3 - Flutter Migration",
             "field": {
               "name": "Version"
             }
@@ -14761,6 +14476,294 @@
             "name": "Desktop",
             "field": {
               "name": "Category"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zgu-EfI",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 240,
+        "title": "General Settings",
+        "state": "CLOSED",
+        "url": "https://github.com/Novyse/novyse/issues/240",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemIssueFieldValue"
+          },
+          {
+            "__typename": "ProjectV2ItemIssueFieldValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "General Settings",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Completed",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Feature",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.3 - Flutter Migration",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Settings",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zg5jzBc",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 310,
+        "title": "Desktop",
+        "state": "CLOSED",
+        "url": "https://github.com/Novyse/novyse/issues/310",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "Desktop",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Completed",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Improvement",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.3 - Flutter Migration",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Desktop",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zg5rY14",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 312,
+        "title": "Chat",
+        "state": "CLOSED",
+        "url": "https://github.com/Novyse/novyse/issues/312",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "Chat",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Completed",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Chat",
+            "field": {
+              "name": "Category"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client+Server",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.3 - Flutter Migration",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Improvement",
+            "field": {
+              "name": "Classification"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zg4sIVc",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 306,
+        "title": "Flutter Migration",
+        "state": "CLOSED",
+        "url": "https://github.com/Novyse/novyse/issues/306",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemIssueFieldValue"
+          },
+          {
+            "__typename": "ProjectV2ItemIssueFieldValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Completed",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "Flutter Migration",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.3 - Flutter Migration",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Miscellaneous",
+            "field": {
+              "name": "Category"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Feature",
+            "field": {
+              "name": "Classification"
             }
           }
         ]
@@ -15061,8 +15064,146 @@
           }
         ]
       }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zg_5NQo",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 323,
+        "title": "[Windows] Fullscreen on comms crashes the app",
+        "state": "OPEN",
+        "url": "https://github.com/Novyse/novyse/issues/323",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Planned",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "[Windows] Fullscreen on comms crashes the app",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Bug Fix",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Unassigned",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Desktop",
+            "field": {
+              "name": "Category"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zg_5Np8",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 324,
+        "title": "[Windows] Tray toggleWindow does not work",
+        "state": "OPEN",
+        "url": "https://github.com/Novyse/novyse/issues/324",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Planned",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "[Windows] Tray toggleWindow does not work",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Unassigned",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Bug Fix",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Desktop",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
     }
   ],
-  "fetched": 198,
-  "totalCount": 198
+  "fetched": 200,
+  "totalCount": 200
 }
