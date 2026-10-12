@@ -1,5 +1,37 @@
 [
   {
+    "number": 328,
+    "title": "ci: add shared build workflow for cross-platform artifacts",
+    "state": "closed",
+    "state_reason": null,
+    "is_pull_request": true,
+    "labels": [],
+    "assignees": [],
+    "milestone": null,
+    "created_at": "2026-10-11T13:54:17Z",
+    "updated_at": "2026-10-11T14:04:58Z",
+    "closed_at": "2026-10-11T13:54:26Z",
+    "author": "SamueleOrazioDurante",
+    "comments_count": 1,
+    "body": null,
+    "url": "https://github.com/Novyse/novyse/pull/328",
+    "parent": null,
+    "sub_issues_summary": null,
+    "sub_issues": [],
+    "issue_field_values": [],
+    "issue_dependencies": null,
+    "comments": [
+      {
+        "id": 6109845848,
+        "author": "codecov[bot]",
+        "created_at": "2026-10-11T14:04:58Z",
+        "updated_at": "2026-10-11T14:04:58Z",
+        "body": "## Welcome to [Codecov](https://codecov.io?utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=Novyse) :tada:\n\nOnce you merge this PR into your default branch, you're all set! Codecov will compare coverage reports and display results in all future pull requests.\n\n:information_source: You can also turn on [project coverage checks](https://docs.codecov.com/docs/common-recipe-list#set-project-coverage-checks-on-a-pull-request) and [project coverage reporting on Pull Request comment](https://docs.codecov.com/docs/common-recipe-list#show-project-coverage-changes-on-the-pull-request-comment)\n\nThanks for integrating Codecov - We've got you covered :open_umbrella:",
+        "url": "https://github.com/Novyse/novyse/pull/328#issuecomment-6109845848"
+      }
+    ]
+  },
+  {
     "number": 327,
     "title": "Merge development into production",
     "state": "closed",
