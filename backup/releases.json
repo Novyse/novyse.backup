@@ -1,5 +1,161 @@
 [
   {
+    "tag_name": "v1.3.0-20261012.2",
+    "name": "Version 1.3.0-20261012.2",
+    "body": "# Novyse 1.3.0-20261012.2 - Flutter Migration\r\n\r\n## Features\r\n\r\n### Chat\r\n- **Chat System:** Core chat system with permission bitmasking, message formatting, database persistence and a queued message-sending pipeline with lifecycle management and network-aware updates.\r\n- **Chat List:** Dynamic, resizable chat list with context-menu actions, local and global chat/message search, and a chat creation and join modal.\r\n- **Chat Overview:** New chat overview page showing the number of subs in the search bar.\r\n- **Sub-channels:** Sub-channel creation modal with type handling, including forums.\r\n- **Pinned Messages:** Pinned message bar with navigation and scrolling support.\r\n- **Bottom Bar:** Modular chat bottom bar with file drop, speech recording, advanced paste support, an @user mention bar, and a floating, blurred design.\r\n- **Attachments:** Attach menu overlay with file and media selection, draft file preview with audio playback, and an emoji and GIF picker with usage-based recents.\r\n- **Shortcuts:** Chat keyboard shortcuts, including Escape to leave a chat and focus the input on reply.\r\n- **Content Sharing:** Incoming content sharing on Android and iOS.\r\n- **Navigation:** Active chat store for navigation, remote chat resolution, and UI synchronization. Opening the same chat multiple times is prevented.\r\n\r\n### Messages\r\n- **Rich Media:** Support for audio, video, files, images, GIFs, and replies, with a new in-chat media viewer.\r\n- **Rich Text:** Rich text formatting and context menu for messages.\r\n- **Actions:** Multi-message selection, swipe-to-reply, reply, quote and reply, copy text, delete, and custom edit message.\r\n- **Reactions:** Reaction menu and reaction pill components.\r\n- **Favorites:** Favorite messages with state management, socket synchronization, and dedicated views.\r\n- **Message List:** Message list item, scroller, and read-tracker components.\r\n\r\n### Notification\r\n- **Push and Local:** Firebase Cloud Messaging and local notifications, with background handling.\r\n- **Actions:** Notification actions to mark messages as read and send quick replies.\r\n- **Navigation:** Notification taps navigate precisely using the subID.\r\n- **Forwarding:** NotificationBridge for message forwarding from notifications.\r\n- **Comms:** Permanent comms notifications on mobile, synced with local status and with mute, video, and leave buttons.\r\n\r\n### Security\r\n- **Secure Storage:** NovyseAuth SDK integrates secure storage.\r\n- **Captcha:** Turnstile captcha controller with refresh after submission, configurable base URL, and error handling.\r\n- **Session Handling:** Handling of session invalidation events with an included reason, preventing logout loops.\r\n\r\n### Authentication\r\n- **SDK:** NovyseAuth SDK integration with platform configuration.\r\n- **Onboarding:** Login and signup UI with a unified validator and manager, QR code authentication, autofill support, and show/hide password toggle.\r\n- **Navigation Guard:** Authentication state in OnboardingManager and a centralized GoRouter navigation guard.\r\n\r\n### Database\r\n- **SQLite:** Repository layer with SQLite integrated into the global event emitter.\r\n- **Sync:** Settings snapshot hydration and socket delta synchronization via SyncService.\r\n\r\n### UI/UX\r\n- **Components:** Avatar component with dynamic loading, gradient, and status indicators, plus bottom sheets, modals, a confirmation modal, `app_button`, segmented switch, number stepper, and a new context menu.\r\n- **Status System:** Global status system with a reactive store, status bar component, and localized network notifications.\r\n- **Floating Headers:** Floating, progressively opaque app bars and bottom bar, with pill-style headers for chat selection mode.\r\n- **Navigation:** Tabs and router implementation, and a switch between the chat and vocal pages.\r\n- **Profile:** Revamped profile page UI.\r\n- **Themes:** Dark as the default theme, customizable theme palettes and surface modes, and more easily grabbable scrollbars.\r\n- **Localization:** English and Italian localization, with all icons now from hugeicons.\r\n\r\n### Distribution\r\n- **Platforms:** Packaging for Android, iOS, macOS (DMG), Windows (installer), Linux (Flatpak and Flathub verification), and Web.\r\n- **Release Workflow:** Multiplatform release workflow with SHA-256 checksums, and dynamic release signing via a properties file or environment variables.\r\n- **Deep Linking:** Environment-based deep linking and automated branch configuration syncing for iOS, macOS, and Android.\r\n- **Build Scripts:** Modular build and sync scripts, and a platform run script.\r\n- **Auto-update:** For desktop only, updateRequired page can automatically update the application without any user assistance.\r\n\r\n### Initialization\r\n- **Branding:** Application branding with externalized app name configuration, and branch-aware app names and descriptions across all platforms.\r\n- **Startup:** Desktop startup and window controller logic.\r\n- **Update Required:** Update required page with routing and global event integration.\r\n\r\n### API\r\n- **API Gateway:** Dio-based gateway with connectivity guards and network state management.\r\n- **Real-time:** Socket.IO service, event bus, and strongly typed event system, with exponential backoff retry for socket authentication errors.\r\n- **Version Check:** Handling of version mismatch events.\r\n\r\n### Comms\r\n- **LiveKit:** LiveKit client integration.\r\n- **Devices:** Audio and video input/output device management.\r\n- **Volume:** Volume and mute controls for participants, including persistence, boosted values, and web audio.\r\n- **Screen Share:** Fluid, clarity, custom, gaming, smooth, and text presets (up to 2K/120fps) with custom bitrate. Includes a remote quality selector, an edit modal, per-stream controls, screen-share audio pairing, and Android support through a background media projection service.\r\n- **Interactions:** Single-tap on the user card for the context menu, and local mic state handling.\r\n- **Architecture:** CommsController mixins for connection, devices, local media, screen sharing, view state, and volume.\r\n\r\n### Settings\r\n- **Catalog:** Catalog-driven, responsive settings architecture with 10 categories, local and synchronized scopes, and settings search.\r\n- **Filtering:** Items filtered by supported OS, and the System category hidden on non-desktop platforms.\r\n- **Appearance:** Customizable theme palettes and surface modes, with a circular hue ring color picker.\r\n- **Account and Updates:** Account deletion, update channel, and official resource links.\r\n- **Legal:** App license, terms of service, and privacy settings, plus an OSS licenses page generated on demand.\r\n- **Copy Actions:** Copy support for device, password, and API key settings.\r\n\r\n### Desktop\r\n- **Window Controls:** Custom title bar on Windows, Linux, and macOS, and a DesktopWindowController.\r\n- **Tray:** Desktop tray with context menu and window controls.\r\n- **Native API:** Migrated to the `nativeapi_flutter` package.\r\n\r\n### Miscellaneous\r\n- **Storage:** Modular file storage system with S3 support and native media utility processing.\r\n- **Sound:** Sound player system.\r\n\r\n## Bug Fixes\r\n\r\n### Chat\r\n- **Chat List:** Last message is now updated, and the row ink stays visible in the chat overview.\r\n- **Navigation:** Fixed router back navigation from a chat, and routing now redirects to chats instead of home.\r\n- **Subscriptions:** Streamlined chat subscription resolution across chat pages.\r\n- **Search:** No more search icon on the vocal page.\r\n\r\n### Messages\r\n- **Deletion:** Messages are deleted only after the server confirms.\r\n- **Activity Keys:** Malformed activity action keys are tolerated.\r\n- **Toolbar:** Toolbar and paste button are hidden when `onPaste` is null.\r\n- **Attachments:** Async attachment picking now works on Android.\r\n\r\n### Notification\r\n- **Sub ID:** The notification sub id now defaults to zero instead of throwing.\r\n\r\n### Security\r\n- **Turnstile:** Default base URL updated to the production domain, and a local HttpServer on Windows bypasses webview limitations.\r\n\r\n### Authentication\r\n- **Auth Loops:** Added logout-triggered service cleanup to prevent auth-looping.\r\n- **Session Restore:** Guard against a missing user UUID on session restore.\r\n- **Web Session:** Web no longer auto-logs out randomly when opening the app.\r\n- **Web Rendering:** Fixed opaque auth on web.\r\n- **Icons:** Fixed wrong icons in login/signup password fields.\r\n\r\n### Comms\r\n- **Screen Share:** Screen share no longer shows outside a comm, and local screen share rendering no longer disposes a shared MediaStream on audio stop.\r\n- **Status Bar:** Bottom bar status error message length fixed.\r\n- **Fullscreen:** Corrected fullscreen handling.\r\n- **Performance:** Reduced re-renders on comm join.\r\n- **Wayland:** Partial Wayland fix, and screen share can now share windows.\r\n- **Android:** Screen projection service is torn down when active screen shares are empty.\r\n\r\n### Desktop\r\n- **Platform Controllers:** Fixed platform-specific desktop window and tray controller behavior.\r\n- **Window Controller:** Removed a redundant web check.\r\n\r\n### UI/UX\r\n- **App Bars:** Fixed app bar height on mobile.\r\n- **General:** Various UI fixes.\r\n\r\n### Distribution\r\n- **Flatpak:** Flatpak runtime version updated to 26.08.\r\n- **Flathub:** Publishing is skipped gracefully when the deployment token is missing.\r\n\r\n### Miscellaneous\r\n- **Linux:** Added the missing path provider.\r\n\r\n## Improvements\r\n\r\n### Chat\r\n- **Queue:** Queue processing with improved file upload validation, inbound message handling, and optimistic cleanup of pending messages.\r\n- **Architecture:** Chat services so widgets no longer call the API gateway directly, and message navigation centralized in ActiveChatStore with quote-range support.\r\n- **Rendering:** Better image rendering in chat.\r\n- **Layout:** Chat overview rows use proper settings rows, and modals and bottom sheets have maximum sizes.\r\n\r\n### Messages\r\n- **Refactor:** Message repository modularized into sub-repositories and helpers, and local media metadata handling shared in the send queue.\r\n- **Feedback:** Message action errors now return through the status provider for visual feedback.\r\n- **Gestures:** Improved gesture handling and swipe-to-reply on message rows.\r\n- **Rendering:** Inline message rendering in chat list items uses `Text.rich`.\r\n    \r\n### Notification\r\n- **Diagnostics:** Debug logs added to notifications.\r\n\r\n### Database\r\n- **User Isolation:** Database and file storage handling now isolates data per user, with cleanup on logout.\r\n- **Repository Calls:** Repository operations migrated to synchronous-style `execute` calls, with the sync service initialized on shell load.\r\n\r\n### UI/UX\r\n- **Theming:** Onboarding colors now follow theme colors, with new theme tokens and scrollbar tokens in core.\r\n- **Components:** Standardized app bars, title bars for modals and bottom sheets, and refined settings components.\r\n- **Performance:** Context menu no longer blocks page load.\r\n- **Cleanup:** Added missing l10n keys and applied the new `withValues` color API.\r\n\r\n### Distribution\r\n- **Android:** `compileSdk` upgraded to 37, Java 17 enforced via Gradle extension (required by `flutter_webrtc`), and legacy ProGuard paths updated for AGP 9.\r\n- **CI:** GitHub Actions workflow with path filters, caching, concurrency, and timeouts. The test action is now manual.\r\n- **Docs:** Documentation migrated to Flutter, and OSS license generation added to the README and run script.\r\n\r\n### Initialization\r\n- **Versioning:** Version synchronization script refactored.\r\n- **Developer Experience:** Auto hot reload, format on save, and macOS support in the run script.\r\n\r\n### API\r\n- **Gateway:** API gateway split into per-domain modules.\r\n- **Socket.IO:** Connection stability improved with manual lifecycle management.\r\n- **Diagnostics:** Debug logs added to services.\r\n\r\n### Settings\r\n- **Structure:** Catalog split into model and category files, with the settings sheet and components refined.\r\n- **State:** Recents and settings stores migrated to Notifier.\r\n\r\n### Desktop\r\n- **Diagnostics:** Debug logs added to desktop actions and tray.\r\n- **Migration:** Window management moved from `window_manager` to the `nativeapi_flutter` package (updated to 0.5.2).\r\n\r\n### Comms\r\n- **Controller:** Comms controller refactored into mixins.\r\n- **Components:** Stepper errors now use StatusMessage components.\r\n\r\n### Miscellaneous\r\n- **Lazy Loading:** MediaKit is initialized lazily on first video.\r\n- **Routing:** Chat routes moved to core and path parsing unified.\r\n- **Tests:** Extensive test coverage for the API gateway, socket receiver, notifications, chat search and actions, queue processing, file handling, comms, favorites, settings, and UI flows, plus a coverage CI workflow.\r\n- **Housekeeping:** Code formatting, lint fixes, and the web blob URL conditional import centralized.\r\n\r\n## Known Issues\r\n\r\n---\r\n\r\n### Integrity Checksums\r\n\r\nBelow are the SHA-256 checksums to verify the authenticity and integrity of each file.\r\nFor detailed verification guides and platform instructions, see [BUILD.md](https://github.com/Novyse/novyse/blob/production/BUILD.md#verifying-release-artifacts).\r\n\r\n> **Android Official Signing Certificate SHA-256:** `AE:CC:02:60:F1:E9:79:79:81:F5:68:55:A5:AE:B9:56:88:9F:77:66:8C:7B:E2:A2:28:1A:AE:E3:B1:EC:6B:13`\r\n\r\n| Platform | File | SHA-256 Checksum |\r\n| :--- | :--- | :--- |\r\n| **Other** | `app-archive.json` | `72caca4c2d792a53f8673089b24e01774a0d187b69ca88633d8ed559c7144f70` |\r\n| **Android** | `novyse-1.3.0-20261012.2-android-arm64-v8a.apk` | `ed99540f0338dde4f9cac5d1c0265cd3f56cedaccd9f29f767bf3eaff10a4321` |\r\n| **Android** | `novyse-1.3.0-20261012.2-android-armeabi-v7a.apk` | `6bfab7d34eda5d456f554422047bc22d1b0cd5826c560eb9bd20b3f368303060` |\r\n| **Android** | `novyse-1.3.0-20261012.2-android-universal.apk` | `7cc820cc86e872831708d3d05f13ef59ee5c67de0626af0b5c68b5d6160c80fc` |\r\n| **Android** | `novyse-1.3.0-20261012.2-android-x86_64.apk` | `073590df28f7afd4bf24068e182424499f3327e40678a3c34435171ce7347993` |\r\n| **Android** | `novyse-1.3.0-20261012.2-android.aab` | `6082fbb568f4b0043da12df27410e854736397a431471730403e7978267690e4` |\r\n| **Linux** | `novyse-1.3.0-20261012.2-linux.AppImage` | `ad341fd28400892d0b9ef67f7bd61085e3b8217063026c9526a3690ed6b67b44` |\r\n| **Linux** | `novyse-1.3.0-20261012.2-linux.deb` | `39399617996c38b15f478534284bbdd5020a1bd8e93c9b0a1497fd38a8d4f4f1` |\r\n| **Linux** | `novyse-1.3.0-20261012.2-linux.rpm` | `8f341729ee2959ec41d69ca98e88669591ffbcdd39cea79dda304bda4f4a5926` |\r\n| **Linux** | `novyse-1.3.0-20261012.2-linux.tar.gz` | `b9f7140c2d978d23c4022201f030f2070d16b883aa341b0492d3baeed0b5625a` |\r\n| **macOS** | `novyse-1.3.0-20261012.2-macos.dmg` | `69c91dc849e380b1fff2d23aaed602c845fbd1bd28e648add0cc352feddb57ba` |\r\n| **macOS** | `novyse-1.3.0-20261012.2-macos.zip` | `cf5ea317b5f94f07e3c637bdc4b642a909053bc472d7170b63112c037cf78eb4` |\r\n| **Web** | `novyse-1.3.0-20261012.2-web.zip` | `04cf3b76cac98a53f47beb60ce826e64f5c04d7d57b4fbeca0c724cd074a6b58` |\r\n| **Windows** | `novyse-1.3.0-20261012.2-windows-portable.exe` | `efb1ec3de9c22661304ec048ccd576ef42496f1970147369a9454580663f7d58` |\r\n| **Windows** | `novyse-1.3.0-20261012.2-windows-setup.exe` | `32f15688ed35d07d7f45c97822e5ca2fe22c8bcb851707d86cbb17722c7bbbff` |\r\n| **Windows** | `novyse-1.3.0-20261012.2-windows-setup.msi` | `918be4bff7ed0a7cedebf9993895df880a6e793b647449476b1c0bf40b71cb52` |\r\n| **Other** | `novyse-1.3.0-20261012.2-windows-setup.wixpdb` | `ff16fa0349fdefedd86ee1747b2b6e235e9d57a94f9f86323c24f50ecb828a6d` |\r\n| **Other** | `novyse-linux-1.3.0-20261012.2-release.json` | `4085644c9962073ee798d58a98ed0f9e3675c62c46721a06a1e3769b6d3b6afa` |\r\n| **Other** | `novyse-linux-1.3.0-20261012.2.zip` | `fe8a668dfcaf2fd76d831b65a5bcfc70090d6ec7b7442c7acc2fe7c180d1d5fc` |\r\n| **Other** | `novyse-macos-1.3.0-20261012.2-release.json` | `38bb7cb04884ad4996272151825ec0ef6557874fbd8ba5a6794f988498782196` |\r\n| **macOS** | `novyse-macos-1.3.0-20261012.2.zip` | `cf5ea317b5f94f07e3c637bdc4b642a909053bc472d7170b63112c037cf78eb4` |\r\n| **Android** | `novyse-release-cert.pem` | `8bdb8944e128bbe133dca7fae412bc7739d81776274c8134387fd8c39f92c52c` |\r\n| **Other** | `novyse-windows-1.3.0-20261012.2-release.json` | `54749035598ad79dad72d8404b86cd80584d9a1ef6331f181edb7ba2c37b4d61` |\r\n| **Other** | `novyse-windows-1.3.0-20261012.2.zip` | `f0c7dbac8a718874b721925f10dd6cf091bab8a39b53b0a8b6bf09a517eb1d8d` |\r\n",
+    "published_at": "2026-10-12T17:48:58Z",
+    "created_at": "2026-10-12T17:26:09Z",
+    "draft": false,
+    "prerelease": false,
+    "target_commitish": "production",
+    "assets": [
+      {
+        "name": "app-archive.json",
+        "size": 1061,
+        "download_count": 2,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/app-archive.json"
+      },
+      {
+        "name": "novyse-1.3.0-20261012.2-android-arm64-v8a.apk",
+        "size": 61880890,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-1.3.0-20261012.2-android-arm64-v8a.apk"
+      },
+      {
+        "name": "novyse-1.3.0-20261012.2-android-armeabi-v7a.apk",
+        "size": 53464572,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-1.3.0-20261012.2-android-armeabi-v7a.apk"
+      },
+      {
+        "name": "novyse-1.3.0-20261012.2-android-universal.apk",
+        "size": 176561025,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-1.3.0-20261012.2-android-universal.apk"
+      },
+      {
+        "name": "novyse-1.3.0-20261012.2-android-x86_64.apk",
+        "size": 71013171,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-1.3.0-20261012.2-android-x86_64.apk"
+      },
+      {
+        "name": "novyse-1.3.0-20261012.2-android.aab",
+        "size": 127217229,
+        "download_count": 2,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-1.3.0-20261012.2-android.aab"
+      },
+      {
+        "name": "novyse-1.3.0-20261012.2-linux.AppImage",
+        "size": 35820736,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-1.3.0-20261012.2-linux.AppImage"
+      },
+      {
+        "name": "novyse-1.3.0-20261012.2-linux.deb",
+        "size": 28485176,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-1.3.0-20261012.2-linux.deb"
+      },
+      {
+        "name": "novyse-1.3.0-20261012.2-linux.rpm",
+        "size": 35869441,
+        "download_count": 2,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-1.3.0-20261012.2-linux.rpm"
+      },
+      {
+        "name": "novyse-1.3.0-20261012.2-linux.tar.gz",
+        "size": 35518195,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-1.3.0-20261012.2-linux.tar.gz"
+      },
+      {
+        "name": "novyse-1.3.0-20261012.2-macos.dmg",
+        "size": 78444670,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-1.3.0-20261012.2-macos.dmg"
+      },
+      {
+        "name": "novyse-1.3.0-20261012.2-macos.zip",
+        "size": 69469860,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-1.3.0-20261012.2-macos.zip"
+      },
+      {
+        "name": "novyse-1.3.0-20261012.2-web.zip",
+        "size": 18831075,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-1.3.0-20261012.2-web.zip"
+      },
+      {
+        "name": "novyse-1.3.0-20261012.2-windows-portable.exe",
+        "size": 34744777,
+        "download_count": 3,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-1.3.0-20261012.2-windows-portable.exe"
+      },
+      {
+        "name": "novyse-1.3.0-20261012.2-windows-setup.exe",
+        "size": 38230424,
+        "download_count": 2,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-1.3.0-20261012.2-windows-setup.exe"
+      },
+      {
+        "name": "novyse-1.3.0-20261012.2-windows-setup.msi",
+        "size": 52555776,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-1.3.0-20261012.2-windows-setup.msi"
+      },
+      {
+        "name": "novyse-1.3.0-20261012.2-windows-setup.wixpdb",
+        "size": 340087,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-1.3.0-20261012.2-windows-setup.wixpdb"
+      },
+      {
+        "name": "novyse-linux-1.3.0-20261012.2-release.json",
+        "size": 771,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-linux-1.3.0-20261012.2-release.json"
+      },
+      {
+        "name": "novyse-linux-1.3.0-20261012.2.zip",
+        "size": 35975333,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-linux-1.3.0-20261012.2.zip"
+      },
+      {
+        "name": "novyse-macos-1.3.0-20261012.2-release.json",
+        "size": 771,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-macos-1.3.0-20261012.2-release.json"
+      },
+      {
+        "name": "novyse-macos-1.3.0-20261012.2.zip",
+        "size": 69469860,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-macos-1.3.0-20261012.2.zip"
+      },
+      {
+        "name": "novyse-release-cert.pem",
+        "size": 1291,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-release-cert.pem"
+      },
+      {
+        "name": "novyse-windows-1.3.0-20261012.2-release.json",
+        "size": 775,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-windows-1.3.0-20261012.2-release.json"
+      },
+      {
+        "name": "novyse-windows-1.3.0-20261012.2.zip",
+        "size": 53604400,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-windows-1.3.0-20261012.2.zip"
+      }
+    ]
+  },
+  {
     "tag_name": "v1.2.0-20260831.0",
     "name": "Version 1.2.0-20260831.0",
     "body": "# Novyse 1.2.0-20260831.0 - Enhanced Chat Features\r\n\r\n## Features\r\n\r\n### Chat\r\n\r\n* **Forums & Sub-Channels:** Implemented full forum support and sub-channel functionality, enabling dedicated message lists and independent vocal channels within chats.\r\n* **Role-Based Permissions:** Added a role-based permission management system and normalized member role data handling across chat components.\r\n* **Sub-Chat Navigation:** Added navigation to automatically switch to the correct sub-chat when selecting pinned messages, including transitions from vocal view to chat view.\r\n\r\n### Messages\r\n\r\n* **GIF Integration:** Integrated GIF search and selection picker powered by a new API gateway endpoint.\r\n* **Message Search:** Added highlighted search navigation supporting local chats, sub-chats, remote chats, and global messages.\r\n\r\n### Comms\r\n\r\n* **Audio Output Selection:** Implemented audio output device selection and toggling in the communications bar.\r\n* **Vocal Subs:** Added support for dedicated voice sub-channels and updated sub-creation flows.\r\n* **Speaking Animations:** Added animated wave indicators in the comms header while speaking, alongside voice chat empty-state animation assets.\r\n\r\n### Authentication\r\n\r\n* **Socket Error Handling & Token Refresh:** Implemented granular socket authentication error handling and in-band token refresh via the `auth:refresh` event.\r\n\r\n### Settings\r\n\r\n* **Startup Preferences:** Added a configurable option in startup settings to launch the application minimized.\r\n\r\n### UI/UX\r\n\r\n* **DateTime Component:** Added a dedicated `DateTimeInput` component for date and time selection.\r\n* **Slider Hover Preview:** Added hover preview functionality to the custom slider component.\r\n* **Header Search Navigation:** Added direct navigation to search from the chat list header.\r\n\r\n### API\r\n\r\n* **GIF Search Gateway:** Added API gateway endpoint support for GIF search and querying.\r\n\r\n### Desktop\r\n\r\n* **Cross-Platform File Opener:** Implemented the `useOpenFile` hook to handle system file opening via native OS intents.\r\n\r\n## Bug Fixes\r\n\r\n### Chat\r\n\r\n* **Store Initialization:** Removed redundant `selectedSub` initializations and corrected member role handling logic in the chat store.\r\n* **Pinned Messages:** Included `subID` parameters when retrieving pinned messages from the active chat store.\r\n* **Split View:** Fixed split-view rendering by removing unwanted borders and eliminating duplicated sublists.\r\n\r\n### Messages\r\n\r\n* **Message Scrolling:** Resolved scrolling bugs and jitter for smoother and more precise message list navigation (#304).\r\n* **Media Dimensions & Scaling:** Corrected video container sizing on mobile and optimized image and video viewers to adapt dynamically to media dimensions.\r\n* **Video Previews:** Fixed an issue where audio remained active during video previews.\r\n* **Mentions:** Fixed user mention handling within the text input component.\r\n\r\n### Comms\r\n\r\n* **Header Overflow:** Resolved layout overflow issues for communications header elements on smaller screens.\r\n* **Context Menu:** Fixed an issue where the communications context menu could not be dismissed.\r\n* **Audio Routing:** Fixed desktop audio output switching (#286) and addressed synchronized audio input/output routing behavior on Android.\r\n\r\n### Notification\r\n\r\n* **Dependency Cycles:** Eliminated require cycles by dynamically and lazily importing `useActiveChatStore` in notification managers.\r\n\r\n### Authentication\r\n\r\n* **Mobile Onboarding Alignment:** Fixed signup text alignment and added transition animations during the welcome sequence to prevent mobile UI lag.\r\n\r\n### UI/UX\r\n\r\n* **Screen Orientation:** Fixed an issue on mobile where the interface would not rotate with screen orientation.\r\n* **Header Layout & Borders:** Corrected border radiuses and paddings across chat headers, search bars, and comms headers.\r\n* **Bottom Sheets:** Fixed incorrect border radiuses on mobile bottom sheet components.\r\n* **Missing Icons:** Resolved missing icon references across multiple UI components.\r\n\r\n### Distribution\r\n\r\n* **Package Lock:** Restored the lockfile for Flathub packaging and updated build dependencies.\r\n* **Memory Paging:** Applied a fix for Android 16KB memory paging warnings.\r\n\r\n### Miscellaneous\r\n\r\n* **File Formatting:** Enforced trailing newline standards in `socket-io.ts` and corrected broken internal imports.\r\n\r\n## Improvements\r\n\r\n### Chat\r\n\r\n* **Header & Sublist Structure:** Unified header logic across the entire application and improved sublist integration within chat views.\r\n\r\n### Messages\r\n\r\n* **Optimized Video Playback:** Configured in-chat videos to play previews only when visible in the viewport, automatically resetting to start when scrolled offscreen.\r\n* **Saved & Favorite Messages:** Renamed starred messages to favorites and added dedicated UI buttons and localization for saved messages.\r\n* **Search Autofocus:** Configured the search input to focus automatically upon navigating to the search view.\r\n\r\n### Comms\r\n\r\n* **Mute Indicators:** Added red background indicators to comms icons when microphone and speaker are muted.\r\n* **Profile Navigation:** Added the ability to view user profiles directly from the communications context menu.\r\n\r\n### Notification\r\n\r\n* **System Notifications:** Refactored system notification handling to suppress unnecessary title and subtitle rendering.\r\n\r\n### Settings\r\n\r\n* **Settings UI Rework:** Modernized multiple settings screens to align with the new design system and added custom right-icon support to `SettingsRow`.\r\n\r\n### UI/UX\r\n\r\n* **Typography Standardization:** Standardized typography components across the application (`AppText` to `Typography`, `LinkText` to `LinkTypography`) and unified text property propagation.\r\n* **Modal Transitions & Sheets:** Added enter/exit animations for modals and updated bottom sheets to dynamically adjust height to content before enabling scrolling.\r\n* **Context Menus:** Migrated action menus and file upload overlays to modular context menu components featuring automatic viewport boundary detection.\r\n* **Touch Targets & Controls:** Enlarged input touch targets, added stretch animations to switch components, and overhauled custom slider controls.\r\n* **Small Screen Performance:** Disabled resource-intensive blur views on tab navigators for compact screens.\r\n\r\n### Security\r\n\r\n* **Route Standardization:** Reorganized security settings routes to `/privacy-and-security`.\r\n\r\n### Miscellaneous\r\n\r\n* **Store Architecture:** Reorganized Zustand context architectures into dedicated `/store` directories.\r\n* **Bundling & Build Warnings:** Updated Metro configs, optimized icon imports to prevent EMFILE errors, and adjusted TypeScript exclude patterns to eliminate build warnings.\r\n\r\n## Known Issues",
@@ -78,7 +234,7 @@
       {
         "name": "novyse-web-1.2.0-20260831.0.zip",
         "size": 7876545,
-        "download_count": 0,
+        "download_count": 1,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/novyse-web-1.2.0-20260831.0.zip"
       },
       {
