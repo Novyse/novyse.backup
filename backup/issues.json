@@ -1,5 +1,279 @@
 [
   {
+    "number": 337,
+    "title": "Mute/unmute speaker button should mute/unmute microphone too",
+    "state": "closed",
+    "state_reason": "completed",
+    "is_pull_request": false,
+    "labels": [],
+    "assignees": [],
+    "milestone": null,
+    "created_at": "2026-10-13T16:30:53Z",
+    "updated_at": "2026-10-13T16:50:06Z",
+    "closed_at": "2026-10-13T16:50:06Z",
+    "author": "SamueleOrazioDurante",
+    "comments_count": 0,
+    "body": "Muting the speaker button should automatically mute the microphone button by default. This behavior should be configurable via a setting toggle (enabled by default) so users can disable it if they prefer the speaker control not to affect the microphone. Additionally, the system must track the microphone's prior state: if the microphone was already muted before the speaker was muted, unmuting the speaker must keep the microphone muted rather than automatically unmuting it.",
+    "url": "https://github.com/Novyse/novyse/issues/337",
+    "parent": null,
+    "sub_issues_summary": {
+      "total": 0,
+      "completed": 0,
+      "percent_completed": 0
+    },
+    "sub_issues": [],
+    "issue_field_values": [],
+    "issue_dependencies": {
+      "blocked_by": 0,
+      "total_blocked_by": 0,
+      "blocking": 0,
+      "total_blocking": 0
+    },
+    "comments": []
+  },
+  {
+    "number": 336,
+    "title": "Chat Header",
+    "state": "open",
+    "state_reason": null,
+    "is_pull_request": false,
+    "labels": [],
+    "assignees": [],
+    "milestone": null,
+    "created_at": "2026-10-13T16:09:08Z",
+    "updated_at": "2026-10-13T16:09:08Z",
+    "closed_at": null,
+    "author": "SamueleOrazioDurante",
+    "comments_count": 0,
+    "body": "Primary tactical interface navigation bars and their current implementation status, while clarifying intended component visibility across active sections.\n\n## Tactical Components\n\n- [x]  Pinned Bar\n- [ ] Comms Bar\n- [ ] Vocal Bar\n\n## Known Issues\n\n- [ ] Pinned messages remain visible while in the communications section (intended behavior).",
+    "url": "https://github.com/Novyse/novyse/issues/336",
+    "parent": null,
+    "sub_issues_summary": {
+      "total": 0,
+      "completed": 0,
+      "percent_completed": 0
+    },
+    "sub_issues": [],
+    "issue_field_values": [],
+    "issue_dependencies": {
+      "blocked_by": 0,
+      "total_blocked_by": 0,
+      "blocking": 0,
+      "total_blocking": 0
+    },
+    "comments": []
+  },
+  {
+    "number": 335,
+    "title": "[Linux]  Severe lag on Firefox (NVIDIA + Wayland) when logged in",
+    "state": "open",
+    "state_reason": null,
+    "is_pull_request": false,
+    "labels": [],
+    "assignees": [],
+    "milestone": null,
+    "created_at": "2026-10-13T13:58:25Z",
+    "updated_at": "2026-10-13T13:58:25Z",
+    "closed_at": null,
+    "author": "SamueleOrazioDurante",
+    "comments_count": 0,
+    "body": "- Heavy lag (can't scroll, can't open chats) only when logged in, even with empty chats and on settings page. Login screens are smooth.\n- Same app is smooth on Chrome/Linux and Firefox/Windows.\n- Smaller window lags slightly less.\n\nWhat we tried (none helped except removing blur entirely):\n\n| Attempt | Result |\n|---|---|\n| RepaintBoundary around all blurred bars, shadow blurRadius 100 -> 28 | Still lags |\n| Stop infinite tickers on web (badge shimmer), throttle comms polling 5s -> 15s, socket websocket-only, status rebuild guards | Still lags |\n| SkWasm build (`--wasm`), release mode | Still lags |\n| Fixed header (no content scrolling under blur) | Still lags |\n| Sigma 18 -> ~10 on Firefox/Linux only | Still lags |\n| Frosted static tint instead of live blur | Fast, but not real blur |\n| Removing all BackdropFilters | Fast |\n| Clean Firefox profile, resistFingerprinting off, XWayland | Still lags |\n\nRoot cause (confirmed): Firefox release blocklists the fast dmabuf/WebGL zero-copy path for NVIDIA on Linux, so every frame is a CPU readback, and each live BackdropFilter adds more. Refs: Mozilla bug 1010527 (slow WebGL compositing on Linux, readback per frame) and bug 1981326 (NVIDIA dmabuf allowlist landed on Nightly only, no impact on release).\n\nProof: same code with full blur on Firefox Nightly runs perfectly. Nightly Decision Log shows DMABUF, DMABUF_WEBGL and BACKDROP_FILTER all available. The aquarium demo also shows ~68ms frames on release vs 60fps+ on Chrome, so it is environmental, not app code.\n\nConclusion: with live BackdropFilter everywhere, this browser/GPU combo cannot hit frame budget regardless of sigma, area, caching or renderer. Workarounds are **Firefox Nightly,** waiting for Mozilla to lift the release blocklist, or a static (non-live) frosted fallback on affected browsers.\n",
+    "url": "https://github.com/Novyse/novyse/issues/335",
+    "parent": null,
+    "sub_issues_summary": {
+      "total": 0,
+      "completed": 0,
+      "percent_completed": 0
+    },
+    "sub_issues": [],
+    "issue_field_values": [],
+    "issue_dependencies": {
+      "blocked_by": 0,
+      "total_blocked_by": 0,
+      "blocking": 0,
+      "total_blocking": 0
+    },
+    "comments": []
+  },
+  {
+    "number": 333,
+    "title": "[Windows] Cannot render images/videos in chat",
+    "state": "open",
+    "state_reason": null,
+    "is_pull_request": false,
+    "labels": [],
+    "assignees": [],
+    "milestone": null,
+    "created_at": "2026-10-13T13:18:15Z",
+    "updated_at": "2026-10-13T13:18:15Z",
+    "closed_at": null,
+    "author": "MatteoMagnani7",
+    "comments_count": 0,
+    "body": null,
+    "url": "https://github.com/Novyse/novyse/issues/333",
+    "parent": null,
+    "sub_issues_summary": {
+      "total": 0,
+      "completed": 0,
+      "percent_completed": 0
+    },
+    "sub_issues": [],
+    "issue_field_values": [],
+    "issue_dependencies": {
+      "blocked_by": 0,
+      "total_blocked_by": 0,
+      "blocking": 0,
+      "total_blocking": 0
+    },
+    "comments": []
+  },
+  {
+    "number": 332,
+    "title": "[Windows] Default communication device name does not show up",
+    "state": "closed",
+    "state_reason": "completed",
+    "is_pull_request": false,
+    "labels": [],
+    "assignees": [],
+    "milestone": null,
+    "created_at": "2026-10-13T12:27:35Z",
+    "updated_at": "2026-10-13T16:23:16Z",
+    "closed_at": "2026-10-13T16:23:16Z",
+    "author": "SamueleOrazioDurante",
+    "comments_count": 0,
+    "body": "Only \"Default\" is printed",
+    "url": "https://github.com/Novyse/novyse/issues/332",
+    "parent": null,
+    "sub_issues_summary": {
+      "total": 0,
+      "completed": 0,
+      "percent_completed": 0
+    },
+    "sub_issues": [],
+    "issue_field_values": [],
+    "issue_dependencies": {
+      "blocked_by": 0,
+      "total_blocked_by": 0,
+      "blocking": 0,
+      "total_blocking": 0
+    },
+    "comments": []
+  },
+  {
+    "number": 331,
+    "title": "Noise removal",
+    "state": "open",
+    "state_reason": null,
+    "is_pull_request": false,
+    "labels": [],
+    "assignees": [],
+    "milestone": null,
+    "created_at": "2026-10-13T12:22:14Z",
+    "updated_at": "2026-10-13T12:24:59Z",
+    "closed_at": null,
+    "author": "SamueleOrazioDurante",
+    "comments_count": 1,
+    "body": "Integrate an advanced audio processing pipeline for WebRTC voice calls across all supported platforms (Web, Desktop, and Mobile). We plan to implement ML-based noise suppression using both RNNoise (for lightweight, low-latency environments) and DeepFilterNet (for high-fidelity speech enhancement), alongside robust acoustic echo cancellation (AEC). Additionally, this introduces user-facing audio preferences, allowing members to toggle noise removal on/off, choose between processing models, and manage input gain and gating for a clearer voice chat experience.",
+    "url": "https://github.com/Novyse/novyse/issues/331",
+    "parent": null,
+    "sub_issues_summary": {
+      "total": 0,
+      "completed": 0,
+      "percent_completed": 0
+    },
+    "sub_issues": [],
+    "issue_field_values": [],
+    "issue_dependencies": {
+      "blocked_by": 0,
+      "total_blocked_by": 0,
+      "blocking": 0,
+      "total_blocking": 0
+    },
+    "comments": [
+      {
+        "id": 6145484506,
+        "author": "SamueleOrazioDurante",
+        "created_at": "2026-10-13T12:24:59Z",
+        "updated_at": "2026-10-13T12:24:59Z",
+        "body": "First step is removing current WebRTC integrated ai noise removal that causes issues on windows",
+        "url": "https://github.com/Novyse/novyse/issues/331#issuecomment-6145484506"
+      }
+    ]
+  },
+  {
+    "number": 330,
+    "title": "Notification should be asked for permission after login",
+    "state": "closed",
+    "state_reason": "completed",
+    "is_pull_request": false,
+    "labels": [],
+    "assignees": [],
+    "milestone": null,
+    "created_at": "2026-10-13T12:18:31Z",
+    "updated_at": "2026-10-13T13:30:19Z",
+    "closed_at": "2026-10-13T13:30:19Z",
+    "author": "SamueleOrazioDurante",
+    "comments_count": 0,
+    "body": null,
+    "url": "https://github.com/Novyse/novyse/issues/330",
+    "parent": null,
+    "sub_issues_summary": {
+      "total": 0,
+      "completed": 0,
+      "percent_completed": 0
+    },
+    "sub_issues": [],
+    "issue_field_values": [],
+    "issue_dependencies": {
+      "blocked_by": 0,
+      "total_blocked_by": 0,
+      "blocking": 0,
+      "total_blocking": 0
+    },
+    "comments": []
+  },
+  {
+    "number": 329,
+    "title": "[Windows] Process name is \"Next-Gen Communication. C...\"",
+    "state": "closed",
+    "state_reason": "completed",
+    "is_pull_request": false,
+    "labels": [],
+    "assignees": [],
+    "milestone": null,
+    "created_at": "2026-10-13T12:15:15Z",
+    "updated_at": "2026-10-13T16:10:28Z",
+    "closed_at": "2026-10-13T16:10:28Z",
+    "author": "SamueleOrazioDurante",
+    "comments_count": 1,
+    "body": null,
+    "url": "https://github.com/Novyse/novyse/issues/329",
+    "parent": null,
+    "sub_issues_summary": {
+      "total": 0,
+      "completed": 0,
+      "percent_completed": 0
+    },
+    "sub_issues": [],
+    "issue_field_values": [],
+    "issue_dependencies": {
+      "blocked_by": 0,
+      "total_blocked_by": 0,
+      "blocking": 0,
+      "total_blocking": 0
+    },
+    "comments": [
+      {
+        "id": 6149889795,
+        "author": "SamueleOrazioDurante",
+        "created_at": "2026-10-13T16:10:23Z",
+        "updated_at": "2026-10-13T16:10:23Z",
+        "body": "ee966f250c413f71cb4efe22fba652c025adea92",
+        "url": "https://github.com/Novyse/novyse/issues/329#issuecomment-6149889795"
+      }
+    ]
+  },
+  {
     "number": 328,
     "title": "ci: add shared build workflow for cross-platform artifacts",
     "state": "closed",
@@ -265,7 +539,7 @@
   },
   {
     "number": 320,
-    "title": "Add Camera and Recording message types with video preview",
+    "title": "Attachments Types",
     "state": "open",
     "state_reason": null,
     "is_pull_request": false,
@@ -273,11 +547,11 @@
     "assignees": [],
     "milestone": null,
     "created_at": "2026-10-05T09:25:07Z",
-    "updated_at": "2026-10-05T09:25:07Z",
+    "updated_at": "2026-10-13T16:13:05Z",
     "closed_at": null,
     "author": "SamueleOrazioDurante",
     "comments_count": 0,
-    "body": "Add `Camera` and `Recording` to the supported message types. For both types, display a live video preview directly above the text input bar.",
+    "body": "Add `Camera` and `Recording` to the supported attachments type, display a live video preview directly above the text input bar.",
     "url": "https://github.com/Novyse/novyse/issues/320",
     "parent": null,
     "sub_issues_summary": {
@@ -1367,40 +1641,6 @@
     "comments": []
   },
   {
-    "number": 294,
-    "title": "Video player and Image on mobile are broken",
-    "state": "open",
-    "state_reason": null,
-    "is_pull_request": false,
-    "labels": [],
-    "assignees": [
-      "MatteoMagnani7"
-    ],
-    "milestone": null,
-    "created_at": "2026-08-01T15:12:07Z",
-    "updated_at": "2026-08-01T15:12:07Z",
-    "closed_at": null,
-    "author": "MatteoMagnani7",
-    "comments_count": 0,
-    "body": "Video\n- The video doesn't start pressing play\n- Audio slider can go crazy and slide randomly\n- Timeline dot doesn't move while video is playing\n- It can't go fullscreen\n\nImages\n- It can't go fullscreen",
-    "url": "https://github.com/Novyse/novyse/issues/294",
-    "parent": null,
-    "sub_issues_summary": {
-      "total": 0,
-      "completed": 0,
-      "percent_completed": 0
-    },
-    "sub_issues": [],
-    "issue_field_values": [],
-    "issue_dependencies": {
-      "blocked_by": 0,
-      "total_blocked_by": 0,
-      "blocking": 0,
-      "total_blocking": 0
-    },
-    "comments": []
-  },
-  {
     "number": 293,
     "title": "Messages notification for system messages should not show sender",
     "state": "closed",
@@ -1828,17 +2068,17 @@
   {
     "number": 284,
     "title": "Mac recognise Novyse desktop app as a potential malware",
-    "state": "open",
-    "state_reason": null,
+    "state": "closed",
+    "state_reason": "completed",
     "is_pull_request": false,
     "labels": [],
     "assignees": [],
     "milestone": null,
     "created_at": "2026-06-15T17:09:05Z",
-    "updated_at": "2026-06-15T17:09:05Z",
-    "closed_at": null,
+    "updated_at": "2026-10-13T16:53:17Z",
+    "closed_at": "2026-10-13T16:53:17Z",
     "author": "MatteoMagnani7",
-    "comments_count": 0,
+    "comments_count": 2,
     "body": "Mac recognise Novyse desktop app as a potential malware and doesn't let you assign permissions for speaker/mic.\nUsually mac apps ask you permissions during setup.",
     "url": "https://github.com/Novyse/novyse/issues/284",
     "parent": null,
@@ -1855,7 +2095,24 @@
       "blocking": 0,
       "total_blocking": 0
     },
-    "comments": []
+    "comments": [
+      {
+        "id": 6146721814,
+        "author": "SamueleOrazioDurante",
+        "created_at": "2026-10-13T13:32:08Z",
+        "updated_at": "2026-10-13T13:32:08Z",
+        "body": "Da verificare se succede ancora con la versione flutter",
+        "url": "https://github.com/Novyse/novyse/issues/284#issuecomment-6146721814"
+      },
+      {
+        "id": 6150680819,
+        "author": "SamueleOrazioDurante",
+        "created_at": "2026-10-13T16:53:17Z",
+        "updated_at": "2026-10-13T16:53:17Z",
+        "body": "Succede ma puoi comunque aprirla, quindi pog",
+        "url": "https://github.com/Novyse/novyse/issues/284#issuecomment-6150680819"
+      }
+    ]
   },
   {
     "number": 283,
@@ -1967,7 +2224,7 @@
     ],
     "milestone": null,
     "created_at": "2026-06-10T19:12:23Z",
-    "updated_at": "2026-06-10T19:13:16Z",
+    "updated_at": "2026-10-13T16:23:41Z",
     "closed_at": null,
     "author": "SamueleOrazioDurante",
     "comments_count": 1,
@@ -2001,8 +2258,8 @@
   {
     "number": 279,
     "title": "Messages internal queue rework",
-    "state": "open",
-    "state_reason": null,
+    "state": "closed",
+    "state_reason": "completed",
     "is_pull_request": false,
     "labels": [],
     "assignees": [
@@ -2010,10 +2267,10 @@
     ],
     "milestone": null,
     "created_at": "2026-06-10T19:07:52Z",
-    "updated_at": "2026-06-10T19:08:24Z",
-    "closed_at": null,
+    "updated_at": "2026-10-13T16:25:39Z",
+    "closed_at": "2026-10-13T16:25:39Z",
     "author": "SamueleOrazioDurante",
-    "comments_count": 1,
+    "comments_count": 2,
     "body": "Currently, the application relies on a single, global message queue. When a message is sent, it enters this global queue and is processed sequentially with basic retry logic on failure. While simple, this architecture creates several bottlenecks and reliability issues that need to be addressed.\nTo improve the user experience and reliability, we need to completely refactor the queue management system. The new architecture must handle the following core improvements:\n\n- Per-Chat Queues: The single global queue must be split into independent queues for each chat. This ensures that a heavy operation (like uploading a video) in one chat does not block messages from being sent in other chats.\n- Message Priority: We need to introduce a priority mechanism within the queues. For example, if a large video is currently being processed/sent, the system should be able to pause it momentarily to let a standard text message go through.\n- Global Error Handling: Critical server errors must be handled globally. If a message encounters a severe error (e.g., an HTTP 500 response), it should immediately halt all active queues across the application, rather than just the specific chat queue it belongs to.\n- Queue Persistence: Currently, pending messages are lost if the application is closed before the sending process finishes. The queue state must be persisted locally (e.g., via the database). If the app is closed, unsent messages must remain in the queue and automatically attempt to send the next time the app is opened.",
     "url": "https://github.com/Novyse/novyse/issues/279",
     "parent": null,
@@ -2035,9 +2292,17 @@
         "id": 4673548692,
         "author": "SamueleOrazioDurante",
         "created_at": "2026-06-10T19:08:24Z",
-        "updated_at": "2026-06-10T19:08:24Z",
-        "body": "- [ ] **Implement Per-Chat Queues:** Refactor the global queue into independent, chat-specific queues to prevent cross-chat blocking.\n- [ ] **Add Priority Management:** Implement a priority system that allows higher-priority items (e.g., text messages) to bypass or momentarily pause heavy, lower-priority tasks (e.g., video uploads).\n- [ ] **Implement Global Error Halting:** Add logic to catch critical server errors (e.g., HTTP 500) and automatically pause all active queues across the entire application.\n- [ ] **Ensure Queue Persistence:** Save the state of the active queue to the local database so that pending/unsent messages survive app closures.\n- [ ] **Auto-Resume on App Launch:** Implement a check on app startup to load the persistent queue and resume sending any pending messages.",
+        "updated_at": "2026-10-13T16:25:02Z",
+        "body": "- [x] **Implement Per-Chat Queues:** Refactor the global queue into independent, chat-specific queues to prevent cross-chat blocking.\n- [x] **Add Priority Management:** Implement a priority system that allows higher-priority items (e.g., text messages) to bypass or momentarily pause heavy, lower-priority tasks (e.g., video uploads).\n- [x] **Implement Global Error Halting:** Add logic to catch critical server errors (e.g., HTTP 500) and automatically pause all active queues across the entire application.\n- [x] **Ensure Queue Persistence:** Save the state of the active queue to the local database so that pending/unsent messages survive app closures.\n- [x] **Auto-Resume on App Launch:** Implement a check on app startup to load the persistent queue and resume sending any pending messages.",
         "url": "https://github.com/Novyse/novyse/issues/279#issuecomment-4673548692"
+      },
+      {
+        "id": 6146737319,
+        "author": "SamueleOrazioDurante",
+        "created_at": "2026-10-13T13:32:57Z",
+        "updated_at": "2026-10-13T13:32:57Z",
+        "body": "Da verificare se abbiamo fatto tutto su flutter",
+        "url": "https://github.com/Novyse/novyse/issues/279#issuecomment-6146737319"
       }
     ]
   },
@@ -2848,53 +3113,6 @@
     "comments": []
   },
   {
-    "number": 260,
-    "title": "Favorite messages",
-    "state": "open",
-    "state_reason": null,
-    "is_pull_request": false,
-    "labels": [],
-    "assignees": [],
-    "milestone": null,
-    "created_at": "2026-06-07T19:34:11Z",
-    "updated_at": "2026-06-07T19:50:03Z",
-    "closed_at": null,
-    "author": "SamueleOrazioDurante",
-    "comments_count": 0,
-    "body": null,
-    "url": "https://github.com/Novyse/novyse/issues/260",
-    "parent": null,
-    "sub_issues_summary": {
-      "total": 0,
-      "completed": 0,
-      "percent_completed": 0
-    },
-    "sub_issues": [],
-    "issue_field_values": [
-      {
-        "issue_field_id": 30474187,
-        "node_id": "IFDV_kgDOABzoSg",
-        "data_type": "date",
-        "issue_field_name": "Start date",
-        "value": "2030-01-01"
-      },
-      {
-        "issue_field_id": 30474188,
-        "node_id": "IFDV_kgDOABzoWA",
-        "data_type": "date",
-        "issue_field_name": "Target date",
-        "value": "2030-01-01"
-      }
-    ],
-    "issue_dependencies": {
-      "blocked_by": 0,
-      "total_blocked_by": 0,
-      "blocking": 0,
-      "total_blocking": 0
-    },
-    "comments": []
-  },
-  {
     "number": 259,
     "title": "New messages types",
     "state": "open",
@@ -2977,211 +3195,6 @@
       {
         "issue_field_id": 30474188,
         "node_id": "IFDV_kgDOABzoVg",
-        "data_type": "date",
-        "issue_field_name": "Target date",
-        "value": "2030-01-01"
-      }
-    ],
-    "issue_dependencies": {
-      "blocked_by": 0,
-      "total_blocked_by": 0,
-      "blocking": 0,
-      "total_blocking": 0
-    },
-    "comments": []
-  },
-  {
-    "number": 257,
-    "title": "Chrome custom scrollbar",
-    "state": "open",
-    "state_reason": null,
-    "is_pull_request": false,
-    "labels": [],
-    "assignees": [
-      "MatteoMagnani7"
-    ],
-    "milestone": null,
-    "created_at": "2026-06-07T19:33:06Z",
-    "updated_at": "2026-06-07T19:50:03Z",
-    "closed_at": null,
-    "author": "SamueleOrazioDurante",
-    "comments_count": 0,
-    "body": null,
-    "url": "https://github.com/Novyse/novyse/issues/257",
-    "parent": null,
-    "sub_issues_summary": {
-      "total": 0,
-      "completed": 0,
-      "percent_completed": 0
-    },
-    "sub_issues": [],
-    "issue_field_values": [
-      {
-        "issue_field_id": 30474187,
-        "node_id": "IFDV_kgDOABzoRA",
-        "data_type": "date",
-        "issue_field_name": "Start date",
-        "value": "2030-01-01"
-      },
-      {
-        "issue_field_id": 30474188,
-        "node_id": "IFDV_kgDOABzoVQ",
-        "data_type": "date",
-        "issue_field_name": "Target date",
-        "value": "2030-01-01"
-      }
-    ],
-    "issue_dependencies": {
-      "blocked_by": 0,
-      "total_blocked_by": 0,
-      "blocking": 0,
-      "total_blocking": 0
-    },
-    "comments": []
-  },
-  {
-    "number": 255,
-    "title": "Messages rework",
-    "state": "open",
-    "state_reason": null,
-    "is_pull_request": false,
-    "labels": [],
-    "assignees": [
-      "MatteoMagnani7"
-    ],
-    "milestone": null,
-    "created_at": "2026-06-07T19:31:50Z",
-    "updated_at": "2026-07-11T08:27:22Z",
-    "closed_at": null,
-    "author": "SamueleOrazioDurante",
-    "comments_count": 1,
-    "body": null,
-    "url": "https://github.com/Novyse/novyse/issues/255",
-    "parent": null,
-    "sub_issues_summary": {
-      "total": 0,
-      "completed": 0,
-      "percent_completed": 0
-    },
-    "sub_issues": [],
-    "issue_field_values": [
-      {
-        "issue_field_id": 30474187,
-        "node_id": "IFDV_kgDOABzoQw",
-        "data_type": "date",
-        "issue_field_name": "Start date",
-        "value": "2030-01-01"
-      },
-      {
-        "issue_field_id": 30474188,
-        "node_id": "IFDV_kgDOABzoVA",
-        "data_type": "date",
-        "issue_field_name": "Target date",
-        "value": "2030-01-01"
-      }
-    ],
-    "issue_dependencies": {
-      "blocked_by": 0,
-      "total_blocked_by": 0,
-      "blocking": 0,
-      "total_blocking": 0
-    },
-    "comments": [
-      {
-        "id": 4943878378,
-        "author": "SamueleOrazioDurante",
-        "created_at": "2026-07-11T08:27:22Z",
-        "updated_at": "2026-07-11T08:27:22Z",
-        "body": "UI",
-        "url": "https://github.com/Novyse/novyse/issues/255#issuecomment-4943878378"
-      }
-    ]
-  },
-  {
-    "number": 254,
-    "title": "Scrollbars penetrate with elements",
-    "state": "open",
-    "state_reason": null,
-    "is_pull_request": false,
-    "labels": [],
-    "assignees": [
-      "MatteoMagnani7"
-    ],
-    "milestone": null,
-    "created_at": "2026-06-07T19:31:44Z",
-    "updated_at": "2026-06-07T19:50:02Z",
-    "closed_at": null,
-    "author": "SamueleOrazioDurante",
-    "comments_count": 0,
-    "body": null,
-    "url": "https://github.com/Novyse/novyse/issues/254",
-    "parent": null,
-    "sub_issues_summary": {
-      "total": 0,
-      "completed": 0,
-      "percent_completed": 0
-    },
-    "sub_issues": [],
-    "issue_field_values": [
-      {
-        "issue_field_id": 30474187,
-        "node_id": "IFDV_kgDOABzoQg",
-        "data_type": "date",
-        "issue_field_name": "Start date",
-        "value": "2030-01-01"
-      },
-      {
-        "issue_field_id": 30474188,
-        "node_id": "IFDV_kgDOABzoUw",
-        "data_type": "date",
-        "issue_field_name": "Target date",
-        "value": "2030-01-01"
-      }
-    ],
-    "issue_dependencies": {
-      "blocked_by": 0,
-      "total_blocked_by": 0,
-      "blocking": 0,
-      "total_blocking": 0
-    },
-    "comments": []
-  },
-  {
-    "number": 253,
-    "title": "Comms topbar",
-    "state": "open",
-    "state_reason": null,
-    "is_pull_request": false,
-    "labels": [],
-    "assignees": [
-      "MatteoMagnani7"
-    ],
-    "milestone": null,
-    "created_at": "2026-06-07T19:31:22Z",
-    "updated_at": "2026-06-07T19:50:02Z",
-    "closed_at": null,
-    "author": "SamueleOrazioDurante",
-    "comments_count": 0,
-    "body": "- overflows in small screens\n- mic doesn’t behave like a classic icon component ",
-    "url": "https://github.com/Novyse/novyse/issues/253",
-    "parent": null,
-    "sub_issues_summary": {
-      "total": 0,
-      "completed": 0,
-      "percent_completed": 0
-    },
-    "sub_issues": [],
-    "issue_field_values": [
-      {
-        "issue_field_id": 30474187,
-        "node_id": "IFDV_kgDOABzoQQ",
-        "data_type": "date",
-        "issue_field_name": "Start date",
-        "value": "2030-01-01"
-      },
-      {
-        "issue_field_id": 30474188,
-        "node_id": "IFDV_kgDOABzoUg",
         "data_type": "date",
         "issue_field_name": "Target date",
         "value": "2030-01-01"

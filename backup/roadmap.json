@@ -7,7 +7,7 @@
     "closed": false,
     "closedAt": null,
     "createdAt": "2026-06-07T13:45:39Z",
-    "updatedAt": "2026-10-12T19:46:00Z"
+    "updatedAt": "2026-10-13T16:53:19Z"
   },
   "org": "Novyse",
   "fields": [
@@ -321,6 +321,75 @@
     }
   ],
   "items": [
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zhAbX8w",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 330,
+        "title": "Notification should be asked for permission after login",
+        "state": "CLOSED",
+        "url": "https://github.com/Novyse/novyse/issues/330",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.3 - Flutter Migration",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "Notification should be asked for permission after login",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Completed",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Bug Fix",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Notification",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
+    },
     {
       "id": "PVTI_lADOCuSSY84BZ912zg5jx1E",
       "isArchived": false,
@@ -893,6 +962,289 @@
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
             "name": "UI/UX",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zhAbbrs",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 331,
+        "title": "Noise removal",
+        "state": "OPEN",
+        "url": "https://github.com/Novyse/novyse/issues/331",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Unassigned",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "Noise removal",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "In Progress",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Feature",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Comms",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zgv0IAY",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 284,
+        "title": "Mac recognise Novyse desktop app as a potential malware",
+        "state": "CLOSED",
+        "url": "https://github.com/Novyse/novyse/issues/284",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "Mac recognise Novyse desktop app as a potential malware",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Completed",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.3 - Flutter Migration",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Improvement",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Desktop",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zgvWLzc",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 279,
+        "title": "Messages internal queue rework",
+        "state": "CLOSED",
+        "url": "https://github.com/Novyse/novyse/issues/279",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": [
+            {
+              "login": "SamueleOrazioDurante"
+            }
+          ]
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldUserValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.3 - Flutter Migration",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "Messages internal queue rework",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Completed",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Improvement",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Miscellaneous",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zhAbgcs",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 332,
+        "title": "[Windows] Default communication device name does not show up",
+        "state": "CLOSED",
+        "url": "https://github.com/Novyse/novyse/issues/332",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.3 - Flutter Migration",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "[Windows] Default communication device name does not show up",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Completed",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Bug Fix",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Comms",
             "field": {
               "name": "Category"
             }
@@ -11834,334 +12186,6 @@
       }
     },
     {
-      "id": "PVTI_lADOCuSSY84BZ912zgu-gaA",
-      "isArchived": false,
-      "content": {
-        "__typename": "Issue",
-        "number": 253,
-        "title": "Comms topbar",
-        "state": "OPEN",
-        "url": "https://github.com/Novyse/novyse/issues/253",
-        "repository": {
-          "nameWithOwner": "Novyse/novyse"
-        },
-        "labels": {
-          "nodes": []
-        },
-        "assignees": {
-          "nodes": [
-            {
-              "login": "MatteoMagnani7"
-            }
-          ]
-        }
-      },
-      "fieldValues": {
-        "nodes": [
-          {
-            "__typename": "ProjectV2ItemFieldUserValue"
-          },
-          {
-            "__typename": "ProjectV2ItemFieldRepositoryValue"
-          },
-          {
-            "__typename": "ProjectV2ItemIssueFieldValue"
-          },
-          {
-            "__typename": "ProjectV2ItemIssueFieldValue"
-          },
-          {
-            "__typename": "ProjectV2ItemFieldTextValue",
-            "text": "Comms topbar",
-            "field": {
-              "name": "Title"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Planned",
-            "field": {
-              "name": "Status"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Improvement",
-            "field": {
-              "name": "Classification"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Unassigned",
-            "field": {
-              "name": "Version"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Client",
-            "field": {
-              "name": "Scope"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "UI/UX",
-            "field": {
-              "name": "Category"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "id": "PVTI_lADOCuSSY84BZ912zgu-gdI",
-      "isArchived": false,
-      "content": {
-        "__typename": "Issue",
-        "number": 254,
-        "title": "Scrollbars penetrate with elements",
-        "state": "OPEN",
-        "url": "https://github.com/Novyse/novyse/issues/254",
-        "repository": {
-          "nameWithOwner": "Novyse/novyse"
-        },
-        "labels": {
-          "nodes": []
-        },
-        "assignees": {
-          "nodes": [
-            {
-              "login": "MatteoMagnani7"
-            }
-          ]
-        }
-      },
-      "fieldValues": {
-        "nodes": [
-          {
-            "__typename": "ProjectV2ItemFieldUserValue"
-          },
-          {
-            "__typename": "ProjectV2ItemFieldRepositoryValue"
-          },
-          {
-            "__typename": "ProjectV2ItemIssueFieldValue"
-          },
-          {
-            "__typename": "ProjectV2ItemIssueFieldValue"
-          },
-          {
-            "__typename": "ProjectV2ItemFieldTextValue",
-            "text": "Scrollbars penetrate with elements",
-            "field": {
-              "name": "Title"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Planned",
-            "field": {
-              "name": "Status"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Improvement",
-            "field": {
-              "name": "Classification"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Unassigned",
-            "field": {
-              "name": "Version"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Client",
-            "field": {
-              "name": "Scope"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "UI/UX",
-            "field": {
-              "name": "Category"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "id": "PVTI_lADOCuSSY84BZ912zgu-gd0",
-      "isArchived": false,
-      "content": {
-        "__typename": "Issue",
-        "number": 255,
-        "title": "Messages rework",
-        "state": "OPEN",
-        "url": "https://github.com/Novyse/novyse/issues/255",
-        "repository": {
-          "nameWithOwner": "Novyse/novyse"
-        },
-        "labels": {
-          "nodes": []
-        },
-        "assignees": {
-          "nodes": [
-            {
-              "login": "MatteoMagnani7"
-            }
-          ]
-        }
-      },
-      "fieldValues": {
-        "nodes": [
-          {
-            "__typename": "ProjectV2ItemFieldUserValue"
-          },
-          {
-            "__typename": "ProjectV2ItemFieldRepositoryValue"
-          },
-          {
-            "__typename": "ProjectV2ItemIssueFieldValue"
-          },
-          {
-            "__typename": "ProjectV2ItemIssueFieldValue"
-          },
-          {
-            "__typename": "ProjectV2ItemFieldTextValue",
-            "text": "Messages rework",
-            "field": {
-              "name": "Title"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Planned",
-            "field": {
-              "name": "Status"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Improvement",
-            "field": {
-              "name": "Classification"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Unassigned",
-            "field": {
-              "name": "Version"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Client",
-            "field": {
-              "name": "Scope"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "UI/UX",
-            "field": {
-              "name": "Category"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "id": "PVTI_lADOCuSSY84BZ912zgu-gn4",
-      "isArchived": false,
-      "content": {
-        "__typename": "Issue",
-        "number": 257,
-        "title": "Chrome custom scrollbar",
-        "state": "OPEN",
-        "url": "https://github.com/Novyse/novyse/issues/257",
-        "repository": {
-          "nameWithOwner": "Novyse/novyse"
-        },
-        "labels": {
-          "nodes": []
-        },
-        "assignees": {
-          "nodes": [
-            {
-              "login": "MatteoMagnani7"
-            }
-          ]
-        }
-      },
-      "fieldValues": {
-        "nodes": [
-          {
-            "__typename": "ProjectV2ItemFieldUserValue"
-          },
-          {
-            "__typename": "ProjectV2ItemFieldRepositoryValue"
-          },
-          {
-            "__typename": "ProjectV2ItemIssueFieldValue"
-          },
-          {
-            "__typename": "ProjectV2ItemIssueFieldValue"
-          },
-          {
-            "__typename": "ProjectV2ItemFieldTextValue",
-            "text": "Chrome custom scrollbar",
-            "field": {
-              "name": "Title"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Planned",
-            "field": {
-              "name": "Status"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Improvement",
-            "field": {
-              "name": "Classification"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Unassigned",
-            "field": {
-              "name": "Version"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Client",
-            "field": {
-              "name": "Scope"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "UI/UX",
-            "field": {
-              "name": "Category"
-            }
-          }
-        ]
-      }
-    },
-    {
       "id": "PVTI_lADOCuSSY84BZ912zgu-jaQ",
       "isArchived": false,
       "content": {
@@ -12358,81 +12382,6 @@
           {
             "__typename": "ProjectV2ItemFieldTextValue",
             "text": "New messages types",
-            "field": {
-              "name": "Title"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Planned",
-            "field": {
-              "name": "Status"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Improvement",
-            "field": {
-              "name": "Classification"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Unassigned",
-            "field": {
-              "name": "Version"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Client",
-            "field": {
-              "name": "Scope"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Messages",
-            "field": {
-              "name": "Category"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "id": "PVTI_lADOCuSSY84BZ912zgu-gzg",
-      "isArchived": false,
-      "content": {
-        "__typename": "Issue",
-        "number": 260,
-        "title": "Favorite messages",
-        "state": "OPEN",
-        "url": "https://github.com/Novyse/novyse/issues/260",
-        "repository": {
-          "nameWithOwner": "Novyse/novyse"
-        },
-        "labels": {
-          "nodes": []
-        },
-        "assignees": {
-          "nodes": []
-        }
-      },
-      "fieldValues": {
-        "nodes": [
-          {
-            "__typename": "ProjectV2ItemFieldRepositoryValue"
-          },
-          {
-            "__typename": "ProjectV2ItemIssueFieldValue"
-          },
-          {
-            "__typename": "ProjectV2ItemIssueFieldValue"
-          },
-          {
-            "__typename": "ProjectV2ItemFieldTextValue",
-            "text": "Favorite messages",
             "field": {
               "name": "Title"
             }
@@ -13050,158 +12999,6 @@
       }
     },
     {
-      "id": "PVTI_lADOCuSSY84BZ912zgvWLzc",
-      "isArchived": false,
-      "content": {
-        "__typename": "Issue",
-        "number": 279,
-        "title": "Messages internal queue rework",
-        "state": "OPEN",
-        "url": "https://github.com/Novyse/novyse/issues/279",
-        "repository": {
-          "nameWithOwner": "Novyse/novyse"
-        },
-        "labels": {
-          "nodes": []
-        },
-        "assignees": {
-          "nodes": [
-            {
-              "login": "SamueleOrazioDurante"
-            }
-          ]
-        }
-      },
-      "fieldValues": {
-        "nodes": [
-          {
-            "__typename": "ProjectV2ItemFieldUserValue"
-          },
-          {
-            "__typename": "ProjectV2ItemFieldRepositoryValue"
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Unassigned",
-            "field": {
-              "name": "Version"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldTextValue",
-            "text": "Messages internal queue rework",
-            "field": {
-              "name": "Title"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Planned",
-            "field": {
-              "name": "Status"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Improvement",
-            "field": {
-              "name": "Classification"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Client",
-            "field": {
-              "name": "Scope"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Miscellaneous",
-            "field": {
-              "name": "Category"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "id": "PVTI_lADOCuSSY84BZ912zgvWNZ8",
-      "isArchived": false,
-      "content": {
-        "__typename": "Issue",
-        "number": 280,
-        "title": "Initialize/update client logic rework",
-        "state": "OPEN",
-        "url": "https://github.com/Novyse/novyse/issues/280",
-        "repository": {
-          "nameWithOwner": "Novyse/novyse"
-        },
-        "labels": {
-          "nodes": []
-        },
-        "assignees": {
-          "nodes": [
-            {
-              "login": "SamueleOrazioDurante"
-            }
-          ]
-        }
-      },
-      "fieldValues": {
-        "nodes": [
-          {
-            "__typename": "ProjectV2ItemFieldUserValue"
-          },
-          {
-            "__typename": "ProjectV2ItemFieldRepositoryValue"
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Unassigned",
-            "field": {
-              "name": "Version"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldTextValue",
-            "text": "Initialize/update client logic rework",
-            "field": {
-              "name": "Title"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Planned",
-            "field": {
-              "name": "Status"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Improvement",
-            "field": {
-              "name": "Classification"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Client+Server",
-            "field": {
-              "name": "Scope"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Initialization",
-            "field": {
-              "name": "Category"
-            }
-          }
-        ]
-      }
-    },
-    {
       "id": "PVTI_lADOCuSSY84BZ912zgvWPS8",
       "isArchived": false,
       "content": {
@@ -13339,75 +13136,6 @@
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
             "name": "Chat",
-            "field": {
-              "name": "Category"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "id": "PVTI_lADOCuSSY84BZ912zgv0IAY",
-      "isArchived": false,
-      "content": {
-        "__typename": "Issue",
-        "number": 284,
-        "title": "Mac recognise Novyse desktop app as a potential malware",
-        "state": "OPEN",
-        "url": "https://github.com/Novyse/novyse/issues/284",
-        "repository": {
-          "nameWithOwner": "Novyse/novyse"
-        },
-        "labels": {
-          "nodes": []
-        },
-        "assignees": {
-          "nodes": []
-        }
-      },
-      "fieldValues": {
-        "nodes": [
-          {
-            "__typename": "ProjectV2ItemFieldRepositoryValue"
-          },
-          {
-            "__typename": "ProjectV2ItemFieldTextValue",
-            "text": "Mac recognise Novyse desktop app as a potential malware",
-            "field": {
-              "name": "Title"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Planned",
-            "field": {
-              "name": "Status"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Unassigned",
-            "field": {
-              "name": "Version"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Improvement",
-            "field": {
-              "name": "Classification"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Client",
-            "field": {
-              "name": "Scope"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Desktop",
             "field": {
               "name": "Category"
             }
@@ -13710,82 +13438,6 @@
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
             "name": "UI/UX",
-            "field": {
-              "name": "Category"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "id": "PVTI_lADOCuSSY84BZ912zg06Ufo",
-      "isArchived": false,
-      "content": {
-        "__typename": "Issue",
-        "number": 294,
-        "title": "Video player and Image on mobile are broken",
-        "state": "OPEN",
-        "url": "https://github.com/Novyse/novyse/issues/294",
-        "repository": {
-          "nameWithOwner": "Novyse/novyse"
-        },
-        "labels": {
-          "nodes": []
-        },
-        "assignees": {
-          "nodes": [
-            {
-              "login": "MatteoMagnani7"
-            }
-          ]
-        }
-      },
-      "fieldValues": {
-        "nodes": [
-          {
-            "__typename": "ProjectV2ItemFieldUserValue"
-          },
-          {
-            "__typename": "ProjectV2ItemFieldRepositoryValue"
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Unassigned",
-            "field": {
-              "name": "Version"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldTextValue",
-            "text": "Video player and Image on mobile are broken",
-            "field": {
-              "name": "Title"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Planned",
-            "field": {
-              "name": "Status"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Bug Fix",
-            "field": {
-              "name": "Classification"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Client",
-            "field": {
-              "name": "Scope"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Media",
             "field": {
               "name": "Category"
             }
@@ -14906,7 +14558,7 @@
       "content": {
         "__typename": "Issue",
         "number": 320,
-        "title": "Add Camera and Recording message types with video preview",
+        "title": "Attachments Types",
         "state": "OPEN",
         "url": "https://github.com/Novyse/novyse/issues/320",
         "repository": {
@@ -14933,7 +14585,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldTextValue",
-            "text": "Add Camera and Recording message types with video preview",
+            "text": "Attachments Types",
             "field": {
               "name": "Title"
             }
@@ -14943,6 +14595,27 @@
             "name": "Planned",
             "field": {
               "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Feature",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Messages",
+            "field": {
+              "name": "Category"
             }
           }
         ]
@@ -14991,6 +14664,27 @@
             "name": "Planned",
             "field": {
               "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Feature",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client+Server",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Messages",
+            "field": {
+              "name": "Category"
             }
           }
         ]
@@ -15202,8 +14896,429 @@
           }
         ]
       }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zhAbUuk",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 329,
+        "title": "[Windows] Process name is \"Next-Gen Communication. C...\"",
+        "state": "CLOSED",
+        "url": "https://github.com/Novyse/novyse/issues/329",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "[Windows] Process name is \"Next-Gen Communication. C...\"",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Completed",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Bug Fix",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Desktop",
+            "field": {
+              "name": "Category"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.3 - Flutter Migration",
+            "field": {
+              "name": "Version"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zhAcSDw",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 333,
+        "title": "[Windows] Cannot render images/videos in chat",
+        "state": "OPEN",
+        "url": "https://github.com/Novyse/novyse/issues/333",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Unassigned",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "[Windows] Cannot render images/videos in chat",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Planned",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Bug Fix",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Chat",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zhAc50o",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 335,
+        "title": "[Linux]  Severe lag on Firefox (NVIDIA + Wayland) when logged in",
+        "state": "OPEN",
+        "url": "https://github.com/Novyse/novyse/issues/335",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Unassigned",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "[Linux]  Severe lag on Firefox (NVIDIA + Wayland) when logged in",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Blocked",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Bug Fix",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Miscellaneous",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zhAe5Gg",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 336,
+        "title": "Chat Header",
+        "state": "OPEN",
+        "url": "https://github.com/Novyse/novyse/issues/336",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Unassigned",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "Chat Header",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Planned",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Feature",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "UI/UX",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zgvWNZ8",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 280,
+        "title": "Initialize/update client logic rework",
+        "state": "OPEN",
+        "url": "https://github.com/Novyse/novyse/issues/280",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": [
+            {
+              "login": "SamueleOrazioDurante"
+            }
+          ]
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldUserValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Unassigned",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "Initialize/update client logic rework",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Planned",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Improvement",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client+Server",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Initialization",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zhAfMls",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 337,
+        "title": "Mute/unmute speaker button should mute/unmute microphone too",
+        "state": "CLOSED",
+        "url": "https://github.com/Novyse/novyse/issues/337",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.3 - Flutter Migration",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "Mute/unmute speaker button should mute/unmute microphone too",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Improvement",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Comms",
+            "field": {
+              "name": "Category"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Completed",
+            "field": {
+              "name": "Status"
+            }
+          }
+        ]
+      }
     }
   ],
-  "fetched": 200,
-  "totalCount": 200
+  "fetched": 202,
+  "totalCount": 202
 }
