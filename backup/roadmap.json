@@ -7,7 +7,7 @@
     "closed": false,
     "closedAt": null,
     "createdAt": "2026-06-07T13:45:39Z",
-    "updatedAt": "2026-10-17T12:35:14Z"
+    "updatedAt": "2026-10-19T21:38:00Z"
   },
   "org": "Novyse",
   "fields": [
@@ -194,12 +194,16 @@
           "name": "v1.3 - Flutter Migration"
         },
         {
+          "id": "6b149086",
+          "name": "v1.4 - Temp"
+        },
+        {
           "id": "92770627",
-          "name": "v1.4 - AI and Bot Integration"
+          "name": "v1.5 - AI and Bot Integration"
         },
         {
           "id": "8249d263",
-          "name": "v1.5 - Self-hosting"
+          "name": "v1.6 - Self-hosting"
         }
       ]
     },
@@ -322,6 +326,144 @@
   ],
   "items": [
     {
+      "id": "PVTI_lADOCuSSY84BZ912zhAe5Gg",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 336,
+        "title": "Chat Header",
+        "state": "CLOSED",
+        "url": "https://github.com/Novyse/novyse/issues/336",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.3 - Flutter Migration",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "Chat Header",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Completed",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Feature",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "UI/UX",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zhAv5P8",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 340,
+        "title": "Voice messages play/stop does not work and no waveform is displayed",
+        "state": "CLOSED",
+        "url": "https://github.com/Novyse/novyse/issues/340",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.3 - Flutter Migration",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "Voice messages play/stop does not work and no waveform is displayed",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Completed",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Bug Fix",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Messages",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
+    },
+    {
       "id": "PVTI_lADOCuSSY84BZ912zhAqaW4",
       "isArchived": false,
       "content": {
@@ -385,75 +527,6 @@
             "name": "Bug Fix",
             "field": {
               "name": "Classification"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "id": "PVTI_lADOCuSSY84BZ912zhAe5Gg",
-      "isArchived": false,
-      "content": {
-        "__typename": "Issue",
-        "number": 336,
-        "title": "Chat Header",
-        "state": "OPEN",
-        "url": "https://github.com/Novyse/novyse/issues/336",
-        "repository": {
-          "nameWithOwner": "Novyse/novyse"
-        },
-        "labels": {
-          "nodes": []
-        },
-        "assignees": {
-          "nodes": []
-        }
-      },
-      "fieldValues": {
-        "nodes": [
-          {
-            "__typename": "ProjectV2ItemFieldRepositoryValue"
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.3 - Flutter Migration",
-            "field": {
-              "name": "Version"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldTextValue",
-            "text": "Chat Header",
-            "field": {
-              "name": "Title"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "In Progress",
-            "field": {
-              "name": "Status"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Feature",
-            "field": {
-              "name": "Classification"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Client",
-            "field": {
-              "name": "Scope"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "UI/UX",
-            "field": {
-              "name": "Category"
             }
           }
         ]
@@ -1209,7 +1282,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Unassigned",
+            "name": "v1.3 - Flutter Migration",
             "field": {
               "name": "Version"
             }
@@ -1278,7 +1351,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Unassigned",
+            "name": "v1.4 - Temp",
             "field": {
               "name": "Version"
             }
@@ -11777,7 +11850,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.4 - AI and Bot Integration",
+            "name": "v1.5 - AI and Bot Integration",
             "field": {
               "name": "Version"
             }
@@ -11852,7 +11925,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.4 - AI and Bot Integration",
+            "name": "v1.5 - AI and Bot Integration",
             "field": {
               "name": "Version"
             }
@@ -11927,7 +12000,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.4 - AI and Bot Integration",
+            "name": "v1.5 - AI and Bot Integration",
             "field": {
               "name": "Version"
             }
@@ -12002,7 +12075,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.4 - AI and Bot Integration",
+            "name": "v1.5 - AI and Bot Integration",
             "field": {
               "name": "Version"
             }
@@ -12077,7 +12150,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.5 - Self-hosting",
+            "name": "v1.6 - Self-hosting",
             "field": {
               "name": "Version"
             }
@@ -12152,7 +12225,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.5 - Self-hosting",
+            "name": "v1.6 - Self-hosting",
             "field": {
               "name": "Version"
             }
@@ -12227,7 +12300,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.5 - Self-hosting",
+            "name": "v1.6 - Self-hosting",
             "field": {
               "name": "Version"
             }
@@ -12302,7 +12375,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.5 - Self-hosting",
+            "name": "v1.6 - Self-hosting",
             "field": {
               "name": "Version"
             }
@@ -12377,7 +12450,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.5 - Self-hosting",
+            "name": "v1.6 - Self-hosting",
             "field": {
               "name": "Version"
             }
@@ -13916,6 +13989,27 @@
             "name": "Unassigned",
             "field": {
               "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Feature",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client+Server",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Security",
+            "field": {
+              "name": "Category"
             }
           }
         ]
@@ -15464,75 +15558,6 @@
       }
     },
     {
-      "id": "PVTI_lADOCuSSY84BZ912zhAv5P8",
-      "isArchived": false,
-      "content": {
-        "__typename": "Issue",
-        "number": 340,
-        "title": "Voice messages play/stop does not work and no waveform is displayed",
-        "state": "OPEN",
-        "url": "https://github.com/Novyse/novyse/issues/340",
-        "repository": {
-          "nameWithOwner": "Novyse/novyse"
-        },
-        "labels": {
-          "nodes": []
-        },
-        "assignees": {
-          "nodes": []
-        }
-      },
-      "fieldValues": {
-        "nodes": [
-          {
-            "__typename": "ProjectV2ItemFieldRepositoryValue"
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.3 - Flutter Migration",
-            "field": {
-              "name": "Version"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldTextValue",
-            "text": "Voice messages play/stop does not work and no waveform is displayed",
-            "field": {
-              "name": "Title"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "In Progress",
-            "field": {
-              "name": "Status"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Bug Fix",
-            "field": {
-              "name": "Classification"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Client",
-            "field": {
-              "name": "Scope"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Messages",
-            "field": {
-              "name": "Category"
-            }
-          }
-        ]
-      }
-    },
-    {
       "id": "PVTI_lADOCuSSY84BZ912zhBc5Xw",
       "isArchived": false,
       "content": {
@@ -15600,8 +15625,77 @@
           }
         ]
       }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zhB3R8E",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 342,
+        "title": "Multi-Platform plugin system",
+        "state": "OPEN",
+        "url": "https://github.com/Novyse/novyse/issues/342",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "Multi-Platform plugin system",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Planned",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Feature",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.4 - Temp",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client+Server",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Comms",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
     }
   ],
-  "fetched": 206,
-  "totalCount": 206
+  "fetched": 207,
+  "totalCount": 207
 }

@@ -1,5 +1,46 @@
 [
   {
+    "number": 342,
+    "title": "Multi-Platform plugin system",
+    "state": "open",
+    "state_reason": null,
+    "is_pull_request": false,
+    "labels": [],
+    "assignees": [],
+    "milestone": null,
+    "created_at": "2026-10-19T14:53:05Z",
+    "updated_at": "2026-10-19T14:56:47Z",
+    "closed_at": null,
+    "author": "SamueleOrazioDurante",
+    "comments_count": 1,
+    "body": "Implement a secure, sandboxed, multi-platform **Plugin/Activity System** for voice chats across **Android, iOS, Windows, macOS, Linux, and Web**. \nAdmins and users in a voice call can launch interactive shared activities (e.g., *Watch Together*, collaborative whiteboards like *Excalidraw*, party games, polls) rendered as tiles inside the voice room grid.\n\nTo ensure host security and zero cross-platform compilation overhead, plugins are built as static **HTML5/JS/CSS bundles** executed inside isolated WebViews/iFrames and communicate with the Flutter host exclusively via a controlled RPC Bridge.\n\n---\n\n## 1. Plugin Distribution & GitHub Registry Model\n\nPlugins are hosted and distributed directly via **Git Repositories & Releases**. The backend supports two types of sources using the same unified parsing logic:\n1. **Official Verified Library (`is_verified = true`):** Global plugins maintained by the platform, available by default in every voice chat.\n2. **External / Custom Repositories (`is_verified = false`):** Added by an admin to a specific chat via a GitHub repo URL.\n\n### Repository Structure Convention\nA Git repository can host either a **single plugin** or a **library of multiple plugins** via a root `registry.json` file:\n```json\n{\n  \"libraryName\": \"Official Activities\",\n  \"plugins\": [\n    {\n      \"slug\": \"watch-together\",\n      \"name\": \"Watch Together\",\n      \"description\": \"Synchronized video player for YouTube, Twitch, and local chat videos.\",\n      \"icon\": \"icons/watch-together.png\",\n      \"readmePath\": \"plugins/watch-together/README.md\",\n      \"assetName\": \"watch-together-bundle.zip\",\n      \"permissions\": [\"chat.media.read\", \"network.state\", \"network.action\"]\n    }\n  ]\n}\n```\n* **Compiled Assets:** GitHub Releases must contain the pre-built static bundles matching `assetName` (e.g., `watch-together-bundle.zip`), containing at minimum an `index.html` entry point and a `manifest.json`. The backend **never** compiles third-party code.\n* **Server-Side Metadata Caching:** Clients never query the GitHub API directly (avoiding rate limits). The backend fetches release tags, READMEs, and asset URLs periodically (via background cron/polling or GitHub Webhooks) and caches them in **Redis** (`plugin:{uuid}:metadata`) with a fallback copy in the SQL database (`cached_metadata`).\n\n---\n\n## 2. Client-Side Architecture & UX Lifecycle (Flutter)\n\n### Multi-Platform Sandbox Engine\n* **Mobile & Desktop (Android, iOS, Windows, macOS, Linux):** Uses `flutter_inappwebview` running in an isolated renderer process with native OS permissions disabled by default.\n* **Web:** Uses `HtmlElementView` mounting a sandboxed `<iframe>` (`sandbox=\"allow-scripts\"`).\n* **Concurrency Limit:** Capped at a maximum of **2–3 active WebView instances** per voice call to prevent Out-Of-Memory (OOM) crashes on mobile devices.\n\n### Zero-Trust Launch & Version Locking\n1. When a user starts an activity, the client sends **only** the `pluginUuid` to the server (`START_ACTIVITY`).\n2. The server validates the plugin, generates a unique `instanceId`, locks the current release version (`lockedVersion`), and broadcasts the authoritative launch payload to all participants in the voice room.\n\n### Per-Client Activity Tile State Machine\nWhen an activity tile spawns in the voice chat grid for the participants, each client independently runs the following state machine inside the tile before executing any plugin code:\n\n```text\n[Activity Spawned in Room]\n          │\n          ▼\n  Is plugin verified OR already trusted by local user?\n     ├── NO  ──► [STATE: UNTRUSTED_PROMPT]\n     │           Render native Flutter warning UI inside the tile:\n     │           \"Unverified plugin from [github.com/](https://github.com/)... Trust & Load?\"\n     │           (Zero bytes downloaded until user clicks \"Confirm\")\n     │\n     └── YES ──► Check local cache: `/plugins/{pluginUuid}/{lockedVersion}/index.html`\n                    ├── MISSING/OUTDATED ──► [STATE: DOWNLOADING]\n                    │                        Show progress bar in tile, download zip,\n                    │                        extract via `archive`, delete old version folder.\n                    │\n                    └── PRESENT ───────────► [STATE: RUNNING]\n                                             Mount InAppWebView / iFrame and inject Bridge.\n```\n\n---\n\n## 3. Networking: The 3-Channel Architecture\n\nPlugins do not manage their own backend servers or sockets. All multiplayer communication is multiplexed through the Flutter host across three distinct channels based on reliability and persistence requirements:\n\n| Channel | Transport Layer | Persistence | Use Case & Behavior |\n| :--- | :--- | :--- | :--- |\n| **1. `STATE`** | **API Gateway (REST) $\\to$ Redis $\\to$ Socket.IO** | **Persistent (Event Log)** | Permanent mutations needed by **Late Joiners** (e.g., *Load Video, Play/Pause/Seek, Commit Whiteboard Shape, Turn Move*). Appended to a Redis list (`RPUSH`) and broadcast to the room. |\n| **2. `ACTION`** | **Socket.IO (TCP)** | **Transient (Not saved)** | Reliable one-off events that must not be lost, but should not be replayed to late joiners (e.g., *Dice roll animation, Soundboard buzzer, Chat reaction, Hit registered*). Supports broadcast and unicast (`targetUserId`). |\n| **3. `STREAM`** | **LiveKit DataChannel (WebRTC UDP Lossy)** | **Transient (Lossy)** | High-frequency 60fps real-time data (e.g., *FPS player coordinates, Mouse cursor pointers, Live drawing stroke preview*). Bypasses backend servers completely via LiveKit SFU. |\n\n### Late Joiner Synchronization (Event Sourcing)\n* There is **no Master/Host client** (preventing client-side state spoofing exploits).\n* Every `STATE` event sent to the API Gateway is stamped with the authoritative `senderId` and `serverTimestamp` and appended to `room:{roomId}:activity:{instanceId}:events` in Redis.\n* When a Late Joiner initializes the plugin, `AppSDK.init()` returns the `eventHistory` array and `serverNow`.\n* The plugin reconstructs the current state locally in milliseconds (e.g., *Watch Together* performs a reverse scan from the end of the array up to the latest `LOAD_VIDEO` event; *Excalidraw* reconciles the committed shape elements).\n\n---\n\n## 4. Local Chat Media Streaming (Multi-GB Video Support)\n\nTo allow plugins like *Watch Together* to play heavy video files (1GB+) previously shared in the text chat **without opening local TCP/HTTP ports and without exposing S3 credentials to the sandbox**:\n\n* **Discovery:** The plugin calls `AppSDK.media.getChatVideos()`, which returns a list of available video files (`fileId`, `fileName`, `duration`, `sizeBytes`, and a Base64 JPEG `thumbnail`).\n* **Streaming on Desktop & Mobile (`flutter_inappwebview`):**\n  * Register a custom scheme handler: `chatmedia://video/{fileId}`.\n  * Intercept `<video src=\"chatmedia://video/{fileId}\">` requests containing HTTP `Range` headers.\n  * Use Dart's `RandomAccessFile` (`setPosition` + `read`) to stream 1–2MB chunks directly from disk and respond with `206 Partial Content`. RAM usage stays under ~15MB regardless of file size.\n* **Streaming on Web (`<iframe>`):**\n  * Retrieve the local `FileHandle` from the browser's **OPFS (Origin Private File System)**.\n  * Generate a disk-backed virtual pointer via `URL.createObjectURL(file)` (or intercept via Service Worker) and pass the `blob:` URL to the `<video>` element.\n\n### Phase 3: Local Video Streaming Engine\n- [ ] Implement `chatmedia://` custom scheme handler in `flutter_inappwebview` using `RandomAccessFile` and HTTP `206 Partial Content` range responses.\n- [ ] Implement Web OPFS `Blob` / `URL.createObjectURL` media bridge for browser support.\n\n### Phase 4: Official Plugins Repository (`official-plugins`)\n- [ ] Create standalone repository and build the lightweight `app-sdk.js` wrapper library.\n- [ ] Migrate **Watch Together** (YouTube, Twitch, Local Chat Video + Reverse-Scan Event Sourcing) as the first official plugin.\n- [ ] Build **Collaborative Whiteboard (Excalidraw)** plugin as the second official validation plugin.",
+    "url": "https://github.com/Novyse/novyse/issues/342",
+    "parent": null,
+    "sub_issues_summary": {
+      "total": 0,
+      "completed": 0,
+      "percent_completed": 0
+    },
+    "sub_issues": [],
+    "issue_field_values": [],
+    "issue_dependencies": {
+      "blocked_by": 0,
+      "total_blocked_by": 0,
+      "blocking": 0,
+      "total_blocking": 0
+    },
+    "comments": [
+      {
+        "id": 6270246057,
+        "author": "SamueleOrazioDurante",
+        "created_at": "2026-10-19T14:56:46Z",
+        "updated_at": "2026-10-19T14:56:46Z",
+        "body": "### Backend\n- [ ] Create SQL migrations for `plugins` and `chat_installed_plugins`.\n- [ ] Build Git/GitHub Sync Worker (fetches `registry.json`, latest release `.zip` URLs, and `README.md`, caching into Redis & DB).\n- [ ] Implement API Gateway endpoints:\n  - `GET /api/chats/{chatId}/plugins` (Returns verified + chat-specific plugins from Redis cache).\n  - `POST /api/rooms/{roomId}/activities/start` (Validates plugin UUID, locks version, broadcasts launch via Redis $\\to$ Socket.IO).\n  - `POST /api/rooms/{roomId}/activities/{instanceId}/event` (Validates user in room, injects `senderId` & `serverNow`, `RPUSH` to Redis, broadcasts via Socket.IO).\n  - `GET /api/rooms/{roomId}/activities/{instanceId}/events` (Returns `serverNow` and `LRANGE` event log for Late Joiners).\n- [ ] Configure Socket.IO router for transient `ACTION` events scoped by `(roomId, instanceId)`.\n\n### Frontend\n- [ ] Implement Activity Grid Tile with the 3-step State Machine (`UNTRUSTED_PROMPT` $\\to$ `DOWNLOADING` $\\to$ `RUNNING`).\n- [ ] Build local plugin cache manager (downloads `.zip`, verifies structure, extracts to `/plugins/{uuid}/{version}`, cleans up outdated versions).\n- [ ] Implement unified `PluginBridgeController` abstracting `flutter_inappwebview` (Mobile/Desktop) and `HtmlElementView` `postMessage` (Web).\n- [ ] Enforce manifest permission checks in the Flutter bridge before executing privileged calls.\n- [ ] Wire `STREAM` channel to LiveKit `localParticipant.publishData(reliability: LOSSY)`.",
+        "url": "https://github.com/Novyse/novyse/issues/342#issuecomment-6270246057"
+      }
+    ]
+  },
+  {
     "number": 341,
     "title": "When an image is pressed to view it bigger from a message preview, it's pixelated. It should only happen on web",
     "state": "closed",
@@ -34,17 +75,17 @@
   {
     "number": 340,
     "title": "Voice messages play/stop does not work and no waveform is displayed",
-    "state": "open",
-    "state_reason": null,
+    "state": "closed",
+    "state_reason": "completed",
     "is_pull_request": false,
     "labels": [],
     "assignees": [],
     "milestone": null,
     "created_at": "2026-10-14T15:41:30Z",
-    "updated_at": "2026-10-14T19:55:18Z",
-    "closed_at": null,
+    "updated_at": "2026-10-19T21:29:53Z",
+    "closed_at": "2026-10-19T21:29:52Z",
     "author": "SamueleOrazioDurante",
-    "comments_count": 1,
+    "comments_count": 2,
     "body": null,
     "url": "https://github.com/Novyse/novyse/issues/340",
     "parent": null,
@@ -69,6 +110,14 @@
         "updated_at": "2026-10-14T19:55:18Z",
         "body": "+ vocal duration does not seem to show up properly",
         "url": "https://github.com/Novyse/novyse/issues/340#issuecomment-6177073538"
+      },
+      {
+        "id": 6268010966,
+        "author": "SamueleOrazioDurante",
+        "created_at": "2026-10-19T13:10:33Z",
+        "updated_at": "2026-10-19T13:10:33Z",
+        "body": "Last thing to do is to replace the current voice recording indicator, a fixed 5-bar visualizer that scales with audio input, with a smooth, dynamically generated native waveform.",
+        "url": "https://github.com/Novyse/novyse/issues/340#issuecomment-6268010966"
       }
     ]
   },
@@ -180,15 +229,15 @@
   {
     "number": 336,
     "title": "Chat Header",
-    "state": "open",
-    "state_reason": null,
+    "state": "closed",
+    "state_reason": "completed",
     "is_pull_request": false,
     "labels": [],
     "assignees": [],
     "milestone": null,
     "created_at": "2026-10-13T16:09:08Z",
-    "updated_at": "2026-10-14T19:52:43Z",
-    "closed_at": null,
+    "updated_at": "2026-10-19T21:29:58Z",
+    "closed_at": "2026-10-19T21:29:58Z",
     "author": "SamueleOrazioDurante",
     "comments_count": 0,
     "body": "Primary tactical interface navigation bars and their current implementation status, while clarifying intended component visibility across active sections.\n\n## Tactical Components\n\n- [x]  Pinned Bar\n- [x] Comms Bar\n- [x] Vocal Bar\n\n## Known Issues\n\n- [x] Pinned messages remain visible while in the communications section (intended behavior).",
