@@ -1,5 +1,149 @@
 [
   {
+    "tag_name": "v1.3.1-20261020.0",
+    "name": "Version 1.3.1-20261020.0",
+    "body": "# Novyse 1.3.1-20261020.0 - Flutter Migration\n\n## Features\n\n### Chat\n\n- **Chat Sub-Header Bars:** Added sub-header bars in the chat view for pinned messages, comms, and active voice sessions.\n- **Vocal View Restore:** The vocal view is now restored per chat, and the participant count now includes yourself.\n- **Chat List Comms/Voice Bars:** Comms and voice bars now appear in the chat list, and tapping a call notification opens the vocal view.\n\n### Comms\n\n- **Screen Share:** Added support for switching between screen share streams.\n- **User Cards:** Double-tap a user card to pin it.\n\n### Messages\n\n- **Audio Message Controls:** Added shared audio message controls, including pausing audio while seeking.\n- **Voice Waveforms:** Voice messages now decode and display waveforms locally, using a shared waveform view.\n- **Live Recording Waveform:** A live waveform is now shown while recording a voice message.\n- **Loading Placeholders:** Voice and audio messages now show loading placeholders while they load.\n- **Media Metadata:** Downloaded media is now enriched with metadata, and message files are updated from download events.\n\n### UI/UX\n\n- **Progress Slider:** Added a generic seekable progress slider with waveform support.\n- **Context Menu:** Context-menu items now have a selected state, and the active voice speed label is displayed.\n\n### Authentication\n\n- **QR Login:** Added a QR login scanner modal.\n\n### Desktop\n\n- **Self-Update Capability:** Updates now work per OS, with Linux distro-specific guidance.\n- **Update Required Page:** The update-required page is split to show guidance for each install source.\n- **Updater Localization:** Added updater strings for macOS, Linux packages, and update check status.\n- **Manual Update Check:** You can now check for updates manually from Settings.\n\n## Bug Fixes\n\n### Chat\n\n- **Last Message Preview:** Fixed the last message not showing for chats created via socket.\n- **Voice Duration Preview:** Receivers now see the voice message duration in the chat list's last message preview, instead of a blank or 0:00 value.\n- **Event Sync:** Fixed the chat event sync cursor so it stays monotonic.\n- **Read Receipts:** Added test coverage for read receipt ingestion paths.\n\n### Comms\n\n- **Speaking Indicator:** The speaking indicator is no longer shown for muted participants.\n\n### Messages\n\n- **Voice Playback:** Fixed voice message playback controls and made speed reset per track.\n- **Image Resolution:** Fixed low image resolution when an image is pressed.\n- **Image Rendering:** Fixed images not rendering on Windows.\n\n### UI/UX\n\n- **Vocal Tiles Padding:** Vocal tiles and the sub list padding now adapt to the measured header height.\n- **Chat Detail Header:** Fixed UI issues in the chat detail sub-header.\n- **Fonts:** Fixed minor font issues.\n\n### Desktop\n\n- **Background Launch:** \"Open in background\" is now disabled when \"Open on startup\" is off.\n- **Linux Package Detection:** Linux system packages are now detected as non-self-updatable installs.\n- **Updater Diagnostics:** Improved updater diagnostics, stale-marker self-healing, and the recovery gate.\n- **Linux Helper Permissions:** Executable permissions for the desktop updater helper are now preserved in the Linux bundle, and an install identity marker is seeded.\n- **Linux Hidden Start:** Added support for the `--hidden` flag to start the Linux app without showing the window.\n\n## Improvements\n\n### Chat\n\n- **Navigation:** Chat navigation in the list and favorites pages now uses `context.go` instead of `context.push`.\n\n### UI/UX\n\n- **List Padding:** All lists now share the same left and right padding.\n- **Pane Resizer:** Standardized the pane resizer component.\n\n### Authentication\n\n- **Turnstile Verification:** Turnstile verification now happens in a modal.\n\n### Miscellaneous\n\n- **Release Script:** Fixed the release script so the version title stays intact.\n- **Test Suite:** Added test coverage for the updater, the progress slider, voice/audio playback, and sub-header bars. Fixed stale tests broken by recent comms and timestamp changes.\n\n## Known Issues\n\n---\n\n### Integrity Checksums\n\nBelow are the SHA-256 checksums to verify the authenticity and integrity of each file.\nFor detailed verification guides and platform instructions, see [BUILD.md](https://github.com/Novyse/novyse/blob/production/BUILD.md#verifying-release-artifacts).\n\n> **Android Official Signing Certificate SHA-256:** `AE:CC:02:60:F1:E9:79:79:81:F5:68:55:A5:AE:B9:56:88:9F:77:66:8C:7B:E2:A2:28:1A:AE:E3:B1:EC:6B:13`\n\n| Platform | File | SHA-256 Checksum |\n| :--- | :--- | :--- |\n| **Updater** | `app-archive.json` | `4ab28dfa5622fdb7f583dbb134c7232f5b6c6594dd8618d00285e32a808ae0f9` |\n| **Android** | `novyse-1.3.1-20261020.0-android-arm64-v8a.apk` | `fbbc899845ef0def9012f4b5353499b2d2064497320c4ebc3562fb5a72525856` |\n| **Android** | `novyse-1.3.1-20261020.0-android-armeabi-v7a.apk` | `9f8369b279c28497f0d5831863df1feef74509bcc5f0e9c5d71d0aecf85c15fe` |\n| **Android** | `novyse-1.3.1-20261020.0-android-universal.apk` | `dc6e77a1a3a525f978dc3b614614fdc0dc6158be9ff9a8b251606992b5ec1ea8` |\n| **Android** | `novyse-1.3.1-20261020.0-android-x86_64.apk` | `b913838c23232685580ab7b097c482f31160919a3e570ae4061601c272c3a208` |\n| **Android** | `novyse-1.3.1-20261020.0-android.aab` | `7110a75933dec7a1bb10480d0807d40411694f052efa5e2dccd1d1bb1b5740e2` |\n| **Linux** | `novyse-1.3.1-20261020.0-linux.AppImage` | `eda53bbc68a822807b641b18045512dc29c7b6301fee6b6f93b89638742463b1` |\n| **Linux** | `novyse-1.3.1-20261020.0-linux.deb` | `914e5997148bdcc7b9856f960e820624e731ce0ca75e4df43e81d8f0b9e4bfab` |\n| **Linux** | `novyse-1.3.1-20261020.0-linux.tar.gz` | `5399eed7d75a676635165614c4f1c5b808dd4d9a3c479c140d6165137be275a5` |\n| **macOS** | `novyse-1.3.1-20261020.0-macos.dmg` | `e4cb2fea056c92718f4377c07dac985a7dc0740f1ee52ff13e22a4b79e5a31d5` |\n| **macOS** | `novyse-1.3.1-20261020.0-macos.zip` | `bb4896a80708842835ca14d4fabb56044737327a35d07324c0bf59ae041abeb6` |\n| **Web** | `novyse-1.3.1-20261020.0-web.zip` | `d22873078f01d8504d99e0f4350eb2944091ca15b66e389f391ff756a9f41bbe` |\n| **Windows** | `novyse-1.3.1-20261020.0-windows-portable.exe` | `9df6940b9e088dcef4d9bdb1ca62515ff565e4093d1990a6ba2067489eb56d96` |\n| **Windows** | `novyse-1.3.1-20261020.0-windows-setup.exe` | `81079a7e04636fe7829067bc0cdcfb08ea462c9ffbc7f42a7b291fcfb00dc960` |\n| **Windows** | `novyse-1.3.1-20261020.0-windows-setup.msi` | `529bb92efd5b665ad683f333557ad478cb39bb98eebe7867dc2e44fcbd04ee01` |\n| **Linux** | `novyse-linux-1.3.1-20261020.0-release.json` | `4115962b631ea02fcde87570bfe38ee75296b5d937c703d5ae5830dc491c378a` |\n| **Linux** | `novyse-linux-1.3.1-20261020.0.zip` | `bc5354a1fc91f2b29d2259268be017067d27255821edf814e52cd7fed28f236f` |\n| **macOS** | `novyse-macos-1.3.1-20261020.0-release.json` | `ddc9758b3300f4ba00c425869208ff95a02a5fd1e1fe0ff7d06ee2da0d2b1c38` |\n| **macOS** | `novyse-macos-1.3.1-20261020.0.zip` | `bb4896a80708842835ca14d4fabb56044737327a35d07324c0bf59ae041abeb6` |\n| **Android** | `novyse-release-cert.pem` | `8bdb8944e128bbe133dca7fae412bc7739d81776274c8134387fd8c39f92c52c` |\n| **Windows** | `novyse-windows-1.3.1-20261020.0-release.json` | `69eb69c2edb00295fb77d197c60d9caa831c1f75101646a8859973685b111794` |\n| **Windows** | `novyse-windows-1.3.1-20261020.0.zip` | `2663ef18358abe09ab3b388bad0064040c8e8c112c1dd69cbf724a2ffd8354b2` |\n",
+    "published_at": "2026-10-20T09:58:10Z",
+    "created_at": "2026-10-20T09:33:39Z",
+    "draft": false,
+    "prerelease": false,
+    "target_commitish": "production",
+    "assets": [
+      {
+        "name": "app-archive.json",
+        "size": 1061,
+        "download_count": 3,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.1-20261020.0/app-archive.json"
+      },
+      {
+        "name": "novyse-1.3.1-20261020.0-android-arm64-v8a.apk",
+        "size": 68791020,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.1-20261020.0/novyse-1.3.1-20261020.0-android-arm64-v8a.apk"
+      },
+      {
+        "name": "novyse-1.3.1-20261020.0-android-armeabi-v7a.apk",
+        "size": 58615152,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.1-20261020.0/novyse-1.3.1-20261020.0-android-armeabi-v7a.apk"
+      },
+      {
+        "name": "novyse-1.3.1-20261020.0-android-universal.apk",
+        "size": 193295638,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.1-20261020.0/novyse-1.3.1-20261020.0-android-universal.apk"
+      },
+      {
+        "name": "novyse-1.3.1-20261020.0-android-x86_64.apk",
+        "size": 78850764,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.1-20261020.0/novyse-1.3.1-20261020.0-android-x86_64.apk"
+      },
+      {
+        "name": "novyse-1.3.1-20261020.0-android.aab",
+        "size": 136849548,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.1-20261020.0/novyse-1.3.1-20261020.0-android.aab"
+      },
+      {
+        "name": "novyse-1.3.1-20261020.0-linux.AppImage",
+        "size": 35914944,
+        "download_count": 3,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.1-20261020.0/novyse-1.3.1-20261020.0-linux.AppImage"
+      },
+      {
+        "name": "novyse-1.3.1-20261020.0-linux.deb",
+        "size": 28475864,
+        "download_count": 2,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.1-20261020.0/novyse-1.3.1-20261020.0-linux.deb"
+      },
+      {
+        "name": "novyse-1.3.1-20261020.0-linux.tar.gz",
+        "size": 35627399,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.1-20261020.0/novyse-1.3.1-20261020.0-linux.tar.gz"
+      },
+      {
+        "name": "novyse-1.3.1-20261020.0-macos.dmg",
+        "size": 78833397,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.1-20261020.0/novyse-1.3.1-20261020.0-macos.dmg"
+      },
+      {
+        "name": "novyse-1.3.1-20261020.0-macos.zip",
+        "size": 69842012,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.1-20261020.0/novyse-1.3.1-20261020.0-macos.zip"
+      },
+      {
+        "name": "novyse-1.3.1-20261020.0-web.zip",
+        "size": 18867751,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.1-20261020.0/novyse-1.3.1-20261020.0-web.zip"
+      },
+      {
+        "name": "novyse-1.3.1-20261020.0-windows-portable.exe",
+        "size": 34817147,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.1-20261020.0/novyse-1.3.1-20261020.0-windows-portable.exe"
+      },
+      {
+        "name": "novyse-1.3.1-20261020.0-windows-setup.exe",
+        "size": 38305780,
+        "download_count": 2,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.1-20261020.0/novyse-1.3.1-20261020.0-windows-setup.exe"
+      },
+      {
+        "name": "novyse-1.3.1-20261020.0-windows-setup.msi",
+        "size": 52666368,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.1-20261020.0/novyse-1.3.1-20261020.0-windows-setup.msi"
+      },
+      {
+        "name": "novyse-linux-1.3.1-20261020.0-release.json",
+        "size": 771,
+        "download_count": 2,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.1-20261020.0/novyse-linux-1.3.1-20261020.0-release.json"
+      },
+      {
+        "name": "novyse-linux-1.3.1-20261020.0.zip",
+        "size": 36081156,
+        "download_count": 2,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.1-20261020.0/novyse-linux-1.3.1-20261020.0.zip"
+      },
+      {
+        "name": "novyse-macos-1.3.1-20261020.0-release.json",
+        "size": 771,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.1-20261020.0/novyse-macos-1.3.1-20261020.0-release.json"
+      },
+      {
+        "name": "novyse-macos-1.3.1-20261020.0.zip",
+        "size": 69842012,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.1-20261020.0/novyse-macos-1.3.1-20261020.0.zip"
+      },
+      {
+        "name": "novyse-release-cert.pem",
+        "size": 1291,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.1-20261020.0/novyse-release-cert.pem"
+      },
+      {
+        "name": "novyse-windows-1.3.1-20261020.0-release.json",
+        "size": 775,
+        "download_count": 2,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.1-20261020.0/novyse-windows-1.3.1-20261020.0-release.json"
+      },
+      {
+        "name": "novyse-windows-1.3.1-20261020.0.zip",
+        "size": 53721333,
+        "download_count": 2,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.1-20261020.0/novyse-windows-1.3.1-20261020.0.zip"
+      }
+    ]
+  },
+  {
     "tag_name": "v1.3.0-20261013.0",
     "name": "Version 1.3.0-20261013.0",
     "body": "# Novyse 1.3.0-20261013.0 - Flutter Migration\r\n\r\n## Features\r\n\r\n### Comms\r\n- **Default Audio Detection:** Added OS default audio device detection implementations for macOS and Linux.\r\n\r\n### Messages\r\n- **Message Queue & Circuit Breaker:** Implemented a global error circuit breaker and persistent queue management for chat messages (#279).\r\n\r\n### Settings\r\n- **Automatic Microphone Mute:** Added a setting and logic to automatically mute the microphone whenever the speaker is muted (#337).\r\n\r\n### Desktop\r\n- **Startup Controller:** Implemented a desktop startup controller with support for launching the application hidden.\r\n- **macOS Entitlements:** Added screen capture, push notifications, and keychain access entitlements for macOS.\r\n\r\n## Bug Fixes\r\n\r\n### Chat\r\n- **Timestamps & Date Separation:** Improved message timezone parsing, date separation, and timestamp conversion in the chat UI.\r\n\r\n### Notification\r\n- **Permission Requests:** Deferred notification permission requests until after the user is logged in (#330).\r\n- **FCM Token Management:** Cleared the confirmed Firebase Cloud Messaging (FCM) token upon login.\r\n\r\n### UI/UX\r\n- **Onboarding Text Fields:** Fixed an issue on Web where the confirm password text field did not allow text modification, and resolved an issue on Android where onboarding text fields closed immediately upon typing.\r\n\r\n### Comms\r\n- **User Card Interactions:** Disabled user card interactions when disconnected from voice chat or while in a different room.\r\n- **Default Audio Devices:** Updated the \"default\" audio input and output labels to display the active device name and fixed default audio device functionality on Windows (#332).\r\n\r\n### Desktop\r\n- **Windows Task Manager:** Fixed the Novyse application display name in the Windows Task Manager.\r\n\r\n## Improvements\r\n\r\n### UI/UX\r\n- **Vocal Chat Interface:** Revamped the vocal chat UI.\r\n\r\n### Distribution\r\n- **RPM Packaging:** Added missing metadata fields to the RPM spec template.\r\n- **Build Script Validation:** Added host OS compatibility validation and platform flag parsing to the build script.\r\n- **Release Workflow:** Added the `upload_all_builds` input and a packaging step to the release-test workflow.\r\n\r\n### Comms\r\n- **Audio Processing:** Removed live audio DSP updates and capture options (#331).\r\n\r\n## Known Issues\r\n\r\n---\r\n\r\n### Integrity Checksums\r\n\r\nBelow are the SHA-256 checksums to verify the authenticity and integrity of each file.\r\nFor detailed verification guides and platform instructions, see [BUILD.md](https://github.com/Novyse/novyse/blob/production/BUILD.md#verifying-release-artifacts).\r\n\r\n> **Android Official Signing Certificate SHA-256:** `AE:CC:02:60:F1:E9:79:79:81:F5:68:55:A5:AE:B9:56:88:9F:77:66:8C:7B:E2:A2:28:1A:AE:E3:B1:EC:6B:13`\r\n\r\n| Platform | File | SHA-256 Checksum |\r\n| :--- | :--- | :--- |\r\n| **Updater** | `app-archive.json` | `da5f7bb881147d703e0288785deabe832296b8bd2139d5e35fdb068352f2b852` |\r\n| **Android** | `novyse-1.3.0-20261013.0-android-arm64-v8a.apk` | `7a45c5c3b383f11ab5fd2be40afbd7324cb426490cec250fd46523741a44f554` |\r\n| **Android** | `novyse-1.3.0-20261013.0-android-armeabi-v7a.apk` | `3baa748144db1636a61a2a16c050c436d5f271a16fcf1d31a3d1dd639dfd44d6` |\r\n| **Android** | `novyse-1.3.0-20261013.0-android-universal.apk` | `9e1fe26f1e8af9d3b271451c1bd86765782717459f0a9393cbfa57783e6dbf16` |\r\n| **Android** | `novyse-1.3.0-20261013.0-android-x86_64.apk` | `5dcd09a7aca47fe001a828d1d984075a4d0ac429701aae78728f2d4bc9b665a8` |\r\n| **Android** | `novyse-1.3.0-20261013.0-android.aab` | `e720a390fe5343c9a31502ad96c26b67ea6367bc99600a46acd115ca8e285c4e` |\r\n| **Linux** | `novyse-1.3.0-20261013.0-linux.AppImage` | `11ef424b200c17c5549181622b997daaf5b66985f60c9491de08b223003795b4` |\r\n| **Linux** | `novyse-1.3.0-20261013.0-linux.deb` | `000ca129ce5a8f9b198dd0a6f1018706e623e9f08e0378c2742682ba194f135d` |\r\n| **Linux** | `novyse-1.3.0-20261013.0-linux.rpm` | `f5df9390416acecae33dc400e242a68303f95f64c2ba4470a3d90b0ed2b82bce` |\r\n| **Linux** | `novyse-1.3.0-20261013.0-linux.tar.gz` | `b245a6a9ee23e52df737bec5687d0eaeb13db26abe3270eacca9e0baeb9f3992` |\r\n| **macOS** | `novyse-1.3.0-20261013.0-macos.dmg` | `23bf16a02872c11e4a158dd705f25956c3302946ae43aaf39a4fbe022dbb4b6b` |\r\n| **macOS** | `novyse-1.3.0-20261013.0-macos.zip` | `005c505dde2949134a8433b841a91bd7d5d929c65ccc76a31d177e237b0db84d` |\r\n| **Web** | `novyse-1.3.0-20261013.0-web.zip` | `79aafaca93f0d375f8139ec14a7369f85a995bb4b523dfedc2c5d51b891b63f8` |\r\n| **Windows** | `novyse-1.3.0-20261013.0-windows-portable.exe` | `2117ecec00e4fa53b8e94355bfca6d85848366deb8dba50cada6454dcc2d8247` |\r\n| **Windows** | `novyse-1.3.0-20261013.0-windows-setup.exe` | `b6dc1435ba11f2518a1aaff5b5aba3694b21b1f07717945bd97a36d0cc97aca7` |\r\n| **Windows** | `novyse-1.3.0-20261013.0-windows-setup.msi` | `81e6396d52ff06ef7e779b774acfeced992b845828bd23d1be72672b44c314a6` |\r\n| **Linux** | `novyse-linux-1.3.0-20261013.0-release.json` | `eaecad6514ce0a4c76e768f17159f62ef2237f0de4e905c656ee3189cc3d0f93` |\r\n| **Linux** | `novyse-linux-1.3.0-20261013.0.zip` | `cd745ab9da32c96169bdccf5d3ddc209a76ceeb3d3bfb76f4259eddd42c98219` |\r\n| **macOS** | `novyse-macos-1.3.0-20261013.0-release.json` | `6ec39c3e72f8b639bbaa6b65301e936372f25f33bd64ce576bbf0fed5416c8c6` |\r\n| **macOS** | `novyse-macos-1.3.0-20261013.0.zip` | `005c505dde2949134a8433b841a91bd7d5d929c65ccc76a31d177e237b0db84d` |\r\n| **Android** | `novyse-release-cert.pem` | `8bdb8944e128bbe133dca7fae412bc7739d81776274c8134387fd8c39f92c52c` |\r\n| **Windows** | `novyse-windows-1.3.0-20261013.0-release.json` | `09e6c663ba5ea77eb673f25a4a4d3144b37a55b49492e0dfe8e29fa23cf678cc` |\r\n| **Windows** | `novyse-windows-1.3.0-20261013.0.zip` | `bb49196f9ae617060a7781c701b094e4ef4f8c06bdd54eb9aa54647f4148bcfd` |\r\n",

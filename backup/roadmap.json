@@ -7,7 +7,7 @@
     "closed": false,
     "closedAt": null,
     "createdAt": "2026-06-07T13:45:39Z",
-    "updatedAt": "2026-10-19T21:38:00Z"
+    "updatedAt": "2026-10-20T21:29:18Z"
   },
   "org": "Novyse",
   "fields": [
@@ -195,7 +195,7 @@
         },
         {
           "id": "6b149086",
-          "name": "v1.4 - Temp"
+          "name": "v1.4 - Voice Evolution"
         },
         {
           "id": "92770627",
@@ -1350,8 +1350,14 @@
             "__typename": "ProjectV2ItemFieldRepositoryValue"
           },
           {
+            "__typename": "ProjectV2ItemIssueFieldValue"
+          },
+          {
+            "__typename": "ProjectV2ItemIssueFieldValue"
+          },
+          {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.4 - Temp",
+            "name": "v1.4 - Voice Evolution",
             "field": {
               "name": "Version"
             }
@@ -13739,7 +13745,7 @@
         "__typename": "Issue",
         "number": 296,
         "title": "Rotation to landscape and portrait",
-        "state": "OPEN",
+        "state": "CLOSED",
         "url": "https://github.com/Novyse/novyse/issues/296",
         "repository": {
           "nameWithOwner": "Novyse/novyse"
@@ -13758,7 +13764,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Unassigned",
+            "name": "v1.3 - Flutter Migration",
             "field": {
               "name": "Version"
             }
@@ -13772,14 +13778,14 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Planned",
+            "name": "Completed",
             "field": {
               "name": "Status"
             }
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Feature",
+            "name": "Improvement",
             "field": {
               "name": "Classification"
             }
@@ -14755,7 +14761,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Unassigned",
+            "name": "v1.3 - Flutter Migration",
             "field": {
               "name": "Version"
             }
@@ -15651,6 +15657,12 @@
             "__typename": "ProjectV2ItemFieldRepositoryValue"
           },
           {
+            "__typename": "ProjectV2ItemIssueFieldValue"
+          },
+          {
+            "__typename": "ProjectV2ItemIssueFieldValue"
+          },
+          {
             "__typename": "ProjectV2ItemFieldTextValue",
             "text": "Multi-Platform plugin system",
             "field": {
@@ -15673,7 +15685,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.4 - Temp",
+            "name": "v1.4 - Voice Evolution",
             "field": {
               "name": "Version"
             }

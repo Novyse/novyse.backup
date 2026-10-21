@@ -9,7 +9,7 @@
     "assignees": [],
     "milestone": null,
     "created_at": "2026-10-19T14:53:05Z",
-    "updated_at": "2026-10-19T14:56:47Z",
+    "updated_at": "2026-10-20T21:29:02Z",
     "closed_at": null,
     "author": "SamueleOrazioDurante",
     "comments_count": 1,
@@ -22,7 +22,22 @@
       "percent_completed": 0
     },
     "sub_issues": [],
-    "issue_field_values": [],
+    "issue_field_values": [
+      {
+        "issue_field_id": 30474187,
+        "node_id": "IFDV_kgDOANMJig",
+        "data_type": "date",
+        "issue_field_name": "Start date",
+        "value": "2026-10-21"
+      },
+      {
+        "issue_field_id": 30474188,
+        "node_id": "IFDV_kgDOANMJmw",
+        "data_type": "date",
+        "issue_field_name": "Target date",
+        "value": "2026-11-30"
+      }
+    ],
     "issue_dependencies": {
       "blocked_by": 0,
       "total_blocked_by": 0,
@@ -366,7 +381,7 @@
     "assignees": [],
     "milestone": null,
     "created_at": "2026-10-13T12:22:14Z",
-    "updated_at": "2026-10-13T12:24:59Z",
+    "updated_at": "2026-10-20T21:28:59Z",
     "closed_at": null,
     "author": "SamueleOrazioDurante",
     "comments_count": 1,
@@ -379,7 +394,22 @@
       "percent_completed": 0
     },
     "sub_issues": [],
-    "issue_field_values": [],
+    "issue_field_values": [
+      {
+        "issue_field_id": 30474187,
+        "node_id": "IFDV_kgDOANMJhQ",
+        "data_type": "date",
+        "issue_field_name": "Start date",
+        "value": "2026-10-21"
+      },
+      {
+        "issue_field_id": 30474188,
+        "node_id": "IFDV_kgDOANMJlA",
+        "data_type": "date",
+        "issue_field_name": "Target date",
+        "value": "2026-11-30"
+      }
+    ],
     "issue_dependencies": {
       "blocked_by": 0,
       "total_blocked_by": 0,
@@ -1794,15 +1824,15 @@
   {
     "number": 296,
     "title": "Rotation to landscape and portrait",
-    "state": "open",
-    "state_reason": null,
+    "state": "closed",
+    "state_reason": "completed",
     "is_pull_request": false,
     "labels": [],
     "assignees": [],
     "milestone": null,
     "created_at": "2026-08-01T17:02:04Z",
-    "updated_at": "2026-08-01T17:02:04Z",
-    "closed_at": null,
+    "updated_at": "2026-10-20T21:27:01Z",
+    "closed_at": "2026-10-20T21:27:01Z",
     "author": "MatteoMagnani7",
     "comments_count": 0,
     "body": "App doesn't rotate in landscape and/or portrait mode on mobile",
@@ -3828,7 +3858,7 @@
     "assignees": [],
     "milestone": null,
     "created_at": "2026-06-07T16:43:56Z",
-    "updated_at": "2026-06-07T17:38:27Z",
+    "updated_at": "2026-10-20T21:29:17Z",
     "closed_at": null,
     "author": "SamueleOrazioDurante",
     "comments_count": 0,
@@ -3847,7 +3877,7 @@
         "node_id": "IFDV_kgDOABziPg",
         "data_type": "date",
         "issue_field_name": "Start date",
-        "value": "2026-10-31"
+        "value": "2026-11-30"
       },
       {
         "issue_field_id": 30474188,
@@ -3875,7 +3905,7 @@
     "assignees": [],
     "milestone": null,
     "created_at": "2026-06-07T16:43:39Z",
-    "updated_at": "2026-06-07T17:38:27Z",
+    "updated_at": "2026-10-20T21:29:15Z",
     "closed_at": null,
     "author": "SamueleOrazioDurante",
     "comments_count": 0,
@@ -3894,7 +3924,7 @@
         "node_id": "IFDV_kgDOABziPQ",
         "data_type": "date",
         "issue_field_name": "Start date",
-        "value": "2026-10-31"
+        "value": "2026-11-30"
       },
       {
         "issue_field_id": 30474188,
@@ -3922,7 +3952,7 @@
     "assignees": [],
     "milestone": null,
     "created_at": "2026-06-07T16:43:23Z",
-    "updated_at": "2026-06-07T17:38:27Z",
+    "updated_at": "2026-10-20T21:29:13Z",
     "closed_at": null,
     "author": "SamueleOrazioDurante",
     "comments_count": 0,
@@ -3941,7 +3971,7 @@
         "node_id": "IFDV_kgDOABziPA",
         "data_type": "date",
         "issue_field_name": "Start date",
-        "value": "2026-10-31"
+        "value": "2026-11-30"
       },
       {
         "issue_field_id": 30474188,
@@ -3969,7 +3999,7 @@
     "assignees": [],
     "milestone": null,
     "created_at": "2026-06-07T16:43:06Z",
-    "updated_at": "2026-06-07T17:38:22Z",
+    "updated_at": "2026-10-20T21:29:11Z",
     "closed_at": null,
     "author": "SamueleOrazioDurante",
     "comments_count": 0,
@@ -3988,7 +4018,7 @@
         "node_id": "IFDV_kgDOABziOw",
         "data_type": "date",
         "issue_field_name": "Start date",
-        "value": "2026-10-31"
+        "value": "2026-11-30"
       },
       {
         "issue_field_id": 30474188,
