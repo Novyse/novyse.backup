@@ -1,5 +1,133 @@
 [
   {
+    "number": 346,
+    "title": "[Windows] App resizing lags",
+    "state": "open",
+    "state_reason": null,
+    "is_pull_request": false,
+    "labels": [],
+    "assignees": [],
+    "milestone": null,
+    "created_at": "2026-10-21T14:35:14Z",
+    "updated_at": "2026-10-21T14:35:14Z",
+    "closed_at": null,
+    "author": "SamueleOrazioDurante",
+    "comments_count": 0,
+    "body": null,
+    "url": "https://github.com/Novyse/novyse/issues/346",
+    "parent": null,
+    "sub_issues_summary": {
+      "total": 0,
+      "completed": 0,
+      "percent_completed": 0
+    },
+    "sub_issues": [],
+    "issue_field_values": [],
+    "issue_dependencies": {
+      "blocked_by": 0,
+      "total_blocked_by": 0,
+      "blocking": 0,
+      "total_blocking": 0
+    },
+    "comments": []
+  },
+  {
+    "number": 345,
+    "title": "When in fullscreen titlebar is still shown",
+    "state": "open",
+    "state_reason": null,
+    "is_pull_request": false,
+    "labels": [],
+    "assignees": [],
+    "milestone": null,
+    "created_at": "2026-10-21T14:34:46Z",
+    "updated_at": "2026-10-21T14:34:46Z",
+    "closed_at": null,
+    "author": "SamueleOrazioDurante",
+    "comments_count": 0,
+    "body": null,
+    "url": "https://github.com/Novyse/novyse/issues/345",
+    "parent": null,
+    "sub_issues_summary": {
+      "total": 0,
+      "completed": 0,
+      "percent_completed": 0
+    },
+    "sub_issues": [],
+    "issue_field_values": [],
+    "issue_dependencies": {
+      "blocked_by": 0,
+      "total_blocked_by": 0,
+      "blocking": 0,
+      "total_blocking": 0
+    },
+    "comments": []
+  },
+  {
+    "number": 344,
+    "title": "Screen share edit menu does not allow screen/window preview",
+    "state": "open",
+    "state_reason": null,
+    "is_pull_request": false,
+    "labels": [],
+    "assignees": [],
+    "milestone": null,
+    "created_at": "2026-10-21T14:34:23Z",
+    "updated_at": "2026-10-21T14:34:23Z",
+    "closed_at": null,
+    "author": "SamueleOrazioDurante",
+    "comments_count": 0,
+    "body": null,
+    "url": "https://github.com/Novyse/novyse/issues/344",
+    "parent": null,
+    "sub_issues_summary": {
+      "total": 0,
+      "completed": 0,
+      "percent_completed": 0
+    },
+    "sub_issues": [],
+    "issue_field_values": [],
+    "issue_dependencies": {
+      "blocked_by": 0,
+      "total_blocked_by": 0,
+      "blocking": 0,
+      "total_blocking": 0
+    },
+    "comments": []
+  },
+  {
+    "number": 343,
+    "title": "Screen/Window preview does not work in screen share start menu",
+    "state": "open",
+    "state_reason": null,
+    "is_pull_request": false,
+    "labels": [],
+    "assignees": [],
+    "milestone": null,
+    "created_at": "2026-10-21T14:33:20Z",
+    "updated_at": "2026-10-21T14:33:20Z",
+    "closed_at": null,
+    "author": "SamueleOrazioDurante",
+    "comments_count": 0,
+    "body": null,
+    "url": "https://github.com/Novyse/novyse/issues/343",
+    "parent": null,
+    "sub_issues_summary": {
+      "total": 0,
+      "completed": 0,
+      "percent_completed": 0
+    },
+    "sub_issues": [],
+    "issue_field_values": [],
+    "issue_dependencies": {
+      "blocked_by": 0,
+      "total_blocked_by": 0,
+      "blocking": 0,
+      "total_blocking": 0
+    },
+    "comments": []
+  },
+  {
     "number": 342,
     "title": "Multi-Platform plugin system",
     "state": "open",
@@ -542,7 +670,7 @@
     "assignees": [],
     "milestone": null,
     "created_at": "2026-10-10T20:07:52Z",
-    "updated_at": "2026-10-10T20:09:48Z",
+    "updated_at": "2026-10-21T09:53:15Z",
     "closed_at": "2026-10-10T20:09:48Z",
     "author": "SamueleOrazioDurante",
     "comments_count": 0,
@@ -597,7 +725,7 @@
     "assignees": [],
     "milestone": null,
     "created_at": "2026-10-10T19:36:19Z",
-    "updated_at": "2026-10-10T19:40:24Z",
+    "updated_at": "2026-10-21T09:53:13Z",
     "closed_at": "2026-10-10T19:40:24Z",
     "author": "SamueleOrazioDurante",
     "comments_count": 0,
@@ -661,10 +789,10 @@
     "assignees": [],
     "milestone": null,
     "created_at": "2026-10-10T19:18:07Z",
-    "updated_at": "2026-10-14T09:28:10Z",
+    "updated_at": "2026-10-21T14:31:30Z",
     "closed_at": null,
     "author": "SamueleOrazioDurante",
-    "comments_count": 1,
+    "comments_count": 2,
     "body": null,
     "url": "https://github.com/Novyse/novyse/issues/323",
     "parent": null,
@@ -689,6 +817,14 @@
         "updated_at": "2026-10-14T09:28:10Z",
         "body": "Waiting for nativeapi fix",
         "url": "https://github.com/Novyse/novyse/issues/323#issuecomment-6165227975"
+      },
+      {
+        "id": 6318606497,
+        "author": "SamueleOrazioDurante",
+        "created_at": "2026-10-21T14:31:30Z",
+        "updated_at": "2026-10-21T14:31:30Z",
+        "body": "Maybe fix, we dont know when but ok",
+        "url": "https://github.com/Novyse/novyse/issues/323#issuecomment-6318606497"
       }
     ]
   },
@@ -849,17 +985,17 @@
   {
     "number": 318,
     "title": "Windows Communication Detection Caused System Volume to be Lowered Significantly",
-    "state": "open",
-    "state_reason": null,
+    "state": "closed",
+    "state_reason": "completed",
     "is_pull_request": false,
     "labels": [],
     "assignees": [],
     "milestone": null,
     "created_at": "2026-09-26T12:53:03Z",
-    "updated_at": "2026-10-05T14:37:51Z",
-    "closed_at": null,
+    "updated_at": "2026-10-21T16:36:11Z",
+    "closed_at": "2026-10-21T16:36:11Z",
     "author": "MatteoMagnani7",
-    "comments_count": 1,
+    "comments_count": 2,
     "body": null,
     "url": "https://github.com/Novyse/novyse/issues/318",
     "parent": null,
@@ -884,6 +1020,14 @@
         "updated_at": "2026-10-05T14:37:51Z",
         "body": "https://github.com/livekit/client-sdk-flutter/issues/506#issuecomment-2087976792",
         "url": "https://github.com/Novyse/novyse/issues/318#issuecomment-5996699969"
+      },
+      {
+        "id": 6318825019,
+        "author": "SamueleOrazioDurante",
+        "created_at": "2026-10-21T14:43:32Z",
+        "updated_at": "2026-10-21T14:43:32Z",
+        "body": "Maybe fixed\nWe removed a lot of client-side default voice enhancer, maybe this change prompt windows to not treat our app as a communication app\n\naf18df06919506c1f355e54260ede0f85bf39303",
+        "url": "https://github.com/Novyse/novyse/issues/318#issuecomment-6318825019"
       }
     ]
   },

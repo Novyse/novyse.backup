@@ -7,7 +7,7 @@
     "closed": false,
     "closedAt": null,
     "createdAt": "2026-06-07T13:45:39Z",
-    "updatedAt": "2026-10-20T21:29:18Z"
+    "updatedAt": "2026-10-21T16:36:43Z"
   },
   "org": "Novyse",
   "fields": [
@@ -326,6 +326,75 @@
   ],
   "items": [
     {
+      "id": "PVTI_lADOCuSSY84BZ912zg86RsM",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 318,
+        "title": "Windows Communication Detection Caused System Volume to be Lowered Significantly",
+        "state": "CLOSED",
+        "url": "https://github.com/Novyse/novyse/issues/318",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.3 - Flutter Migration",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "Windows Communication Detection Caused System Volume to be Lowered Significantly",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Completed",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Bug Fix",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Comms",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
+    },
+    {
       "id": "PVTI_lADOCuSSY84BZ912zhAe5Gg",
       "isArchived": false,
       "content": {
@@ -527,6 +596,75 @@
             "name": "Bug Fix",
             "field": {
               "name": "Classification"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zg_5NQo",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 323,
+        "title": "[Windows] Fullscreen on comms crashes the app",
+        "state": "OPEN",
+        "url": "https://github.com/Novyse/novyse/issues/323",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "In Progress",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "[Windows] Fullscreen on comms crashes the app",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Bug Fix",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.3 - Flutter Migration",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Desktop",
+            "field": {
+              "name": "Category"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
             }
           }
         ]
@@ -1318,6 +1456,282 @@
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
             "name": "UI/UX",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zhCb708",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 343,
+        "title": "Screen/Window preview does not work in screen share start menu",
+        "state": "OPEN",
+        "url": "https://github.com/Novyse/novyse/issues/343",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.3 - Flutter Migration",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "Screen/Window preview does not work in screen share start menu",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "In Progress",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Bug Fix",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Comms",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zhCb9Ao",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 344,
+        "title": "Screen share edit menu does not allow screen/window preview",
+        "state": "OPEN",
+        "url": "https://github.com/Novyse/novyse/issues/344",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.3 - Flutter Migration",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "Screen share edit menu does not allow screen/window preview",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "In Progress",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Bug Fix",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Comms",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zhCb9eY",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 345,
+        "title": "When in fullscreen titlebar is still shown",
+        "state": "OPEN",
+        "url": "https://github.com/Novyse/novyse/issues/345",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.3 - Flutter Migration",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "When in fullscreen titlebar is still shown",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "In Progress",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Bug Fix",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Comms",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zhCb-FA",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 346,
+        "title": "[Windows] App resizing lags",
+        "state": "OPEN",
+        "url": "https://github.com/Novyse/novyse/issues/346",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.3 - Flutter Migration",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "[Windows] App resizing lags",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "In Progress",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Bug Fix",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Desktop",
             "field": {
               "name": "Category"
             }
@@ -14736,75 +15150,6 @@
       }
     },
     {
-      "id": "PVTI_lADOCuSSY84BZ912zg86RsM",
-      "isArchived": false,
-      "content": {
-        "__typename": "Issue",
-        "number": 318,
-        "title": "Windows Communication Detection Caused System Volume to be Lowered Significantly",
-        "state": "OPEN",
-        "url": "https://github.com/Novyse/novyse/issues/318",
-        "repository": {
-          "nameWithOwner": "Novyse/novyse"
-        },
-        "labels": {
-          "nodes": []
-        },
-        "assignees": {
-          "nodes": []
-        }
-      },
-      "fieldValues": {
-        "nodes": [
-          {
-            "__typename": "ProjectV2ItemFieldRepositoryValue"
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.3 - Flutter Migration",
-            "field": {
-              "name": "Version"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldTextValue",
-            "text": "Windows Communication Detection Caused System Volume to be Lowered Significantly",
-            "field": {
-              "name": "Title"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Planned",
-            "field": {
-              "name": "Status"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Bug Fix",
-            "field": {
-              "name": "Classification"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Client",
-            "field": {
-              "name": "Scope"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Comms",
-            "field": {
-              "name": "Category"
-            }
-          }
-        ]
-      }
-    },
-    {
       "id": "PVTI_lADOCuSSY84BZ912zg93LvA",
       "isArchived": false,
       "content": {
@@ -15281,75 +15626,6 @@
       }
     },
     {
-      "id": "PVTI_lADOCuSSY84BZ912zg_5NQo",
-      "isArchived": false,
-      "content": {
-        "__typename": "Issue",
-        "number": 323,
-        "title": "[Windows] Fullscreen on comms crashes the app",
-        "state": "OPEN",
-        "url": "https://github.com/Novyse/novyse/issues/323",
-        "repository": {
-          "nameWithOwner": "Novyse/novyse"
-        },
-        "labels": {
-          "nodes": []
-        },
-        "assignees": {
-          "nodes": []
-        }
-      },
-      "fieldValues": {
-        "nodes": [
-          {
-            "__typename": "ProjectV2ItemFieldRepositoryValue"
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Blocked",
-            "field": {
-              "name": "Status"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldTextValue",
-            "text": "[Windows] Fullscreen on comms crashes the app",
-            "field": {
-              "name": "Title"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Bug Fix",
-            "field": {
-              "name": "Classification"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Unassigned",
-            "field": {
-              "name": "Version"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Desktop",
-            "field": {
-              "name": "Category"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Client",
-            "field": {
-              "name": "Scope"
-            }
-          }
-        ]
-      }
-    },
-    {
       "id": "PVTI_lADOCuSSY84BZ912zg_5Np8",
       "isArchived": false,
       "content": {
@@ -15708,6 +15984,6 @@
       }
     }
   ],
-  "fetched": 207,
-  "totalCount": 207
+  "fetched": 211,
+  "totalCount": 211
 }
