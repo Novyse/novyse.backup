@@ -7,7 +7,7 @@
     "closed": false,
     "closedAt": null,
     "createdAt": "2026-06-07T13:45:39Z",
-    "updatedAt": "2026-10-21T16:36:43Z"
+    "updatedAt": "2026-10-27T12:19:46Z"
   },
   "org": "Novyse",
   "fields": [
@@ -325,6 +325,75 @@
     }
   ],
   "items": [
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zhD4ncM",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 347,
+        "title": "[Android] Bitwarden auto-fill does not show up",
+        "state": "CLOSED",
+        "url": "https://github.com/Novyse/novyse/issues/347",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.3 - Flutter Migration",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "[Android] Bitwarden auto-fill does not show up",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Completed",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Bug Fix",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Authentication",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
+    },
     {
       "id": "PVTI_lADOCuSSY84BZ912zg86RsM",
       "isArchived": false,
@@ -15984,6 +16053,6 @@
       }
     }
   ],
-  "fetched": 211,
-  "totalCount": 211
+  "fetched": 212,
+  "totalCount": 212
 }
