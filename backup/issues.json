@@ -1859,40 +1859,6 @@
     ]
   },
   {
-    "number": 300,
-    "title": "Upgrade to React Native Gesture Handler 3.2",
-    "state": "open",
-    "state_reason": null,
-    "is_pull_request": false,
-    "labels": [],
-    "assignees": [
-      "MatteoMagnani7"
-    ],
-    "milestone": null,
-    "created_at": "2026-08-18T12:46:22Z",
-    "updated_at": "2026-08-18T13:13:08Z",
-    "closed_at": null,
-    "author": "MatteoMagnani7",
-    "comments_count": 0,
-    "body": "- Use Touchable from gesture handler 3.2 instead of current HoverAndPressedButton (requires RN 0.87, not yet available in expo 57)\n- use new features from 3.x (pangestures...)",
-    "url": "https://github.com/Novyse/novyse/issues/300",
-    "parent": null,
-    "sub_issues_summary": {
-      "total": 0,
-      "completed": 0,
-      "percent_completed": 0
-    },
-    "sub_issues": [],
-    "issue_field_values": [],
-    "issue_dependencies": {
-      "blocked_by": 0,
-      "total_blocked_by": 0,
-      "blocking": 0,
-      "total_blocking": 0
-    },
-    "comments": []
-  },
-  {
     "number": 299,
     "title": "Error when selecting a message",
     "state": "closed",
@@ -1966,38 +1932,6 @@
     ]
   },
   {
-    "number": 297,
-    "title": "Unified router for tabs and pages",
-    "state": "open",
-    "state_reason": null,
-    "is_pull_request": false,
-    "labels": [],
-    "assignees": [],
-    "milestone": null,
-    "created_at": "2026-08-07T19:41:49Z",
-    "updated_at": "2026-08-07T19:41:49Z",
-    "closed_at": null,
-    "author": "MatteoMagnani7",
-    "comments_count": 0,
-    "body": null,
-    "url": "https://github.com/Novyse/novyse/issues/297",
-    "parent": null,
-    "sub_issues_summary": {
-      "total": 0,
-      "completed": 0,
-      "percent_completed": 0
-    },
-    "sub_issues": [],
-    "issue_field_values": [],
-    "issue_dependencies": {
-      "blocked_by": 0,
-      "total_blocked_by": 0,
-      "blocking": 0,
-      "total_blocking": 0
-    },
-    "comments": []
-  },
-  {
     "number": 296,
     "title": "Rotation to landscape and portrait",
     "state": "closed",
@@ -2013,38 +1947,6 @@
     "comments_count": 0,
     "body": "App doesn't rotate in landscape and/or portrait mode on mobile",
     "url": "https://github.com/Novyse/novyse/issues/296",
-    "parent": null,
-    "sub_issues_summary": {
-      "total": 0,
-      "completed": 0,
-      "percent_completed": 0
-    },
-    "sub_issues": [],
-    "issue_field_values": [],
-    "issue_dependencies": {
-      "blocked_by": 0,
-      "total_blocked_by": 0,
-      "blocking": 0,
-      "total_blocking": 0
-    },
-    "comments": []
-  },
-  {
-    "number": 295,
-    "title": "Some errors don't use localization",
-    "state": "open",
-    "state_reason": null,
-    "is_pull_request": false,
-    "labels": [],
-    "assignees": [],
-    "milestone": null,
-    "created_at": "2026-08-01T17:00:25Z",
-    "updated_at": "2026-08-01T17:00:25Z",
-    "closed_at": null,
-    "author": "MatteoMagnani7",
-    "comments_count": 0,
-    "body": "example pages:\n- login",
-    "url": "https://github.com/Novyse/novyse/issues/295",
     "parent": null,
     "sub_issues_summary": {
       "total": 0,
