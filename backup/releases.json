@@ -1,5 +1,317 @@
 [
   {
+    "tag_name": "v1.3.2-20261030.1",
+    "name": "Version 1.3.2-20261030.1",
+    "body": "# Novyse 1.3.2-20261030.1 - Flutter Migration\n\n## Features\n\n## Bug Fixes\n\n### Comms  \n\n- **Audio Capture:** Automatic gain control now stays enabled during audio capture, keeping input levels consistent.\n\n## Improvements\n\n### Distribution  \n\n- **Snap Package:** The Snap package now ships on the stable channel.\n\n## Known Issues\n\n---\n\n### Integrity Checksums\n\nBelow are the SHA-256 checksums to verify the authenticity and integrity of each file.\nFor detailed verification guides and platform instructions, see [BUILD.md](https://github.com/Novyse/novyse/blob/production/BUILD.md#verifying-release-artifacts).\n\n> **Android Official Signing Certificate SHA-256:** `AE:CC:02:60:F1:E9:79:79:81:F5:68:55:A5:AE:B9:56:88:9F:77:66:8C:7B:E2:A2:28:1A:AE:E3:B1:EC:6B:13`\n\n| Platform | File | SHA-256 Checksum |\n| :--- | :--- | :--- |\n| **Updater** | `app-archive.json` | `8e17283466896f123f7a0e5208244c9072695c5530a84fd915219c62e490bce2` |\n| **Android** | `novyse-1.3.2-20261030.1-android-arm64-v8a.apk` | `6ec39ef9cef69763ae524bc671c6ffb30dbca4ff742112650d1b1e4fb8c3e846` |\n| **Android** | `novyse-1.3.2-20261030.1-android-armeabi-v7a.apk` | `a334b020675a26e356f2059716830d37f635142db80d6d086053ee4b0b11e68e` |\n| **Android** | `novyse-1.3.2-20261030.1-android-universal.apk` | `a81057883a87e348edcbcc82fedb273b2aeac22677e9b67b606831dd21cdd427` |\n| **Android** | `novyse-1.3.2-20261030.1-android-x86_64.apk` | `a061742b2d71403605ffcac5d1d132ffb887bf34b18512216a96c791ea873382` |\n| **Android** | `novyse-1.3.2-20261030.1-android.aab` | `e0d3926f3421701bead1d9d3aa30dc5558d07a63895bb120572baea5b7b07b63` |\n| **Linux** | `novyse-1.3.2-20261030.1-linux.AppImage` | `348e1050518711256c1789b39e8e9bbb15e1a6f0662a82a689b4a219a9fba91e` |\n| **Linux** | `novyse-1.3.2-20261030.1-linux.deb` | `0eecf23f7f0946dce4ea3b351e5bb140110bab2cf7132b2e63ee153f15bf2e46` |\n| **Linux** | `novyse-1.3.2-20261030.1-linux.flatpak` | `20f481e5449d15e670d24ca752a9c1384bb0db384a12f0b1f3e07d82f2fe11f4` |\n| **Linux** | `novyse-1.3.2-20261030.1-linux.rpm` | `90ac96531bb78eabd1bf4271c1ae3d9da542a24903b1b3f914f92eede25e86da` |\n| **Linux** | `novyse-1.3.2-20261030.1-linux.tar.gz` | `b2f46b9f5f253d2b926a7f3e56966163fc7de70db3048eae660f94283c334aba` |\n| **macOS** | `novyse-1.3.2-20261030.1-macos.dmg` | `202a87645c35ec4f81a0ce9ef97ea1a736a11bcb6f54e315edfba8d8a8a2ce0d` |\n| **macOS** | `novyse-1.3.2-20261030.1-macos.zip` | `603c356e01fd0ae88304cacab73cf156128054c1a3429c5fffc8b86c12511f5e` |\n| **Web** | `novyse-1.3.2-20261030.1-web.zip` | `c07d7660a9a1ba81c77a38c04d5b6b412038ee9e30ce12b808de4191d6223e31` |\n| **Windows** | `novyse-1.3.2-20261030.1-windows-portable.exe` | `fa3c07e3c32233bdd00b0ce6db66c4ca5ca3d291fc76afe7c41cd81b8235c713` |\n| **Windows** | `novyse-1.3.2-20261030.1-windows-setup.exe` | `424ab6cf416f6876ffb3a969398df0408179886f14c147e5214a8f8826527697` |\n| **Windows** | `novyse-1.3.2-20261030.1-windows-setup.msi` | `41555f181ceba3b8b5ce6a8b60604d0648f7d707bc3812e9f3ea8815ec7055a3` |\n| **Linux** | `novyse-linux-1.3.2-20261030.1-release.json` | `12892e312ac533a3e0721e670d21a97de4caa068ac91e4a978c9c80a87edee9b` |\n| **Linux** | `novyse-linux-1.3.2-20261030.1.zip` | `d9ea2e3785fdd528dc4d9c18a7b0e940bb9c2fbe52ecd23443090f68c7c08adb` |\n| **macOS** | `novyse-macos-1.3.2-20261030.1-release.json` | `c7c2dde9245188854ef921409de7197d5a68b700a92c2e83e2af0e35113eeea4` |\n| **macOS** | `novyse-macos-1.3.2-20261030.1.zip` | `603c356e01fd0ae88304cacab73cf156128054c1a3429c5fffc8b86c12511f5e` |\n| **Android** | `novyse-release-cert.pem` | `8bdb8944e128bbe133dca7fae412bc7739d81776274c8134387fd8c39f92c52c` |\n| **Windows** | `novyse-windows-1.3.2-20261030.1-release.json` | `ace6a705c4e589309255ee6bbe2ff026c04a277c492a00688f003d574332db3d` |\n| **Windows** | `novyse-windows-1.3.2-20261030.1.zip` | `8d68e3b5f7dce3867f6af369a4c4ecdb3119f6285447cad63834e3ec3c7c7c00` |\n",
+    "published_at": "2026-10-30T21:14:45Z",
+    "created_at": "2026-10-30T20:48:37Z",
+    "draft": false,
+    "prerelease": false,
+    "target_commitish": "production",
+    "assets": [
+      {
+        "name": "app-archive.json",
+        "size": 1061,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.1/app-archive.json"
+      },
+      {
+        "name": "novyse-1.3.2-20261030.1-android-arm64-v8a.apk",
+        "size": 68791020,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.1/novyse-1.3.2-20261030.1-android-arm64-v8a.apk"
+      },
+      {
+        "name": "novyse-1.3.2-20261030.1-android-armeabi-v7a.apk",
+        "size": 58647920,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.1/novyse-1.3.2-20261030.1-android-armeabi-v7a.apk"
+      },
+      {
+        "name": "novyse-1.3.2-20261030.1-android-universal.apk",
+        "size": 193426710,
+        "download_count": 2,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.1/novyse-1.3.2-20261030.1-android-universal.apk"
+      },
+      {
+        "name": "novyse-1.3.2-20261030.1-android-x86_64.apk",
+        "size": 78949068,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.1/novyse-1.3.2-20261030.1-android-x86_64.apk"
+      },
+      {
+        "name": "novyse-1.3.2-20261030.1-android.aab",
+        "size": 136955079,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.1/novyse-1.3.2-20261030.1-android.aab"
+      },
+      {
+        "name": "novyse-1.3.2-20261030.1-linux.AppImage",
+        "size": 36078784,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.1/novyse-1.3.2-20261030.1-linux.AppImage"
+      },
+      {
+        "name": "novyse-1.3.2-20261030.1-linux.deb",
+        "size": 28531578,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.1/novyse-1.3.2-20261030.1-linux.deb"
+      },
+      {
+        "name": "novyse-1.3.2-20261030.1-linux.flatpak",
+        "size": 23649704,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.1/novyse-1.3.2-20261030.1-linux.flatpak"
+      },
+      {
+        "name": "novyse-1.3.2-20261030.1-linux.rpm",
+        "size": 24854983,
+        "download_count": 2,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.1/novyse-1.3.2-20261030.1-linux.rpm"
+      },
+      {
+        "name": "novyse-1.3.2-20261030.1-linux.tar.gz",
+        "size": 35729432,
+        "download_count": 2,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.1/novyse-1.3.2-20261030.1-linux.tar.gz"
+      },
+      {
+        "name": "novyse-1.3.2-20261030.1-macos.dmg",
+        "size": 78765428,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.1/novyse-1.3.2-20261030.1-macos.dmg"
+      },
+      {
+        "name": "novyse-1.3.2-20261030.1-macos.zip",
+        "size": 69830542,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.1/novyse-1.3.2-20261030.1-macos.zip"
+      },
+      {
+        "name": "novyse-1.3.2-20261030.1-web.zip",
+        "size": 18871392,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.1/novyse-1.3.2-20261030.1-web.zip"
+      },
+      {
+        "name": "novyse-1.3.2-20261030.1-windows-portable.exe",
+        "size": 34828549,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.1/novyse-1.3.2-20261030.1-windows-portable.exe"
+      },
+      {
+        "name": "novyse-1.3.2-20261030.1-windows-setup.exe",
+        "size": 38315703,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.1/novyse-1.3.2-20261030.1-windows-setup.exe"
+      },
+      {
+        "name": "novyse-1.3.2-20261030.1-windows-setup.msi",
+        "size": 52670464,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.1/novyse-1.3.2-20261030.1-windows-setup.msi"
+      },
+      {
+        "name": "novyse-linux-1.3.2-20261030.1-release.json",
+        "size": 771,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.1/novyse-linux-1.3.2-20261030.1-release.json"
+      },
+      {
+        "name": "novyse-linux-1.3.2-20261030.1.zip",
+        "size": 36185891,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.1/novyse-linux-1.3.2-20261030.1.zip"
+      },
+      {
+        "name": "novyse-macos-1.3.2-20261030.1-release.json",
+        "size": 771,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.1/novyse-macos-1.3.2-20261030.1-release.json"
+      },
+      {
+        "name": "novyse-macos-1.3.2-20261030.1.zip",
+        "size": 69830542,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.1/novyse-macos-1.3.2-20261030.1.zip"
+      },
+      {
+        "name": "novyse-release-cert.pem",
+        "size": 1291,
+        "download_count": 0,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.1/novyse-release-cert.pem"
+      },
+      {
+        "name": "novyse-windows-1.3.2-20261030.1-release.json",
+        "size": 775,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.1/novyse-windows-1.3.2-20261030.1-release.json"
+      },
+      {
+        "name": "novyse-windows-1.3.2-20261030.1.zip",
+        "size": 53723481,
+        "download_count": 1,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.1/novyse-windows-1.3.2-20261030.1.zip"
+      }
+    ]
+  },
+  {
+    "tag_name": "v1.3.2-20261030.0",
+    "name": "Version 1.3.2-20261030.0",
+    "body": "# Novyse 1.3.2-20261030.0 - Flutter Migration\n\n## Features\n\n### Comms\n\n- **Screen Share Preview:** Added a live screen/window preview to the start screen share menu.\n- **Screen Share Edit Menu:** Added a screen/window preview to the screen share edit menu.\n\n### Desktop\n\n- **Custom Titlebar:** The custom titlebar is now hidden when the window is in fullscreen mode.\n\n### Authentication\n\n- **Onboarding:** Added autofill hints and grouping to the authentication form.\n\n### Messages\n\n- **Quick Actions:** Added two quick action buttons that appear when hovering over a message. You can choose which actions to show (reply, edit, or delete) in Settings.\n\n### Settings\n\n- **Message Quick Actions:** Added a setting to choose which quick actions (reply, edit, delete) appear on message hover.\n\n### Distribution\n\n- **Flatpak:** Added Linux Flatpak support.\n- **Snap:** Added publishing to the Snapcraft store.\n- **Android:** Android builds are now published to the Play Store as part of the release pipeline.\n\n## Bug Fixes\n\n### Comms\n\n- **Screen Share Previews:** Fixed conflicting screen share preview captures.\n- **Windows Screen Share:** Fixed an issue where screen sharing was unavailable on Windows.\n- **Windows Previews:** Fixed missing screen share previews on Windows.\n- **Audio Filters:** Fixed audio filters not being fully removed; every audio filter is now forcibly removed.\n- **Auto Gain Control:** Fixed auto gain control being enabled when it should not be.\n\n### Notification\n\n- **Vocal Chats:** Notifications for active vocal chats are now preserved, with an added check for the sub ID.\n\n### Distribution\n\n- **Linux RPM:** Fixed RPM packaging to work with RPM 6.\n- **Android Versioning:** The Android build number is now auto-incremented in sync-version, avoiding duplicate Play Store versionCode errors.\n\n## Improvements\n\n### UI/UX\n\n- **Floating Pills Bar:** Updated the floating pills bar styles and applied related UI fixes.\n- **Bottom Bar:** Fixed the middle bottom bar height; the emoji icon now stays in place when additional lines of text appear.\n- **Selected Messages:** A selected message is now highlighted with a background instead of a border.\n\n### Distribution\n\n- **Linux Icons:** Linux builds now use pre-rendered hicolor icons.\n- **Snap:** Snap builds now target core26 and the latest snapcraft.\n- **Release Channels:** Dropped the preview release channel.\n\n### Miscellaneous\n\n- **Web URL:** Removed the fragment from the web URL.\n- **Desktop Startup Test:** Made the desktop startup test branch-agnostic.\n\n## Known Issues\n\n---\n\n### Integrity Checksums\n\nBelow are the SHA-256 checksums to verify the authenticity and integrity of each file.\nFor detailed verification guides and platform instructions, see [BUILD.md](https://github.com/Novyse/novyse/blob/production/BUILD.md#verifying-release-artifacts).\n\n> **Android Official Signing Certificate SHA-256:** `AE:CC:02:60:F1:E9:79:79:81:F5:68:55:A5:AE:B9:56:88:9F:77:66:8C:7B:E2:A2:28:1A:AE:E3:B1:EC:6B:13`\n\n| Platform | File | SHA-256 Checksum |\n| :--- | :--- | :--- |\n| **Updater** | `app-archive.json` | `0674e627c4cf92158f678869659232cabf0580e420724d0dd3a20a5178c407cc` |\n| **Android** | `novyse-1.3.2-20261030.0-android-arm64-v8a.apk` | `73a71a6e1750a4da63744a7fcd38eee328ce7afe9c9d635844301c9758127a06` |\n| **Android** | `novyse-1.3.2-20261030.0-android-armeabi-v7a.apk` | `0f5127e3b8c7a2e79fb32d9c9b80ca8e89c300d9668af4ce194ec549fa7a50f0` |\n| **Android** | `novyse-1.3.2-20261030.0-android-universal.apk` | `935a0f309f6e5350f42021a3bacec1e3ebfd1fc97864b12983004eed75b82e2d` |\n| **Android** | `novyse-1.3.2-20261030.0-android-x86_64.apk` | `a1a47325cec0d5b69391780f2f748ec5e867171b36d7c3b942e9a7fd0b7b2c93` |\n| **Android** | `novyse-1.3.2-20261030.0-android.aab` | `b8f4e4a538b2d9dab7eabcc0f10839982cf5bbac0785f2c705197c985f2dce4b` |\n| **Linux** | `novyse-1.3.2-20261030.0-linux.AppImage` | `8689c05cd83797403e35c29af35fefd307bb4901d7466cd26bd854223e3d7a36` |\n| **Linux** | `novyse-1.3.2-20261030.0-linux.deb` | `6cc25cc50d896a6e041f52ddf409d660d669f98641d967d032d9546aaa666278` |\n| **Linux** | `novyse-1.3.2-20261030.0-linux.flatpak` | `88f99222c1439a2f29494b932da0a5f4992d23b89f0f033d04ebc7c3da035b32` |\n| **Linux** | `novyse-1.3.2-20261030.0-linux.rpm` | `0da2428e68bef75f915ad614b4c833a2a8d646f932b8ad3188008149f8223959` |\n| **Linux** | `novyse-1.3.2-20261030.0-linux.tar.gz` | `09c504891ec3475aa9e9c2231aa6bf4bf51ad6a0d10df021e51f882ec74a1d09` |\n| **macOS** | `novyse-1.3.2-20261030.0-macos.dmg` | `92d267394e833b812510496ec47112fb72d605ab9bef9c70f5004da35c830d14` |\n| **macOS** | `novyse-1.3.2-20261030.0-macos.zip` | `12daecef54d647e1987098ddba8ea28063e360b967d3a43b0129aeb01fba0818` |\n| **Web** | `novyse-1.3.2-20261030.0-web.zip` | `4d84ebda6d4df6a94fa755fb17de6a8c248647563bf19729c47673614b32ae7e` |\n| **Windows** | `novyse-1.3.2-20261030.0-windows-portable.exe` | `30f50d040756156a42ba06df2207193bb6a31d48bec8a620c58c269403a77bce` |\n| **Windows** | `novyse-1.3.2-20261030.0-windows-setup.exe` | `3ab0241d51299de9f4a7d46bfba397a55e000e3a1ed1804ed71eef6b10587d02` |\n| **Windows** | `novyse-1.3.2-20261030.0-windows-setup.msi` | `d72cb75ed6952beae23b411487c091432ea73ea2d3a320560f03ffa6cc4043b3` |\n| **Linux** | `novyse-linux-1.3.2-20261030.0-release.json` | `d66bf472b1d3db63bf29c014b006a2a09be66f8e38a5646246467ec1375dad49` |\n| **Linux** | `novyse-linux-1.3.2-20261030.0.zip` | `1ea0a565a04b9578be65d2626fd06dae2a8124c4adf71d80dfb30483ccad7f4f` |\n| **macOS** | `novyse-macos-1.3.2-20261030.0-release.json` | `8f09739aba14ce916cafca6dcbf0c8ee516631ccb98639ae531afa5ec686c0b6` |\n| **macOS** | `novyse-macos-1.3.2-20261030.0.zip` | `12daecef54d647e1987098ddba8ea28063e360b967d3a43b0129aeb01fba0818` |\n| **Android** | `novyse-release-cert.pem` | `8bdb8944e128bbe133dca7fae412bc7739d81776274c8134387fd8c39f92c52c` |\n| **Windows** | `novyse-windows-1.3.2-20261030.0-release.json` | `e7418f117bf9431ea99899a0344bc891b208671ced4b95f450fdbd824f897147` |\n| **Windows** | `novyse-windows-1.3.2-20261030.0.zip` | `a9e94cc413b431b97fdf79705e21b0d0996036c1efe0fc2086646b6de03dcf7f` |\n",
+    "published_at": "2026-10-30T13:04:24Z",
+    "created_at": "2026-10-30T12:38:28Z",
+    "draft": false,
+    "prerelease": false,
+    "target_commitish": "production",
+    "assets": [
+      {
+        "name": "app-archive.json",
+        "size": 1061,
+        "download_count": 6,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.0/app-archive.json"
+      },
+      {
+        "name": "novyse-1.3.2-20261030.0-android-arm64-v8a.apk",
+        "size": 68791020,
+        "download_count": 5,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.0/novyse-1.3.2-20261030.0-android-arm64-v8a.apk"
+      },
+      {
+        "name": "novyse-1.3.2-20261030.0-android-armeabi-v7a.apk",
+        "size": 58631536,
+        "download_count": 3,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.0/novyse-1.3.2-20261030.0-android-armeabi-v7a.apk"
+      },
+      {
+        "name": "novyse-1.3.2-20261030.0-android-universal.apk",
+        "size": 193410326,
+        "download_count": 3,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.0/novyse-1.3.2-20261030.0-android-universal.apk"
+      },
+      {
+        "name": "novyse-1.3.2-20261030.0-android-x86_64.apk",
+        "size": 78949068,
+        "download_count": 3,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.0/novyse-1.3.2-20261030.0-android-x86_64.apk"
+      },
+      {
+        "name": "novyse-1.3.2-20261030.0-android.aab",
+        "size": 136949167,
+        "download_count": 3,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.0/novyse-1.3.2-20261030.0-android.aab"
+      },
+      {
+        "name": "novyse-1.3.2-20261030.0-linux.AppImage",
+        "size": 36078784,
+        "download_count": 2,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.0/novyse-1.3.2-20261030.0-linux.AppImage"
+      },
+      {
+        "name": "novyse-1.3.2-20261030.0-linux.deb",
+        "size": 28531972,
+        "download_count": 2,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.0/novyse-1.3.2-20261030.0-linux.deb"
+      },
+      {
+        "name": "novyse-1.3.2-20261030.0-linux.flatpak",
+        "size": 23651400,
+        "download_count": 2,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.0/novyse-1.3.2-20261030.0-linux.flatpak"
+      },
+      {
+        "name": "novyse-1.3.2-20261030.0-linux.rpm",
+        "size": 24855225,
+        "download_count": 4,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.0/novyse-1.3.2-20261030.0-linux.rpm"
+      },
+      {
+        "name": "novyse-1.3.2-20261030.0-linux.tar.gz",
+        "size": 35728561,
+        "download_count": 2,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.0/novyse-1.3.2-20261030.0-linux.tar.gz"
+      },
+      {
+        "name": "novyse-1.3.2-20261030.0-macos.dmg",
+        "size": 78761946,
+        "download_count": 2,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.0/novyse-1.3.2-20261030.0-macos.dmg"
+      },
+      {
+        "name": "novyse-1.3.2-20261030.0-macos.zip",
+        "size": 69828082,
+        "download_count": 3,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.0/novyse-1.3.2-20261030.0-macos.zip"
+      },
+      {
+        "name": "novyse-1.3.2-20261030.0-web.zip",
+        "size": 18871389,
+        "download_count": 3,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.0/novyse-1.3.2-20261030.0-web.zip"
+      },
+      {
+        "name": "novyse-1.3.2-20261030.0-windows-portable.exe",
+        "size": 34827037,
+        "download_count": 2,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.0/novyse-1.3.2-20261030.0-windows-portable.exe"
+      },
+      {
+        "name": "novyse-1.3.2-20261030.0-windows-setup.exe",
+        "size": 38316202,
+        "download_count": 2,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.0/novyse-1.3.2-20261030.0-windows-setup.exe"
+      },
+      {
+        "name": "novyse-1.3.2-20261030.0-windows-setup.msi",
+        "size": 52666368,
+        "download_count": 2,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.0/novyse-1.3.2-20261030.0-windows-setup.msi"
+      },
+      {
+        "name": "novyse-linux-1.3.2-20261030.0-release.json",
+        "size": 771,
+        "download_count": 4,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.0/novyse-linux-1.3.2-20261030.0-release.json"
+      },
+      {
+        "name": "novyse-linux-1.3.2-20261030.0.zip",
+        "size": 36185446,
+        "download_count": 5,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.0/novyse-linux-1.3.2-20261030.0.zip"
+      },
+      {
+        "name": "novyse-macos-1.3.2-20261030.0-release.json",
+        "size": 771,
+        "download_count": 2,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.0/novyse-macos-1.3.2-20261030.0-release.json"
+      },
+      {
+        "name": "novyse-macos-1.3.2-20261030.0.zip",
+        "size": 69828082,
+        "download_count": 2,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.0/novyse-macos-1.3.2-20261030.0.zip"
+      },
+      {
+        "name": "novyse-release-cert.pem",
+        "size": 1291,
+        "download_count": 2,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.0/novyse-release-cert.pem"
+      },
+      {
+        "name": "novyse-windows-1.3.2-20261030.0-release.json",
+        "size": 775,
+        "download_count": 3,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.0/novyse-windows-1.3.2-20261030.0-release.json"
+      },
+      {
+        "name": "novyse-windows-1.3.2-20261030.0.zip",
+        "size": 53723180,
+        "download_count": 6,
+        "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.0/novyse-windows-1.3.2-20261030.0.zip"
+      }
+    ]
+  },
+  {
     "tag_name": "v1.3.1-20261020.0",
     "name": "Version 1.3.1-20261020.0",
     "body": "# Novyse 1.3.1-20261020.0 - Flutter Migration\n\n## Features\n\n### Chat\n\n- **Chat Sub-Header Bars:** Added sub-header bars in the chat view for pinned messages, comms, and active voice sessions.\n- **Vocal View Restore:** The vocal view is now restored per chat, and the participant count now includes yourself.\n- **Chat List Comms/Voice Bars:** Comms and voice bars now appear in the chat list, and tapping a call notification opens the vocal view.\n\n### Comms\n\n- **Screen Share:** Added support for switching between screen share streams.\n- **User Cards:** Double-tap a user card to pin it.\n\n### Messages\n\n- **Audio Message Controls:** Added shared audio message controls, including pausing audio while seeking.\n- **Voice Waveforms:** Voice messages now decode and display waveforms locally, using a shared waveform view.\n- **Live Recording Waveform:** A live waveform is now shown while recording a voice message.\n- **Loading Placeholders:** Voice and audio messages now show loading placeholders while they load.\n- **Media Metadata:** Downloaded media is now enriched with metadata, and message files are updated from download events.\n\n### UI/UX\n\n- **Progress Slider:** Added a generic seekable progress slider with waveform support.\n- **Context Menu:** Context-menu items now have a selected state, and the active voice speed label is displayed.\n\n### Authentication\n\n- **QR Login:** Added a QR login scanner modal.\n\n### Desktop\n\n- **Self-Update Capability:** Updates now work per OS, with Linux distro-specific guidance.\n- **Update Required Page:** The update-required page is split to show guidance for each install source.\n- **Updater Localization:** Added updater strings for macOS, Linux packages, and update check status.\n- **Manual Update Check:** You can now check for updates manually from Settings.\n\n## Bug Fixes\n\n### Chat\n\n- **Last Message Preview:** Fixed the last message not showing for chats created via socket.\n- **Voice Duration Preview:** Receivers now see the voice message duration in the chat list's last message preview, instead of a blank or 0:00 value.\n- **Event Sync:** Fixed the chat event sync cursor so it stays monotonic.\n- **Read Receipts:** Added test coverage for read receipt ingestion paths.\n\n### Comms\n\n- **Speaking Indicator:** The speaking indicator is no longer shown for muted participants.\n\n### Messages\n\n- **Voice Playback:** Fixed voice message playback controls and made speed reset per track.\n- **Image Resolution:** Fixed low image resolution when an image is pressed.\n- **Image Rendering:** Fixed images not rendering on Windows.\n\n### UI/UX\n\n- **Vocal Tiles Padding:** Vocal tiles and the sub list padding now adapt to the measured header height.\n- **Chat Detail Header:** Fixed UI issues in the chat detail sub-header.\n- **Fonts:** Fixed minor font issues.\n\n### Desktop\n\n- **Background Launch:** \"Open in background\" is now disabled when \"Open on startup\" is off.\n- **Linux Package Detection:** Linux system packages are now detected as non-self-updatable installs.\n- **Updater Diagnostics:** Improved updater diagnostics, stale-marker self-healing, and the recovery gate.\n- **Linux Helper Permissions:** Executable permissions for the desktop updater helper are now preserved in the Linux bundle, and an install identity marker is seeded.\n- **Linux Hidden Start:** Added support for the `--hidden` flag to start the Linux app without showing the window.\n\n## Improvements\n\n### Chat\n\n- **Navigation:** Chat navigation in the list and favorites pages now uses `context.go` instead of `context.push`.\n\n### UI/UX\n\n- **List Padding:** All lists now share the same left and right padding.\n- **Pane Resizer:** Standardized the pane resizer component.\n\n### Authentication\n\n- **Turnstile Verification:** Turnstile verification now happens in a modal.\n\n### Miscellaneous\n\n- **Release Script:** Fixed the release script so the version title stays intact.\n- **Test Suite:** Added test coverage for the updater, the progress slider, voice/audio playback, and sub-header bars. Fixed stale tests broken by recent comms and timestamp changes.\n\n## Known Issues\n\n---\n\n### Integrity Checksums\n\nBelow are the SHA-256 checksums to verify the authenticity and integrity of each file.\nFor detailed verification guides and platform instructions, see [BUILD.md](https://github.com/Novyse/novyse/blob/production/BUILD.md#verifying-release-artifacts).\n\n> **Android Official Signing Certificate SHA-256:** `AE:CC:02:60:F1:E9:79:79:81:F5:68:55:A5:AE:B9:56:88:9F:77:66:8C:7B:E2:A2:28:1A:AE:E3:B1:EC:6B:13`\n\n| Platform | File | SHA-256 Checksum |\n| :--- | :--- | :--- |\n| **Updater** | `app-archive.json` | `4ab28dfa5622fdb7f583dbb134c7232f5b6c6594dd8618d00285e32a808ae0f9` |\n| **Android** | `novyse-1.3.1-20261020.0-android-arm64-v8a.apk` | `fbbc899845ef0def9012f4b5353499b2d2064497320c4ebc3562fb5a72525856` |\n| **Android** | `novyse-1.3.1-20261020.0-android-armeabi-v7a.apk` | `9f8369b279c28497f0d5831863df1feef74509bcc5f0e9c5d71d0aecf85c15fe` |\n| **Android** | `novyse-1.3.1-20261020.0-android-universal.apk` | `dc6e77a1a3a525f978dc3b614614fdc0dc6158be9ff9a8b251606992b5ec1ea8` |\n| **Android** | `novyse-1.3.1-20261020.0-android-x86_64.apk` | `b913838c23232685580ab7b097c482f31160919a3e570ae4061601c272c3a208` |\n| **Android** | `novyse-1.3.1-20261020.0-android.aab` | `7110a75933dec7a1bb10480d0807d40411694f052efa5e2dccd1d1bb1b5740e2` |\n| **Linux** | `novyse-1.3.1-20261020.0-linux.AppImage` | `eda53bbc68a822807b641b18045512dc29c7b6301fee6b6f93b89638742463b1` |\n| **Linux** | `novyse-1.3.1-20261020.0-linux.deb` | `914e5997148bdcc7b9856f960e820624e731ce0ca75e4df43e81d8f0b9e4bfab` |\n| **Linux** | `novyse-1.3.1-20261020.0-linux.tar.gz` | `5399eed7d75a676635165614c4f1c5b808dd4d9a3c479c140d6165137be275a5` |\n| **macOS** | `novyse-1.3.1-20261020.0-macos.dmg` | `e4cb2fea056c92718f4377c07dac985a7dc0740f1ee52ff13e22a4b79e5a31d5` |\n| **macOS** | `novyse-1.3.1-20261020.0-macos.zip` | `bb4896a80708842835ca14d4fabb56044737327a35d07324c0bf59ae041abeb6` |\n| **Web** | `novyse-1.3.1-20261020.0-web.zip` | `d22873078f01d8504d99e0f4350eb2944091ca15b66e389f391ff756a9f41bbe` |\n| **Windows** | `novyse-1.3.1-20261020.0-windows-portable.exe` | `9df6940b9e088dcef4d9bdb1ca62515ff565e4093d1990a6ba2067489eb56d96` |\n| **Windows** | `novyse-1.3.1-20261020.0-windows-setup.exe` | `81079a7e04636fe7829067bc0cdcfb08ea462c9ffbc7f42a7b291fcfb00dc960` |\n| **Windows** | `novyse-1.3.1-20261020.0-windows-setup.msi` | `529bb92efd5b665ad683f333557ad478cb39bb98eebe7867dc2e44fcbd04ee01` |\n| **Linux** | `novyse-linux-1.3.1-20261020.0-release.json` | `4115962b631ea02fcde87570bfe38ee75296b5d937c703d5ae5830dc491c378a` |\n| **Linux** | `novyse-linux-1.3.1-20261020.0.zip` | `bc5354a1fc91f2b29d2259268be017067d27255821edf814e52cd7fed28f236f` |\n| **macOS** | `novyse-macos-1.3.1-20261020.0-release.json` | `ddc9758b3300f4ba00c425869208ff95a02a5fd1e1fe0ff7d06ee2da0d2b1c38` |\n| **macOS** | `novyse-macos-1.3.1-20261020.0.zip` | `bb4896a80708842835ca14d4fabb56044737327a35d07324c0bf59ae041abeb6` |\n| **Android** | `novyse-release-cert.pem` | `8bdb8944e128bbe133dca7fae412bc7739d81776274c8134387fd8c39f92c52c` |\n| **Windows** | `novyse-windows-1.3.1-20261020.0-release.json` | `69eb69c2edb00295fb77d197c60d9caa831c1f75101646a8859973685b111794` |\n| **Windows** | `novyse-windows-1.3.1-20261020.0.zip` | `2663ef18358abe09ab3b388bad0064040c8e8c112c1dd69cbf724a2ffd8354b2` |\n",
@@ -12,109 +324,109 @@
       {
         "name": "app-archive.json",
         "size": 1061,
-        "download_count": 3,
+        "download_count": 5,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.1-20261020.0/app-archive.json"
       },
       {
         "name": "novyse-1.3.1-20261020.0-android-arm64-v8a.apk",
         "size": 68791020,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.1-20261020.0/novyse-1.3.1-20261020.0-android-arm64-v8a.apk"
       },
       {
         "name": "novyse-1.3.1-20261020.0-android-armeabi-v7a.apk",
         "size": 58615152,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.1-20261020.0/novyse-1.3.1-20261020.0-android-armeabi-v7a.apk"
       },
       {
         "name": "novyse-1.3.1-20261020.0-android-universal.apk",
         "size": 193295638,
-        "download_count": 1,
+        "download_count": 3,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.1-20261020.0/novyse-1.3.1-20261020.0-android-universal.apk"
       },
       {
         "name": "novyse-1.3.1-20261020.0-android-x86_64.apk",
         "size": 78850764,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.1-20261020.0/novyse-1.3.1-20261020.0-android-x86_64.apk"
       },
       {
         "name": "novyse-1.3.1-20261020.0-android.aab",
         "size": 136849548,
-        "download_count": 2,
+        "download_count": 3,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.1-20261020.0/novyse-1.3.1-20261020.0-android.aab"
       },
       {
         "name": "novyse-1.3.1-20261020.0-linux.AppImage",
         "size": 35914944,
-        "download_count": 3,
+        "download_count": 5,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.1-20261020.0/novyse-1.3.1-20261020.0-linux.AppImage"
       },
       {
         "name": "novyse-1.3.1-20261020.0-linux.deb",
         "size": 28475864,
-        "download_count": 2,
+        "download_count": 5,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.1-20261020.0/novyse-1.3.1-20261020.0-linux.deb"
       },
       {
         "name": "novyse-1.3.1-20261020.0-linux.tar.gz",
         "size": 35627399,
-        "download_count": 1,
+        "download_count": 3,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.1-20261020.0/novyse-1.3.1-20261020.0-linux.tar.gz"
       },
       {
         "name": "novyse-1.3.1-20261020.0-macos.dmg",
         "size": 78833397,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.1-20261020.0/novyse-1.3.1-20261020.0-macos.dmg"
       },
       {
         "name": "novyse-1.3.1-20261020.0-macos.zip",
         "size": 69842012,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.1-20261020.0/novyse-1.3.1-20261020.0-macos.zip"
       },
       {
         "name": "novyse-1.3.1-20261020.0-web.zip",
         "size": 18867751,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.1-20261020.0/novyse-1.3.1-20261020.0-web.zip"
       },
       {
         "name": "novyse-1.3.1-20261020.0-windows-portable.exe",
         "size": 34817147,
-        "download_count": 1,
+        "download_count": 3,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.1-20261020.0/novyse-1.3.1-20261020.0-windows-portable.exe"
       },
       {
         "name": "novyse-1.3.1-20261020.0-windows-setup.exe",
         "size": 38305780,
-        "download_count": 3,
+        "download_count": 4,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.1-20261020.0/novyse-1.3.1-20261020.0-windows-setup.exe"
       },
       {
         "name": "novyse-1.3.1-20261020.0-windows-setup.msi",
         "size": 52666368,
-        "download_count": 1,
+        "download_count": 3,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.1-20261020.0/novyse-1.3.1-20261020.0-windows-setup.msi"
       },
       {
         "name": "novyse-linux-1.3.1-20261020.0-release.json",
         "size": 771,
-        "download_count": 2,
+        "download_count": 5,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.1-20261020.0/novyse-linux-1.3.1-20261020.0-release.json"
       },
       {
         "name": "novyse-linux-1.3.1-20261020.0.zip",
         "size": 36081156,
-        "download_count": 2,
+        "download_count": 5,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.1-20261020.0/novyse-linux-1.3.1-20261020.0.zip"
       },
       {
         "name": "novyse-macos-1.3.1-20261020.0-release.json",
         "size": 771,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.1-20261020.0/novyse-macos-1.3.1-20261020.0-release.json"
       },
       {
@@ -132,13 +444,13 @@
       {
         "name": "novyse-windows-1.3.1-20261020.0-release.json",
         "size": 775,
-        "download_count": 2,
+        "download_count": 3,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.1-20261020.0/novyse-windows-1.3.1-20261020.0-release.json"
       },
       {
         "name": "novyse-windows-1.3.1-20261020.0.zip",
         "size": 53721333,
-        "download_count": 2,
+        "download_count": 3,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.1-20261020.0/novyse-windows-1.3.1-20261020.0.zip"
       }
     ]
@@ -156,67 +468,67 @@
       {
         "name": "app-archive.json",
         "size": 1061,
-        "download_count": 15,
+        "download_count": 16,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261013.0/app-archive.json"
       },
       {
         "name": "novyse-1.3.0-20261013.0-android-arm64-v8a.apk",
         "size": 61946422,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261013.0/novyse-1.3.0-20261013.0-android-arm64-v8a.apk"
       },
       {
         "name": "novyse-1.3.0-20261013.0-android-armeabi-v7a.apk",
         "size": 53497340,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261013.0/novyse-1.3.0-20261013.0-android-armeabi-v7a.apk"
       },
       {
         "name": "novyse-1.3.0-20261013.0-android-universal.apk",
         "size": 176659329,
-        "download_count": 1,
+        "download_count": 3,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261013.0/novyse-1.3.0-20261013.0-android-universal.apk"
       },
       {
         "name": "novyse-1.3.0-20261013.0-android-x86_64.apk",
         "size": 71013167,
-        "download_count": 1,
+        "download_count": 3,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261013.0/novyse-1.3.0-20261013.0-android-x86_64.apk"
       },
       {
         "name": "novyse-1.3.0-20261013.0-android.aab",
         "size": 127320205,
-        "download_count": 1,
+        "download_count": 3,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261013.0/novyse-1.3.0-20261013.0-android.aab"
       },
       {
         "name": "novyse-1.3.0-20261013.0-linux.AppImage",
         "size": 35845312,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261013.0/novyse-1.3.0-20261013.0-linux.AppImage"
       },
       {
         "name": "novyse-1.3.0-20261013.0-linux.deb",
         "size": 28500256,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261013.0/novyse-1.3.0-20261013.0-linux.deb"
       },
       {
         "name": "novyse-1.3.0-20261013.0-linux.rpm",
         "size": 35895554,
-        "download_count": 2,
+        "download_count": 3,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261013.0/novyse-1.3.0-20261013.0-linux.rpm"
       },
       {
         "name": "novyse-1.3.0-20261013.0-linux.tar.gz",
         "size": 35542184,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261013.0/novyse-1.3.0-20261013.0-linux.tar.gz"
       },
       {
         "name": "novyse-1.3.0-20261013.0-macos.dmg",
         "size": 78316588,
-        "download_count": 3,
+        "download_count": 4,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261013.0/novyse-1.3.0-20261013.0-macos.dmg"
       },
       {
@@ -228,67 +540,67 @@
       {
         "name": "novyse-1.3.0-20261013.0-web.zip",
         "size": 18835850,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261013.0/novyse-1.3.0-20261013.0-web.zip"
       },
       {
         "name": "novyse-1.3.0-20261013.0-windows-portable.exe",
         "size": 34766351,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261013.0/novyse-1.3.0-20261013.0-windows-portable.exe"
       },
       {
         "name": "novyse-1.3.0-20261013.0-windows-setup.exe",
         "size": 38252957,
-        "download_count": 2,
+        "download_count": 3,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261013.0/novyse-1.3.0-20261013.0-windows-setup.exe"
       },
       {
         "name": "novyse-1.3.0-20261013.0-windows-setup.msi",
         "size": 52588544,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261013.0/novyse-1.3.0-20261013.0-windows-setup.msi"
       },
       {
         "name": "novyse-linux-1.3.0-20261013.0-release.json",
         "size": 771,
-        "download_count": 5,
+        "download_count": 7,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261013.0/novyse-linux-1.3.0-20261013.0-release.json"
       },
       {
         "name": "novyse-linux-1.3.0-20261013.0.zip",
         "size": 35999101,
-        "download_count": 4,
+        "download_count": 5,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261013.0/novyse-linux-1.3.0-20261013.0.zip"
       },
       {
         "name": "novyse-macos-1.3.0-20261013.0-release.json",
         "size": 771,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261013.0/novyse-macos-1.3.0-20261013.0-release.json"
       },
       {
         "name": "novyse-macos-1.3.0-20261013.0.zip",
         "size": 69505660,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261013.0/novyse-macos-1.3.0-20261013.0.zip"
       },
       {
         "name": "novyse-release-cert.pem",
         "size": 1291,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261013.0/novyse-release-cert.pem"
       },
       {
         "name": "novyse-windows-1.3.0-20261013.0-release.json",
         "size": 775,
-        "download_count": 7,
+        "download_count": 8,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261013.0/novyse-windows-1.3.0-20261013.0-release.json"
       },
       {
         "name": "novyse-windows-1.3.0-20261013.0.zip",
         "size": 53641084,
-        "download_count": 7,
+        "download_count": 8,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261013.0/novyse-windows-1.3.0-20261013.0.zip"
       }
     ]
@@ -306,121 +618,121 @@
       {
         "name": "app-archive.json",
         "size": 1061,
-        "download_count": 2,
+        "download_count": 3,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/app-archive.json"
       },
       {
         "name": "novyse-1.3.0-20261012.2-android-arm64-v8a.apk",
         "size": 61880890,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-1.3.0-20261012.2-android-arm64-v8a.apk"
       },
       {
         "name": "novyse-1.3.0-20261012.2-android-armeabi-v7a.apk",
         "size": 53464572,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-1.3.0-20261012.2-android-armeabi-v7a.apk"
       },
       {
         "name": "novyse-1.3.0-20261012.2-android-universal.apk",
         "size": 176561025,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-1.3.0-20261012.2-android-universal.apk"
       },
       {
         "name": "novyse-1.3.0-20261012.2-android-x86_64.apk",
         "size": 71013171,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-1.3.0-20261012.2-android-x86_64.apk"
       },
       {
         "name": "novyse-1.3.0-20261012.2-android.aab",
         "size": 127217229,
-        "download_count": 2,
+        "download_count": 4,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-1.3.0-20261012.2-android.aab"
       },
       {
         "name": "novyse-1.3.0-20261012.2-linux.AppImage",
         "size": 35820736,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-1.3.0-20261012.2-linux.AppImage"
       },
       {
         "name": "novyse-1.3.0-20261012.2-linux.deb",
         "size": 28485176,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-1.3.0-20261012.2-linux.deb"
       },
       {
         "name": "novyse-1.3.0-20261012.2-linux.rpm",
         "size": 35869441,
-        "download_count": 2,
+        "download_count": 3,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-1.3.0-20261012.2-linux.rpm"
       },
       {
         "name": "novyse-1.3.0-20261012.2-linux.tar.gz",
         "size": 35518195,
-        "download_count": 2,
+        "download_count": 3,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-1.3.0-20261012.2-linux.tar.gz"
       },
       {
         "name": "novyse-1.3.0-20261012.2-macos.dmg",
         "size": 78444670,
-        "download_count": 3,
+        "download_count": 5,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-1.3.0-20261012.2-macos.dmg"
       },
       {
         "name": "novyse-1.3.0-20261012.2-macos.zip",
         "size": 69469860,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-1.3.0-20261012.2-macos.zip"
       },
       {
         "name": "novyse-1.3.0-20261012.2-web.zip",
         "size": 18831075,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-1.3.0-20261012.2-web.zip"
       },
       {
         "name": "novyse-1.3.0-20261012.2-windows-portable.exe",
         "size": 34744777,
-        "download_count": 4,
+        "download_count": 6,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-1.3.0-20261012.2-windows-portable.exe"
       },
       {
         "name": "novyse-1.3.0-20261012.2-windows-setup.exe",
         "size": 38230424,
-        "download_count": 2,
+        "download_count": 3,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-1.3.0-20261012.2-windows-setup.exe"
       },
       {
         "name": "novyse-1.3.0-20261012.2-windows-setup.msi",
         "size": 52555776,
-        "download_count": 1,
+        "download_count": 3,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-1.3.0-20261012.2-windows-setup.msi"
       },
       {
         "name": "novyse-1.3.0-20261012.2-windows-setup.wixpdb",
         "size": 340087,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-1.3.0-20261012.2-windows-setup.wixpdb"
       },
       {
         "name": "novyse-linux-1.3.0-20261012.2-release.json",
         "size": 771,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-linux-1.3.0-20261012.2-release.json"
       },
       {
         "name": "novyse-linux-1.3.0-20261012.2.zip",
         "size": 35975333,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-linux-1.3.0-20261012.2.zip"
       },
       {
         "name": "novyse-macos-1.3.0-20261012.2-release.json",
         "size": 771,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-macos-1.3.0-20261012.2-release.json"
       },
       {
@@ -438,13 +750,13 @@
       {
         "name": "novyse-windows-1.3.0-20261012.2-release.json",
         "size": 775,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-windows-1.3.0-20261012.2-release.json"
       },
       {
         "name": "novyse-windows-1.3.0-20261012.2.zip",
         "size": 53604400,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.0-20261012.2/novyse-windows-1.3.0-20261012.2.zip"
       }
     ]
@@ -462,133 +774,133 @@
       {
         "name": "latest-linux.yml",
         "size": 644,
-        "download_count": 67,
+        "download_count": 68,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/latest-linux.yml"
       },
       {
         "name": "latest-mac.yml",
         "size": 477,
-        "download_count": 2,
+        "download_count": 3,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/latest-mac.yml"
       },
       {
         "name": "latest.yml",
         "size": 340,
-        "download_count": 13,
+        "download_count": 14,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/latest.yml"
       },
       {
         "name": "novyse-arm64-v8a.apk",
         "size": 104810511,
-        "download_count": 6,
+        "download_count": 7,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/novyse-arm64-v8a.apk"
       },
       {
         "name": "novyse-armeabi-v7a.apk",
         "size": 81691737,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/novyse-armeabi-v7a.apk"
       },
       {
         "name": "Novyse-mac.zip",
         "size": 129390293,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/Novyse-mac.zip"
       },
       {
         "name": "Novyse-mac.zip.blockmap",
         "size": 135444,
-        "download_count": 0,
+        "download_count": 1,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/Novyse-mac.zip.blockmap"
       },
       {
         "name": "Novyse-Portable.exe",
         "size": 116609257,
-        "download_count": 2,
+        "download_count": 3,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/Novyse-Portable.exe"
       },
       {
         "name": "Novyse-Setup.exe",
         "size": 116770774,
-        "download_count": 2,
+        "download_count": 4,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/Novyse-Setup.exe"
       },
       {
         "name": "Novyse-Setup.exe.blockmap",
         "size": 122904,
-        "download_count": 0,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/Novyse-Setup.exe.blockmap"
       },
       {
         "name": "Novyse-Setup.msi",
         "size": 130826240,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/Novyse-Setup.msi"
       },
       {
         "name": "novyse-web-1.2.0-20260831.0.zip",
         "size": 7876545,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/novyse-web-1.2.0-20260831.0.zip"
       },
       {
         "name": "novyse-x86.apk",
         "size": 104886940,
-        "download_count": 0,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/novyse-x86.apk"
       },
       {
         "name": "novyse-x86_64.apk",
         "size": 112743014,
-        "download_count": 0,
+        "download_count": 1,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/novyse-x86_64.apk"
       },
       {
         "name": "novyse.aab",
         "size": 226021481,
-        "download_count": 0,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/novyse.aab"
       },
       {
         "name": "Novyse.AppImage",
         "size": 148769892,
-        "download_count": 0,
+        "download_count": 1,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/Novyse.AppImage"
       },
       {
         "name": "novyse.deb",
         "size": 117295744,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/novyse.deb"
       },
       {
         "name": "Novyse.dmg",
         "size": 134068446,
-        "download_count": 0,
+        "download_count": 1,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/Novyse.dmg"
       },
       {
         "name": "Novyse.dmg.blockmap",
         "size": 140202,
-        "download_count": 0,
+        "download_count": 1,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/Novyse.dmg.blockmap"
       },
       {
         "name": "novyse.flatpak",
         "size": 105775104,
-        "download_count": 0,
+        "download_count": 1,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/novyse.flatpak"
       },
       {
         "name": "novyse.rpm",
         "size": 99755133,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/novyse.rpm"
       },
       {
         "name": "Novyse.snap",
         "size": 125308928,
-        "download_count": 0,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.2.0-20260831.0/Novyse.snap"
       }
     ]
@@ -606,133 +918,133 @@
       {
         "name": "latest-linux.yml",
         "size": 644,
-        "download_count": 112,
+        "download_count": 113,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/latest-linux.yml"
       },
       {
         "name": "latest-mac.yml",
         "size": 477,
-        "download_count": 2,
+        "download_count": 3,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/latest-mac.yml"
       },
       {
         "name": "latest.yml",
         "size": 340,
-        "download_count": 0,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/latest.yml"
       },
       {
         "name": "novyse-arm64-v8a.apk",
         "size": 99860777,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/novyse-arm64-v8a.apk"
       },
       {
         "name": "novyse-armeabi-v7a.apk",
         "size": 77954417,
-        "download_count": 0,
+        "download_count": 1,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/novyse-armeabi-v7a.apk"
       },
       {
         "name": "Novyse-mac.zip",
         "size": 128943210,
-        "download_count": 0,
+        "download_count": 1,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/Novyse-mac.zip"
       },
       {
         "name": "Novyse-mac.zip.blockmap",
         "size": 135555,
-        "download_count": 0,
+        "download_count": 1,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/Novyse-mac.zip.blockmap"
       },
       {
         "name": "Novyse-Portable.exe",
         "size": 115324195,
-        "download_count": 5,
+        "download_count": 6,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/Novyse-Portable.exe"
       },
       {
         "name": "Novyse-Setup.exe",
         "size": 115485699,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/Novyse-Setup.exe"
       },
       {
         "name": "Novyse-Setup.exe.blockmap",
         "size": 121740,
-        "download_count": 0,
+        "download_count": 1,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/Novyse-Setup.exe.blockmap"
       },
       {
         "name": "Novyse-Setup.msi",
         "size": 129880064,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/Novyse-Setup.msi"
       },
       {
         "name": "novyse-web-1.1.0-20260614.0.zip",
         "size": 7763977,
-        "download_count": 2,
+        "download_count": 3,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/novyse-web-1.1.0-20260614.0.zip"
       },
       {
         "name": "novyse-x86.apk",
         "size": 102919169,
-        "download_count": 0,
+        "download_count": 1,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/novyse-x86.apk"
       },
       {
         "name": "novyse-x86_64.apk",
         "size": 107367299,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/novyse-x86_64.apk"
       },
       {
         "name": "novyse.aab",
         "size": 215114407,
-        "download_count": 1,
+        "download_count": 3,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/novyse.aab"
       },
       {
         "name": "Novyse.AppImage",
         "size": 147072138,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/Novyse.AppImage"
       },
       {
         "name": "novyse.deb",
         "size": 116276360,
-        "download_count": 0,
+        "download_count": 3,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/novyse.deb"
       },
       {
         "name": "Novyse.dmg",
         "size": 133557162,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/Novyse.dmg"
       },
       {
         "name": "Novyse.dmg.blockmap",
         "size": 139679,
-        "download_count": 0,
+        "download_count": 1,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/Novyse.dmg.blockmap"
       },
       {
         "name": "novyse.flatpak",
         "size": 105026056,
-        "download_count": 4,
+        "download_count": 6,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/novyse.flatpak"
       },
       {
         "name": "novyse.rpm",
         "size": 99058417,
-        "download_count": 2,
+        "download_count": 3,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/novyse.rpm"
       },
       {
         "name": "Novyse.snap",
         "size": 123908096,
-        "download_count": 3,
+        "download_count": 4,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.1.0-20260614.0/Novyse.snap"
       }
     ]

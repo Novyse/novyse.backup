@@ -338,10 +338,10 @@
     "assignees": [],
     "milestone": null,
     "created_at": "2026-10-14T09:26:09Z",
-    "updated_at": "2026-10-14T12:55:35Z",
+    "updated_at": "2026-10-30T13:48:08Z",
     "closed_at": null,
     "author": "SamueleOrazioDurante",
-    "comments_count": 1,
+    "comments_count": 2,
     "body": "When attempting to auto-update Novyse on Linux from an `.rpm` package installation, the update fails immediately with the error:\n> *\"Automatic update failed. Please try again or download manually.\"*\n\nNo error logs appear in the console because the exception is caught and silently swallowed in `UpdateRequiredPage`.\n\n1. **Root-owned install directory**: The `.rpm` installs Novyse into `/opt/novyse/` owned by `root`. Running the app as a regular user means the app lacks write permissions to replace its own directory.\n2. **Missing privileged helper**: Because `/opt/novyse` is root-owned, `desktop_updater` attempts to run a PolKit helper (`/usr/libexec/desktop-updater-helper`) and load a system policy (`/etc/desktop-updater/policies/...`), neither of which exists or is installed by the package.\n3. **Packaging mismatch**: The auto-updater distributes raw `.zip` archives meant to overwrite a portable directory (`wholeDirectoryReplace`). Directly overwriting files in `/opt` bypasses and breaks the RPM/DNF package manager database.\n4. **False \"Update Now\" prompt**: Novyse detects Snap and Flatpak but classifies RPM/DEB installs as direct/portable (`AppInstallSource.direct`), falsely showing the \"Update Now\" button instead of directing the user to download the new `.rpm` package from the website.",
     "url": "https://github.com/Novyse/novyse/issues/338",
     "parent": null,
@@ -366,6 +366,14 @@
         "updated_at": "2026-10-14T12:55:35Z",
         "body": "It does not work everywhere. Auto-update will be disabled for macos and linux for everything except tarball installation with custom guide with a clear explanation or a guide to update. Windows should work correctly ",
         "url": "https://github.com/Novyse/novyse/issues/338#issuecomment-6168836069"
+      },
+      {
+        "id": 6524360419,
+        "author": "SamueleOrazioDurante",
+        "created_at": "2026-10-30T13:47:27Z",
+        "updated_at": "2026-10-30T13:48:08Z",
+        "body": "Desktop auto-update is currently broken: desktop_updater requires a \"packaged helper policy\" JSON next to its install helper inside every installed bundle, but the plugin (up to 3.2.8) provides no way to generate or bundle that file on Linux/Windows, its `helper-policy` command is macOS-only. As a result clients fail to install updates with \"Unable to serialize helper request: packaged helper policy identity rejected\" (Linux) or \"Windows helper preparation failed: Required install metadata file is unavailable\" (Windows). Waiting for upstream desktop_updater to ship portable policy generation; until then updates require a fresh manual install.",
+        "url": "https://github.com/Novyse/novyse/issues/338#issuecomment-6524360419"
       }
     ]
   },
