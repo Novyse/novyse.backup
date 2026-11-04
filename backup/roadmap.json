@@ -7,7 +7,7 @@
     "closed": false,
     "closedAt": null,
     "createdAt": "2026-06-07T13:45:39Z",
-    "updatedAt": "2026-11-02T19:28:31Z"
+    "updatedAt": "2026-11-03T20:53:21Z"
   },
   "org": "Novyse",
   "fields": [
@@ -329,6 +329,75 @@
     }
   ],
   "items": [
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zhFeJrg",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 348,
+        "title": "Android predictive gestures aren't working as expected",
+        "state": "CLOSED",
+        "url": "https://github.com/Novyse/novyse/issues/348",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.4 - Voice Evolution",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "Android predictive gestures aren't working as expected",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Completed",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Miscellaneous",
+            "field": {
+              "name": "Category"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Bug Fix",
+            "field": {
+              "name": "Classification"
+            }
+          }
+        ]
+      }
+    },
     {
       "id": "PVTI_lADOCuSSY84BZ912zhB3R8E",
       "isArchived": false,
@@ -16126,75 +16195,6 @@
             "name": "Messages",
             "field": {
               "name": "Category"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "id": "PVTI_lADOCuSSY84BZ912zhFeJrg",
-      "isArchived": false,
-      "content": {
-        "__typename": "Issue",
-        "number": 348,
-        "title": "Android predictive gestures aren't working as expected",
-        "state": "OPEN",
-        "url": "https://github.com/Novyse/novyse/issues/348",
-        "repository": {
-          "nameWithOwner": "Novyse/novyse"
-        },
-        "labels": {
-          "nodes": []
-        },
-        "assignees": {
-          "nodes": []
-        }
-      },
-      "fieldValues": {
-        "nodes": [
-          {
-            "__typename": "ProjectV2ItemFieldRepositoryValue"
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.4 - Voice Evolution",
-            "field": {
-              "name": "Version"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldTextValue",
-            "text": "Android predictive gestures aren't working as expected",
-            "field": {
-              "name": "Title"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Planned",
-            "field": {
-              "name": "Status"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Client",
-            "field": {
-              "name": "Scope"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Miscellaneous",
-            "field": {
-              "name": "Category"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Bug Fix",
-            "field": {
-              "name": "Classification"
             }
           }
         ]
