@@ -1,5 +1,37 @@
 [
   {
+    "number": 349,
+    "title": "Different themes for app icon",
+    "state": "open",
+    "state_reason": null,
+    "is_pull_request": false,
+    "labels": [],
+    "assignees": [],
+    "milestone": null,
+    "created_at": "2026-11-04T22:19:28Z",
+    "updated_at": "2026-11-04T22:19:28Z",
+    "closed_at": null,
+    "author": "MatteoMagnani7",
+    "comments_count": 0,
+    "body": null,
+    "url": "https://github.com/Novyse/novyse/issues/349",
+    "parent": null,
+    "sub_issues_summary": {
+      "total": 0,
+      "completed": 0,
+      "percent_completed": 0
+    },
+    "sub_issues": [],
+    "issue_field_values": [],
+    "issue_dependencies": {
+      "blocked_by": 0,
+      "total_blocked_by": 0,
+      "blocking": 0,
+      "total_blocking": 0
+    },
+    "comments": []
+  },
+  {
     "number": 348,
     "title": "Android predictive gestures aren't working as expected",
     "state": "closed",
