@@ -7,7 +7,7 @@
     "closed": false,
     "closedAt": null,
     "createdAt": "2026-06-07T13:45:39Z",
-    "updatedAt": "2026-11-04T22:19:45Z"
+    "updatedAt": "2026-11-05T22:19:18Z"
   },
   "org": "Novyse",
   "fields": [
@@ -16199,8 +16199,83 @@
           }
         ]
       }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zhGZ_-s",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 349,
+        "title": "Different themes for app icon",
+        "state": "OPEN",
+        "url": "https://github.com/Novyse/novyse/issues/349",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemIssueFieldValue"
+          },
+          {
+            "__typename": "ProjectV2ItemIssueFieldValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "Different themes for app icon",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "In Progress",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Feature",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.4 - Voice Evolution",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "UI/UX",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
     }
   ],
-  "fetched": 214,
-  "totalCount": 214
+  "fetched": 215,
+  "totalCount": 215
 }

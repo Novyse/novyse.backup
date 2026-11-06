@@ -9,11 +9,11 @@
     "assignees": [],
     "milestone": null,
     "created_at": "2026-11-04T22:19:28Z",
-    "updated_at": "2026-11-04T22:19:28Z",
+    "updated_at": "2026-11-05T22:19:18Z",
     "closed_at": null,
     "author": "MatteoMagnani7",
     "comments_count": 0,
-    "body": null,
+    "body": "Customize your look with dynamic app icon themes. Choose from a wide selection of unique backgrounds and color palettes, fully supported across all platforms.",
     "url": "https://github.com/Novyse/novyse/issues/349",
     "parent": null,
     "sub_issues_summary": {
@@ -22,7 +22,22 @@
       "percent_completed": 0
     },
     "sub_issues": [],
-    "issue_field_values": [],
+    "issue_field_values": [
+      {
+        "issue_field_id": 30474187,
+        "node_id": "IFDV_kgDOAPtkQA",
+        "data_type": "date",
+        "issue_field_name": "Start date",
+        "value": "2026-11-03"
+      },
+      {
+        "issue_field_id": 30474188,
+        "node_id": "IFDV_kgDOAPtkTA",
+        "data_type": "date",
+        "issue_field_name": "Target date",
+        "value": "2026-11-10"
+      }
+    ],
     "issue_dependencies": {
       "blocked_by": 0,
       "total_blocked_by": 0,
@@ -233,7 +248,7 @@
     "assignees": [],
     "milestone": null,
     "created_at": "2026-10-19T14:53:05Z",
-    "updated_at": "2026-11-02T18:04:06Z",
+    "updated_at": "2026-11-05T13:47:42Z",
     "closed_at": null,
     "author": "SamueleOrazioDurante",
     "comments_count": 2,
@@ -273,8 +288,8 @@
         "id": 6581970641,
         "author": "SamueleOrazioDurante",
         "created_at": "2026-11-02T16:09:47Z",
-        "updated_at": "2026-11-02T16:09:47Z",
-        "body": "Il piano cambia leggermente dopo la migrazione da socket.io a centrifuge. Rimosse alcune feature non più supportate",
+        "updated_at": "2026-11-05T13:47:42Z",
+        "body": "Il piano cambia leggermente dopo la migrazione da socket.io a centrifuge. Rimosse alcune feature non più supportate, il piano di implementazione sopra NON è aggiornato, da non usare.",
         "url": "https://github.com/Novyse/novyse/issues/342#issuecomment-6581970641"
       },
       {
