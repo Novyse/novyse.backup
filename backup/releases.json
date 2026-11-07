@@ -12,7 +12,7 @@
       {
         "name": "app-archive.json",
         "size": 1061,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.1/app-archive.json"
       },
       {
@@ -144,13 +144,13 @@
       {
         "name": "novyse-windows-1.3.2-20261030.1-release.json",
         "size": 775,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.1/novyse-windows-1.3.2-20261030.1-release.json"
       },
       {
         "name": "novyse-windows-1.3.2-20261030.1.zip",
         "size": 53723481,
-        "download_count": 1,
+        "download_count": 2,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.1/novyse-windows-1.3.2-20261030.1.zip"
       }
     ]
@@ -198,13 +198,13 @@
       {
         "name": "novyse-1.3.2-20261030.0-android.aab",
         "size": 136949167,
-        "download_count": 3,
+        "download_count": 4,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.0/novyse-1.3.2-20261030.0-android.aab"
       },
       {
         "name": "novyse-1.3.2-20261030.0-linux.AppImage",
         "size": 36078784,
-        "download_count": 2,
+        "download_count": 3,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.0/novyse-1.3.2-20261030.0-linux.AppImage"
       },
       {
@@ -216,13 +216,13 @@
       {
         "name": "novyse-1.3.2-20261030.0-linux.flatpak",
         "size": 23651400,
-        "download_count": 2,
+        "download_count": 3,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.0/novyse-1.3.2-20261030.0-linux.flatpak"
       },
       {
         "name": "novyse-1.3.2-20261030.0-linux.rpm",
         "size": 24855225,
-        "download_count": 4,
+        "download_count": 5,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.0/novyse-1.3.2-20261030.0-linux.rpm"
       },
       {
@@ -240,7 +240,7 @@
       {
         "name": "novyse-1.3.2-20261030.0-macos.zip",
         "size": 69828082,
-        "download_count": 3,
+        "download_count": 4,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.0/novyse-1.3.2-20261030.0-macos.zip"
       },
       {
@@ -258,7 +258,7 @@
       {
         "name": "novyse-1.3.2-20261030.0-windows-setup.exe",
         "size": 38316202,
-        "download_count": 3,
+        "download_count": 4,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.0/novyse-1.3.2-20261030.0-windows-setup.exe"
       },
       {
@@ -276,7 +276,7 @@
       {
         "name": "novyse-linux-1.3.2-20261030.0.zip",
         "size": 36185446,
-        "download_count": 5,
+        "download_count": 6,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.0/novyse-linux-1.3.2-20261030.0.zip"
       },
       {
@@ -288,7 +288,7 @@
       {
         "name": "novyse-macos-1.3.2-20261030.0.zip",
         "size": 69828082,
-        "download_count": 2,
+        "download_count": 3,
         "browser_download_url": "https://github.com/Novyse/novyse/releases/download/v1.3.2-20261030.0/novyse-macos-1.3.2-20261030.0.zip"
       },
       {
