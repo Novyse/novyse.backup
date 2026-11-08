@@ -7,7 +7,7 @@
     "closed": false,
     "closedAt": null,
     "createdAt": "2026-06-07T13:45:39Z",
-    "updatedAt": "2026-11-06T20:31:45Z"
+    "updatedAt": "2026-11-07T12:29:09Z"
   },
   "org": "Novyse",
   "fields": [
@@ -16412,8 +16412,77 @@
           }
         ]
       }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zhGyE9Y",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 351,
+        "title": "flutter_inappwebview_android 1.1.3 referencing proguard-android.txt",
+        "state": "OPEN",
+        "url": "https://github.com/Novyse/novyse/issues/351",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Unassigned",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "flutter_inappwebview_android 1.1.3 referencing proguard-android.txt",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Blocked",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Bug Fix",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Miscellaneous",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
     }
   ],
-  "fetched": 217,
-  "totalCount": 217
+  "fetched": 218,
+  "totalCount": 218
 }
