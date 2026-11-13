@@ -1,5 +1,46 @@
 [
   {
+    "number": 352,
+    "title": "[Android] Samsung auto-fill unfocuses text input",
+    "state": "open",
+    "state_reason": null,
+    "is_pull_request": false,
+    "labels": [],
+    "assignees": [],
+    "milestone": null,
+    "created_at": "2026-11-12T16:41:40Z",
+    "updated_at": "2026-11-12T16:42:14Z",
+    "closed_at": null,
+    "author": "SamueleOrazioDurante",
+    "comments_count": 1,
+    "body": null,
+    "url": "https://github.com/Novyse/novyse/issues/352",
+    "parent": null,
+    "sub_issues_summary": {
+      "total": 0,
+      "completed": 0,
+      "percent_completed": 0
+    },
+    "sub_issues": [],
+    "issue_field_values": [],
+    "issue_dependencies": {
+      "blocked_by": 0,
+      "total_blocked_by": 0,
+      "blocking": 0,
+      "total_blocking": 0
+    },
+    "comments": [
+      {
+        "id": 6829783665,
+        "author": "SamueleOrazioDurante",
+        "created_at": "2026-11-12T16:42:14Z",
+        "updated_at": "2026-11-12T16:42:14Z",
+        "body": "Bug noto di flutter, aspettiamo un fix \nhttps://github.com/flutter/flutter/issues/144224",
+        "url": "https://github.com/Novyse/novyse/issues/352#issuecomment-6829783665"
+      }
+    ]
+  },
+  {
     "number": 351,
     "title": "flutter_inappwebview_android 1.1.3 referencing proguard-android.txt",
     "state": "open",
@@ -9,10 +50,10 @@
     "assignees": [],
     "milestone": null,
     "created_at": "2026-11-07T12:28:58Z",
-    "updated_at": "2026-11-07T12:28:58Z",
+    "updated_at": "2026-11-12T17:41:39Z",
     "closed_at": null,
     "author": "SamueleOrazioDurante",
-    "comments_count": 0,
+    "comments_count": 1,
     "body": "flutter_inappwebview_android 1.1.3 (latest stable) still references proguard-android.txt, which AGP 9 rejects. Allow it until upstream releases the fix (see https://github.com/pichillilorenzo/flutter_inappwebview/issues/2852). Remove this once flutter_inappwebview ships a version using proguard-android-optimize.txt.\n\nandroid/gradle.properties\n- android.r8.proguardAndroidTxt.disallowed=false\n\n",
     "url": "https://github.com/Novyse/novyse/issues/351",
     "parent": null,
@@ -29,7 +70,16 @@
       "blocking": 0,
       "total_blocking": 0
     },
-    "comments": []
+    "comments": [
+      {
+        "id": 6831265427,
+        "author": "SamueleOrazioDurante",
+        "created_at": "2026-11-12T17:41:39Z",
+        "updated_at": "2026-11-12T17:41:39Z",
+        "body": "flutter_inappwebview is no longer used: the plugin WebView sandbox now runs on webview_all, so flutter_inappwebview_android is no longer in the dependency graph. The android.r8.proguardAndroidTxt.disallowed=false workaround is therefore unnecessary and has been removed. Verified with AGP 9.1.0/Gradle 9.3.1 that the configuration works with the default disallowed=true. The android.r8.proguardAndroidTxt.disallowed=false workaround is therefore no longer needed and can be removed. Verified with AGP 9.1.0/Gradle 9.3.1 that the configuration works with the default disallowed=true.",
+        "url": "https://github.com/Novyse/novyse/issues/351#issuecomment-6831265427"
+      }
+    ]
   },
   {
     "number": 350,
@@ -312,7 +362,7 @@
     "assignees": [],
     "milestone": null,
     "created_at": "2026-10-19T14:53:05Z",
-    "updated_at": "2026-11-05T13:47:42Z",
+    "updated_at": "2026-11-12T17:51:45Z",
     "closed_at": null,
     "author": "SamueleOrazioDurante",
     "comments_count": 2,
@@ -338,7 +388,7 @@
         "node_id": "IFDV_kgDOANMJmw",
         "data_type": "date",
         "issue_field_name": "Target date",
-        "value": "2026-11-30"
+        "value": "2026-11-15"
       }
     ],
     "issue_dependencies": {
