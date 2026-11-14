@@ -1,5 +1,206 @@
 [
   {
+    "number": 357,
+    "title": "FCM bootstrap fails on load",
+    "state": "open",
+    "state_reason": null,
+    "is_pull_request": false,
+    "labels": [],
+    "assignees": [],
+    "milestone": null,
+    "created_at": "2026-11-13T14:49:38Z",
+    "updated_at": "2026-11-13T14:51:32Z",
+    "closed_at": null,
+    "author": "SamueleOrazioDurante",
+    "comments_count": 2,
+    "body": "On a cold load of the web build the console is flooded with initialization errors. The app still renders, but FCM is effectively dead on web and every notification path logs a failure.\n\n```\n[main] Firebase init skipped: Null check operator used on a null value\n[NotificationManager] FCM init skipped: Null check operator used on a null value\n[NotificationBridge] register failed: UnimplementedError\nTypeError: Cannot read properties of null (reading 'a')\n```",
+    "url": "https://github.com/Novyse/novyse/issues/357",
+    "parent": null,
+    "sub_issues_summary": {
+      "total": 0,
+      "completed": 0,
+      "percent_completed": 0
+    },
+    "sub_issues": [],
+    "issue_field_values": [],
+    "issue_dependencies": {
+      "blocked_by": 0,
+      "total_blocked_by": 0,
+      "blocking": 0,
+      "total_blocking": 0
+    },
+    "comments": [
+      {
+        "id": 6856417018,
+        "author": "SamueleOrazioDurante",
+        "created_at": "2026-11-13T14:49:59Z",
+        "updated_at": "2026-11-13T14:49:59Z",
+        "body": "- `FcmService.isSupported` returns `true` on web, so the FCM boot path runs there.\n- There is no `lib/firebase_options.dart`, so `Firebase.initializeApp()` has no web app configuration and throws.\n- Downstream code (`FirebaseMessaging`, notification bridge registration) does not treat that failure as fatal and keeps calling into a null app / unsupported API.\n- Decide first whether web push is in scope: if yes, configure a web Firebase app + service worker; if not, hard-guard FCM out on web.",
+        "url": "https://github.com/Novyse/novyse/issues/357#issuecomment-6856417018"
+      },
+      {
+        "id": 6856460303,
+        "author": "SamueleOrazioDurante",
+        "created_at": "2026-11-13T14:51:32Z",
+        "updated_at": "2026-11-13T14:51:32Z",
+        "body": "```\n[main] Firebase init skipped: Null check operator used on a null value\nauth.novyse.com/token:1  Failed to load resource: the server responded with a status of 401 ()\nmain.dart.js:55089 [NotificationBridge] register failed: UnimplementedError\nmain.dart.js:55305 Bad state: RenderBox was not laid out: minified:atF#8cb7f\nmain.dart.js:55305 \n    at Object.N (main.dart.js:4777:29)\n    at atF.gI (main.dart.js:105968:18)\n    at atF.gmj (main.dart.js:105969:18)\n    at h1.gcA (main.dart.js:123388:48)\n    at Object.d7w (main.dart.js:28286:5)\n    at Object.ctI (main.dart.js:28250:5)\n    at bun.a21 (main.dart.js:123838:11)\n    at bun.asp (main.dart.js:123842:22)\n    at abX.aFb (main.dart.js:138052:45)\n    at ayu.a9S (main.dart.js:120655:7)\nmain.dart.js:55089 [NotificationManager] FCM init skipped: Null check operator used on a null value\nmain.dart.js:55089 TypeError: Cannot read properties of null (reading 'a')\nmain.dart.js:55089     at https://app.novyse.com/main.dart.js:83194:46\nmain.dart.js:55089     at cg7.a (https://app.novyse.com/main.dart.js:6214:63)\nmain.dart.js:55089     at cg7.$2 (https://app.novyse.com/main.dart.js:71320:14)\nmain.dart.js:55089     at cdZ.$1 (https://app.novyse.com/main.dart.js:71314:21)\nmain.dart.js:55089     at aai.Bz (https://app.novyse.com/main.dart.js:72759:33)\nmain.dart.js:55089     at bWR.$0 (https://app.novyse.com/main.dart.js:71810:11)\nmain.dart.js:55089     at Object.L7 (https://app.novyse.com/main.dart.js:6382:40)\nmain.dart.js:55089     at ad.tt (https://app.novyse.com/main.dart.js:71716:3)\nmain.dart.js:55089     at bWJ.$0 (https://app.novyse.com/main.dart.js:71773:13)\nmain.dart.js:55089     at Object.dh_ (https://app.novyse.com/main.dart.js:6414:5)\nauth.novyse.com/signin/qrcode/status/io227un3bcmq36h86tufjhka52mbrv25bi1pntxo52rluk0y0mz6xoq8s9y5cc1nnzciouazbu0xynz91bfj1s3cbrty2h08h84ol7zwj4yxcpu4pi0pygq74x6wl3vu:1  Failed to load resource: the server responded with a status of 404 ()\n```",
+        "url": "https://github.com/Novyse/novyse/issues/357#issuecomment-6856460303"
+      }
+    ]
+  },
+  {
+    "number": 356,
+    "title": "Deleting a message doesn't update the chat list preview",
+    "state": "open",
+    "state_reason": null,
+    "is_pull_request": false,
+    "labels": [],
+    "assignees": [],
+    "milestone": null,
+    "created_at": "2026-11-13T14:49:11Z",
+    "updated_at": "2026-11-13T14:49:11Z",
+    "closed_at": null,
+    "author": "SamueleOrazioDurante",
+    "comments_count": 0,
+    "body": "After deleting a message, the chat list keeps showing the deleted message as the last-message preview (text, attachment, timestamp and chat ordering stay stale). The conversation itself no longer contains the message. Reopening the app,  or anything that reloads the chat list from the database, shows the correct preview.",
+    "url": "https://github.com/Novyse/novyse/issues/356",
+    "parent": null,
+    "sub_issues_summary": {
+      "total": 0,
+      "completed": 0,
+      "percent_completed": 0
+    },
+    "sub_issues": [],
+    "issue_field_values": [],
+    "issue_dependencies": {
+      "blocked_by": 0,
+      "total_blocked_by": 0,
+      "blocking": 0,
+      "total_blocking": 0
+    },
+    "comments": []
+  },
+  {
+    "number": 355,
+    "title": "Delete from the message action menu does nothing (bulk delete works)",
+    "state": "open",
+    "state_reason": null,
+    "is_pull_request": false,
+    "labels": [],
+    "assignees": [],
+    "milestone": null,
+    "created_at": "2026-11-13T14:48:35Z",
+    "updated_at": "2026-11-13T14:48:35Z",
+    "closed_at": null,
+    "author": "SamueleOrazioDurante",
+    "comments_count": 0,
+    "body": "Opening a message's action menu and choosing **Delete** has no effect: the message is not deleted and no confirmation is shown. Deleting the same message through selection (**Select** → delete in the selection header) works correctly.",
+    "url": "https://github.com/Novyse/novyse/issues/355",
+    "parent": null,
+    "sub_issues_summary": {
+      "total": 0,
+      "completed": 0,
+      "percent_completed": 0
+    },
+    "sub_issues": [],
+    "issue_field_values": [],
+    "issue_dependencies": {
+      "blocked_by": 0,
+      "total_blocked_by": 0,
+      "blocking": 0,
+      "total_blocking": 0
+    },
+    "comments": []
+  },
+  {
+    "number": 354,
+    "title": "Joining a room with an active screen share plays the \"share started\" sound",
+    "state": "open",
+    "state_reason": null,
+    "is_pull_request": false,
+    "labels": [],
+    "assignees": [],
+    "milestone": null,
+    "created_at": "2026-11-13T14:48:21Z",
+    "updated_at": "2026-11-13T14:48:21Z",
+    "closed_at": null,
+    "author": "SamueleOrazioDurante",
+    "comments_count": 0,
+    "body": "When joining a voice room where someone is already sharing their screen, the screen-share start cue is played on entry. The sound should only announce a share that actually starts while you are in the room.",
+    "url": "https://github.com/Novyse/novyse/issues/354",
+    "parent": null,
+    "sub_issues_summary": {
+      "total": 0,
+      "completed": 0,
+      "percent_completed": 0
+    },
+    "sub_issues": [],
+    "issue_field_values": [],
+    "issue_dependencies": {
+      "blocked_by": 0,
+      "total_blocked_by": 0,
+      "blocking": 0,
+      "total_blocking": 0
+    },
+    "comments": []
+  },
+  {
+    "number": 353,
+    "title": "Custom Profiles",
+    "state": "open",
+    "state_reason": null,
+    "is_pull_request": false,
+    "labels": [],
+    "assignees": [],
+    "milestone": null,
+    "created_at": "2026-11-13T14:38:46Z",
+    "updated_at": "2026-11-13T14:40:10Z",
+    "closed_at": null,
+    "author": "SamueleOrazioDurante",
+    "comments_count": 1,
+    "body": "Full self-expression for every profile: upload and crop an avatar, edit name, surname and bio, add a banner image and a looping card GIF, and theme the profile with solid or gradient colors for the name, banner and card background. Birthday is picked with a native date picker, and every change is stored through the API and local database, synced to chats and pushed to other users in real time.",
+    "url": "https://github.com/Novyse/novyse/issues/353",
+    "parent": null,
+    "sub_issues_summary": {
+      "total": 0,
+      "completed": 0,
+      "percent_completed": 0
+    },
+    "sub_issues": [],
+    "issue_field_values": [
+      {
+        "issue_field_id": 30474187,
+        "node_id": "IFDV_kgDOAQ5o8Q",
+        "data_type": "date",
+        "issue_field_name": "Start date",
+        "value": "2026-11-02"
+      },
+      {
+        "issue_field_id": 30474188,
+        "node_id": "IFDV_kgDOAQ5pAA",
+        "data_type": "date",
+        "issue_field_name": "Target date",
+        "value": "2026-11-20"
+      }
+    ],
+    "issue_dependencies": {
+      "blocked_by": 0,
+      "total_blocked_by": 0,
+      "blocking": 0,
+      "total_blocking": 0
+    },
+    "comments": [
+      {
+        "id": 6856124979,
+        "author": "SamueleOrazioDurante",
+        "created_at": "2026-11-13T14:39:18Z",
+        "updated_at": "2026-11-13T14:39:18Z",
+        "body": "- 2daee6a0  profile picture upload + crop (avatar sheet, crop geometry/guide, image encoding)\n- 04de87bc  avatar/backdrop gradient taken from the cropped image; speaking effect on voice-room user cards\n- b258fac1  edit name, surname and biography; new text-input settings row; profile draft store\n- ffeba59a  color picker component (solid + gradient, HEX input, angle)\n- c42b8f06  datetime picker component (used for birthday)\n- d6b909a0  API support for banner, card image and customization gradients\n- c4c21c27  customization fields in the local DB, chat info sync and realtime propagation\n- e735e8da  profile UI: profile card, birthday, name/banner/card colors, banner upload with 17:6 crop, card GIF, account settings catalog",
+        "url": "https://github.com/Novyse/novyse/issues/353#issuecomment-6856124979"
+      }
+    ]
+  },
+  {
     "number": 352,
     "title": "[Android] Samsung auto-fill unfocuses text input",
     "state": "open",
@@ -43,15 +244,15 @@
   {
     "number": 351,
     "title": "flutter_inappwebview_android 1.1.3 referencing proguard-android.txt",
-    "state": "open",
-    "state_reason": null,
+    "state": "closed",
+    "state_reason": "completed",
     "is_pull_request": false,
     "labels": [],
     "assignees": [],
     "milestone": null,
     "created_at": "2026-11-07T12:28:58Z",
-    "updated_at": "2026-11-12T17:41:39Z",
-    "closed_at": null,
+    "updated_at": "2026-11-13T14:35:44Z",
+    "closed_at": "2026-11-13T14:35:44Z",
     "author": "SamueleOrazioDurante",
     "comments_count": 1,
     "body": "flutter_inappwebview_android 1.1.3 (latest stable) still references proguard-android.txt, which AGP 9 rejects. Allow it until upstream releases the fix (see https://github.com/pichillilorenzo/flutter_inappwebview/issues/2852). Remove this once flutter_inappwebview ships a version using proguard-android-optimize.txt.\n\nandroid/gradle.properties\n- android.r8.proguardAndroidTxt.disallowed=false\n\n",
@@ -123,7 +324,7 @@
     "assignees": [],
     "milestone": null,
     "created_at": "2026-11-04T22:19:28Z",
-    "updated_at": "2026-11-05T22:19:18Z",
+    "updated_at": "2026-11-13T14:36:00Z",
     "closed_at": null,
     "author": "MatteoMagnani7",
     "comments_count": 0,
@@ -149,7 +350,7 @@
         "node_id": "IFDV_kgDOAPtkTA",
         "data_type": "date",
         "issue_field_name": "Target date",
-        "value": "2026-11-10"
+        "value": "2026-11-20"
       }
     ],
     "issue_dependencies": {
@@ -750,7 +951,7 @@
     "assignees": [],
     "milestone": null,
     "created_at": "2026-10-13T12:22:14Z",
-    "updated_at": "2026-10-20T21:28:59Z",
+    "updated_at": "2026-11-13T14:36:23Z",
     "closed_at": null,
     "author": "SamueleOrazioDurante",
     "comments_count": 1,
@@ -769,14 +970,14 @@
         "node_id": "IFDV_kgDOANMJhQ",
         "data_type": "date",
         "issue_field_name": "Start date",
-        "value": "2026-10-21"
+        "value": "2026-12-01"
       },
       {
         "issue_field_id": 30474188,
         "node_id": "IFDV_kgDOANMJlA",
         "data_type": "date",
         "issue_field_name": "Target date",
-        "value": "2026-11-30"
+        "value": "2026-12-31"
       }
     ],
     "issue_dependencies": {

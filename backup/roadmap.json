@@ -7,7 +7,7 @@
     "closed": false,
     "closedAt": null,
     "createdAt": "2026-06-07T13:45:39Z",
-    "updatedAt": "2026-11-12T17:51:46Z"
+    "updatedAt": "2026-11-13T14:51:01Z"
   },
   "org": "Novyse",
   "fields": [
@@ -195,15 +195,19 @@
         },
         {
           "id": "6b149086",
-          "name": "v1.4 - Voice Evolution"
+          "name": "v1.4 - Profiles & Plugins"
+        },
+        {
+          "id": "6e047262",
+          "name": "v1.5 - Voice Evolution"
         },
         {
           "id": "92770627",
-          "name": "v1.5 - AI and Bot Integration"
+          "name": "v1.6 - AI and Bot Integration"
         },
         {
           "id": "8249d263",
-          "name": "v1.6 - Self-hosting"
+          "name": "v1.7 - Self-hosting"
         }
       ]
     },
@@ -355,7 +359,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.4 - Voice Evolution",
+            "name": "v1.4 - Profiles & Plugins",
             "field": {
               "name": "Version"
             }
@@ -451,7 +455,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.4 - Voice Evolution",
+            "name": "v1.4 - Profiles & Plugins",
             "field": {
               "name": "Version"
             }
@@ -466,156 +470,6 @@
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
             "name": "Comms",
-            "field": {
-              "name": "Category"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "id": "PVTI_lADOCuSSY84BZ912zhFc0UI",
-      "isArchived": false,
-      "content": {
-        "__typename": "Issue",
-        "number": 1,
-        "title": "Watch Together",
-        "state": "OPEN",
-        "url": "https://github.com/Novyse/plugins/issues/1",
-        "repository": {
-          "nameWithOwner": "Novyse/plugins"
-        },
-        "labels": {
-          "nodes": []
-        },
-        "assignees": {
-          "nodes": []
-        }
-      },
-      "fieldValues": {
-        "nodes": [
-          {
-            "__typename": "ProjectV2ItemFieldRepositoryValue"
-          },
-          {
-            "__typename": "ProjectV2ItemIssueFieldValue"
-          },
-          {
-            "__typename": "ProjectV2ItemIssueFieldValue"
-          },
-          {
-            "__typename": "ProjectV2ItemFieldTextValue",
-            "text": "Watch Together",
-            "field": {
-              "name": "Title"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "In Progress",
-            "field": {
-              "name": "Status"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Feature",
-            "field": {
-              "name": "Classification"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.4 - Voice Evolution",
-            "field": {
-              "name": "Version"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Client",
-            "field": {
-              "name": "Scope"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Plugin",
-            "field": {
-              "name": "Category"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "id": "PVTI_lADOCuSSY84BZ912zhGqsrY",
-      "isArchived": false,
-      "content": {
-        "__typename": "Issue",
-        "number": 2,
-        "title": "Excalidraw",
-        "state": "OPEN",
-        "url": "https://github.com/Novyse/plugins/issues/2",
-        "repository": {
-          "nameWithOwner": "Novyse/plugins"
-        },
-        "labels": {
-          "nodes": []
-        },
-        "assignees": {
-          "nodes": []
-        }
-      },
-      "fieldValues": {
-        "nodes": [
-          {
-            "__typename": "ProjectV2ItemFieldRepositoryValue"
-          },
-          {
-            "__typename": "ProjectV2ItemIssueFieldValue"
-          },
-          {
-            "__typename": "ProjectV2ItemIssueFieldValue"
-          },
-          {
-            "__typename": "ProjectV2ItemFieldTextValue",
-            "text": "Excalidraw",
-            "field": {
-              "name": "Title"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "In Progress",
-            "field": {
-              "name": "Status"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Feature",
-            "field": {
-              "name": "Classification"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.4 - Voice Evolution",
-            "field": {
-              "name": "Version"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Client",
-            "field": {
-              "name": "Scope"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Plugin",
             "field": {
               "name": "Category"
             }
@@ -1222,7 +1076,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.4 - Voice Evolution",
+            "name": "v1.4 - Profiles & Plugins",
             "field": {
               "name": "Version"
             }
@@ -1270,7 +1124,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.4 - Voice Evolution",
+            "name": "v1.4 - Profiles & Plugins",
             "field": {
               "name": "Version"
             }
@@ -2063,7 +1917,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.4 - Voice Evolution",
+            "name": "v1.4 - Profiles & Plugins",
             "field": {
               "name": "Version"
             }
@@ -2138,7 +1992,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.4 - Voice Evolution",
+            "name": "v1.5 - Voice Evolution",
             "field": {
               "name": "Version"
             }
@@ -2152,7 +2006,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "In Progress",
+            "name": "Planned",
             "field": {
               "name": "Status"
             }
@@ -12637,7 +12491,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.5 - AI and Bot Integration",
+            "name": "v1.6 - AI and Bot Integration",
             "field": {
               "name": "Version"
             }
@@ -12712,7 +12566,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.5 - AI and Bot Integration",
+            "name": "v1.6 - AI and Bot Integration",
             "field": {
               "name": "Version"
             }
@@ -12787,7 +12641,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.5 - AI and Bot Integration",
+            "name": "v1.6 - AI and Bot Integration",
             "field": {
               "name": "Version"
             }
@@ -12862,7 +12716,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.5 - AI and Bot Integration",
+            "name": "v1.6 - AI and Bot Integration",
             "field": {
               "name": "Version"
             }
@@ -12937,7 +12791,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.6 - Self-hosting",
+            "name": "v1.7 - Self-hosting",
             "field": {
               "name": "Version"
             }
@@ -13012,7 +12866,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.6 - Self-hosting",
+            "name": "v1.7 - Self-hosting",
             "field": {
               "name": "Version"
             }
@@ -13087,7 +12941,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.6 - Self-hosting",
+            "name": "v1.7 - Self-hosting",
             "field": {
               "name": "Version"
             }
@@ -13162,7 +13016,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.6 - Self-hosting",
+            "name": "v1.7 - Self-hosting",
             "field": {
               "name": "Version"
             }
@@ -13237,7 +13091,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.6 - Self-hosting",
+            "name": "v1.7 - Self-hosting",
             "field": {
               "name": "Version"
             }
@@ -16328,7 +16182,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.4 - Voice Evolution",
+            "name": "v1.4 - Profiles & Plugins",
             "field": {
               "name": "Version"
             }
@@ -16376,7 +16230,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.4 - Voice Evolution",
+            "name": "v1.4 - Profiles & Plugins",
             "field": {
               "name": "Version"
             }
@@ -16420,13 +16274,163 @@
       }
     },
     {
+      "id": "PVTI_lADOCuSSY84BZ912zhFc0UI",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 1,
+        "title": "Watch Together",
+        "state": "CLOSED",
+        "url": "https://github.com/Novyse/plugins/issues/1",
+        "repository": {
+          "nameWithOwner": "Novyse/plugins"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemIssueFieldValue"
+          },
+          {
+            "__typename": "ProjectV2ItemIssueFieldValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "Watch Together",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Completed",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Feature",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.4 - Profiles & Plugins",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Plugin",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zhGqsrY",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 2,
+        "title": "Excalidraw",
+        "state": "CLOSED",
+        "url": "https://github.com/Novyse/plugins/issues/2",
+        "repository": {
+          "nameWithOwner": "Novyse/plugins"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemIssueFieldValue"
+          },
+          {
+            "__typename": "ProjectV2ItemIssueFieldValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "Excalidraw",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Completed",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Feature",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.4 - Profiles & Plugins",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Plugin",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
+    },
+    {
       "id": "PVTI_lADOCuSSY84BZ912zhGyE9Y",
       "isArchived": false,
       "content": {
         "__typename": "Issue",
         "number": 351,
         "title": "flutter_inappwebview_android 1.1.3 referencing proguard-android.txt",
-        "state": "OPEN",
+        "state": "CLOSED",
         "url": "https://github.com/Novyse/novyse/issues/351",
         "repository": {
           "nameWithOwner": "Novyse/novyse"
@@ -16445,7 +16449,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.4 - Voice Evolution",
+            "name": "v1.4 - Profiles & Plugins",
             "field": {
               "name": "Version"
             }
@@ -16459,7 +16463,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Blocked",
+            "name": "Completed",
             "field": {
               "name": "Status"
             }
@@ -16556,8 +16560,359 @@
           }
         ]
       }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zhIfA_c",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 353,
+        "title": "Custom Profiles",
+        "state": "OPEN",
+        "url": "https://github.com/Novyse/novyse/issues/353",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemIssueFieldValue"
+          },
+          {
+            "__typename": "ProjectV2ItemIssueFieldValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.4 - Profiles & Plugins",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "Custom Profiles",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "In Progress",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "UI/UX",
+            "field": {
+              "name": "Category"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client+Server",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Feature",
+            "field": {
+              "name": "Classification"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zhIfLE8",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 354,
+        "title": "Joining a room with an active screen share plays the \"share started\" sound",
+        "state": "OPEN",
+        "url": "https://github.com/Novyse/novyse/issues/354",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.4 - Profiles & Plugins",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "Joining a room with an active screen share plays the \"share started\" sound",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Planned",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Bug Fix",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Comms",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zhIfLS4",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 355,
+        "title": "Delete from the message action menu does nothing (bulk delete works)",
+        "state": "OPEN",
+        "url": "https://github.com/Novyse/novyse/issues/355",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.4 - Profiles & Plugins",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "Delete from the message action menu does nothing (bulk delete works)",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Planned",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Chat",
+            "field": {
+              "name": "Category"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Bug Fix",
+            "field": {
+              "name": "Classification"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zhIfL2E",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 356,
+        "title": "Deleting a message doesn't update the chat list preview",
+        "state": "OPEN",
+        "url": "https://github.com/Novyse/novyse/issues/356",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.4 - Profiles & Plugins",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "Deleting a message doesn't update the chat list preview",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Planned",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Bug Fix",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Chat",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zhIfMWc",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 357,
+        "title": "FCM bootstrap fails on load",
+        "state": "OPEN",
+        "url": "https://github.com/Novyse/novyse/issues/357",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.4 - Profiles & Plugins",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "FCM bootstrap fails on load",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Planned",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Bug Fix",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Notification",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
     }
   ],
-  "fetched": 219,
-  "totalCount": 219
+  "fetched": 224,
+  "totalCount": 224
 }
