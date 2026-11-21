@@ -7,7 +7,7 @@
     "closed": false,
     "closedAt": null,
     "createdAt": "2026-06-07T13:45:39Z",
-    "updatedAt": "2026-11-19T14:01:08Z"
+    "updatedAt": "2026-11-20T15:56:47Z"
   },
   "org": "Novyse",
   "fields": [
@@ -333,6 +333,144 @@
     }
   ],
   "items": [
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zhKK2Kc",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 359,
+        "title": "Cloudflare challenge sometimes fails without even trying",
+        "state": "CLOSED",
+        "url": "https://github.com/Novyse/novyse/issues/359",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.4 - Profiles & Plugins",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "Cloudflare challenge sometimes fails without even trying",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Completed",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Bug Fix",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Authentication",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zhIfMWc",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 357,
+        "title": "FCM bootstrap fails on load",
+        "state": "CLOSED",
+        "url": "https://github.com/Novyse/novyse/issues/357",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.4 - Profiles & Plugins",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "FCM bootstrap fails on load",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Completed",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Bug Fix",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Notification",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
+    },
     {
       "id": "PVTI_lADOCuSSY84BZ912zhB3R8E",
       "isArchived": false,
@@ -1076,7 +1214,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.4 - Profiles & Plugins",
+            "name": "v1.5 - Voice Evolution",
             "field": {
               "name": "Version"
             }
@@ -1124,7 +1262,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.4 - Profiles & Plugins",
+            "name": "v1.5 - Voice Evolution",
             "field": {
               "name": "Version"
             }
@@ -1898,7 +2036,7 @@
         "__typename": "Issue",
         "number": 313,
         "title": "Emoji picker cleanup + android keyboard integration",
-        "state": "OPEN",
+        "state": "CLOSED",
         "url": "https://github.com/Novyse/novyse/issues/313",
         "repository": {
           "nameWithOwner": "Novyse/novyse"
@@ -1931,7 +2069,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "In Progress",
+            "name": "Completed",
             "field": {
               "name": "Status"
             }
@@ -13576,7 +13714,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Unassigned",
+            "name": "v1.4 - Profiles & Plugins",
             "field": {
               "name": "Version"
             }
@@ -13658,7 +13796,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Unassigned",
+            "name": "v1.4 - Profiles & Plugins",
             "field": {
               "name": "Version"
             }
@@ -13740,7 +13878,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Unassigned",
+            "name": "v1.4 - Profiles & Plugins",
             "field": {
               "name": "Version"
             }
@@ -13822,7 +13960,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Unassigned",
+            "name": "v1.4 - Profiles & Plugins",
             "field": {
               "name": "Version"
             }
@@ -16913,213 +17051,6 @@
       }
     },
     {
-      "id": "PVTI_lADOCuSSY84BZ912zhIfMWc",
-      "isArchived": false,
-      "content": {
-        "__typename": "Issue",
-        "number": 357,
-        "title": "FCM bootstrap fails on load",
-        "state": "OPEN",
-        "url": "https://github.com/Novyse/novyse/issues/357",
-        "repository": {
-          "nameWithOwner": "Novyse/novyse"
-        },
-        "labels": {
-          "nodes": []
-        },
-        "assignees": {
-          "nodes": []
-        }
-      },
-      "fieldValues": {
-        "nodes": [
-          {
-            "__typename": "ProjectV2ItemFieldRepositoryValue"
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.4 - Profiles & Plugins",
-            "field": {
-              "name": "Version"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldTextValue",
-            "text": "FCM bootstrap fails on load",
-            "field": {
-              "name": "Title"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Planned",
-            "field": {
-              "name": "Status"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Bug Fix",
-            "field": {
-              "name": "Classification"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Client",
-            "field": {
-              "name": "Scope"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Notification",
-            "field": {
-              "name": "Category"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "id": "PVTI_lADOCuSSY84BZ912zhKK2Kc",
-      "isArchived": false,
-      "content": {
-        "__typename": "Issue",
-        "number": 359,
-        "title": "Cloudflare challenge sometimes fails without even trying",
-        "state": "OPEN",
-        "url": "https://github.com/Novyse/novyse/issues/359",
-        "repository": {
-          "nameWithOwner": "Novyse/novyse"
-        },
-        "labels": {
-          "nodes": []
-        },
-        "assignees": {
-          "nodes": []
-        }
-      },
-      "fieldValues": {
-        "nodes": [
-          {
-            "__typename": "ProjectV2ItemFieldRepositoryValue"
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.4 - Profiles & Plugins",
-            "field": {
-              "name": "Version"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldTextValue",
-            "text": "Cloudflare challenge sometimes fails without even trying",
-            "field": {
-              "name": "Title"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Planned",
-            "field": {
-              "name": "Status"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Bug Fix",
-            "field": {
-              "name": "Classification"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Client",
-            "field": {
-              "name": "Scope"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Authentication",
-            "field": {
-              "name": "Category"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "id": "PVTI_lADOCuSSY84BZ912zhKK5lg",
-      "isArchived": false,
-      "content": {
-        "__typename": "Issue",
-        "number": 360,
-        "title": "Prevent opening start DM/join modal if chat already exists in DB and move from global chats to active chats",
-        "state": "OPEN",
-        "url": "https://github.com/Novyse/novyse/issues/360",
-        "repository": {
-          "nameWithOwner": "Novyse/novyse"
-        },
-        "labels": {
-          "nodes": []
-        },
-        "assignees": {
-          "nodes": []
-        }
-      },
-      "fieldValues": {
-        "nodes": [
-          {
-            "__typename": "ProjectV2ItemFieldRepositoryValue"
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.4 - Profiles & Plugins",
-            "field": {
-              "name": "Version"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldTextValue",
-            "text": "Prevent opening start DM/join modal if chat already exists in DB and move from global chats to active chats",
-            "field": {
-              "name": "Title"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Planned",
-            "field": {
-              "name": "Status"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Bug Fix",
-            "field": {
-              "name": "Classification"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Client",
-            "field": {
-              "name": "Scope"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Miscellaneous",
-            "field": {
-              "name": "Category"
-            }
-          }
-        ]
-      }
-    },
-    {
       "id": "PVTI_lADOCuSSY84BZ912zhKLMSM",
       "isArchived": false,
       "content": {
@@ -17159,7 +17090,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Planned",
+            "name": "In Progress",
             "field": {
               "name": "Status"
             }
@@ -17181,6 +17112,75 @@
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
             "name": "Comms",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zhKK5lg",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 360,
+        "title": "Prevent opening start DM/join modal if chat already exists in DB and move from global chats to active chats",
+        "state": "CLOSED",
+        "url": "https://github.com/Novyse/novyse/issues/360",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.4 - Profiles & Plugins",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "Prevent opening start DM/join modal if chat already exists in DB and move from global chats to active chats",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Completed",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Bug Fix",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Miscellaneous",
             "field": {
               "name": "Category"
             }

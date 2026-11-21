@@ -9,10 +9,10 @@
     "assignees": [],
     "milestone": null,
     "created_at": "2026-11-19T14:00:21Z",
-    "updated_at": "2026-11-19T14:00:21Z",
+    "updated_at": "2026-11-20T15:22:44Z",
     "closed_at": null,
     "author": "SamueleOrazioDurante",
-    "comments_count": 0,
+    "comments_count": 2,
     "body": null,
     "url": "https://github.com/Novyse/novyse/issues/361",
     "parent": null,
@@ -29,22 +29,39 @@
       "blocking": 0,
       "total_blocking": 0
     },
-    "comments": []
+    "comments": [
+      {
+        "id": 7043287999,
+        "author": "SamueleOrazioDurante",
+        "created_at": "2026-11-20T15:22:37Z",
+        "updated_at": "2026-11-20T15:22:37Z",
+        "body": "d982aabd5d01bba98965f04a99560087789a2c69",
+        "url": "https://github.com/Novyse/novyse/issues/361#issuecomment-7043287999"
+      },
+      {
+        "id": 7043290921,
+        "author": "SamueleOrazioDurante",
+        "created_at": "2026-11-20T15:22:44Z",
+        "updated_at": "2026-11-20T15:22:44Z",
+        "body": "ora son da trovare i suoni veri",
+        "url": "https://github.com/Novyse/novyse/issues/361#issuecomment-7043290921"
+      }
+    ]
   },
   {
     "number": 360,
     "title": "Prevent opening start DM/join modal if chat already exists in DB and move from global chats to active chats",
-    "state": "open",
-    "state_reason": null,
+    "state": "closed",
+    "state_reason": "completed",
     "is_pull_request": false,
     "labels": [],
     "assignees": [],
     "milestone": null,
     "created_at": "2026-11-19T13:44:36Z",
-    "updated_at": "2026-11-19T13:44:36Z",
-    "closed_at": null,
+    "updated_at": "2026-11-20T13:22:23Z",
+    "closed_at": "2026-11-20T13:22:23Z",
     "author": "SamueleOrazioDurante",
-    "comments_count": 0,
+    "comments_count": 1,
     "body": "Currently, when searching for a user, starting a DM (or joining a chat), and then clicking on that chat again, the \"Start DM / Join Chat\" modal still opens even though the chat already exists in the database. This only happens when the chat does not exist at the time of the search.",
     "url": "https://github.com/Novyse/novyse/issues/360",
     "parent": null,
@@ -61,23 +78,32 @@
       "blocking": 0,
       "total_blocking": 0
     },
-    "comments": []
+    "comments": [
+      {
+        "id": 7038815943,
+        "author": "SamueleOrazioDurante",
+        "created_at": "2026-11-20T11:50:48Z",
+        "updated_at": "2026-11-20T11:50:48Z",
+        "body": "Search results are a stale snapshot and DM hits carry the peer's user uuid, so an already-created chat still opened the start-DM/join modal. Results are now resolved to local chats and the search sections refresh from the local store after joining.",
+        "url": "https://github.com/Novyse/novyse/issues/360#issuecomment-7038815943"
+      }
+    ]
   },
   {
     "number": 359,
     "title": "Cloudflare challenge sometimes fails without even trying",
-    "state": "open",
-    "state_reason": null,
+    "state": "closed",
+    "state_reason": "completed",
     "is_pull_request": false,
     "labels": [],
     "assignees": [],
     "milestone": null,
     "created_at": "2026-11-19T13:41:54Z",
-    "updated_at": "2026-11-19T13:41:54Z",
-    "closed_at": null,
+    "updated_at": "2026-11-20T15:22:28Z",
+    "closed_at": "2026-11-20T15:22:28Z",
     "author": "SamueleOrazioDurante",
     "comments_count": 0,
-    "body": null,
+    "body": "The Turnstile modal opened already showing its error state on Android because WebView subresource load errors were treated as challenge failures. Failures now come only from the embedded page, and the first transient Cloudflare error is retried silently.",
     "url": "https://github.com/Novyse/novyse/issues/359",
     "parent": null,
     "sub_issues_summary": {
@@ -139,15 +165,15 @@
   {
     "number": 357,
     "title": "FCM bootstrap fails on load",
-    "state": "open",
-    "state_reason": null,
+    "state": "closed",
+    "state_reason": "completed",
     "is_pull_request": false,
     "labels": [],
     "assignees": [],
     "milestone": null,
     "created_at": "2026-11-13T14:49:38Z",
-    "updated_at": "2026-11-13T14:51:32Z",
-    "closed_at": null,
+    "updated_at": "2026-11-20T11:31:15Z",
+    "closed_at": "2026-11-20T11:31:15Z",
     "author": "SamueleOrazioDurante",
     "comments_count": 2,
     "body": "On a cold load of the web build the console is flooded with initialization errors. The app still renders, but FCM is effectively dead on web and every notification path logs a failure.\n\n```\n[main] Firebase init skipped: Null check operator used on a null value\n[NotificationManager] FCM init skipped: Null check operator used on a null value\n[NotificationBridge] register failed: UnimplementedError\nTypeError: Cannot read properties of null (reading 'a')\n```",
@@ -1792,17 +1818,17 @@
   {
     "number": 313,
     "title": "Emoji picker cleanup + android keyboard integration",
-    "state": "open",
-    "state_reason": null,
+    "state": "closed",
+    "state_reason": "completed",
     "is_pull_request": false,
     "labels": [],
     "assignees": [],
     "milestone": null,
     "created_at": "2026-09-15T19:57:27Z",
-    "updated_at": "2026-09-15T19:58:03Z",
-    "closed_at": null,
+    "updated_at": "2026-11-20T13:19:36Z",
+    "closed_at": "2026-11-20T13:19:36Z",
     "author": "SamueleOrazioDurante",
-    "comments_count": 2,
+    "comments_count": 3,
     "body": null,
     "url": "https://github.com/Novyse/novyse/issues/313",
     "parent": null,
@@ -1835,6 +1861,14 @@
         "updated_at": "2026-09-15T19:58:03Z",
         "body": "Implementazione di libreria keyboard manager per gestire meglio switch keyboard/emoji",
         "url": "https://github.com/Novyse/novyse/issues/313#issuecomment-5687258763"
+      },
+      {
+        "id": 7040562713,
+        "author": "MatteoMagnani7",
+        "created_at": "2026-11-20T13:19:26Z",
+        "updated_at": "2026-11-20T13:19:26Z",
+        "body": "mi sono dimenticato di taggare l'issue, comunque è stato risolto in nel commit 4002bb2c4ed914b0f5143f8822b3cd139f0ca7d0",
+        "url": "https://github.com/Novyse/novyse/issues/313#issuecomment-7040562713"
       }
     ]
   },
