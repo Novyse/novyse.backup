@@ -1,5 +1,118 @@
 [
   {
+    "number": 364,
+    "title": "Chat pin",
+    "state": "open",
+    "state_reason": null,
+    "is_pull_request": false,
+    "labels": [],
+    "assignees": [],
+    "milestone": null,
+    "created_at": "2026-11-21T21:52:33Z",
+    "updated_at": "2026-11-21T21:52:33Z",
+    "closed_at": null,
+    "author": "SamueleOrazioDurante",
+    "comments_count": 0,
+    "body": null,
+    "url": "https://github.com/Novyse/novyse/issues/364",
+    "parent": null,
+    "sub_issues_summary": {
+      "total": 0,
+      "completed": 0,
+      "percent_completed": 0
+    },
+    "sub_issues": [],
+    "issue_field_values": [],
+    "issue_dependencies": {
+      "blocked_by": 0,
+      "total_blocked_by": 0,
+      "blocking": 0,
+      "total_blocking": 0
+    },
+    "comments": []
+  },
+  {
+    "number": 363,
+    "title": "Chat deletion",
+    "state": "open",
+    "state_reason": null,
+    "is_pull_request": false,
+    "labels": [],
+    "assignees": [],
+    "milestone": null,
+    "created_at": "2026-11-21T21:52:24Z",
+    "updated_at": "2026-11-21T21:52:24Z",
+    "closed_at": null,
+    "author": "SamueleOrazioDurante",
+    "comments_count": 0,
+    "body": null,
+    "url": "https://github.com/Novyse/novyse/issues/363",
+    "parent": null,
+    "sub_issues_summary": {
+      "total": 0,
+      "completed": 0,
+      "percent_completed": 0
+    },
+    "sub_issues": [],
+    "issue_field_values": [],
+    "issue_dependencies": {
+      "blocked_by": 0,
+      "total_blocked_by": 0,
+      "blocking": 0,
+      "total_blocking": 0
+    },
+    "comments": []
+  },
+  {
+    "number": 362,
+    "title": "Terms Of Services",
+    "state": "open",
+    "state_reason": null,
+    "is_pull_request": false,
+    "labels": [],
+    "assignees": [
+      "SamueleOrazioDurante"
+    ],
+    "milestone": null,
+    "created_at": "2026-11-21T16:10:44Z",
+    "updated_at": "2026-11-21T16:42:02Z",
+    "closed_at": null,
+    "author": "SamueleOrazioDurante",
+    "comments_count": 0,
+    "body": null,
+    "url": "https://github.com/Novyse/novyse/issues/362",
+    "parent": null,
+    "sub_issues_summary": {
+      "total": 0,
+      "completed": 0,
+      "percent_completed": 0
+    },
+    "sub_issues": [],
+    "issue_field_values": [
+      {
+        "issue_field_id": 30474187,
+        "node_id": "IFDV_kgDOASZRIg",
+        "data_type": "date",
+        "issue_field_name": "Start date",
+        "value": "2026-11-21"
+      },
+      {
+        "issue_field_id": 30474188,
+        "node_id": "IFDV_kgDOASZRJA",
+        "data_type": "date",
+        "issue_field_name": "Target date",
+        "value": "2026-11-22"
+      }
+    ],
+    "issue_dependencies": {
+      "blocked_by": 0,
+      "total_blocked_by": 0,
+      "blocking": 0,
+      "total_blocking": 0
+    },
+    "comments": []
+  },
+  {
     "number": 361,
     "title": "Add sounds to activity start/stop",
     "state": "open",
@@ -317,7 +430,7 @@
     "assignees": [],
     "milestone": null,
     "created_at": "2026-11-13T14:38:46Z",
-    "updated_at": "2026-11-13T14:40:10Z",
+    "updated_at": "2026-11-21T16:42:17Z",
     "closed_at": null,
     "author": "SamueleOrazioDurante",
     "comments_count": 1,
@@ -343,7 +456,7 @@
         "node_id": "IFDV_kgDOAQ5pAA",
         "data_type": "date",
         "issue_field_name": "Target date",
-        "value": "2026-11-20"
+        "value": "2026-11-22"
       }
     ],
     "issue_dependencies": {
@@ -3722,55 +3835,6 @@
     ]
   },
   {
-    "number": 266,
-    "title": "GDPR",
-    "state": "open",
-    "state_reason": null,
-    "is_pull_request": false,
-    "labels": [],
-    "assignees": [
-      "SamueleOrazioDurante"
-    ],
-    "milestone": null,
-    "created_at": "2026-06-07T19:35:37Z",
-    "updated_at": "2026-06-07T19:50:05Z",
-    "closed_at": null,
-    "author": "SamueleOrazioDurante",
-    "comments_count": 0,
-    "body": null,
-    "url": "https://github.com/Novyse/novyse/issues/266",
-    "parent": null,
-    "sub_issues_summary": {
-      "total": 0,
-      "completed": 0,
-      "percent_completed": 0
-    },
-    "sub_issues": [],
-    "issue_field_values": [
-      {
-        "issue_field_id": 30474187,
-        "node_id": "IFDV_kgDOABzoUA",
-        "data_type": "date",
-        "issue_field_name": "Start date",
-        "value": "2030-01-01"
-      },
-      {
-        "issue_field_id": 30474188,
-        "node_id": "IFDV_kgDOABzoXg",
-        "data_type": "date",
-        "issue_field_name": "Target date",
-        "value": "2030-01-01"
-      }
-    ],
-    "issue_dependencies": {
-      "blocked_by": 0,
-      "total_blocked_by": 0,
-      "blocking": 0,
-      "total_blocking": 0
-    },
-    "comments": []
-  },
-  {
     "number": 265,
     "title": "Privacy Policy",
     "state": "open",
@@ -3782,10 +3846,10 @@
     ],
     "milestone": null,
     "created_at": "2026-06-07T19:35:26Z",
-    "updated_at": "2026-09-27T18:47:14Z",
+    "updated_at": "2026-11-21T16:41:44Z",
     "closed_at": null,
     "author": "SamueleOrazioDurante",
-    "comments_count": 2,
+    "comments_count": 3,
     "body": null,
     "url": "https://github.com/Novyse/novyse/issues/265",
     "parent": null,
@@ -3801,14 +3865,14 @@
         "node_id": "IFDV_kgDOABzoTw",
         "data_type": "date",
         "issue_field_name": "Start date",
-        "value": "2030-01-01"
+        "value": "2026-11-21"
       },
       {
         "issue_field_id": 30474188,
         "node_id": "IFDV_kgDOABzoXQ",
         "data_type": "date",
         "issue_field_name": "Target date",
-        "value": "2030-01-01"
+        "value": "2026-11-22"
       }
     ],
     "issue_dependencies": {
@@ -3833,63 +3897,22 @@
         "updated_at": "2026-09-27T18:47:14Z",
         "body": "Quindi nell'app al posto di rimandare al sito rimando alla pagina generata da questo file markdown presente nella repo come ho fatto per LICENCE",
         "url": "https://github.com/Novyse/novyse/issues/265#issuecomment-5858700187"
+      },
+      {
+        "id": 7064149450,
+        "author": "SamueleOrazioDurante",
+        "created_at": "2026-11-21T14:31:15Z",
+        "updated_at": "2026-11-21T14:31:15Z",
+        "body": "Privacy policy integra Cookie Policy e GDPR compliance",
+        "url": "https://github.com/Novyse/novyse/issues/265#issuecomment-7064149450"
       }
     ]
   },
   {
-    "number": 264,
-    "title": "Cookie policy",
-    "state": "open",
-    "state_reason": null,
-    "is_pull_request": false,
-    "labels": [],
-    "assignees": [
-      "SamueleOrazioDurante"
-    ],
-    "milestone": null,
-    "created_at": "2026-06-07T19:35:08Z",
-    "updated_at": "2026-06-07T19:50:04Z",
-    "closed_at": null,
-    "author": "SamueleOrazioDurante",
-    "comments_count": 0,
-    "body": null,
-    "url": "https://github.com/Novyse/novyse/issues/264",
-    "parent": null,
-    "sub_issues_summary": {
-      "total": 0,
-      "completed": 0,
-      "percent_completed": 0
-    },
-    "sub_issues": [],
-    "issue_field_values": [
-      {
-        "issue_field_id": 30474187,
-        "node_id": "IFDV_kgDOABzoTg",
-        "data_type": "date",
-        "issue_field_name": "Start date",
-        "value": "2030-01-01"
-      },
-      {
-        "issue_field_id": 30474188,
-        "node_id": "IFDV_kgDOABzoXA",
-        "data_type": "date",
-        "issue_field_name": "Target date",
-        "value": "2030-01-01"
-      }
-    ],
-    "issue_dependencies": {
-      "blocked_by": 0,
-      "total_blocked_by": 0,
-      "blocking": 0,
-      "total_blocking": 0
-    },
-    "comments": []
-  },
-  {
     "number": 263,
     "title": "Better metadata management",
-    "state": "open",
-    "state_reason": null,
+    "state": "closed",
+    "state_reason": "completed",
     "is_pull_request": false,
     "labels": [],
     "assignees": [
@@ -3897,8 +3920,8 @@
     ],
     "milestone": null,
     "created_at": "2026-06-07T19:35:04Z",
-    "updated_at": "2026-06-07T19:50:04Z",
-    "closed_at": null,
+    "updated_at": "2026-11-21T16:41:42Z",
+    "closed_at": "2026-11-21T16:41:42Z",
     "author": "SamueleOrazioDurante",
     "comments_count": 0,
     "body": null,
@@ -3916,63 +3939,14 @@
         "node_id": "IFDV_kgDOABzoTQ",
         "data_type": "date",
         "issue_field_name": "Start date",
-        "value": "2030-01-01"
+        "value": "2026-11-21"
       },
       {
         "issue_field_id": 30474188,
         "node_id": "IFDV_kgDOABzoWw",
         "data_type": "date",
         "issue_field_name": "Target date",
-        "value": "2030-01-01"
-      }
-    ],
-    "issue_dependencies": {
-      "blocked_by": 0,
-      "total_blocked_by": 0,
-      "blocking": 0,
-      "total_blocking": 0
-    },
-    "comments": []
-  },
-  {
-    "number": 262,
-    "title": "Newsletter + honeypot",
-    "state": "open",
-    "state_reason": null,
-    "is_pull_request": false,
-    "labels": [],
-    "assignees": [
-      "SamueleOrazioDurante"
-    ],
-    "milestone": null,
-    "created_at": "2026-06-07T19:34:55Z",
-    "updated_at": "2026-06-07T19:50:04Z",
-    "closed_at": null,
-    "author": "SamueleOrazioDurante",
-    "comments_count": 0,
-    "body": null,
-    "url": "https://github.com/Novyse/novyse/issues/262",
-    "parent": null,
-    "sub_issues_summary": {
-      "total": 0,
-      "completed": 0,
-      "percent_completed": 0
-    },
-    "sub_issues": [],
-    "issue_field_values": [
-      {
-        "issue_field_id": 30474187,
-        "node_id": "IFDV_kgDOABzoTA",
-        "data_type": "date",
-        "issue_field_name": "Start date",
-        "value": "2030-01-01"
-      },
-      {
-        "issue_field_id": 30474188,
-        "node_id": "IFDV_kgDOABzoWg",
-        "data_type": "date",
-        "issue_field_name": "Target date",
-        "value": "2030-01-01"
+        "value": "2026-11-21"
       }
     ],
     "issue_dependencies": {
