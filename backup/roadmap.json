@@ -7,7 +7,7 @@
     "closed": false,
     "closedAt": null,
     "createdAt": "2026-06-07T13:45:39Z",
-    "updatedAt": "2026-11-21T21:53:14Z"
+    "updatedAt": "2026-11-22T22:10:13Z"
   },
   "org": "Novyse",
   "fields": [
@@ -334,6 +334,452 @@
   ],
   "items": [
     {
+      "id": "PVTI_lADOCuSSY84BZ912zhKyVGI",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 364,
+        "title": "Chat pin",
+        "state": "OPEN",
+        "url": "https://github.com/Novyse/novyse/issues/364",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.4 - Profiles & Plugins",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "Chat pin",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "In Progress",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Feature",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client+Server",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Chat",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zhKyU_4",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 363,
+        "title": "Chat deletion",
+        "state": "OPEN",
+        "url": "https://github.com/Novyse/novyse/issues/363",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.4 - Profiles & Plugins",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "Chat deletion",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "In Progress",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Feature",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client+Server",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Chat",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zhKLMSM",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 361,
+        "title": "Add sounds to activity start/stop",
+        "state": "CLOSED",
+        "url": "https://github.com/Novyse/novyse/issues/361",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.4 - Profiles & Plugins",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "Add sounds to activity start/stop",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Completed",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Improvement",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Comms",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zhIfA_c",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 353,
+        "title": "Custom Profiles",
+        "state": "CLOSED",
+        "url": "https://github.com/Novyse/novyse/issues/353",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemIssueFieldValue"
+          },
+          {
+            "__typename": "ProjectV2ItemIssueFieldValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.4 - Profiles & Plugins",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "Custom Profiles",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Completed",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "UI/UX",
+            "field": {
+              "name": "Category"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client+Server",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Feature",
+            "field": {
+              "name": "Classification"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zhKvINE",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 362,
+        "title": "Terms Of Services",
+        "state": "CLOSED",
+        "url": "https://github.com/Novyse/novyse/issues/362",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": [
+            {
+              "login": "SamueleOrazioDurante"
+            }
+          ]
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldUserValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemIssueFieldValue"
+          },
+          {
+            "__typename": "ProjectV2ItemIssueFieldValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.4 - Profiles & Plugins",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "Terms Of Services",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Completed",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Improvement",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Landing Page",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Miscellaneous",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zgu-g8k",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 265,
+        "title": "Privacy Policy",
+        "state": "CLOSED",
+        "url": "https://github.com/Novyse/novyse/issues/265",
+        "repository": {
+          "nameWithOwner": "Novyse/novyse"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": [
+            {
+              "login": "SamueleOrazioDurante"
+            }
+          ]
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldUserValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemIssueFieldValue"
+          },
+          {
+            "__typename": "ProjectV2ItemIssueFieldValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "Privacy Policy",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Completed",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Improvement",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.4 - Profiles & Plugins",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Landing Page",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Miscellaneous",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
+    },
+    {
       "id": "PVTI_lADOCuSSY84BZ912zgu-g6A",
       "isArchived": false,
       "content": {
@@ -380,170 +826,6 @@
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
             "name": "Completed",
-            "field": {
-              "name": "Status"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Improvement",
-            "field": {
-              "name": "Classification"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.4 - Profiles & Plugins",
-            "field": {
-              "name": "Version"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Landing Page",
-            "field": {
-              "name": "Scope"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Miscellaneous",
-            "field": {
-              "name": "Category"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "id": "PVTI_lADOCuSSY84BZ912zhKvINE",
-      "isArchived": false,
-      "content": {
-        "__typename": "Issue",
-        "number": 362,
-        "title": "Terms Of Services",
-        "state": "OPEN",
-        "url": "https://github.com/Novyse/novyse/issues/362",
-        "repository": {
-          "nameWithOwner": "Novyse/novyse"
-        },
-        "labels": {
-          "nodes": []
-        },
-        "assignees": {
-          "nodes": [
-            {
-              "login": "SamueleOrazioDurante"
-            }
-          ]
-        }
-      },
-      "fieldValues": {
-        "nodes": [
-          {
-            "__typename": "ProjectV2ItemFieldUserValue"
-          },
-          {
-            "__typename": "ProjectV2ItemFieldRepositoryValue"
-          },
-          {
-            "__typename": "ProjectV2ItemIssueFieldValue"
-          },
-          {
-            "__typename": "ProjectV2ItemIssueFieldValue"
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.4 - Profiles & Plugins",
-            "field": {
-              "name": "Version"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldTextValue",
-            "text": "Terms Of Services",
-            "field": {
-              "name": "Title"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "In Progress",
-            "field": {
-              "name": "Status"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Improvement",
-            "field": {
-              "name": "Classification"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Landing Page",
-            "field": {
-              "name": "Scope"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Miscellaneous",
-            "field": {
-              "name": "Category"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "id": "PVTI_lADOCuSSY84BZ912zgu-g8k",
-      "isArchived": false,
-      "content": {
-        "__typename": "Issue",
-        "number": 265,
-        "title": "Privacy Policy",
-        "state": "OPEN",
-        "url": "https://github.com/Novyse/novyse/issues/265",
-        "repository": {
-          "nameWithOwner": "Novyse/novyse"
-        },
-        "labels": {
-          "nodes": []
-        },
-        "assignees": {
-          "nodes": [
-            {
-              "login": "SamueleOrazioDurante"
-            }
-          ]
-        }
-      },
-      "fieldValues": {
-        "nodes": [
-          {
-            "__typename": "ProjectV2ItemFieldUserValue"
-          },
-          {
-            "__typename": "ProjectV2ItemFieldRepositoryValue"
-          },
-          {
-            "__typename": "ProjectV2ItemIssueFieldValue"
-          },
-          {
-            "__typename": "ProjectV2ItemIssueFieldValue"
-          },
-          {
-            "__typename": "ProjectV2ItemFieldTextValue",
-            "text": "Privacy Policy",
-            "field": {
-              "name": "Title"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "In Progress",
             "field": {
               "name": "Status"
             }
@@ -16812,150 +17094,6 @@
       }
     },
     {
-      "id": "PVTI_lADOCuSSY84BZ912zhIfA_c",
-      "isArchived": false,
-      "content": {
-        "__typename": "Issue",
-        "number": 353,
-        "title": "Custom Profiles",
-        "state": "OPEN",
-        "url": "https://github.com/Novyse/novyse/issues/353",
-        "repository": {
-          "nameWithOwner": "Novyse/novyse"
-        },
-        "labels": {
-          "nodes": []
-        },
-        "assignees": {
-          "nodes": []
-        }
-      },
-      "fieldValues": {
-        "nodes": [
-          {
-            "__typename": "ProjectV2ItemFieldRepositoryValue"
-          },
-          {
-            "__typename": "ProjectV2ItemIssueFieldValue"
-          },
-          {
-            "__typename": "ProjectV2ItemIssueFieldValue"
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.4 - Profiles & Plugins",
-            "field": {
-              "name": "Version"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldTextValue",
-            "text": "Custom Profiles",
-            "field": {
-              "name": "Title"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "In Progress",
-            "field": {
-              "name": "Status"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "UI/UX",
-            "field": {
-              "name": "Category"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Client+Server",
-            "field": {
-              "name": "Scope"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Feature",
-            "field": {
-              "name": "Classification"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "id": "PVTI_lADOCuSSY84BZ912zhKLMSM",
-      "isArchived": false,
-      "content": {
-        "__typename": "Issue",
-        "number": 361,
-        "title": "Add sounds to activity start/stop",
-        "state": "OPEN",
-        "url": "https://github.com/Novyse/novyse/issues/361",
-        "repository": {
-          "nameWithOwner": "Novyse/novyse"
-        },
-        "labels": {
-          "nodes": []
-        },
-        "assignees": {
-          "nodes": []
-        }
-      },
-      "fieldValues": {
-        "nodes": [
-          {
-            "__typename": "ProjectV2ItemFieldRepositoryValue"
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.4 - Profiles & Plugins",
-            "field": {
-              "name": "Version"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldTextValue",
-            "text": "Add sounds to activity start/stop",
-            "field": {
-              "name": "Title"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "In Progress",
-            "field": {
-              "name": "Status"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Improvement",
-            "field": {
-              "name": "Classification"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Client",
-            "field": {
-              "name": "Scope"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Comms",
-            "field": {
-              "name": "Category"
-            }
-          }
-        ]
-      }
-    },
-    {
       "id": "PVTI_lADOCuSSY84BZ912zhKK5lg",
       "isArchived": false,
       "content": {
@@ -17025,14 +17163,14 @@
       }
     },
     {
-      "id": "PVTI_lADOCuSSY84BZ912zhKyU_4",
+      "id": "PVTI_lADOCuSSY84BZ912zhK6MRw",
       "isArchived": false,
       "content": {
         "__typename": "Issue",
-        "number": 363,
-        "title": "Chat deletion",
+        "number": 365,
+        "title": "[Linux] Flutter 3.50.1 window opens with a black screen on KDE + NVIDIA Optimus",
         "state": "OPEN",
-        "url": "https://github.com/Novyse/novyse/issues/363",
+        "url": "https://github.com/Novyse/novyse/issues/365",
         "repository": {
           "nameWithOwner": "Novyse/novyse"
         },
@@ -17050,42 +17188,42 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Unassigned",
+            "name": "v1.4 - Profiles & Plugins",
             "field": {
               "name": "Version"
             }
           },
           {
             "__typename": "ProjectV2ItemFieldTextValue",
-            "text": "Chat deletion",
+            "text": "[Linux] Flutter 3.50.1 window opens with a black screen on KDE + NVIDIA Optimus",
             "field": {
               "name": "Title"
             }
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Planned",
+            "name": "Blocked",
             "field": {
               "name": "Status"
             }
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Feature",
+            "name": "Bug Fix",
             "field": {
               "name": "Classification"
             }
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Client+Server",
+            "name": "Client",
             "field": {
               "name": "Scope"
             }
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Chat",
+            "name": "Desktop",
             "field": {
               "name": "Category"
             }
@@ -17094,16 +17232,16 @@
       }
     },
     {
-      "id": "PVTI_lADOCuSSY84BZ912zhKyVGI",
+      "id": "PVTI_lADOCuSSY84BZ912zhK-LZ8",
       "isArchived": false,
       "content": {
         "__typename": "Issue",
-        "number": 364,
-        "title": "Chat pin",
+        "number": 3,
+        "title": "Timer",
         "state": "OPEN",
-        "url": "https://github.com/Novyse/novyse/issues/364",
+        "url": "https://github.com/Novyse/plugins/issues/3",
         "repository": {
-          "nameWithOwner": "Novyse/novyse"
+          "nameWithOwner": "Novyse/plugins"
         },
         "labels": {
           "nodes": []
@@ -17118,15 +17256,77 @@
             "__typename": "ProjectV2ItemFieldRepositoryValue"
           },
           {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "Timer",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Unassigned",
+            "name": "In Progress",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Feature",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.4 - Profiles & Plugins",
             "field": {
               "name": "Version"
             }
           },
           {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Plugin",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zhK-MUc",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 4,
+        "title": "Wordle",
+        "state": "OPEN",
+        "url": "https://github.com/Novyse/plugins/issues/4",
+        "repository": {
+          "nameWithOwner": "Novyse/plugins"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
             "__typename": "ProjectV2ItemFieldTextValue",
-            "text": "Chat pin",
+            "text": "Wordle",
             "field": {
               "name": "Title"
             }
@@ -17147,14 +17347,159 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Client+Server",
+            "name": "v1.4 - Profiles & Plugins",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
             "field": {
               "name": "Scope"
             }
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Chat",
+            "name": "Plugin",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zhK-Mug",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 5,
+        "title": "Valorant Tracker",
+        "state": "OPEN",
+        "url": "https://github.com/Novyse/plugins/issues/5",
+        "repository": {
+          "nameWithOwner": "Novyse/plugins"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "Valorant Tracker",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Planned",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Feature",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.4 - Profiles & Plugins",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Plugin",
+            "field": {
+              "name": "Category"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PVTI_lADOCuSSY84BZ912zhK-NCI",
+      "isArchived": false,
+      "content": {
+        "__typename": "Issue",
+        "number": 6,
+        "title": "Wheel of Fortune",
+        "state": "OPEN",
+        "url": "https://github.com/Novyse/plugins/issues/6",
+        "repository": {
+          "nameWithOwner": "Novyse/plugins"
+        },
+        "labels": {
+          "nodes": []
+        },
+        "assignees": {
+          "nodes": []
+        }
+      },
+      "fieldValues": {
+        "nodes": [
+          {
+            "__typename": "ProjectV2ItemFieldRepositoryValue"
+          },
+          {
+            "__typename": "ProjectV2ItemFieldTextValue",
+            "text": "Wheel of Fortune",
+            "field": {
+              "name": "Title"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "In Progress",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Feature",
+            "field": {
+              "name": "Classification"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "v1.4 - Profiles & Plugins",
+            "field": {
+              "name": "Version"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Client",
+            "field": {
+              "name": "Scope"
+            }
+          },
+          {
+            "__typename": "ProjectV2ItemFieldSingleSelectValue",
+            "name": "Plugin",
             "field": {
               "name": "Category"
             }
@@ -17163,6 +17508,6 @@
       }
     }
   ],
-  "fetched": 228,
-  "totalCount": 228
+  "fetched": 233,
+  "totalCount": 233
 }

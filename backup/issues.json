@@ -1,5 +1,62 @@
 [
   {
+    "number": 365,
+    "title": "[Linux] Flutter 3.50.1 window opens with a black screen on KDE + NVIDIA Optimus",
+    "state": "open",
+    "state_reason": null,
+    "is_pull_request": false,
+    "labels": [],
+    "assignees": [],
+    "milestone": null,
+    "created_at": "2026-11-22T15:19:27Z",
+    "updated_at": "2026-11-22T15:29:20Z",
+    "closed_at": null,
+    "author": "SamueleOrazioDurante",
+    "comments_count": 3,
+    "body": "With Flutter 3.50.1 stable on KDE Plasma Wayland, a Linux app (including a stock `flutter create` project) opens its window but the Flutter content never appears: the client area stays black. The process is alive and the Impeller OpenGLES backend is initialized, but no frame is presented. The issue is in Flutter's Wayland subsurface renderer, not in the app code or the GPU driver.",
+    "url": "https://github.com/Novyse/novyse/issues/365",
+    "parent": null,
+    "sub_issues_summary": {
+      "total": 0,
+      "completed": 0,
+      "percent_completed": 0
+    },
+    "sub_issues": [],
+    "issue_field_values": [],
+    "issue_dependencies": {
+      "blocked_by": 0,
+      "total_blocked_by": 0,
+      "blocking": 0,
+      "total_blocking": 0
+    },
+    "comments": [
+      {
+        "id": 7081226282,
+        "author": "SamueleOrazioDurante",
+        "created_at": "2026-11-22T15:20:21Z",
+        "updated_at": "2026-11-22T15:20:21Z",
+        "body": "Workaround that works\n\nForce the NVIDIA GPU through PRIME render offload, avoiding the Mesa/Intel EGL path where the deadlock happens:\n\n```bash \n__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia flutter run -d linux \n```\n\nFor a built bundle:\n\n```bash \n__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia \\ ./build/linux/x64/release/bundle/novyse \n```\n\nThese are runtime variables: `flutter build linux` does not need them, but every launch path does (terminal, `.desktop`, autostart, AppImage, Flatpak). The drawback is that the app always uses the discrete GPU. Building with Flutter 3.47.8 is an alternative, since it predates the subsurface renderer.",
+        "url": "https://github.com/Novyse/novyse/issues/365#issuecomment-7081226282"
+      },
+      {
+        "id": 7081229549,
+        "author": "SamueleOrazioDurante",
+        "created_at": "2026-11-22T15:20:36Z",
+        "updated_at": "2026-11-22T15:20:36Z",
+        "body": "We can only wait for a 3.50.2 or 3.51 release",
+        "url": "https://github.com/Novyse/novyse/issues/365#issuecomment-7081229549"
+      },
+      {
+        "id": 7081341264,
+        "author": "SamueleOrazioDurante",
+        "created_at": "2026-11-22T15:29:20Z",
+        "updated_at": "2026-11-22T15:29:20Z",
+        "body": "The closest upstream report is [flutter/flutter#188966](https://github.com/flutter/flutter/issues/188966)",
+        "url": "https://github.com/Novyse/novyse/issues/365#issuecomment-7081341264"
+      }
+    ]
+  },
+  {
     "number": 364,
     "title": "Chat pin",
     "state": "open",
@@ -9,10 +66,10 @@
     "assignees": [],
     "milestone": null,
     "created_at": "2026-11-21T21:52:33Z",
-    "updated_at": "2026-11-21T21:52:33Z",
+    "updated_at": "2026-11-23T11:06:39Z",
     "closed_at": null,
     "author": "SamueleOrazioDurante",
-    "comments_count": 0,
+    "comments_count": 2,
     "body": null,
     "url": "https://github.com/Novyse/novyse/issues/364",
     "parent": null,
@@ -29,7 +86,24 @@
       "blocking": 0,
       "total_blocking": 0
     },
-    "comments": []
+    "comments": [
+      {
+        "id": 7099025202,
+        "author": "SamueleOrazioDurante",
+        "created_at": "2026-11-23T11:05:35Z",
+        "updated_at": "2026-11-23T11:05:35Z",
+        "body": "5cfe89f934e35a4df7ef983a1c0983a545b517dd",
+        "url": "https://github.com/Novyse/novyse/issues/364#issuecomment-7099025202"
+      },
+      {
+        "id": 7099057363,
+        "author": "SamueleOrazioDurante",
+        "created_at": "2026-11-23T11:06:39Z",
+        "updated_at": "2026-11-23T11:06:39Z",
+        "body": "da capire come gestire ri posizionamento di chat già pinnate",
+        "url": "https://github.com/Novyse/novyse/issues/364#issuecomment-7099057363"
+      }
+    ]
   },
   {
     "number": 363,
@@ -66,8 +140,8 @@
   {
     "number": 362,
     "title": "Terms Of Services",
-    "state": "open",
-    "state_reason": null,
+    "state": "closed",
+    "state_reason": "completed",
     "is_pull_request": false,
     "labels": [],
     "assignees": [
@@ -75,8 +149,8 @@
     ],
     "milestone": null,
     "created_at": "2026-11-21T16:10:44Z",
-    "updated_at": "2026-11-21T16:42:02Z",
-    "closed_at": null,
+    "updated_at": "2026-11-22T15:03:38Z",
+    "closed_at": "2026-11-22T15:03:38Z",
     "author": "SamueleOrazioDurante",
     "comments_count": 0,
     "body": null,
@@ -115,17 +189,17 @@
   {
     "number": 361,
     "title": "Add sounds to activity start/stop",
-    "state": "open",
-    "state_reason": null,
+    "state": "closed",
+    "state_reason": "completed",
     "is_pull_request": false,
     "labels": [],
     "assignees": [],
     "milestone": null,
     "created_at": "2026-11-19T14:00:21Z",
-    "updated_at": "2026-11-20T15:22:44Z",
-    "closed_at": null,
+    "updated_at": "2026-11-22T15:04:07Z",
+    "closed_at": "2026-11-22T15:04:07Z",
     "author": "SamueleOrazioDurante",
-    "comments_count": 2,
+    "comments_count": 3,
     "body": null,
     "url": "https://github.com/Novyse/novyse/issues/361",
     "parent": null,
@@ -158,6 +232,14 @@
         "updated_at": "2026-11-20T15:22:44Z",
         "body": "ora son da trovare i suoni veri",
         "url": "https://github.com/Novyse/novyse/issues/361#issuecomment-7043290921"
+      },
+      {
+        "id": 7081017575,
+        "author": "SamueleOrazioDurante",
+        "created_at": "2026-11-22T15:04:07Z",
+        "updated_at": "2026-11-22T15:04:07Z",
+        "body": "Lasciamo questo per la 1.4, faremo un rework dei suoni",
+        "url": "https://github.com/Novyse/novyse/issues/361#issuecomment-7081017575"
       }
     ]
   },
@@ -423,15 +505,15 @@
   {
     "number": 353,
     "title": "Custom Profiles",
-    "state": "open",
-    "state_reason": null,
+    "state": "closed",
+    "state_reason": "completed",
     "is_pull_request": false,
     "labels": [],
     "assignees": [],
     "milestone": null,
     "created_at": "2026-11-13T14:38:46Z",
-    "updated_at": "2026-11-21T16:42:17Z",
-    "closed_at": null,
+    "updated_at": "2026-11-22T15:03:42Z",
+    "closed_at": "2026-11-22T15:03:42Z",
     "author": "SamueleOrazioDurante",
     "comments_count": 1,
     "body": "Full self-expression for every profile: upload and crop an avatar, edit name, surname and bio, add a banner image and a looping card GIF, and theme the profile with solid or gradient colors for the name, banner and card background. Birthday is picked with a native date picker, and every change is stored through the API and local database, synced to chats and pushed to other users in real time.",
@@ -3837,8 +3919,8 @@
   {
     "number": 265,
     "title": "Privacy Policy",
-    "state": "open",
-    "state_reason": null,
+    "state": "closed",
+    "state_reason": "completed",
     "is_pull_request": false,
     "labels": [],
     "assignees": [
@@ -3846,8 +3928,8 @@
     ],
     "milestone": null,
     "created_at": "2026-06-07T19:35:26Z",
-    "updated_at": "2026-11-21T16:41:44Z",
-    "closed_at": null,
+    "updated_at": "2026-11-22T15:03:36Z",
+    "closed_at": "2026-11-22T15:03:36Z",
     "author": "SamueleOrazioDurante",
     "comments_count": 3,
     "body": null,
