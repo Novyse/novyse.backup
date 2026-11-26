@@ -336,70 +336,9 @@
     {
       "id": "PVTI_lADOCuSSY84BZ912zhK-Mug",
       "isArchived": false,
-      "content": {
-        "__typename": "Issue",
-        "number": 5,
-        "title": "Valorant Tracker",
-        "state": "OPEN",
-        "url": "https://github.com/Novyse/plugins/issues/5",
-        "repository": {
-          "nameWithOwner": "Novyse/plugins"
-        },
-        "labels": {
-          "nodes": []
-        },
-        "assignees": {
-          "nodes": []
-        }
-      },
+      "content": null,
       "fieldValues": {
-        "nodes": [
-          {
-            "__typename": "ProjectV2ItemFieldRepositoryValue"
-          },
-          {
-            "__typename": "ProjectV2ItemFieldTextValue",
-            "text": "Valorant Tracker",
-            "field": {
-              "name": "Title"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "In Progress",
-            "field": {
-              "name": "Status"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Feature",
-            "field": {
-              "name": "Classification"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.4 - Profiles & Plugins",
-            "field": {
-              "name": "Version"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Client",
-            "field": {
-              "name": "Scope"
-            }
-          },
-          {
-            "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Plugin",
-            "field": {
-              "name": "Category"
-            }
-          }
-        ]
+        "nodes": []
       }
     },
     {
