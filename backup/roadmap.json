@@ -7,7 +7,7 @@
     "closed": false,
     "closedAt": null,
     "createdAt": "2026-06-07T13:45:39Z",
-    "updatedAt": "2026-11-24T23:36:34Z"
+    "updatedAt": "2026-11-26T16:38:28Z"
   },
   "org": "Novyse",
   "fields": [
@@ -333,14 +333,6 @@
     }
   ],
   "items": [
-    {
-      "id": "PVTI_lADOCuSSY84BZ912zhK-Mug",
-      "isArchived": false,
-      "content": null,
-      "fieldValues": {
-        "nodes": []
-      }
-    },
     {
       "id": "PVTI_lADOCuSSY84BZ912zhKyVGI",
       "isArchived": false,
@@ -1986,7 +1978,7 @@
         "__typename": "Issue",
         "number": 346,
         "title": "[Windows] App resizing lags",
-        "state": "OPEN",
+        "state": "CLOSED",
         "url": "https://github.com/Novyse/novyse/issues/346",
         "repository": {
           "nameWithOwner": "Novyse/novyse"
@@ -2005,7 +1997,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "v1.5 - Voice Evolution",
+            "name": "v1.4 - Profiles & Plugins",
             "field": {
               "name": "Version"
             }
@@ -2019,7 +2011,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Blocked",
+            "name": "Completed",
             "field": {
               "name": "Status"
             }
@@ -16324,7 +16316,7 @@
         "__typename": "Issue",
         "number": 324,
         "title": "[Windows] Tray toggleWindow does not work",
-        "state": "OPEN",
+        "state": "CLOSED",
         "url": "https://github.com/Novyse/novyse/issues/324",
         "repository": {
           "nameWithOwner": "Novyse/novyse"
@@ -16343,7 +16335,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Blocked",
+            "name": "Completed",
             "field": {
               "name": "Status"
             }
@@ -16357,7 +16349,7 @@
           },
           {
             "__typename": "ProjectV2ItemFieldSingleSelectValue",
-            "name": "Unassigned",
+            "name": "v1.3 - Flutter Migration",
             "field": {
               "name": "Version"
             }
@@ -17378,6 +17370,6 @@
       }
     }
   ],
-  "fetched": 232,
-  "totalCount": 232
+  "fetched": 231,
+  "totalCount": 231
 }
